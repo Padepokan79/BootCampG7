@@ -1,0 +1,21 @@
+-add Ex2Drills1
+-add Ex2Drills2
+-add Ex3Drills1
+-add Ex4Drills1
+-add Ex4Drills2
+-add Ex5Drills1
+-add Ex5Drills2
+-add Ex6Drills1
+-add Ex6Drills2
+
+-add CreatingVariables
+-add EscapeSequencesComments
+-add FirsProg
+-add ForgetfullMachine
+-add GasolineReceipt
+-add MathOperations
+-add PrintingChoices
+
+-add alifhar
+
+all java file
