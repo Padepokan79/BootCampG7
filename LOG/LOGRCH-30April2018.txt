@@ -1,0 +1,17 @@
+Menambahkan file:
+
+-CreatingVariables
+-EscapeSequencesComments
+-MathOperation
+-GasolineReceipt
+-PrintingChoices
+-FirstProg
+-Exercise 2 Drills 1
+-Exercise 2 Drills 2
+-Exercise 3 Drills 1
+-Exercise 4 Drills 2
+-Exercise 5 Drills 1
+-Exercise 5 Drills 2
+-Exercise 6 Drills 1
+-Exercise 6 Drills 2
+-RichaFitria: Tugas apa saja yang membuat saya senang, marah dan menyesal
