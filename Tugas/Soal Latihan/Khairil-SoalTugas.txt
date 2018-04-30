@@ -1,0 +1,7 @@
+Soal cerita
+
+- Tuan Nishiyama ingin membuat aplikasi untuk mengukur kecepatan mobil. Setiap kecepatan memiliki indikasi yang berbeda. Asumsi untuk satuan jarak adalah km, kecepatan km/jam dan waktu jam, menit. inputan yang kosong hanya ada satu inputan baik itu jaraknya saja, kecepatannya saja ataupun waktunya saja. Kecepatan maksimum yang bisa diinputkan adalah sebesar 200km/jam.
+
+- Seorang guru sedang mengajarkan kepada muridnya untuk menghitung luas lingkaran. Setiap masing-masing lingkaran memiliki perhitungan yang berbeda. apabila jari-jari memiliki ukuran kelipatan 7 maka pergunakan konstanta phi = 22/7 dan apabila bukan kelipatan 7 maka pergunakan konstanta phi = 3,14.
+
+- Sebuah toko pakaian memiliki aplikasi POS sederhana. Item yang dijual adalah pakaian pria. Setiap pakaian memiliki harga yang bervariasi. Harga untuk sebuah kemeja adalah 120000, celana panjang 60000, dasi 40000, dan kaos kaki per pasang 35000. Untuk pembelian minimal 100000 mendapatkan potongan harga sebesar 10% dan pembelian minimal 250000 mendapatkan potongan harga sebesar 15%. Apabila pembelian mencapai 300000 berlaku kelipatan maka pembeli akan mendapatkan bonus 1 buah dasi.
