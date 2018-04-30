@@ -1,1 +1,2 @@
 - Add File KhairilVar.java
+- Add File Khairil-SoalTugas.txt
