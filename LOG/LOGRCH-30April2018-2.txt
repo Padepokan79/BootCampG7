@@ -1,0 +1,3 @@
+Menambahkan file:
+
+-ubah variabel pada file RichaFitria.java
