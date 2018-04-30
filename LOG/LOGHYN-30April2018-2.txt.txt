@@ -1,0 +1,6 @@
+-Menambahkan Folder untuk Setiap anggota Bootcamp
+-Menambahkan Folder LOG
+-Menambahkan Folder Tugas
+-Menambahkan subFolder Soal Latihan
+
+-Menambahkan Folder SoftSkill
