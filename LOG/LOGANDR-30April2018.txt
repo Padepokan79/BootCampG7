@@ -1,0 +1,23 @@
+>Menambahkan subfolder pada foler Andrian:
+  27April2018
+  30April2018
+>Menambahkan file :
+ - CreatingVariable.java
+ - EscapeSequenceComments.java
+ - Ex1Drills1.java
+ - Ex1Drills2.java
+ - Ex2Drills1.java
+ - Ex2Drills2.java
+ - Ex3Drills1.java
+ - Ex3Drills2.java
+ - Ex4Drills2.java
+ - Ex5Drills1.java
+ - Ex5Drills2.java
+ - Ex5Drills3.java
+ - Ex6Drills1.java
+ - Ex6Drills2.java
+ - FirstProg.java
+ - GasolineReceipt.java
+ - MathOperation.java
+ - PrintingChoises.java
+ - TugasKemarin.java
