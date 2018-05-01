@@ -1,0 +1,2 @@
+- add math operation exercise from G7
+- add math operation exercise from Kang Hendra
