@@ -2,8 +2,10 @@ Soal latihan
 
 1. Seseorang mengendarai mobil ke tempat kerjanya selama 1 jam dengan jarak 30 km. 
 Jika dia terlambat berangkat 10 menit, kecepatan yang harus digunakan agar sampai ke kantor adalah …
+
 2. Seorang anak bernama Oni setiap pagi selalu berolahraga memutari sebuah lapangan dengan keliling 0,5 km. 
 Apabila dengan kecepatan lari 5 km/jam Oni mampu memutari lapangan sebanyak 5 kali, 
-berapa lamakah Oni lari setiap paginya?J
+berapa lamakah Oni lari setiap paginya?
+
 3.Selisih uang Ani dan Budi adalah 7500.
 Jika 10% uang Ani diberikan kepada Budi, maka uang Budi menjadi 80% uang Ani semula. Berapa jumlah uang keduanya?
