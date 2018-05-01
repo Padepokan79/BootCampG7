@@ -1,0 +1,29 @@
+- Add Folder Exercise_1
+	- Add File FirstProg.java
+	- Add File Ex1Drills1.java
+
+- Add Folder Exercise_2
+	- Add File GasolineReceipt.java
+	- Add File Ex2Drills1.java
+	- Add File Ex2Drills2.java
+
+- Add Folder Exercise_3
+	- Add File PrintingChoices.java
+	- Add File Ex3Drills1.java
+
+- Add Folder Exercise_4
+	- Add File EscapeSequencesComments.java
+	- Add File Ex4Drills1.java
+	- Add File Ex4Drills2.java
+
+- Add Folder Exercise_5
+	- Add File CreatingVariables.java
+	- Add File Ex5Drills1.java
+	- Add File Ex5Drills2.java
+
+- Add Folder Exercise_6
+	- Add File MathOperations.java
+	- Add File Ex6Drills1.java
+	- Add File Ex6Drills2.java
+
+- Add File Arief_PN_SoalCerita.txt

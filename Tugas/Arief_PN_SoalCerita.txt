@@ -1,0 +1,7 @@
+Buat 3 soal cerita yang mengandung operasi matematika
+
+1. Udin pergi ke toko alat tulis membeli pulpen seharga Rp. 1.950 per buah nya. Udin membeli pulpen sebanyak satu lusin, jika Udin membayar menggunakan uang lembaran Rp.10.000 sebanyak tiga lembar, berapakah kembalian yang diterima Udin?
+
+2. Ucup memiliki 5 buah toko helm, dalam sehari setiap toko helmnya berhasil menjual sebanyak 3 buah helm dengan masing-masing harga helmnya, Rp. 250.000 Helm A, Rp. 50.000 Helm B, Rp. 650.000 Helm C. Berapa hasil penjualan Helm dalam 1 minggu?
+
+3. Us pergi kepasar membeli beberapa lauk. Satu bungkus tahu harganya Rp. 3.000, tempe satu potong seharga Rp. 4.500, dan kangkung Rp. 1.000 per ikatnya. Jika Uus belanja tahu 4 bungkus, tempe 8 potong, dan kangkung 3 ikat, berapa uang yang harus dibayarkan oleh Uus?
