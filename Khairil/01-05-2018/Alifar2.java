@@ -22,3 +22,7 @@ class Alifar2 {
 		System.out.printf("\nTotal Keuntungan     : %.2f", totalKeuntungan);
 	}
 }
+
+/*
+Pak Ryu ingin menjual dua buah rumah yang harga beli nya sebesar 60 juta rupiah. Rumah pertama berhasil dijualnya dengan untung sebesar 30%. Namun rumah keduanya harus terpaksa dijual dengan harga 15% lebih murah dari harga belinya. Berapa total uang yang didapatkan oleh Pak Ryu?
+*/

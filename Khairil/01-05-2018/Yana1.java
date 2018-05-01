@@ -25,3 +25,10 @@ class Yana1 {
 		System.out.println("Jumlah uang Ijal = " + uangIjal);
 	}
 }
+
+/*
+Ijal mempunyai uang sebesar Rp. 20.000, ia membelanjakan setengah 
+uangnya untuk membeli 10 butir kelereng. kemudian Ijal menjual 4 butir 
+kelerengnya dengan laba 20% dari setiap butir kelereng yang dijualnya. 
+Berapakan jumlah uang Ijal saat ini?
+*/

@@ -30,3 +30,7 @@ class Arief2 {
 		System.out.printf("Total Penghasilan       : %.2f", total);		
 	}
 }
+
+/*
+Ucup memiliki 5 buah toko helm, dalam sehari setiap toko helmnya berhasil menjual sebanyak 3 buah helm dengan masing-masing harga helmnya, Rp. 250.000 Helm A, Rp. 50.000 Helm B, Rp. 650.000 Helm C. Berapa hasil penjualan Helm dalam 1 minggu?
+*/

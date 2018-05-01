@@ -25,3 +25,12 @@ class Yana2 {
 		System.out.print("%");
 	}
 }
+
+/*
+Alifar pergi ke toko buku untuk membeli 1 buah pensil, 1 buah penghapus 
+dan 1 buah penggaris. Harga barang yang dibeli Alifhar adalah pensil seharga 
+Rp. 8.000, penghapus seharga 6.000 dan penggaris Rp. 10.000. Karena Alifhar 
+membeli pensil dan penghapus dengan merek yang sama, Alifhar berhak membayar 
+keduanya seharga Rp. 10.000. Berapa % keuntungan yang didapat Alifhar dari 
+transaksi belanja tersebut?
+*/
