@@ -1,8 +1,8 @@
 /*
 created by	: Yana
-time		: 15.31
-*/
-/*
+time		: 1 Mei 2018 15.31
+
+
 Bima akan mengikuti ujian sekolahnya hari ini. Pada jam pertama, 
 ia mendapatkan waktu 6000 detik untuk mengerjakan soal bahasa inggris. 
 Setelah itu, diberikan waktu untuk istirahat sebanyak 1800 detik 
@@ -13,15 +13,30 @@ Berapa waktu yang telah dihabiskan disekolah pada hari itu?
 Ubahlah format waktunya kedalam jam, menit dan detik.
 */
 
-public class Alifhar{
-	public static void main(Sting[] args){
+public class Alifhar3{
+	public static void main(String[] args){
 
-		int waktuInggris, waktuIstirahat, waktuMatematika, waktuBaris, jumlahDetik;
+		int waktuInggris, waktuIstirahat, waktuMatematika, waktuBaris, jumlahDetik,
+			detikJam, detikMenit;
+		double jam, detik, menit;
 
 		waktuInggris	= 6000;
 		waktuIstirahat	= 1800;
 		waktuMatematika	= 7200;
 		waktuBaris		= 1234;
+		detikJam		= 3600;
+		detikMenit		= 60;
+
+		jumlahDetik		= waktuInggris + waktuIstirahat + waktuMatematika + waktuBaris;
+
+		jam 			= jumlahDetik / detikJam;
+		menit 			= (jumlahDetik - (jam * detikJam)) / detikMenit;
+		detik 			= jumlahDetik - ((jam * detikJam) - (menit * detikMenit));
+
+		System.out.println("Jumlah Detik " +jumlahDetik);
+		System.out.printf("Jam %.0f\n" ,Math.floor(jam);
+		System.out.printf("Menit %.0f\n" ,Math.floor(menit));
+		System.out.printf("Detik %.0f\n" ,detik);
 		
 	}
 }

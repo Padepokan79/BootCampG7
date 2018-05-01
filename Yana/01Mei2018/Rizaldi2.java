@@ -1,7 +1,7 @@
 /*
-created by : Yana
-*/
-/*
+created by 	: Yana
+time		: 1 Mei 2018
+
 2. adi menabung perhari sebesar 2000 rupiah. dia hendak membeli gitar seharga 245.000 rupiah
 dari hasil tabungan nya itu. disaat hari ke 80 adi memakai uang tabungannya sebanyak 100.000 rupiah
 untuk mengikuti praktikum.

@@ -1,8 +1,7 @@
 /* 
-Created by : Yana 
-*/
+Created by 	: Yana 
+time		: 1 Mei 2018
 
-/*
 3. Harga dua buah apel dan satu buah jeruk adalah Rp. 3.400, 
 Harga satu apel dan dua jeruk adalah Rp. 4.100, 
 Berapa harga satu buah apel dan satu buah jeruk ?

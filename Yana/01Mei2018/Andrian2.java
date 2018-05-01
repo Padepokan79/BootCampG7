@@ -1,8 +1,7 @@
 /* 
-Created by : Yana 
-*/
+Created by 	: Yana 
+time		: 1 Mei 2018
 
-/* 
 2. Di toko Bu Poniem tersedia 12 karung beras. Setiap karung beratnya 50 kg. 
 Jika hari ini dan kemarin masing-masing terjual 175 kg dan 120 kg, 
 berapa kg sisa beras di warung Bu Poniem sekarang ?
