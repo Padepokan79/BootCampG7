@@ -26,7 +26,7 @@ public class Richa1{
         "Jika dia terlambat berangkat 10 menit, kecepatan yang harus digunakan agar sampai ke kantor adalah ?\n");
         System.out.printf("\n");
 
-        System.out.printf("kecepatan yang harus digunakan agar sampai ke kantor adalah : %.0f KM\n", speed);
+        System.out.printf("kecepatan yang harus digunakan agar sampai ke kantor adalah : %.0f KM/Jam\n", speed);
 
     }
 }

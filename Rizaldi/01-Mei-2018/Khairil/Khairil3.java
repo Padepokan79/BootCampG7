@@ -27,7 +27,7 @@ public class Khairil3{
         double sale1, sale2, sale3, disc1, disc2, disc3;
         sale1=shirt;
         sale2=shirt+(2*pants);
-        sale3=shirt+pants+necktie+(5*necktie);
+        sale3=shirt+pants+necktie+(6*necktie);
 
         disc1=sale1*min100k;
         disc2=sale2*min250k;
