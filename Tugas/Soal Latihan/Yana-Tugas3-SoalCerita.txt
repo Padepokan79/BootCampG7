@@ -16,4 +16,6 @@ ke-2 berjarak 200 meter, dari persimpangan ke-2 ke kantor 79 berjarak 250
 meter. Setiap 100 meter dapat ditempuh selama 120 detik dengan jalan kaki dan 
 60 detik menggunakan motor. Jika Arief pergi dari kosan ke persimpangan ke-2 dengan 
 berjalan kaki, kemudian dari persimpangan ke-2 ke kantor 79 menggunakan motor, 
+
 berapa waktu tempuh perjalan Arief dari kosan ke kantor 79?
+
