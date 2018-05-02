@@ -24,3 +24,7 @@ class Arief1 {
 		System.out.printf("Kembalian   : %.2f", kembalian);		
 	}
 }
+
+/*
+Udin pergi ke toko alat tulis membeli pulpen seharga Rp. 1.950 per buah nya. Udin membeli pulpen sebanyak satu lusin, jika Udin membayar menggunakan uang lembaran Rp.10.000 sebanyak tiga lembar, berapakah kembalian yang diterima Udin?
+*/

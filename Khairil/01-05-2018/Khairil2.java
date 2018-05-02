@@ -7,12 +7,16 @@
 class Khairil2 {
 	public static void main(String[] args) {
 		int rad;
+		String Soal;
 		double phi, luas;
-
+		String soal;
+		soal = "Seorang guru sedang mengajarkan kepada muridnya untuk menghitung luas lingkaran. Setiap masing-masing lingkaran memiliki perhitungan yang berbeda. apabila jari-jari memiliki ukuran kelipatan 7 maka pergunakan konstanta phi = 22/7 dan apabila bukan kelipatan 7 maka pergunakan konstanta phi = 3,14.";
 		phi = 22/7;
 		rad = 7;
 		luas = phi * rad;
-
+		System.out.println(soal);
+		System.out.println();	
+		
 		System.out.println("Phi       : " + phi);
 		System.out.println("Jari-jari : " + rad);
 		System.out.println("Luas      : " + luas);
