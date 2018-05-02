@@ -6,11 +6,11 @@
 */
 class Alifar3 {
 	public static void main(String[] args) {
-		int jam, menit, detik, wBing, wIstirahat, wMatematika, wKumpul, totalWaktu, konversiWaktuMenit, konversiWaktuJam;
+		int jam, menit, detik, wBing, wIstirahat, wMatematika, wKumpul, totalWaktu, konversiWaktuDetik, konversiWaktuMenit, konversiWaktuJam;
 
-		jam = 3600;
+		jam = 60;
 		menit = 60;
-		detik = 1;
+		detik = 60;
 
 		wBing = 6000;
 		wIstirahat = 1800;
@@ -18,16 +18,20 @@ class Alifar3 {
 		wKumpul = 1234;
 
 		totalWaktu = wBing + wIstirahat + wMatematika + wKumpul;
-		konversiWaktuMenit = totalWaktu / 60;
-		konversiWaktuJam   = konversiWaktuMenit / 60;
+		konversiWaktuMenit = totalWaktu/menit;
+		konversiWaktuDetik = totalWaktu%detik;
+
+		konversiWaktuJam = konversiWaktuMenit/menit;
+		konversiWaktuMenit = konversiWaktuMenit%menit;
 
 		System.out.println("Waktu Bahasa Inggris : " + wBing);
 		System.out.println("Waktu Istirahat 	 : " + wIstirahat);
 		System.out.println("Waktu Matematika 	 : " + wMatematika);
 		System.out.println("Waktu Kumpul 		 : " + wKumpul);
-		System.out.println("Total Waktu (Detik)  : " + totalWaktu);
+		System.out.println("Total Waktu Detik    : " + totalWaktu);
+		System.out.println("Total Waktu (Detik)  : " + konversiWaktuDetik);
 		System.out.println("Total Waktu (Menit)  : " + konversiWaktuMenit);
-		System.out.println("Total Waktu (Jam)  : " + konversiWaktuJam);	
+		System.out.println("Total Waktu (Jam)  : " + konversiWaktuJam);
 	}
 }
 
