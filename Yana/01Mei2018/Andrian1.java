@@ -1,8 +1,7 @@
 /* 
-Created by : Yana 
-*/
+Created by 	: Yana 
+time		: 1 Mei 2018
 
-/* 
 1. Tono berada 20 meter disebelah kiri tiang bendera. 
 Ati berada 4 meter disebelah kanan tono, sedangkan susi berada 8 meter 
 disebelah kiri ati. jika posisi tiang bendera dianggap posisi awal atau titik nol, 
@@ -17,8 +16,6 @@ public class Andrian1{
 		jarakTonoDanBendera		= 20;
 		jarakAtiDanTono			= 4;
 		jarakSusiDanAti			= 8;
-		jarakAtiDanBendera		= 0;
-		jarakSusiDanBendera		= 0;
 
 		jarakAtiDanBendera		= jarakTonoDanBendera - jarakAtiDanTono;
 		jarakSusiDanBendera		= jarakAtiDanBendera + jarakSusiDanAti;

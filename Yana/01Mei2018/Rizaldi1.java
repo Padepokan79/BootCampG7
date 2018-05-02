@@ -1,7 +1,7 @@
 /*
-created by : Yana
-*/
-/*
+created by 	: Yana
+time 		: 1 Mei 2018
+
 1. Adi membeli 20 bungkus roti dan 20 botol air mineral,
 jika lapar adi memakan 1 bungkus roti dan 1/2 botol air mineral.
 berapa sisa roti dan air mineral jika adi merasa lapar 15 kali. ?

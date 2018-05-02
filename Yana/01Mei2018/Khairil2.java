@@ -1,7 +1,7 @@
 /*
 creadted by : Yana
-*/
-/*
+time		: 1 Mei 2018
+
 Seorang guru sedang mengajarkan kepada muridnya untuk menghitung luas lingkaran. 
 Setiap masing-masing lingkaran memiliki perhitungan yang berbeda. 
 apabila jari-jari memiliki ukuran kelipatan 7 maka pergunakan konstanta phi = 22/7 

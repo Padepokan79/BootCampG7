@@ -1,7 +1,7 @@
 /*
-created by : Yana
-*/
-/*
+created by 	: Yana
+time 		: 1 Mei 2018
+
 3. boni mendapat gajian perbulan sebesar 5000.000 rupiah, dia hendak membeli sebuah mobil antik seharga
 60.000.000 rupiah. setiap bulan boni bisa menyisihkan uang hasil gajian setelah dipakai 500.000 untuk bayar kost,
 1000.000 untuk keperluan makan dan transport, serta ada uang keamanan setiap 6 bulan sekali sebesar 100.000 rupah.
