@@ -1,0 +1,6 @@
+- Move Folder OperasiMatematika to Arief/01-05-2018
+	- Edit File Richa03.java
+	- Edit File Rizaldi03.java
+	- Edit File Yana01.java
+
+	
