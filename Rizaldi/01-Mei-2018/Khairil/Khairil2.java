@@ -33,3 +33,5 @@ public class Khairil2{
 
     }
 }
+
+//phinya cukup satu var

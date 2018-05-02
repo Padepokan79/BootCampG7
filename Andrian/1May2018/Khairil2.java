@@ -19,3 +19,5 @@
 			System.out.println( "jika lingkaran 1 memiliki nilai " + nilai1 + " cm, maka nilai phi adalah " + phi1 + "jika lingkaran 2 memiliki nilai " + nilai2 + " cm, maka nilai phi adalah " + phi2 );
 		}
 	}
+
+	//phi nya cukup satu dan deklrasi phi bukan menggunakan String

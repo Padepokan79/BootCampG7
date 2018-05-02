@@ -31,3 +31,5 @@ public class Khairil02{
 
 	}
 }
+
+//phi nya cukup satu aja tapi nanti berbeda value

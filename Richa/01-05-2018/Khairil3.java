@@ -20,3 +20,6 @@ public class Khairil3 {
 		
 	}
 }
+
+//bonus cuma 1 buah dasi tulis manual
+//diskon belanja nya ga ada
