@@ -1,0 +1,13 @@
+Menambahkan file :
+ - BMICalculator.java
+ - Ex11Drills1
+ - Ex11Drills2
+ - Ex7Drills1dan2
+ - Ex8Drills1sampai4
+ - Ex9Drills1
+ - Ex9Drills2
+ - Ex9Drills3
+ - ForgetfulMachine
+ - RudeQuestions
+ - Sequencing
+ - VariableChangeShortcut
