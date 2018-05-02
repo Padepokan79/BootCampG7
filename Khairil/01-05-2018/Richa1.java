@@ -6,14 +6,13 @@
 */
 class Richa1 {
 	public static void main(String[] args) {
-		double kecepatan, waktu, jarak, delay;
+		double kecepatan, waktu, jarak, delay, del;
 		String soal;
 		soal  = "Seseorang mengendarai mobil ke tempat kerjanya selama 1 jam dengan jarak 30 km. Jika dia terlambat berangkat 10 menit, kecepatan yang harus digunakan agar sampai ke kantor adalah …";
-		waktu = 60; //menit
-		delay = 10; //menit
-		waktu = waktu + delay;
-		jarak = 30; //km
-		kecepatan = jarak / (waktu / 60);
+		jarak = 30;
+		waktu = 1;
+		delay = 50.0 / 60.0;
+		kecepatan = jarak / delay;
 		System.out.println(soal);		
 		System.out.println();		
 		System.out.println("Waktu tempuh adalah    : " + waktu + " jam");
