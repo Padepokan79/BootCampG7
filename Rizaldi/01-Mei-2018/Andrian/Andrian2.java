@@ -22,6 +22,10 @@ public class Andrian2{
 
         lastStock=totalNetto-totalSales;
 
+        System.out.printf("Di toko Bu Poniem tersedia 12 karung beras.\n"+
+        "Setiap karung beratnya 50 kg. Jika hari ini dan kemarin masing-masing terjual 175 kg dan 120 kg,\n"+
+        "berapa kg sisa beras di warung Bu Poniem sekarang ?\n");
+        System.out.printf("\n");
 
         System.out.println("sisa beras di warung Bu Poniem sekarang adalah : "+lastStock+" Kg");
 

@@ -22,6 +22,12 @@ public class Arief1{
         payMoney=moneyType*qtyMoneyType;
 
         moneyReturn=payMoney-payPen;
+
+        System.out.printf("Udin pergi ke toko alat tulis membeli pulpen seharga Rp. 1.950 per buah nya.\n"+
+        "Udin membeli pulpen sebanyak satu lusin, jika Udin membayar menggunakan uang lembaran Rp.10.000 sebanyak tiga lembar,\n"+
+        "berapakah kembalian yang diterima Udin?\n");
+        System.out.printf("\n");
+
         System.out.printf("kembalian yang diterima Udin  : Rp %.2f\n", moneyReturn);
 
     }

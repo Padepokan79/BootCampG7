@@ -30,6 +30,11 @@ public class Arief3{
 
         totalPayment=payTofu+payTempe+payKangkung;
 
+        System.out.printf("Us pergi kepasar membeli beberapa lauk. Satu bungkus tahu harganya Rp. 3.000,\n"+
+        "tempe satu potong seharga Rp. 4.500, dan kangkung Rp. 1.000 per ikatnya.\n"+
+        "Jika Uus belanja tahu 4 bungkus, tempe 8 potong, dan kangkung 3 ikat, berapa uang yang harus dibayarkan oleh Uus?\n");
+        System.out.printf("\n");
+
         System.out.printf("uang yang harus dibayarkan oleh Uus adalah : Rp %.2f\n", totalPayment);
 
     }
