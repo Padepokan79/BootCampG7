@@ -29,6 +29,16 @@ public class Yana3{
         motorTime=leftDistance/consDistance*motor;
 
         totalTime=walkTime+motorTime;
+
+        System.out.printf("Perjalanan dari kosan Arief ke kantor 79 melewati 2 persimpangan, dari kosan ke\n"+
+        "persimpangan ke-1 berjarak 300 meter, dari persimpangan ke-1 ke persimpangan\n"+
+        "ke-2 berjarak 200 meter, dari persimpangan ke-2 ke kantor 79 berjarak 250\n"+
+        "meter. Setiap 100 meter dapat ditempuh selama 120 detik dengan jalan kaki dan\n"+
+        "60 detik menggunakan motor. Jika Arief pergi dari kosan ke persimpangan ke-2 dengan\n"+
+        "berjalan kaki, kemudian dari persimpangan ke-2 ke kantor 79 menggunakan motor,\n"+
+        "berapa waktu tempuh perjalan Arief dari kosan ke kantor 79?\n");
+        System.out.printf("\n");
+
         System.out.println("waktu tempuh perjalan Arief dari kosan ke kantor 79 adalah  : "+totalTime+" detik");
 
     }

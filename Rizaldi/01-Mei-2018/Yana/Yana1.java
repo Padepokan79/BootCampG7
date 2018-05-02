@@ -26,6 +26,12 @@ public class Yana1{
         walletMoney=walletMoney+((marbleUnit-soldMarble)*marblePrice);
         walletMoney=walletMoney+totalLaba;
 
+        System.out.printf("Ijal mempunyai uang sebesar Rp. 20.000, ia membelanjakan setengah\n"+
+        "uangnya untuk membeli 10 butir kelereng. kemudian Ijal menjual 4 butir\n"+
+        "kelerengnya dengan laba 20 persen dari setiap butir kelereng yang dijualnya.\n"+
+        "Berapakan jumlah uang Ijal saat ini?\n");
+        System.out.printf("\n");
+
         System.out.println("jumlah uang Ijal saat ini adalah : Rp "+walletMoney);
 
     }
