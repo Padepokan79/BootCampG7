@@ -16,11 +16,11 @@ public class Yana1{
 		uang=20000;
 		
 		kelereng=10;
-		beli=uang*1/2;
+		beli=uang*1/2/kelereng;
 		
-		uang=uang-beli;
+		uang=uang-beli*kelereng;
 		
-		jual=(beli/kelereng)*20/100*4;
+		jual=(beli*20/100+beli)*4;
 		uang=uang+jual;
 		System.out.println("\nUang ijal saat ini adalah "+uang+" rupiah");
 	}

@@ -1,0 +1,14 @@
+- add example program
+	BMICalculator.java
+	ForgetfulMachine.java
+	RudeQuestion.java
+	Sequencing.java
+	VariableChangeShortcuts.java
+- add exercise
+	Ex7Drills.java
+	Ex8Drills.java
+	Ex9Drills1.java
+	Ex9Drills2.java
+	Ex9Drills3.java
+	Ex11Drills1.java
+	Ex11Drills2.java

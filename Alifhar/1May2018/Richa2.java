@@ -14,7 +14,7 @@ public class Richa2{
 
 		double lapangan, kecepatan, total;
 		lapangan=0.5; kecepatan=5;
-		total=lapangan*kecepatan*5;
-		System.out.println("\ntotal Oni lari pagi adalah "+total+" km");
+		total=(lapangan/kecepatan)*5;
+		System.out.println("\nOni lari pagi selama "+total+" jam");
 	}
 }
