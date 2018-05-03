@@ -1,0 +1,26 @@
+Lowongan pekerjaan
+- Laki-laki
+- Umur min 23
+- Pendidikan S1/S2/S3
+- Keahlian : - Java dan ANgularJs
+	     - Java dan PHP
+- Pengalaman : ya
+
+
+Beasiswa bidikmisi s3
+- Laki-laki/Perempuan
+- Pendidikan S2 rataan ipk s1&s2 : 3.25
+- Akreditasi kampus min B
+
+
+Beasiswa Informatika
+- Laki-laki/Perempuan
+- semester 3 - 5
+- jenis beasiswa : ppa/ppb
+- * untuk beasiswa ppa
+	- ipk min 2.75
+	- status "tidak mampu"
+- * untuk beasiswa ppb
+	- ipk min 3.00
+	- nilai matakuliah algiritma : 8
+	- rata-rata nilai matakuliah database dan bahasa pemrograman : 8 skala 10
