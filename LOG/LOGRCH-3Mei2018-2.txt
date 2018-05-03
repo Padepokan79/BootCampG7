@@ -1,0 +1,6 @@
+Menambahkan file:
+
+-LatihanBoolean1.java
+-LatihanBoolean2.java
+-LatihanBoolean3.java
+-LatihanBoolean4.java
