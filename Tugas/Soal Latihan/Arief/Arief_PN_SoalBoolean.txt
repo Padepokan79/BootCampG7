@@ -1,0 +1,12 @@
+1. Jalan tol ganjil genap.
+Jika tanggal ganjil, maka hanya Plat nomor ganjil yang boleh masuk.
+Jika tanggal genap, maka hanya Plat nomor genap yang boleh masuk.
+
+2. Toko Elekronik
+Toko buka di hari senin s/d kamis, dan sabtu.
+Selain itu toko tutup.
+
+3. Spesifikasi laptop
+Jumlah Ram setidaknya 8GB.
+Kapasitas Penyimpanan HDD minimal 1TB.
+Kecepatan processor tidak boleh kurang dari 3.0 Ghz dan tidak boleh lebih dari 4.5 Ghz
