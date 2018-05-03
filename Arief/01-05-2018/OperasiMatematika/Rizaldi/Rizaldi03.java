@@ -6,17 +6,18 @@ Modified By		:
 */
 public class Rizaldi03{
 	public static void main ( String[]args ){
-		double bulanan, tahun, tahunan, mobil, kost, makan, keamanan, sisa, target;
+		double bulanan, tahun, tahunan, mobil, kost, makan, keamanan, sisa, target, bayarBulanan, bayarTahunan;
 
 		bulanan = 5000000;
 		tahun = 12;
 		mobil = 60000000;
 		kost = 500000;
 		makan = 1000000;
-		keamanan = 100000 / 6;
-		sisa = bulanan - (kost + makan + keamanan);
-		tahunan = sisa * tahun;
-		target = (mobil - tahunan) / tahunan;
+		keamanan = 100000;
+		bayarBulanan = kost + makan;
+		bayarTahunan = (bayarBulanan * tahun) + (keamanan * 2);
+		tahunan = (bulanan * tahun) - bayarTahunan;
+		target = mobil/tahunan;
 
 		System.out.println("boni mendapat gajian perbulan sebesar 5000.000 rupiah, \n" +
 							"dia hendak membeli sebuah mobil antik seharga 60.000.000 \n" +

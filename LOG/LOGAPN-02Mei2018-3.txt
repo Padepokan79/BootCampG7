@@ -1,0 +1,23 @@
+- Add Folder Exercise_7
+	- Add File ForgetfulMachine.java
+	- Add File Ex7Drills.java
+
+- Add Folder Exercise_8
+	- Add File RudeQuestions.java
+	- Add File Ex8Drills.java
+
+- Add Folder Exercise_9
+	- Add File BMICalculator.java
+	- Add File Ex9Drills1.java
+	- Add File Ex9Drills2.java
+	- Add File Ex9Drills3.java
+
+- Add Folder Exercise_10
+	- Add File Sequencing.java
+
+- Add Folder Exercise_11
+	- Add File VariableChangeShortcuts.java
+	- Add File Ex11Drills1.java
+	- Add File Ex11Drills2.java
+
+- Add File DefaultAuthor.txt

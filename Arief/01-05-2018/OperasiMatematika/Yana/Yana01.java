@@ -12,11 +12,12 @@ public class Yana01{
 		belanja = (1.0/2) * uang;
 		kelereng = 10;
 		jualKelereng = 4;
-		hargaKelereng = belanja / kelereng;
-		laba = (20.0/100) * hargaKelereng;
+		hargaKelereng = belanja / kelereng; // 1000
+		laba = (20.0/100) * hargaKelereng; // 200
 		totalLaba = laba * jualKelereng;
+
 		sisaUang = uang - belanja;
-		totalUang = sisaUang + totalLaba;
+		totalUang = sisaUang + (hargaKelereng * jualKelereng) + totalLaba;
 
 		System.out.println("Ijal mempunyai uang sebesar Rp. 20.000, ia membelanjakan setengah \n" +
 							"uangnya untuk membeli 10 butir kelereng. kemudian Ijal menjual 4 \n" +
