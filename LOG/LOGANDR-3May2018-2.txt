@@ -1,0 +1,6 @@
+Menambahkan file :
+ - Menambahkan file latihan Boolean dari rekan G7 (21 number)
+ - Menambahkan file Ex12-Ex14
+ - Menambahkan file BooleanExpressions.java
+ - Menambahkan file WeaselOrNot.java
+ - Menambahkan file ShallowGrandmother.java
