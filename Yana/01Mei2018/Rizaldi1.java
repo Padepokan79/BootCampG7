@@ -20,7 +20,7 @@ public class Rizaldi1{
 		jumlahRoti		= jumlahRoti - (jumlahLapar * kebutuhanRoti);
 		jumlahBotol		= jumlahBotol - (jumlahLapar * kebutuhanAir);
 
-		System.out.printf("Sisa roti adalah %.0f " ,jumlahRoti, "dan sisa air %.1f" ,jumlahBotol);
-
+		System.out.printf("Sisa roti adalah %.0f " ,jumlahRoti);
+		System.out.printf(" dan sisa air %.1f" ,jumlahBotol);
 	}
 }

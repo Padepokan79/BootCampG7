@@ -1,0 +1,14 @@
+Add Folder 02Mei2018
+
+Add File Ex7Drills12.java
+Add File ForgetfulMachine.java
+Add File Sequencing.java
+Add File Ex11Drills1.java
+Add File Ex11Drills2.java
+Add File VariableChangeShortcuts.java
+Add File Ex9Drills1.java
+Add File Ex9Drills2.java
+Add File RudeQuestions.java
+Add File BMIClculator.java
+Add File Ex8Drills14.java
+Add File FormRegistrasi.java

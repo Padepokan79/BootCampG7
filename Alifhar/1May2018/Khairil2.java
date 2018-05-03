@@ -18,6 +18,12 @@ public class Khairil2{
 		phi=3.14;
 		luas=phi*r*r;
 		System.out.println("luasnya adalah "+luas);
+
+		r=21;
+		System.out.println("\njari jari lingkaran adalah "+r);
+		phi=22.0/7.0;
+		luas=phi*r*r;
+		System.out.println("luasnya adalah "+luas);
 	}
 }
 

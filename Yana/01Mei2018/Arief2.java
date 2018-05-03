@@ -18,7 +18,7 @@ public class Arief2{
 		hargaHelmA		= 250000;
 		hargaHelmB		= 50000;
 		hargaHelmC		= 650000;
-		jumlahHari		= 21;
+		jumlahHari		= 7;
 
 		penjualan 		= hargaHelmA + hargaHelmB + hargaHelmC;
 		penjualan 		= penjualan * jumlahToko;

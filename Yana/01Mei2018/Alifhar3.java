@@ -31,10 +31,11 @@ public class Alifhar3{
 
 		jam 			= jumlahDetik / detikJam;
 		menit 			= (jumlahDetik - (jam * detikJam)) / detikMenit;
-		detik 			= jumlahDetik - ((jam * detikJam) - (menit * detikMenit));
+		// detik 			= jumlahDetik - (((jumlahDetik / detikJam) + (jumlahDetik - (jam * detikJam))));
+		detik 			= jumlahDetik % detikMenit;
 
 		System.out.println("Jumlah Detik " +jumlahDetik);
-		System.out.printf("Jam %.0f\n" ,Math.floor(jam);
+		System.out.printf("Jam %.0f\n" ,Math.floor(jam));
 		System.out.printf("Menit %.0f\n" ,Math.floor(menit));
 		System.out.printf("Detik %.0f\n" ,detik);
 		
