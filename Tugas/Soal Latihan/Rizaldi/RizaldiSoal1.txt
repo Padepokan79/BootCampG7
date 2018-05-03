@@ -1,0 +1,23 @@
+/*
+     * Soal untuk pembahasan tentang BOOLEAN
+     *
+     * Programmer : Rizaldi
+     * Created By : Rizaldi
+     * Created At : 1 Mei 2018 10:47 AM     
+     * Updated By : 
+     * Updated At : 
+*/
+
+Soal
+
+buat tiga file untuk masing-masing soal dengan nama RizaldiBoolean1 sd RizaldiBoolean3...
+
+
+1.  untuk lulus dari universitas Gajah Duduk, maka mahasiswa harus bisa lulus di 6 minimal dari 8 mata kuliah,
+yakni matakuliah A,B,C,D,E,F,G,H sedangkan 4 diantaranya wajib lulus yakni matakuliah C,D,E,A. dengan syarat nilai
+lulus adalah 7 untuk setiap matakuliah.
+
+2. agar bisa tidur kucing sasuke harus makan rumput atau dedak, minum air hujan dan berak di pasir.
+
+3. manusia mencari planet baru dengan karakteristik : ada air, kadar O2 20% dari total udara,total udara adalah 500rb ton/kubik temperaturnya 32 sd 40 derajat selsius,
+boleh ada siang dan malam, dan umur planet harus 45 sd 200 milyar tahun.
