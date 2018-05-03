@@ -1,0 +1,73 @@
+Soal 1:
+
+Bayangkan kamu ingin liburan ke Lombok. Untuk pergi ke Lombok terdapat minimum budget yang dibutuhkan dan ketersedian hari untuk tiket pesawat dan hotel. Untuk ke lombok kamu harus mempunyai budget di atas $520 dan kamu harus free selama senin sampai jumat.
+Input hari dalam angka (Ex: 1 untuk senin dan 7 untuk minggu)
+program akan mengatakan apakah kamu dibolehkan pergi ke Lombok atau tidak.
+
+
+Output 1:
+
+=============== WELCOME TO TRAVEL CHOICE CLUB ===================
+Are you able to go Lombok this week? Please fill our form below!
+
+What's your name? Richa
+How much budget do you have, Richa? (in dollar)
+550
+Enter available date you have! (you may only choose 1 day, in number)
+3
+
+==================================================================
+This is your result, Richa....
+Are you allowed go to lombok? true
+
+
+
+
+Soal 2:
+
+Kamu ingin tau bagaimana orang menilai kamu. Apakah kamu orang yang baik atau tidak.
+Parameter orang yang baik adalah
+1. Kamu memiliki teman baik lebih dari 13
+2. Kamu memiliki pelanggaran kriminal tidak lebih dari 7 kali namun masih dianggap baik apabila hanya melanggar 2 kali saja
+3. Kamu murah senyum atau tidak
+
+apabila 2 dari 3 syarat tersebut dipenuhi maka kamu layak menjadi orang yang baik!
+
+
+Output 2:
+
+Hai kamu ingin tahu kan bagaimana orang menilaimu?
+Isi penilaian di bawah ini ya :)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Nama : Richa
+Berapa teman baik yang kamu punya, Richa? 14
+Apakah kamu pernah melakukan pelanggaran kriminal sebelumnya? kalo iya, berapa kali? 8
+Menurutmu kamu murah senyum atau tidak? (Ya/Tidak)
+Ya
+
+Baiklah, 
+Apakah Richa adalah orang yang baik? Ya
+Terimakasih! teruslah menjadi orang yang baik yaa
+
+
+
+Soal 3:
+
+Kamu mempunyai ayah dan ibu. Kamu tidak sengaja membaca artikel tentang kecocokan sepasang suami istri. Menurut artikel
+tersebut sepasang suami istri cocok apabila suami memiliki umur di atas istri tidak lebih dari 9 tahun, dalam 1
+bulan frekuensi bertengkar tidak lebih dari 5 kali dan gaji suami lebih dari 5 juta rupiah. Kamu ingin mencari tahu kecocokan kedua ortumu. Tuliskan programnya!
+
+
+Output 3:
+
+Selamat datang, ketahuilah kecocokan kalian sebagai suami istri!
+
+Umur suami: 42
+Umur istri: 39
+Dalam sebulan berapa kali frekuensi kalian bertengkar? 3
+Berapa gaji suami dalam sebulan? 10000000
+
+Ini hasilnya....
+Apakah kalian cocok menjadi suami istri? true
