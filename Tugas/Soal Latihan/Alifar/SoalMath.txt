@@ -1,9 +1,0 @@
-+-----------------------+
-|Soal Operasi Matematika|
-+-----------------------+
-
-1. Sebuah kamar mandi memiliki 2 pipa yang berbeda ukuran. Pipa kecil dapat mengalirkan air 10 liter/menit, sedangkan pipa besar 15 liter/menit. Waktu yang dibutuhkan untuk mengisi bak menggunakan pipa besar adalah 0,8 menit. Berapa menit yang dibutuhkan untuk mengisi bak menggunakan pipa kecil?
-
-2. Pak Ryu ingin menjual dua buah rumah yang harga beli nya sebesar 60 juta rupiah. Rumah pertama berhasil dijualnya dengan untung sebesar 30%. Namun rumah keduanya harus terpaksa dijual dengan harga 15% lebih murah dari harga belinya. Berapa total uang yang didapatkan oleh Pak Ryu?
-
-3. Bima akan mengikuti ujian sekolahnya hari ini. Pada jam pertama, ia mendapatkan waktu 6000 detik untuk mengerjakan soal bahasa inggris. Setelah itu, diberikan waktu untuk istirahat sebanyak 1800 detik sebelum dilanjutkan untuk mengikuti ujian Matematika. Waktu yang diberikan untuk mengerjakan Matematika adalah 7200 detik. Lalu sebelum pulang, seluruh murid diwajibkan baris dilapangan untuk mendengarkan pengumuman oleh kepala sekolah selama 1234 detik. Berapa waktu yang telah dihabiskan disekolah pada hari itu? Ubahlah format waktunya kedalam jam, menit dan detik.

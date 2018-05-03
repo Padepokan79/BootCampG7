@@ -1,0 +1,4 @@
+- Add file Boolean Exercise from G7 (21 number)
+- Add file Ex12-Ex13
+- Add file BooleanExpressions.java
+- Add file WeaselOrNot.java
