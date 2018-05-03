@@ -17,3 +17,5 @@
 			System.out.println( "jika suatu lingkaran memiliki jari2 " + nilai1 + "  maka nilai phi adalah " + phi );
 		}
 	}
+
+	//phi nya cukup satu dan deklrasi phi bukan menggunakan String

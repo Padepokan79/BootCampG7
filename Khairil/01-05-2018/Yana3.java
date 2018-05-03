@@ -6,15 +6,15 @@
 */
 class Yana3 {
 	public static void main(String[] args) {
-		double kosanKeSimpang1, simpang1KeSimpang2, simpang2KeTujuh, tempuhJalan, waktuTempuh, waktuTempuhMotor, waktuTempuhJalan;
+		double kosanKeSimpang1, simpang1KeSimpang2, simpang2KeTujuh, jarakTempuh, tempuhJalan, waktuTempuh, waktuTempuhMotor, waktuTempuhJalan;
 
 		kosanKeSimpang1 = 300;
 		simpang1KeSimpang2 = 200;
 		simpang2KeTujuh = 250;
-		waktuTempuhJalan = 1.2;
-		waktuTempuhMotor = 6;
-		tempuhJalan = kosanKeSimpang1 + simpang1KeSimpang2;
-		waktuTempuh = (tempuhJalan / waktuTempuhJalan) + (simpang2KeTujuh / waktuTempuhMotor);
+		jarakTempuh = 100;
+		waktuTempuhJalan = 120;
+		waktuTempuhMotor = 60;
+		waktuTempuh = ((kosanKeSimpang1 + simpang1KeSimpang2) / jarakTempuh * waktuTempuhJalan) + (simpang2KeTujuh / jarakTempuh * waktuTempuhMotor);
 		System.out.println("Jarak Kosan ke Simpang 1   : " + kosanKeSimpang1 + " m");
 		System.out.println("Jarak simpang1 Ke Simpang2 : " + simpang1KeSimpang2 + " m");
 		System.out.println("Jarak simpang2 ke 79       : " + simpang2KeTujuh + "m");
