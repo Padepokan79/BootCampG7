@@ -21,7 +21,7 @@ class Soal4 {
 		System.out.println( "Enter your age, hey " + gender + " ?" );
 		age = keyboard.nextInt();
 
-		System.out.println( "Are you cute, my " + gender + " ?" );
+		System.out.println( "Are you cute, my " + gender + " ? Scale 0.0 to 10.0" );
 		performance = keyboard.nextDouble();		
 
 		entrance = ( (gender.equals("Woman") && performance>= 8 && age >= 30 && age <= 45) || (gender.equals("Man") && performance < 8 && age >= 20 && age <= 25) );
