@@ -1,3 +1,9 @@
+/*
+     Creator     : Khairil
+     Created At  : 2 Mei 2018 13:50 PM     
+     Updated By  : 
+     Update Date : 
+*/
 public class VariableChangeShortcuts {
 	public static void main(String[] args) {
 		int i, j, k;
