@@ -1,2 +1,3 @@
 Menambahkan file :
  - tugasbolean 1-4 pada sub folder tugas\TugasLatihan\Andrian
+ - soal latihan bolean
