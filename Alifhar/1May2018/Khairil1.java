@@ -20,3 +20,6 @@ public class Khairil1{
 		System.out.println("maka jaraknya adalah "+jarak+" km");
 	}
 }
+
+// untuk menulis / deklarasikan variabel jangan di tengah-tengah karena saat melibatkan banyak class nanti bingung sendiri posisinya
+// untuk penulisan soal bisa dibuat var String soal system.out.printl(soal)

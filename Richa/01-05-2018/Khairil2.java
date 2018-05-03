@@ -16,3 +16,5 @@ public class Khairil2 {
 		System.out.println ("Luas lingkaran dengan jari-jari 2.456 cm meggunakan phi = 3.14 " + luas2 + " cm kuadrat");
 	}
 }
+
+//phi nya cukup satu aja

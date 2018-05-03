@@ -26,3 +26,8 @@ public class Khairil2{
 		System.out.println("luasnya adalah "+luas);
 	}
 }
+
+// untuk menulis / deklarasikan variabel jangan di tengah-tengah karena saat melibatkan banyak class nanti bingung sendiri posisinya
+// untuk penulisan soal bisa dibuat var String soal system.out.printl(soal)
+// tidak ada perhitungan 22/7
+

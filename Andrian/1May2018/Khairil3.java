@@ -24,4 +24,8 @@
 			System.out.println( "Sebuah toko pakaian memiliki aplikasi POS sederhana.\nItem yang dijual adalah pakaian pria.\nSetiap pakaian memiliki harga yang bervariasi.\nHarga untuk sebuah kemeja adalah 120000, celana panjang 60000, dasi 40000, dan kaos kaki per pasang 35000.\nUntuk pembelian minimal 100000 mendapatkan potongan harga sebesar 10% dan pembelian minimal 250000 mendapatkan potongan harga sebesar 15%.\nApabila pembelian mencapai 300000 berlaku kelipatan maka pembeli akan mendapatkan bonus 1 buah dasi." );
 			System.out.println( "jika yang dibeli 2 buah kameja, 1 celana panjang, dan 1 dasi maka yang harus dibayarkan adalah " + hargaakhir + " dan mendapatkankan bonus " + bonus );
 		}
+
 	}
+
+//Total harga 340000 artinya diskon 15% + bonus 1 buah dasi
+//1 Buah dasi tulis manual saja

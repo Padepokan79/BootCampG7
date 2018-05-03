@@ -11,13 +11,18 @@ public class Richa3{
 	public static void main(String[] args){
 
 		double selisihiUang, perbandinganAni, perbandinganBudi, selisihBanding, uangBudi, uangAni, jumlahUang;
+		double pemberianAni, persenUtuh;
 
 		selisihiUang		= 7500;
-		perbandinganAni		= 9;
-		perbandinganBudi	= 8;
-		selisihBanding		= perbandinganAni - perbandinganBudi;
-		uangAni				= perbandinganAni * selisihiUang / selisihBanding;
-		uangBudi			= perbandinganBudi * selisihiUang / selisihBanding;
+		pemberianAni		= 10;
+		perbandinganAni		= 80 - pemberianAni;
+		perbandinganBudi	= 80;
+		persenUtuh			= 100;
+		// selisihBanding		= perbandinganAni - perbandinganBudi;
+		// uangAni				= perbandinganAni * selisihiUang / selisihBanding;
+		// uangBudi			= perbandinganBudi * selisihiUang / selisihBanding;
+		uangAni				= selisihiUang * persenUtuh / (persenUtuh - perbandinganAni);
+		uangBudi			= perbandinganAni * uangAni / persenUtuh;
 		jumlahUang			= uangAni + uangBudi;
 
 		System.out.printf("Uang Ani Rp. %.0f\n" ,uangAni);

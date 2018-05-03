@@ -11,7 +11,7 @@ class Rifan1 {
 		soal = "Tono berada 20 meter disebelah kiri tiang bendera. Ati berada 4 meter disebelah kanan tono, sedangkan susi berada 8 meter disebelah kiri ati. jika posisi tiang bendera dianggap posisi awal atau titik nol, berapa meterkah susi dengan tiang bendera ?";
 		tiangBendera = 0;
 		tono = 20 + tiangBendera;
-		ati  = 4 + tono;
+		ati  = tono - 4;
 		susi = 8 + ati;
 		System.out.println(soal);
 		System.out.println();
