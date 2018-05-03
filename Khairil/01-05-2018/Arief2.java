@@ -21,6 +21,7 @@ class Arief2 {
 		helmHc = jumHari * helmC;
 
 		total  = helmHa + helmHb + helmHc;
+		total  = total * toko;
 
 		System.out.println("Harga helm A  		   : " + helmA);
 		System.out.println("Harga helm B     	   : " + helmB);
