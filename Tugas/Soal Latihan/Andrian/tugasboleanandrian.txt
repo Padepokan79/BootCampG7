@@ -1,0 +1,31 @@
+Soal Bolean 
+1. 	Akan diadakan rave party di rumah nesa, dan nesa ingin mengundang semua
+	temannya akan tetapi karena tempat yang terbatas nesa harus mensortir
+	itu semua yang dimana yang dapat memasuki pesta tersebut merupakan
+	teman sekolah nesa, pria / wanita tidak masalah, harus membawa hadiah
+	dengan minimum harga 5000000, pria diwajibkan tampan dan wanita sangat
+	diharuskan cantik dengan skala 8.5, cantik atau ganteng tidak masalah
+	jika orang tersebut membawa hadiah lebih dari 20000000. diluar hal itu 
+	dilarang masuk.
+
+
+2	disebuah tempat bernama triangle diadakan penampilan dj ternama yang
+	dimana tidak semua kalangan bisa memasukinya, dan hal membatasinya
+	adalah, pria atau wanita dengan umur minimal 25 tahun, memiliki KTP, 
+	memiliki penghasilan lebih dari 3000000, dan mempunyai tinggi badan 
+	diatas 160 cm untuk pria dan untuk wanita 153 . diluar kriteria 
+	tersebut pengunjung tidak diperbolehkan	untuk masuk
+
+
+3.	Anto ingin sekali membeli rumah didaerah perumahan ternama di daerah
+	heidelberg, akan tetapi dari banyaknya perusahaan property yang datang
+	kepada dirinya membuat Anto bingung, berhubung Anto seorang programmer
+	maka anto menggunakan fungsi boolean untuk mensortirnya, dimana yang
+	dia inginkan rumah yang memiliki luas lebih dari 0.3 hektare, mampu
+	direnovasi dan didirikan rumah hingga lebih dari 3 lantai, harus 
+	memiliki garasi yang mampu menampung lebih dari 3 mobil, dapat di
+	bangun minimal 2 kolam renang, dan harus mampu menampung flora sebanyak
+	5 jenis dari daerah subtropis. selain itu hal yang mampu diterima anto
+	jika tidak mampu dibuat kolam 2 kolam renang, maka harus dapat
+	meanmpung 8 jenis flora, dan ketika jika tidak bisa ditingkatkan hingga
+	3 lantai maka luas tanah harus 0.7 hektare
