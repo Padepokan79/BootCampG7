@@ -1,0 +1,4 @@
+- Add file
+	SyaratKakek.java
+	SyaratIbu.java
+	SyaratAyah.java
