@@ -31,7 +31,7 @@ public class Alifar1{
         System.out.printf("\n");
 
 
-        System.out.printf("waktu yang dibutuhkan untuk mengisi bak menggunakan pipa kecil adalah : %.2f\n", sPipeTime);
+        System.out.printf("waktu yang dibutuhkan untuk mengisi bak menggunakan pipa kecil adalah : %.1f menit\n", sPipeTime);
 
     }
 }

@@ -1,0 +1,8 @@
+Menambahkan sub folder pada Andrian :
+  -  2May2018
+
+>Menambahkan file :
+  -  Adding file Khairil2,Khairil3,Richa1,Arif2,Yana1 pada sub folder BootCampG7\Andrian\1May2018
+
+>Mengubah file :
+  -  Mengubah file Khairil2,Khairil3,Richa1,Arif2,Yana1 pada sub folder BootCampG7\Andrian\1May2018

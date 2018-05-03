@@ -26,7 +26,7 @@ public class Rizaldi1{
         System.out.printf("\n");
         
         System.out.printf("Sisa roti adalah         : %.0f buah\n",eat);
-        System.out.printf("Sisa air Mineral adalah  : %.0f botol\n",drink);
+        System.out.printf("Sisa air Mineral adalah  : %.1f botol\n",drink);
         
         
 
