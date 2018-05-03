@@ -1,0 +1,26 @@
+Soal Boolean
+
+1. Sakti sedang mencari partner bisnis untuk usahanya. Ia mencari seseorang yang mampu bekerja dengan cepat dan berpenampilan rapi. Partnernya juga harus lebih dari 30 tahun atau memiliki pengalaman 3 tahun.
+*bekerja cepat lebih dari 8.0 skala 10.0
+*penampilan minimal 9.0 dari skala 10.0
+
+2. Deo sedang mencari mobil baru. Mobil lamanya sudah hampir rusak dan hanya mampu berjalan 20 km dalam 30 menit. Syarat yang dimilikinya untuk mobil  baru tersebut adalah: berwarna biru, memiliki kecepatan 30km/jam lebih cepat dari mobil lamanya, dan keluaran tahun 2016 atau 2017.
+
+3. Kalos sedang mengikuti ujian matematika disekolahnya. Soal tersebut terdiri dari 60 soal. Sebelum memulai ujian, ia diberitahu bahwa setiap jawaban benar akan bernilai 4, jawaban salah bernilai -1 dan tidak diisi bernilai 0. Ia mencoba membuat program untuk memodelkan permasalahan tersebut. Ia akan dinyatakan lulus apabila memiliki total nilai lebih dari 130. Selain itu pensil yang digunakan juga harus 2B. Syarat terakhir untuk lulus adalah ia harus menggunakan seragam rapi atau berambut pendek.
+inputan
++----------------------------------------------+
+|Jawaban benar:                                |
+|Jawaban salah:                                |
+|Jawaban kosong:                               |
+|pensil yang digunakan (HB/2B/3B/4B/5B/6B):    |
+|Skala kerapian (0 sampai 10):                 |
+|Rambut (pendek/panjang):                      |
++----------------------------------------------+
+Output
++----------------------------------------------+
+|Total nilai: (integer)                        |
+|Kedisplinan: (boolean)                        |
+|Anda lulus: (boolean)                         |
++----------------------------------------------+
+*kedispilinan tergantung oleh pensil, kerapian, rambut
+*kerapian minimal 8
