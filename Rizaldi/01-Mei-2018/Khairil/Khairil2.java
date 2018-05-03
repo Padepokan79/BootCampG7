@@ -13,13 +13,14 @@ public class Khairil2{
         
         double phi1, phi2, r1, r2, s1, s2;
 
-        phi1=22.0/7.0;
-        phi2=3.14;
+        phi1=22.0/7.0;        
         r1=14.0;
         r2=40.0;
 
         s1=phi1*(r1*r1);
-        s2=phi2*(r2*r2);
+        // radius ke dua
+        phi1=3.14;
+        s2=phi1*(r2*r2);
 
         System.out.printf("Seorang guru sedang mengajarkan kepada muridnya untuk menghitung luas lingkaran.\n"+
         "Setiap masing-masing lingkaran memiliki perhitungan yang berbeda.\n"+

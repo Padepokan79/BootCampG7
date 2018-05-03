@@ -23,7 +23,7 @@ public class Yana1{
         laba=marblePrice*20/100;
         totalLaba=laba*soldMarble;
 
-        walletMoney=walletMoney+((marbleUnit-soldMarble)*marblePrice);
+        walletMoney=walletMoney+(soldMarble*marblePrice);
         walletMoney=walletMoney+totalLaba;
 
         System.out.printf("Ijal mempunyai uang sebesar Rp. 20.000, ia membelanjakan setengah\n"+
