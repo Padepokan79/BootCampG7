@@ -16,7 +16,7 @@ public class TugasBool4{
 
 		Scanner keyboard=new Scanner(System.in);
 
-		System.out.println("Hari Kamis");
+		System.out.println("Hari Selasa");
 		System.out.print("Jenis kelamin anda (cewe/cowo)?: ");
 		kelamin=keyboard.next();
 		System.out.print("Berapa usia Anda? ");
@@ -25,7 +25,7 @@ public class TugasBool4{
 		penampilan=keyboard.nextDouble();
 
 		boleh=((kelamin.equals("cewe") && usia>=30 && usia<=45 && penampilan>=8) ||
-				kelamin.equals("cowo") && usia>=20 && usia<=25 && penampilan<8);
+			   (kelamin.equals("cowo") && usia>=20 && usia<=25 && penampilan<8));
 		System.out.println("Dibolehkan untuk masuk: "+boleh);
 	}
 }

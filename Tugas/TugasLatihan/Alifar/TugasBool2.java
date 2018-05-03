@@ -24,7 +24,7 @@ public class TugasBool2{
 		System.out.print("Seberapa cakep anda, skala 0.0 sampai 10.0? ");
 		penampilan=keyboard.nextDouble();
 
-		boleh=( usia>40 && penampilan>=8);
+		boleh=( (kelamin.equals("cewe") || kelamin.equals("cowo")) && usia>40 );
 		System.out.println("Dibolehkan untuk masuk: "+boleh);
 	}
 }
