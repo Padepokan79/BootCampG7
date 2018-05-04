@@ -1,6 +1,6 @@
 /*
      Creator     : Khairil
-     Created At  : 3 Mei 2018 09:25 AM     
+     Created At  : 3 Mei 2018 09:50 AM     
      Updated By  : 
      Update Date : 
 */
@@ -9,9 +9,9 @@ import java.util.Scanner;
 class Drills4 {
 	public static void main(String[] args ) {
 		Scanner keyboard = new Scanner(System.in);
-		int age1, age, income;
-		double cute;
-		boolean allowed, cuted;
+		int age, age1, ageDiff, ageDiff1;
+		double income, cute;
+		boolean allowed;
 
 		System.out.println( "Enter your age" );
 		age = keyboard.nextInt();
@@ -25,7 +25,10 @@ class Drills4 {
 		System.out.println( "How Cute Are you, on a scale from 0.0 to 10.0? " );
 		cute = keyboard.nextDouble();
 
-		allowed = ( age1 <= age + 5 && age >= age1 - 5 && income >= 5000000 && cute >= 8 );
+		ageDiff = age + 5;
+		ageDiff1 = age1 - 5;
+
+		allowed = ( age1 <= ageDiff && age >= ageDiff1 && income >= 5000000 && cute >= 8 );
 
 		System.out.println( "Can you marry my daughter ? " + allowed);
 	}
