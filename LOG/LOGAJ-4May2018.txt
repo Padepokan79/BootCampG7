@@ -1,0 +1,5 @@
+- Modify file in Alifhar/3May2018/SoalBoolean
+	BoolAndrian3.java
+	BoolKhairil1.java
+	BoolYana2.java
+	
