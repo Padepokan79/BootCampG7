@@ -2,4 +2,4 @@
 
 2. belanja bulanan terdiri dari min 4 item (boleh beli lebih dari 1 item per jenisnya kecuali mentega dan roti) dan total belanja tidak boleh > 100000. Harga masing-masing roti(15000), selai(8500), kismis(7500), mentega(3500)
 
-3. di bandara husein penumpang yang diperbolehkan masuk ke bisnis lounge adalah pemegang tiket pesawat kelas bisnis yang memiliki kelas D atau F (kelas T dengan syarat laki/perempuan terbang 30x)baik untuk laki-laki terbang 20x dan perempuan terbang 15x.
+3. di bandara husein penumpang yang diperbolehkan masuk ke bisnis lounge adalah pemegang tiket pesawat kelas bisnis yang memiliki subkelas D atau F (subkelas T dengan syarat laki/perempuan terbang 30x)baik untuk laki-laki terbang 20x dan perempuan terbang 15x.
