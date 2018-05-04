@@ -13,7 +13,7 @@ public class Khairil02{
 		int bulanan, minItemBulanan, hargaMentega, hargaRoti, hargaSlay, hargaKismis, maxMentega, maxRoti, totItem, totHarga, maxHarga, mentega, roti, slay, kismis;
 		boolean allowed;
 
-		minItemBulanan = 4;
+		minItemBulanan = 4; //tidak perlu ada minimal item
 		hargaMentega = 3500;
 		hargaRoti = 15000;
 		hargaSlay = 8500;

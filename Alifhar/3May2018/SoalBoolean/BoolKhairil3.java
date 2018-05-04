@@ -28,3 +28,6 @@ public class BoolKhairil3{
 		System.out.println("Belanja disetujui: "+boleh);
 	}
 }
+
+
+//Tidak ada eksekutif adanya First Class tapi ga ngaruh sih hehehe

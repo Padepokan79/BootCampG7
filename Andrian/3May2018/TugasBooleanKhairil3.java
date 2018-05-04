@@ -31,3 +31,5 @@
 			System.out.println("Anda di perbolehkan memasuki bisnis lounge " + hasil );
 		}
 	}
+
+//Memastikan apakah kelas nya bisnis atau bukan.

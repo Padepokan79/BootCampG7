@@ -44,3 +44,6 @@ public class Khairil03{
         
 	}
 }
+
+//kelas Bisnis ya / tidak ... atau bisa juga pilih kelas.
+//coba cek kelas F - Perempuan - 19 & kelas F - Laki-laki - 21 harusnya bisa

@@ -36,3 +36,5 @@
 
 		}
 	}
+
+	//Nilai MTK harus ada 2 (semester 1 dan semester 2)

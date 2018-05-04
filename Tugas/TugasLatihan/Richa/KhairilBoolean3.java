@@ -44,3 +44,6 @@ public class KhairilBoolean3 {
 
 	}
 }
+
+//tidak ada pilihan kelas bisnis atau bukan
+//boleh pilih : kelas bisnis (Y/T) atau pilihan kelas (ekonomi/bisnis)

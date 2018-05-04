@@ -31,3 +31,5 @@ public class BoolKhairil2{
 		System.out.println("Belanja disetujui: "+boleh);
 	}
 }
+
+//Benar

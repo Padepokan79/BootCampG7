@@ -45,3 +45,6 @@ public class KhairilBoolean1{
 
     }
 }
+
+//bukan lama semester maksudnya ada 2 nilai matematika yang harus 8 
+//semester 1 dan semester 2

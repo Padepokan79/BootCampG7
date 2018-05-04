@@ -25,3 +25,6 @@ public class BoolKhairil1{
 		System.out.println("Dapat mengikuti seleksi olimpiade matematika: "+boleh);
 	}
 }
+
+//Belum pernah mengikuti seleksi Y / T belum ada
+//Jenis Kelamin L / P 
