@@ -1,0 +1,47 @@
+Folder 03Mei2018 > BOOLEAN
+
+Add File AlifharBoolean1.java
+Add File AlifharBoolean2.java
+Add File AlifharBoolean3.java
+Add File AndrianBoolean1.java
+Add File AndrianBoolean2.java
+Add File AndrianBoolean3.java
+Add File AriefBoolean1.java
+Add File AriefBoolean2.java
+Add File AriefBoolean3.java
+Add File KhairilBoolean1.java
+Add File KhairilBoolean2.java
+Add File KhairilBoolean3.java
+Add File RichaBoolean1.java
+Add File RichaBoolean2.java
+Add File RichaBoolean3.java
+Add File RizaldiBoolean1.java
+Add File RizaldiBoolean2.java
+Add File RizaldiBoolean3.java
+Add File YanaBoolean1.java
+Add File YanaBoolean2.java
+Add File YanaBoolean3.java
+
+Remove file di folder Tugas
+
+AlifharBoolean1.java
+AlifharBoolean2.java
+AlifharBoolean3.java
+AndrianBoolean1.java
+AndrianBoolean2.java
+AndrianBoolean3.java
+AriefBoolean1.java
+AriefBoolean2.java
+AriefBoolean3.java
+KhairilBoolean1.java
+KhairilBoolean2.java
+KhairilBoolean3.java
+RichaBoolean1.java
+RichaBoolean2.java
+RichaBoolean3.java
+RizaldiBoolean1.java
+RizaldiBoolean2.java
+RizaldiBoolean3.java
+YanaBoolean1.java
+YanaBoolean2.java
+YanaBoolean3.java
