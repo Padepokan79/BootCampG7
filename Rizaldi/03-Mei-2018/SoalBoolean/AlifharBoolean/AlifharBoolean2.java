@@ -35,7 +35,7 @@ public class AlifharBoolean2{
         minYear1=2016;
         minYear2=2017;
 
-        newCar=(blue&&speed>=expectSpeed&&(year>=minYear1||year>=minYear2));
+        newCar=(blue&&speed>=expectSpeed&&(year==minYear1||year==minYear2));
 
         System.out.println("    ");                
         System.out.println("mobil baru ini masuk kriteria = "+newCar);           

@@ -15,10 +15,12 @@ public class KhairilBoolean3{
         Scanner keyboard = new Scanner(System.in);
         Scanner keyLine = new Scanner(System.in);
         
-        String ticketClass, gender;
-        int qtyFlight, minDFFlight, minTFlightMale, minTFlightFemale;
-        boolean bussLoungeDFClass, bussLoungeTClassMale, bussLoungeTClassFemale, classD, classF, classT, male, female;
+        String ticketClass, gender, classBuss;
+        int qtyFlight, minDFFlight, minTFlight;
+        boolean bussLoungeDFClass, bussLoungeTClass, classD, classF, classT, male, female, bussClass, ecoClass, condition1, loungeAcc;
 
+        System.out.println("Apakah jenis kelas nya bisnis (Y/T) : ");        
+        classBuss=keyboard.next();
         System.out.println("Sebutkan kelas tiket pesawat : ");        
         ticketClass=keyboard.next();
         System.out.println("Sebutkan gender anda : ");        
@@ -26,6 +28,9 @@ public class KhairilBoolean3{
         System.out.println("Berapa jumlah penerbangan anda : ");        
         qtyFlight=keyboard.nextInt();                     
         
+        bussClass=classBuss.equals("Y");
+        ecoClass=classBuss.equals("T");
+
         classD=ticketClass.equals("D");
         classF=ticketClass.equals("F");
         classT=ticketClass.equals("T");
@@ -33,18 +38,19 @@ public class KhairilBoolean3{
         male=gender.equals("pria");
         female=gender.equals("wanita");
 
-        minDFFlight=30;
-        minTFlightMale=20;
-        minTFlightFemale=15;
+        minTFlight=30;
+        minDFlightMale=20;
+        minDFlightFemale=15;
 
-        bussLoungeDFClass=((classD||classF)&&(male||female)&&(qtyFlight>=minDFFlight));
-        bussLoungeTClassMale=(classT&&male&&qtyFlight>=minTFlightMale);
-        bussLoungeTClassFemale=(classT&&female&&qtyFlight>=minTFlightFemale);
+
+        condition1=(bussClass)
+        bussLoungeTClass=((male||female)&&qtyFlight>=minTFlight&&classT);
+        bussLoungeDFClass=((classD||classF)&&((male&&qtyFlight>=minDFFlight)||(female&&qtyFlight>=minDFlightFemale)));
+        
+        loungeAcc=(condition1&&(bussLoungeTClass||bussLoungeDFClass))
         
         System.out.println("    ");        
-        System.out.println("akses untuk kelas D atau F ? "+bussLoungeDFClass);
-        System.out.println("akses untuk kelas T pria ? "+bussLoungeTClassMale);
-        System.out.println("akses untuk kelas T wanita ? "+bussLoungeTClassFemale);
+        System.out.println("masuk lounge ? "+loungeAcc);        
         
         
                 

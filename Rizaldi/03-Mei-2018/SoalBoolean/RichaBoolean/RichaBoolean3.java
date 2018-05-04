@@ -35,7 +35,7 @@ public class RichaBoolean3{
         ageRatio=ageHusb-ageWife;
 
         
-        compatible=(ageRatio<=idealRatio&&dispute<=maxDispute&&husbSalary>=minHusbSalary);
+        compatible=((ageRatio<=idealRatio||ageRatio>=idealRatio)&&dispute<=maxDispute&&husbSalary>=minHusbSalary);
 
         System.out.println("    ");
         System.out.println("Ini hasilnya....");

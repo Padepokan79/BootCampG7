@@ -16,7 +16,7 @@ public class KhairilBoolean1{
         Scanner keyLine = new Scanner(System.in);
 
         String gender, participation, domisili;
-        Double mathVal, minMath, semester, maxSemester;        
+        Double mathVal, mathVal2, minMath, semester, maxSemester;        
         boolean criteriaPassed, male, female, partValue, domValue;        
 
         System.out.println("Masukkan gender : ");        
@@ -25,19 +25,19 @@ public class KhairilBoolean1{
         participation=keyboard.next();
         System.out.println("Domisili asal : ");        
         domisili=keyLine.nextLine();
-        System.out.println("Nilai matematika : ");        
+        System.out.println("Nilai matematika semester 1: ");        
         mathVal=keyboard.nextDouble();
-        System.out.println("lama semester untuk nilai matematika : ");        
-        semester=keyboard.nextDouble();        
+        System.out.println("Nilai matematika semester 2: ");        
+        mathVal2=keyboard.nextDouble();
         
-        minMath=8.0;
-        maxSemester=2.0;
+        
+        minMath=8.0;        
         male=gender.equals("pria");
         female=gender.equals("wanita");
         partValue=participation.equals("T");
         domValue=domisili.equals("Bandung");
         
-        criteriaPassed=((male||female)&&partValue&&domValue&&(mathVal>=minMath&&semester<=maxSemester));
+        criteriaPassed=((male||female)&&partValue&&domValue&&mathVal>=minMath&&mathVal2>=minMath);
         System.out.println("    ");        
         System.out.println("kriteria memnuhi untuk seleksi ? "+criteriaPassed);
         

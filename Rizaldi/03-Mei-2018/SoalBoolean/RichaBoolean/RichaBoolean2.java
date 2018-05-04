@@ -39,7 +39,7 @@ public class RichaBoolean2{
         yCrazy=crazy.equals("Ya");
         nCrazy=crazy.equals("Tidak");
 
-        nicePerson=(goodFriends>=minQtyFriends&&minQtyCrime<=crimRecord);
+        nicePerson=(goodFriends>=minQtyFriends&&minQtyCrime<=crimRecord&&yCrazy);
 
         System.out.println("Baiklah,");
         System.out.println("Apakah "+name+" adalah orang yang baik? Ya "+nicePerson);
