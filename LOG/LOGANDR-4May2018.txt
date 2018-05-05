@@ -1,0 +1,12 @@
+Menambahkan folder :
+	- 4May2018
+Menambahkan file :
+	- TugasBooleanAlifhar1
+	- TugasBooleanAlifhar3
+	- TugasBooleanArif3
+	- TugasBooleanKhairil1
+	- TugasBooleanRicha2
+	- TugasBooleanRicha3
+	- TugasBooleanRizaldi1
+	- TugasBooleanYana1
+	- TugasBooleanYana2
