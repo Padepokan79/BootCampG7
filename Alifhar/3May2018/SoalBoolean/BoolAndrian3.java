@@ -12,9 +12,12 @@ public class BoolAndrian3{
 		Scanner keyboard=new Scanner(System.in);
 		int flora, garasi, kolam, renovasi;
 		double luas;
+		String tempat;
 		boolean boleh;
 
-		System.out.print("\nLuas rumah dalam hektare? ");
+		System.out.print("\nDi kota mana rumah tersebut berada? ");
+		tempat=keyboard.next();
+		System.out.print("Luas rumah dalam hektare? ");
 		luas=keyboard.nextDouble();
 		System.out.print("Mampu direnovasi hingga berapa lantai? ");
 		renovasi=keyboard.nextInt();
@@ -25,7 +28,7 @@ public class BoolAndrian3{
 		System.out.print("Berapa flora yang dapat ditampung? ");
 		flora=keyboard.nextInt();
 	
-		boleh=( luas>0.3 && (renovasi>=3 || luas>=0.7) && garasi>=3 && (kolam>=2 || flora>=8) && flora>=5 );
+		boleh=( tempat.equals("heidelberg") && luas>0.3 && (renovasi>=3 || luas>=0.7) && garasi>=3 && (kolam>=2 || flora>=8) && flora>=5 );
 		System.out.println("Anto akan membeli rumahnya: "+boleh);
 	}
 }
