@@ -11,11 +11,13 @@ public class BoolYana2{
 	public static void main(String[] args){
 		Scanner keyboard=new Scanner(System.in);
 		double ipk1, ipk2, rata;
-		String kelamin, akreditasi;
+		String kelamin, akreditasi, pendidikan;
 		boolean diterima;
 
 		System.out.print("\nJenis Kelamin (pria/wanita): ");
 		kelamin=keyboard.next();
+		System.out.print("Pendidikan terakhir anda: ");
+		pendidikan=keyboard.next();
 		System.out.print("IPK S1: ");
 		ipk1=keyboard.nextDouble();
 		System.out.print("IPK S2: ");
@@ -25,7 +27,7 @@ public class BoolYana2{
 
 		rata=(ipk1+ipk2)/2;
 
-		diterima=( (kelamin.equals("pria")||kelamin.equals("wanita")) && rata>=3.25 && (akreditasi.equals("A") ||akreditasi.equals("B")) );
+		diterima=( (kelamin.equals("pria")||kelamin.equals("wanita")) && pendidikan.equals("S2") && rata>=3.25 && (akreditasi.equals("A") ||akreditasi.equals("B")) );
 		
 		System.out.println("Anda diterima beasiswa S3 "+diterima);
 	}
