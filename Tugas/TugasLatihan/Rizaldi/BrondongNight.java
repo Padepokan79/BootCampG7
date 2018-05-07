@@ -16,7 +16,7 @@ public class BrondongNight{
         
         int age;    
         String gender;    
-        double cute;
+        double cute, cuteMin;
         boolean allowed, cewek, cowok;
         
         System.out.println("Masukkan gender (cewek/cowok): ");
@@ -28,10 +28,12 @@ public class BrondongNight{
         System.out.println("Masukkan tingkat penampilan anda dari skala 0.0 s/d 10.0 : ");
         cute=keyboard.nextDouble();
 
+        cuteMin=8.0;
+
         cewek=gender.equals("cewek");
         cowok=gender.equals("cowok");
 
-        allowed=((cewek&&age>=30&&age<=45&&cute>=8)||(cowok&&age>=30&&age<=45&&cute>=8));
+        allowed=((cewek&&age>=30&&age<=45&&cute>=8&&(cute>=cuteMin))||(cowok&&age>=30&&age<=45&&cute>=8(cute<cuteMin)));
 
         System.out.println("Orang tersebut boleh masuk : "+allowed);
 

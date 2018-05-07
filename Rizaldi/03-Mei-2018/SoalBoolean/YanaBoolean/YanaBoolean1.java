@@ -15,9 +15,9 @@ public class YanaBoolean1{
         Scanner keyboard = new Scanner(System.in);
         Scanner keyLine = new Scanner(System.in);
         
-        String gender, degree, skill, skill2, exp;    
+        String gender, degree, skill1, skill2, skill3, exp;    
         int age, ageLimit;
-        boolean job, male, female, s1, s2, s3, java, angular, php, expY;
+        boolean male, s1, s2, s3, java, angJS, pHp, expY, accepted;
         
         System.out.println("masukkan jenis kelamin (laki-laki/perempuan) : ");
         gender=keyboard.next();
@@ -28,10 +28,14 @@ public class YanaBoolean1{
         System.out.println("apa jenjang pendidikan terakhir anda : ");
         degree=keyboard.next();
 
-        System.out.println("apa skill yang anda miliki : ");
-        skill=keyLine.nextLine();
+        System.out.println("apa anda bisa Java ? (Y/T) : ");
+        skill1=keyboard.next();
+        System.out.println("apa anda bisa Angular ? (Y/T) : ");
+        skill2=keyboard.next();
+        System.out.println("apa anda bisa PHP ? (Y/T) : ");
+        skill3=keyboard.next();
 
-        System.out.println("apa anda pernah punya pengalaman (ya/tidak) : ");
+        System.out.println("apa anda pernah punya pengalaman (Y/T) : ");
         exp=keyboard.next();
                         
         ageLimit=23;
@@ -40,18 +44,18 @@ public class YanaBoolean1{
         s2=degree.equals("S2");
         s3=degree.equals("S3");
 
-        java=skill.equals("Java dan AngularJs");
-        angular=skill.equals("AngularJs");
-        php=skill.equals("Java dan PHP");
+        male=gender.equals("laki-laki");                
 
-        male=gender.equals("laki-laki");        
-        female=gender.equals("perempuan"); 
+        java=skill1.equals("Y");
+        angJS=skill2.equals("Y");
+        pHp=skill3.equals("Y");
 
-        expY=exp.equals("ya");
+        expY=exp.equals("Y");
 
-        job=(male&&age>=ageLimit&&(java||php)&&expY);
+        // jobY=(male&&age>=ageLimit&&java(angular||php)&&expY);
+        accepted=(male&&(age>=ageLimit)&&(s1||s2||s3)&&(java&&(angJS||pHp)));
 
-        System.out.println("diterima kerja ? : "+job);
+        System.out.println("diterima kerja ? : "+accepted);
 
     }
 }
