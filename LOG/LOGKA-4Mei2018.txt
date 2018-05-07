@@ -16,3 +16,7 @@ Add File BooleanRizaldi3.java
 Add File BooleanYana1.java
 Add File BooleanYana2.java
 Add File BooleanYana3.java
+
+Revisi Program File Yana
+Revisi Program File Richa
+Revisi Program File Alifhar

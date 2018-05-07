@@ -57,3 +57,7 @@ public class KhairilBoolean3{
 
     }
 }
+
+//Tidak ada pilihan apakah itu masuk kelas bisnis atau bukan
+//Boleh pilih kelas bisnis (Y/T) atau opsi pemilihan kelas
+// Kelas D / Wanita / 6 (F) harusnya T

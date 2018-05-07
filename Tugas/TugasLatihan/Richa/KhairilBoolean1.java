@@ -34,3 +34,5 @@ public class KhairilBoolean1 {
 
 	}
 }
+
+//belum ada keterangan untuk pernah mengikuti seleksi atau tidaknya

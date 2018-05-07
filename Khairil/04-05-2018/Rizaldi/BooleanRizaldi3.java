@@ -38,7 +38,7 @@ class BooleanRizaldi3 {
 		umurMin = 45;
 		umurMax = 200;
 
-		cariPlanet = ( inputAir.equals(y) && inputKadar == kadar && inputUdara == 500000 && (inputSuhu >= suhuMin && inputSuhu <= suhuMax) && ( inputSiang.equals(y) || inputMalam.equals(y) ) && (inputUmur >= umurMin && inputUmur <= umurMax) );
+		cariPlanet = ( inputAir.equals(y) && inputKadar == kadar && inputUdara == udara && (inputSuhu >= suhuMin && inputSuhu <= suhuMax) && ( inputSiang.equals(y) || inputMalam.equals(y) ) && (inputUmur >= umurMin && inputUmur <= umurMax) );
 
 		System.out.println( "Pewe Ga ?  : " + cariPlanet );		
 	}

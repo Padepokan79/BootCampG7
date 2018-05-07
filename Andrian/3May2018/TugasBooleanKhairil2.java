@@ -45,3 +45,6 @@
 
 		}
 	}
+
+	//Tampilkan total belanjanya 
+	//Total harga harusnya <= 100000
