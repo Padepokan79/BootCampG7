@@ -15,7 +15,7 @@ public class RichaBoolean3{
         Scanner keyboard = new Scanner(System.in);
         Scanner keyLine = new Scanner(System.in);
                 
-        int ageHusb, ageWife, dispute, husbSalary, ageRatio, idealRatio, maxDispute, minHusbSalary;
+        int ageHusb, ageWife, dispute, husbSalary, ageRatioMax, ageRatioMin, idealRatio, maxDispute, minHusbSalary;
         boolean compatible;        
 
         System.out.println("Selamat datang, ketahuilah kecocokan kalian sebagai suami isteri!");        
@@ -32,10 +32,11 @@ public class RichaBoolean3{
         maxDispute=5;
         minHusbSalary=5000000;
 
-        ageRatio=ageHusb-ageWife;
+        ageRatioMax=ageHusb-ageWife;
+        ageRatioMin=ageWife+ageHusb;
 
         
-        compatible=((ageRatio<=idealRatio||ageRatio>=idealRatio)&&dispute<=maxDispute&&husbSalary>=minHusbSalary);
+        compatible=((ageRatioMax<=idealRatio||ageRatioMin<=idealRatio)&&dispute<=maxDispute&&husbSalary>=minHusbSalary);
 
         System.out.println("    ");
         System.out.println("Ini hasilnya....");
