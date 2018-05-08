@@ -34,7 +34,7 @@ public class AlifharBoolean1{
         minAge=30.0;
         minExp=3.0;
 
-        partner=((workSpeed>=minSpeed&&workSpeed<=maxSpeed)&&(cute>=minCute&&cute<=maxCute)&&age>minAge&&expWork>=minExp);
+        partner=((workSpeed>=minSpeed&&workSpeed<=maxSpeed)&&(cute>=minCute&&cute<=maxCute)&&age>minAge||expWork>=minExp);
 
         System.out.println("    ");                
         System.out.println("anda bisa menjadi partner bisnis = "+partner);           

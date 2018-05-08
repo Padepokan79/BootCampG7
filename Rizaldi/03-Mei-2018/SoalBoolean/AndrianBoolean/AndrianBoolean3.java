@@ -22,8 +22,8 @@ public class AndrianBoolean3{
 
         System.out.println("sebutkan luas rumah yang diinginkan (hektare) : ");        
         houseWide=keyboard.nextDouble();                                        
-        System.out.println("apakah rumahnya bisa direnovasi (Y/T) : ");        
-        renovated=keyboard.next();                 
+        // System.out.println("apakah rumahnya bisa direnovasi (Y/T) : ");        
+        // renovated=keyboard.next();                 
         System.out.println("berapa lantai yang ingin anda buat : ");        
         floorQty=keyboard.nextInt();                 
         System.out.println("berapa mobil yang ingin anda tampung di garasi : ");        
@@ -43,9 +43,9 @@ public class AndrianBoolean3{
 
         renovatedY=renovated.equals("Y");
         
-        condition1=(houseWide>minHouseWide&&renovatedY&&floorQty>minFloor&&carQty>minCar&&poolQty>=minPool&&floraQty>=minFlora);
-        condition2=(houseWide>minHouseWide&&renovatedY&&floorQty>minFloor&&carQty>minCar&&poolQty<minPool&&floraQty>=minFloraCondition2);
-        condition3=(houseWide>minHouseWideCondition3&&renovatedY&&floorQty<minFloor&&carQty>minCar&&poolQty>=minPool&&floraQty>=minFlora);
+        condition1=(houseWide>minHouseWide&&floorQty>minFloor&&carQty>minCar&&poolQty>=minPool&&floraQty>=minFlora);
+        condition2=(houseWide>minHouseWide&&floorQty>minFloor&&carQty>minCar&&poolQty<minPool&&floraQty>=minFloraCondition2);
+        condition3=(houseWide>minHouseWideCondition3&&floorQty<minFloor&&carQty>minCar&&poolQty>=minPool&&floraQty>=minFlora);
 
         acceptedHouse=(condition1||condition2||condition3);
 

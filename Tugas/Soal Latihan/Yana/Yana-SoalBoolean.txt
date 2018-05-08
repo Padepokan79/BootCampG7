@@ -22,5 +22,5 @@ Beasiswa Informatika
 	- status "tidak mampu"
 - * untuk beasiswa ppb
 	- ipk min 3.00
-	- nilai matakuliah algiritma : 8
+	- nilai matakuliah algoritma : 8
 	- rata-rata nilai matakuliah database dan bahasa pemrograman : 8 skala 10

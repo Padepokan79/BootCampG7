@@ -41,3 +41,5 @@ public class KhairilBoolean2 {
 
 	}
 }
+
+//mentega dan roti tidak bisa dibeli > 1 item

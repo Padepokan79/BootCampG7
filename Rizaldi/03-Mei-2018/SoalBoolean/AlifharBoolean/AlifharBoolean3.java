@@ -45,7 +45,7 @@ public class AlifharBoolean3{
         srtHair=hair.equals("pendek");
 
         totalValue=((correctAnsw*correctVal)+(wrongAnsw*wrongVal)+(nullAnsw*nullVal));
-        descipline=(pen2B&&cute>=minCute&&srtHair);
+        descipline=(pen2B&&cute>=minCute||srtHair);
         passed=(totalValue>passedVal&&descipline);
 
         System.out.println("    ");                        

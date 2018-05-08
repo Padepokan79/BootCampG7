@@ -32,3 +32,5 @@ public class KhairilBoolean1{
 		System.out.println("Selecsi Olimpiade MTK terpenuhi: " +hasil);
 	}
 }
+
+//nilai MTK2 diisi 7 masih true harusnya F
