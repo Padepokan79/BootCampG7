@@ -1,0 +1,39 @@
+soal no 3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+- buat file dengan nama ExRizaldi3.java
+
+ketik :
+hal yg membuat saya senang 5 hal :
+1. wkwkwk
+2. wkwkwk
+
+hal yang membuat saya marah 5 hal :
+1. wjwkwk
+2. wkwkwk
+
+hal yang membuat saya menyesal atau belum termaafkan :
+1. wkwkwk
+2. wkwkwk
+
+soal no 4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+- buat file dengan nama ExRizaldi4.java
+- buat soal no 3 supaya bisa di print hanya dengan 3 buah println.
+
+soal no 5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+- buat file dengan nama ExRizaldi5.java
+
+ani ingin membelli mobil seharga Rp 2.000.000 bulan november 2018, sedangkan
+rubi ingin meminjam uang ani sejumlah Rp 1.000.000 untuk membeli kucing.
+sehingga ani terpaksa menunda jadwal pembelian pada bulan januari 2019.
+
+- ganti setiap angka yang berada pada kalimat di atas dengan variable bertipe Int
+- setiap nama dan objek dengan variable string.
+
+misal : Int year1=2018;
+
+soal no 6 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+- dina memiliki uang sebesar 1 jt,
+- membeli sebuah baju seharga 200 rb, 
+- mengikuti lomba dengan uang pendaftaran sebesar 50 rb,
+- dan menjadi juara ke dua mendapat hadiah sebesar 1.5 tj,
+- dibelikan boneka sebesar 80rb
+- berapa sisa uang dina ?
