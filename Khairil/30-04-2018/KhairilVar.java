@@ -1,7 +1,7 @@
 public class KhairilVar {
 	public static void main(String[] args) {
 		String menyesal1, menyesal2, menyesal3, menyesal4, menyesal5;
-		String maker1, maker2, maker3, maker4, maker5, maker6, maker7, maker8;
+		String maker1, maker2, maker3, maker4, maker5, maker6, maker7, maker8, maker9;
 		String sng1, sng2, sng3, sng4, sng5, sng6, sng7, sng8, sng9, sng10, sng11, sng12,
 			   sng13, sng14, sng15;
 		String garispp;
@@ -20,6 +20,7 @@ public class KhairilVar {
 		maker6    = "SEENAKNYA MEMBATALKAN JANJI TANPA ALASAN YANG JELAS     ";
 		maker7    = "BERDIAM TERLALU LAMA ALIAS MENGANGGUR                   ";
 		maker8    = "SEROBOT ANTRIAN                                         ";
+		maker9	  = "JARGON MENYEPELEKAN \"KAMU KAN ANAK IT\"                ";
 
 		sng1 	  = "NAIK PESAWAT KEMANAPUN (GARUDA)                         ";
 		sng2	  = "TRAVELING KELUAR KOTA SENDIRI / RAME-RAME               ";
@@ -36,6 +37,7 @@ public class KhairilVar {
 		sng13 	  = "MENDENGARKAN LAKI-LAKI CURHAT                           ";
 		sng14 	  = "BERTEMU TEMAN LAMA                                      ";
 		sng15 	  = "MENGKOLEKSI BENDA ATAU HAL YANG BERKAITAN DENGAN BIRU   ";
+		sng16	  = "SECRET SAFER                                            ";
 
 		garispp   = "--------------------------------------------------------";
 
@@ -60,6 +62,7 @@ public class KhairilVar {
 		System.out.println(maker6);
 		System.out.println(maker7);
 		System.out.println(maker8);
+		System.out.println(maker9);
 		System.out.println(garispp);
 		System.out.println();
 		System.out.println(garispp);
@@ -80,5 +83,6 @@ public class KhairilVar {
 		System.out.println(sng13);									
 		System.out.println(sng14);									
 		System.out.println(sng15);									
+		System.out.println(sng16);									
 	}
 }
