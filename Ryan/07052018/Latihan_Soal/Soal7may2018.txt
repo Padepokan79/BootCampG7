@@ -1,0 +1,36 @@
+Ex1Drill
+- tuliskan nama, tanggal lahir, alamat, hobi
+
+Ex2Drill
+- Buat struck belanja minimal 4 item yang di beli
+
+Ex3Drill
+- tulis hal yang serupa yang terdapat pada Ex1DrillAndrian dengan contoh seperti ada Ex3Drills1
+
+Ex4Drill
+- tuliskan mimpi anda minimal 10, dan jelaskan pula bagaimana anda meraih mimpi tersebut
+
+Ex5Drill
+- Jika diketahui "a" memiliki nilai 150 dan "b" memiliki nilai 900, lalu Diinginkan nilai a berubah menjadi niali b tanpa mengubah variable tersebut, dan yang diinginkan adalah sebagai berikut:
+
+System.out.println( "The value of a is " + a + " and the value of b is " + b );	
+
+lalu output yang ditampilkan adalah sebagai berikut:
+
+The value of a is 900 and the value of b is 150
+
+Ex6Drill
+- Di toko Bu Poniem tersedia 12 karung beras. Setiap karung beratnya 50 kg. Jika hari ini dan kemarin masing-masing terjual 175 kg dan 120 kg, berapa kg sisa beras di warung Bu Poniem sekarang ?
+
+output yang diinginkan:
+===========================================
+============== Warung Cendana =============
+===========================================
+         --PENDATAAN KARUNG BERAS--
+Berat total Karung Beras :               kg
+
+Berat karung beras yang terjual:         kg
+
+Sisa berat karung yang ada:              kg
+
+===========================================
