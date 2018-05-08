@@ -3,7 +3,7 @@ public class KhairilVar {
 		String menyesal1, menyesal2, menyesal3, menyesal4, menyesal5;
 		String maker1, maker2, maker3, maker4, maker5, maker6, maker7, maker8, maker9;
 		String sng1, sng2, sng3, sng4, sng5, sng6, sng7, sng8, sng9, sng10, sng11, sng12,
-			   sng13, sng14, sng15;
+			   sng13, sng14, sng15, sng16;
 		String garispp;
 
 		menyesal1 = "TERJEBAK PERGAULAN BEBAS                                ";
