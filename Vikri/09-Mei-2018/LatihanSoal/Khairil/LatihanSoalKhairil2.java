@@ -11,11 +11,15 @@
 */
 public class LatihanSoalKhairil2{
 	public static void main(String[] args) {
-		double luas, phi, jari;
+		double luas, luas2, phi, phi2, jari, jari2;
 		jari = 21;
+		jari2 = 10;
 		phi = 22/7;
+		phi2 = 3.14;
 		luas = phi*(jari*jari);
-
-		System.out.println("Luas Lingkaran adalah adalah: "+luas+ "cm");
+		luas2 = phi2*(jari2*jari2);
+		
+		System.out.println("Luas Lingkaran dengan rusuk "+jari+" adalah: "+luas+ "cm");
+		System.out.println("Luas Lingkaran dengan rusuk "+jari2+" adalah: "+luas2+ "cm");
 	}
 }
