@@ -22,7 +22,7 @@ public class AndrianSoal1{
 
 
 
-		System.out.print("Jarak susi dengan tiang bendera : "+jarakSusiTiang);
+		System.out.print("Jarak susi dengan tiang bendera : "+jarakSusiTiang+ " meter");
 
 	}
 }
