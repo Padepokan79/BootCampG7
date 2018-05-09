@@ -10,13 +10,14 @@
 
 public class OperasiMathRicha1{
 	public static void main(String[] args) {
-		int kecepatanAwalPerjam, keterlambatan, kmPerMenit, kmTamabahn, kecepatanAkhir;
+		int jarak, waktu;
+          double keterlambatan, kecepatanAkhir;
 
-          kecepatanAwalPerjam = 30; //km perjam
-          keterlambatan = 10; //dalam menit
-          kmPerMenit = 60/kecepatanAwalPerjam;
-          kmTamabahn = keterlambatan/kmPerMenit;
-          kecepatanAkhir = kecepatanAwalPerjam+kmTamabahn;
+
+          jarak = 30;
+          keterlambatan = 50.0/60.0;
+          kecepatanAkhir = jarak/keterlambatan;
+          
 
           System.out.println("Kecepatan Yang harus ditempuh agar tepat waktu adalah : "+kecepatanAkhir+" km/jam");
 	}
