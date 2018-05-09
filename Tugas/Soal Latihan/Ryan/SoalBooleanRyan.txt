@@ -1,0 +1,17 @@
+1. Untuk Mendaftar menjadi murid baru ke salah 1 sekolah dasar 
+ di daerah rawa rontek, seorang anak harus pandai mebaca,
+ berusia minimal 7 tahun,
+ dan mempunyai histori di Taman Kanak Kanak atau lihai membaca
+
+ *pandai skala diatas 7, lihai adalah 10
+
+2. Disebuah perosotan kolam renang,
+ anak yang diperbolehkan menaikinya yaitu :
+	*Laki laki : 12 tahun keatas dan tinggi 150 keatas
+	*Perempuan : 12 tahun keatas dan tinggi 145 keatas
+
+3. Uuntuk bergabung dengan salah satu klub sepakbola di kota bencana,
+ seseorang harus memiliki berusia 17 tahun dan hanya pria yang boleh bergabung.
+ Skill yang harus dimiliki yaitu jugling minimal 100 untuk usia kurang dari 20th,
+ dan jugling minimal 250 untuk usia diatas 20 tahun, selain itu kemampuan fisik juga
+ harus diatas 8.0 dari skala 10.0 untuk pemain usia 20th keatas 
