@@ -16,6 +16,6 @@ public class SoalAlifhar2{
 		menit = jam2/60;
 		detik = jam2%60;
 
-		System.out.println(total+" Jam "+menit+" Menit "+detik+" Detik");
+		System.out.println(jam+" Jam "+menit+" Menit "+detik+" Detik");
 	}
 }
