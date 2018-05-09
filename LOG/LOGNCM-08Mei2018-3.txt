@@ -1,0 +1,5 @@
+1. menambahkan file java Ex7Drills1
+2. menambahkan file java Ex7Drills2
+3. menambahkan file java Ex8Drills1234
+4. menambahkan file java RudeQuestions
+5. menambahkan file java ForgetfulMachine
