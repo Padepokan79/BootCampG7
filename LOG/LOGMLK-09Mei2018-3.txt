@@ -1,0 +1,9 @@
+add file :
+- Tugas2Boolean1.java
+- Tugas2Boolean2.java
+- Tugas2Boolean3.java
+- Tugas2Boolean4.java
+- TugasBoolean1.java
+- TugasBoolean2.java
+- TugasBoolean3.java
+- SoalMalikBoolean.txt
