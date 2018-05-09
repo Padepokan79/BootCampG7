@@ -1,0 +1,14 @@
+Adding file 	- SoallatihanAlifhar.java
+		- SoalLatihanAlifhar2.java
+		
+		- SoalLatihanAndrian.java
+		- SoalLatihanAndrian2.java
+		
+		- SoalLatihanArief.java
+		- SoalLatihanArief2.java
+		
+		- SoalLatihanRizaldi.java
+		- SoalLatihanRizaldi2.java
+
+		- SoalLatihanYana.java
+		- SoalLatihanYana2.java
