@@ -19,9 +19,9 @@ public class RichaSoal2{
 		keliling = 0.5;
 		waktu = 60;
 
-		lari = (keliling*waktu)/banyakPutar;
+		lari = (keliling*banyakPutar)/kecepatan;
 		
-		System.out.print("lama Oni lari setiap paginya : "+lari);
+		System.out.print("lama Oni lari setiap paginya : "+lari+" jam");
 
 	}
 }

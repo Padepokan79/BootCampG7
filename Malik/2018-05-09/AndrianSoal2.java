@@ -22,7 +22,7 @@ public class AndrianSoal2{
 		totalKg = banyakBeras*beratKarung;
 		totalKg = totalKg-(terjualHariIni+terjualKemarin);
 
-		System.out.print("Sisa beras di warung Bu Poniem : "+totalKg);
+		System.out.print("Sisa beras di warung Bu Poniem : "+totalKg+ "Kilogram");
 
 	}
 }
