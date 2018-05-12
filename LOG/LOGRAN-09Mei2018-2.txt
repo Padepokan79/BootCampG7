@@ -1,0 +1,17 @@
+Exercise 9 + Drill
+Exercise 10 + Drill
+Exercise 11 + Drill
+Exercise 12 + Drill
+Exercise 13 + Drill
+Exercise 14 + 4 Drill
+
+4 Tugas Soal latihan Booelean
+	LadiesNight.java
+	MelodiesMemory.java
+	JombloNight.java
+	BrondongNight.java
+
+Membuat 3 Soal Latihan boolean
+
+Modify  SoalMathRicha1.java
+	SoalMathArief2.java 

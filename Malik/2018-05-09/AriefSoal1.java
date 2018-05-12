@@ -19,7 +19,7 @@ public class AriefSoal1{
 
 		kembalian = uang-(hargaPulpen*banyakPulpen);
 		
-		System.out.print("kembalian yang diterima Udin : "+kembalian);
+		System.out.print("kembalian yang diterima Udin : Rp. "+kembalian);
 
 	}
 }

@@ -10,17 +10,16 @@ time : 08-05-2018 8:28PM
 
 public class RichaSoal1{
 	public static void main(String[] args){
-		int jarak, waktu, terlambat, kecepatan;
+		double jarak, waktu, terlambat, kecepatan;
 
 		jarak = 30;
-		waktu = 60;
 		terlambat = 10;
+		waktu = 60-terlambat;
 
-		kecepatan = terlambat/(waktu/jarak);
-		kecepatan = jarak+kecepatan;
+		kecepatan = jarak/waktu;
 
 		
-		System.out.print("kecepatan yang harus digunakan agar sampai ke kantor adalah : "+kecepatan);
+		System.out.print("kecepatan yang harus digunakan agar sampai ke kantor adalah : "+kecepatan+" KM/menit");
 
 	}
 }

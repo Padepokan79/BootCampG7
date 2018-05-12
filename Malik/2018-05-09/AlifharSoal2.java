@@ -15,7 +15,7 @@ public class AlifharSoal2{
 		int hargaRumah;
 		double untungRumahPertama, rugiRumahDua, totalUangPertama, totalUangDua, totalSemua;
 
-		hargaRumah = 60;
+		hargaRumah = 60000000;
 		untungRumahPertama = 30.0/100;
 		rugiRumahDua = 15.0/100;
 
@@ -29,7 +29,7 @@ public class AlifharSoal2{
 
 
 
-		System.out.print("total uang yang didapatkan oleh Pak Ryu : "+totalSemua);
+		System.out.printf("total uang yang didapatkan oleh Pak Ryu : %.2f", totalSemua);
 
 	}
 }
