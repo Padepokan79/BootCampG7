@@ -1,0 +1,37 @@
+/*
+	 Program     : Exercise 20 - More Chains of Ifs and else
+     Creator     : Khairil
+     Created At  : 14 Mei 2018 10:55 AM     
+     Updated By  : 
+     Update Date : 
+*/
+import static java.lang.System.*;
+import java.util.Scanner;
+
+public class CollegeAdmission {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		int math;
+
+		out.println( "Welcome to the UT Austin College Admissions Interface" );
+		out.print( "Please enter your SAT math score (200-800): " );
+		math = keyboard.nextInt();
+
+		out.println( "Admitance status: " );
+
+		if( math >= 790 )
+			out.print( "CERTAIN " );
+		else if ( math >= 710 )
+			out.print( "SAFE " );
+		else if ( math >= 580 )
+			out.print( "PROBABLE" );
+		else if ( math >= 500 )
+			out.print( "UNCERTAIN" );
+		else if ( math >= 390 )
+			out.print( "UNLIKELY" );
+		else //below 390 
+			out.print( "DENIED" );
+		out.println();
+	}
+}
+// 3. I trust you
