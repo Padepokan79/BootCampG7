@@ -1,0 +1,18 @@
+adding 	- Bmi Calculator.java
+	- booleanexpress.java
+	- Ex10D1.java
+	- Ex11D1.java
+	- Ex11D2.java
+	- Ex12D1.java
+	- Ex13D1.java
+	- Ex13D2.java
+	- Ex14D1.java
+	- Ex14D2.java
+	- Ex14D3.java
+	- Ex14D4.java
+	- Ex14D5.java
+	
+	- Sequincing.java
+	- shallowGrandmother.java
+	- variablechangeshortcuts.java
+	- weaseornot.java

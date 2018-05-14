@@ -22,10 +22,10 @@ public class AriefSoal2{
 		banyakTempe = 8;
 		banyakKangkung = 3;
 
-		total = (banyakTahu*hargaTahu)+(banyakTempe+hargaTempe)+(banyakKangkung+hargaKangkung);
+		total = (banyakTahu*hargaTahu)+(banyakTempe*hargaTempe)+(banyakKangkung*hargaKangkung);
 
 		
-		System.out.print("uang yang harus dibayarkan oleh Uus : "+total);
+		System.out.print("uang yang harus dibayarkan oleh Uus : Rp. "+total);
 
 	}
 }

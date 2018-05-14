@@ -1,0 +1,22 @@
+1. Adi bercita-cita ingin menjadi Polisi. namun ada beberapa syarat yang harus dipenuhi agar dapat diterima menjadi anggota polisi. yaitu :
+	- tinggi badan Pria minimal 165 cm
+	- tinggi badan Wanita minimal 160 cm
+	- Usia minimal 18 tahun dan tidak lebih dari 22 tahun
+	- status belum menikah, bukan janda atau duda
+	- berkewarganegaraan Indonesia
+	- tidak pernah melakukan tindak pidana
+
+2. Seorang pria membutuhkan rumah disebuah perumahan dengan : 
+	- luas tanah minimal 100m2. 	
+	- setidaknya minimal memiliki 2 kamar tidur
+	- memiliki kamar mandi berwarna biru
+	- ada tamannya	
+	- jarak dari luar perumahan sampai kedalam komplek tidak sampai dari 100meter
+	- boleh memiliki 2 lantai.
+
+3. Seorang dokter sedang mengidentifikasi seorang pasien pengidap penyakit AIDS
+	- orang tersebut memiliki gejala seperti diare kronis
+	- berat badan penderita berkurang 10% dari berat badan awal
+	- demam berlangsung antara 1 minggu sampai 1 bulan
+	- gampang lelah
+	- ada ruam di kulit

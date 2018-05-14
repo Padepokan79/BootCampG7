@@ -22,7 +22,7 @@ public class OperasiMathArief2{
           hargaHelmB = 50000;
           hargaHelmC = 650000;
           hasilPenjualanPerHari = hargaHelmA + hargaHelmB + hargaHelmC;
-          hasilPenjualanPerMinggu = hasilPenjualanPerHari*7;
+          hasilPenjualanPerMinggu = hasilPenjualanPerHari*7*banyakTokoHelm;
 
           System.out.println( "Hasil Penjualan Helm dalam 1 Minggu adalah : ");
           System.out.println(penjualanHelmPerMinggu + " Helm");

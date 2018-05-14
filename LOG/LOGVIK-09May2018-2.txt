@@ -1,0 +1,9 @@
+Adding 	- LatihanSoalRicha.java
+	- LatihanSoalRicha2.java
+
+	- LatihanSoalKhairil.java
+	- LatihanSoalKhairil2.java
+
+Editing - SoalAlifhar.java
+	- SoalAlifhar2.java
+	- latihanSoalAndrian.java

@@ -1,0 +1,17 @@
+add file :
+- AlifharSoal2.java
+- AndrianSoal1.java
+- AndrianSoal2.java
+- AriefSoal1.java
+- AriefSoal2.java
+- BooleanExpression.java
+- Ex11Drill1.java
+- Ex11Drill2.java
+- Ex12Drill1.java
+- Ex13Drill1.java
+- Ex14Drill1.java
+- RichaSoal1.java
+- RichaSoal2.java
+- ShallowGrandmother.java
+- VariableChangeShorcut.java
+- WeaselOrNot.java

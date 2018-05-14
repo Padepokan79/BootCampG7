@@ -1,0 +1,12 @@
+1. menambahkan file java alifhar01
+2. menambahkan file java alifhar02
+3. menambahkan file java andrian01
+4. menambahkan file java andrian02
+5. menambahkan file java khairil01
+6. menambahkan file java khairil02
+7. menambahkan file java richa01
+8. menambahkan file java richa02
+9. menambahkan file java rizaldi01	
+10. menambahkan file java rizaldi02
+11. menambahkan file java yana01
+12. menambahkan file java yana02
