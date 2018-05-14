@@ -1,0 +1,26 @@
+
+Add folder 14May2018 in alifhar
+
+Add java file in 14May2018:
+	AgeMessages.java
+	BMICategories.java
+	ClubBouncer.java
+	CollegeAdmission.java
+	CollegeAdmissionExpanded.java
+	ComparingNumbers.java
+	Ex15Drills1.java
+	Ex15Drills2.java
+	Ex16Drills1.java
+	Ex16Drills2.java
+	Ex17Drills1.java
+	Ex18Drills1.java
+	Ex18Drills2.java
+	Ex18Drills3.java
+	Ex18Drills4.java
+	Ex19Drills1.java
+	Ex19Drills2.java
+	Ex20Drills1.java
+	Ex20Drills2.java
+	Ex21Drills1.java
+	GenderTitles.java
+	SecretWord.java
