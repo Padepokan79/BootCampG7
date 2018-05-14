@@ -24,7 +24,10 @@ public class Ex14D4{
 		pria = jenisKelamin.equals("Pria");
 		wanita = jenisKelamin.equals("Wanita");
 		
-		jombloNight = penampilan >= 8 && umur >= 21 || umur <= 30 && (pria || wanita);
+		jombloNight = penampilan >= 8 && umur >= 21 && umur <= 30 && (pria || wanita);
+
+		partnerBisnis = (umur >= 30 && tahunPengalaman >= 3) && (kecepatanBekerja >= 8 && kecepatanBekerja <= 10) && (penampilan >= 9 && penampilan && <= 10);
+
 
 		System.out.println("Boleh Masuk Melodies memori? "+jombloNight);
 	}
