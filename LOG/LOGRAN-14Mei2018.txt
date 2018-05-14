@@ -1,0 +1,18 @@
+Exercise 15 + Drill
+Exercise 16 + Drill
+Exercise 17 + Drill
+Exercise 18 + Drill + latihan soal
+Exercise 19 + Drill
+Exercise 20 + Drill
+Exercise 21 + Drill
+
+Menambahkan file
+BooleanAlifhar1.java
+BooleanAlifhar2.java
+BooleanAndrian1.java
+BooleanAndrian2.java
+BooleanArief1.java
+BooleanArief2.java
+BooleanKhairil1.java
+BooleanKhairil2.java
+BooleanRyan1.java
