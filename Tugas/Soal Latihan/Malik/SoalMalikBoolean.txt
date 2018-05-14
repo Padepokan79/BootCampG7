@@ -1,0 +1,45 @@
+1. sebuah perusahaan majalah ternama di dunia, mengadakan rekruitmen untuk calon model baru pria. 
+   adapun syarat yang mereka ajukan yang harus dipenuhi oleh para calon pelamarnya, diantaranya minimal tinggi 175 cm, tampan, warna kulit tidak terlalu diperhatikan.
+
+   penampilan 7
+
+   output yang diinginkan
+
+   =============================
+         CALON MODEL BARU
+   =============================
+
+   tinggi badan :
+   skala penampilan :
+   warna kulit :
+
+   -----------------------------
+   apakah anda diterima ? ....
+   -----------------------------
+
+
+2. Ani ingin membuat program kelulusan siswa, syarat kelulusan yang harus dipenuhi
+   nilai UN tidak boleh di bawah 7, izin max 3, alfa max 5, izin banyak pun tidak jadi masalah.
+   izin boleh lebih dari 5 tetapi nilai tidak boleh dibawah 7.5
+
+   output yang diinginkan
+
+   =============================
+          SURAT KELULUSAN
+   =============================
+
+   nilai un :
+   izin :
+   alfa :
+
+   -----------------------------
+   apakah anda lulus ? ...
+
+3. sebuah tempat hiburan mengajukan syarat bagi para pelanggannya yang ingin bersenang senang di tempat tsb,
+   untuk cowo mereka diwajibkan kaya, ganteng tidak perlu, usia tidak boleh lebih dari 30, kulit harus putih
+   untuk cewe mereka harus cantik, kaya atau tidak yang penting putih
+
+   kaya = 10000000
+   penampilan = 7
+
+   output bebas   
