@@ -1,0 +1,33 @@
+jam: 11.50
+
+- menambahkan folder 14-05-2018
+- menambahkan file java AgeMessages
+- menambahkan file java BMICategories
+- menambahkan file java ClubBouncer
+- menambahkan file java CollegeAdmission
+- menambahkan file java CollegeAdmissionExpanded
+- menambahkan file java ComparingNumbers
+
+- menambahkan file java Ex15Drills1
+- menambahkan file java Ex15Drills23
+
+- menambahkan file java Ex16Drills12
+
+- menambahkan file java Ex17Drills1
+
+- menambahkan file java Ex18Drills1
+- menambahkan file java Ex18Drills2
+- menambahkan file java Ex18Drills3
+- menambahkan file java Ex18Drills4
+
+- menambahkan file java Ex19Drills1
+- menambahkan file java Ex19Drills2
+
+- menambahkan file java Ex20Drills1
+- menambahkan file java Ex20Drills2
+- menambahkan file java Ex20Drills3
+
+- menambahkan file java Ex21Drills1
+
+- menambahkan file java GenderTitles
+- menambahkan file java SecretWord
