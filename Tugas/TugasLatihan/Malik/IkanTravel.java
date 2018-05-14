@@ -35,6 +35,31 @@ public class IkanTravel{
 		kursiLima = 12;
 		kursiEnam = 6;
 		maxKursi = 120;
+		int ratusEnam =	106;
+		int ratusLima =	105;
+		int bilanTiga =	93;
+		int bilanDua = 92;
+		int bilanSatu =	91;
+		int bilanPuluh = 90;
+		int lapanBilan = 89;
+		int juhBilan = 79;
+		int juhLapan = 78;
+		int juJuh =	77;
+		int juhTiga = 73;
+		int juhDua = 72;
+		int namLima = 65;
+		int namEmpat = 64;
+		int namTiga = 63;
+		int maLapan = 58;
+		int maJuh =	57;
+		int maSatu = 51;
+		int maPuluh = 50;
+		int tigaJuh = 37;
+		int tigaNam = 36;
+		int tigaSatu = 31;
+		int tigaPuluh =	30;
+		int duaMa = 25;
+		int duaPat = 24;
 
 		System.out.println("===========================");
 		System.out.println("Selamat Datang di Ikan Travel ");
@@ -45,72 +70,66 @@ public class IkanTravel{
 		if (penumpang > maxKursi) {
 			System.out.println("Maaf jumlah penumpang maxximum");
 		}else{
-
+ 
 			if ( penumpang >= kursiSatu && maxPenumpang <= maxKursi) {
 				System.out.println("Bis Dengan Kursi 60\t\t Rp. 2.300.000 ");
-				
 			}
 			if ( penumpang >= kursiDua && maxPenumpang <= maxKursi) {
 				System.out.println("Bis Dengan Kursi 45\t\tRp. 2.000.000");
-				
 			}
 			if ( penumpang >= kursiTiga && maxPenumpang <= maxKursi) {
 				System.out.println("Bis Dengan Kursi 32\t\tRp. 1.800.000");
-				
 			}
 			if ( penumpang >= kursiEmpat && maxPenumpang <= maxKursi) {
 				System.out.println("Bis Dengan Kursi 18\t\tRp. 1.500.000");
-				
 			}
 			if ( penumpang >= kursiLima && maxPenumpang <= maxKursi) {
 				System.out.println("Bis Dengan Kursi 12\t\tRp. 1.300.000");
-				
 			}
 			if ( ( penumpang >= kursiEnam || penumpang < kursiEnam ) && maxPenumpang <= maxKursi )  {
 				System.out.println("Bis Dengan Kursi 6 Executive\t Rp. 2.000.000");
-				
 			}
 			if ( penumpang == maxKursi ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis Dengan Kursi 60 dengan harga Rp."+(hargaSatu+hargaSatu));
 			}
-			if ( penumpang < maxKursi && penumpang >= 106 ) {
+			if ( penumpang < maxKursi && penumpang >= ratusEnam ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis Dengan Kursi 60 dengan harga Rp."+(hargaSatu+hargaSatu));
 			}
-			else if ( penumpang <= 105 && penumpang >= 93) {
+			else if ( penumpang <= ratusLima && penumpang >= bilanTiga) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 60 dan 1 bis dengan 45 kursi dengan harga Rp."+(hargaSatu+hargaDua));
 			}
-			else if ( penumpang <= 92 && penumpang >= 91 ) {
+			else if ( penumpang <= bilanDua && penumpang >= bilanSatu ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 60 dan 1 bis dengan 32 kursi dengan harga Rp."+(hargaSatu+hargaTiga));
 			}
-			else if ( penumpang == 90 ) {
+			else if ( penumpang == bilanPuluh ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis Dengan Kursi 45 dengan harga Rp."+(hargaDua+hargaDua));
-			}else if ( penumpang <= 89 && penumpang >= 79 ) {
+			}else if ( penumpang <= lapanBilan && penumpang >= juhBilan ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis dengan 45 kursi dengan harga Rp."+(hargaDua+hargaDua));
 			}
-			else if (penumpang == 78) {
+			else if (penumpang == juhLapan) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 60 dan 1 Bis dengan kursi 18 dengan harga Rp."+(hargaSatu+hargaEmpat));
 			}
-			else if (penumpang <= 77 && penumpang >= 73) {
+			else if (penumpang <= juJuh && penumpang >= juhTiga) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 60 dan 1 Bis dengan kursi 18 dengan harga Rp."+(hargaSatu+hargaEmpat));
 				System.out.println("1 Bis Dengan Kursi 45 dan 1 Bis dengan kursi 32 dengan harga Rp."+(hargaDua+hargaTiga));
 			}
-			else if ( penumpang <= 72 && penumpang >= 65 ) {
+			else if ( penumpang <= juhDua && penumpang >= namLima ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 60 dan 1 bis dengan kursi 12 dengan harga Rp."+(hargaSatu+hargaLima));
 			}
-			else if (penumpang == 64) {
+			else if (penumpang == namEmpat) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis Dengan Kursi 32 dengan harga Rp."+(hargaTiga+hargaTiga) );
 			}
-			else if ( penumpang <= 63 && penumpang >= 61 ) {
+			else if ( penumpang <= namTiga && penumpang > kursiSatu ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 45 dan 1 Bis dengan kursi 18 dengan harga Rp."+(hargaLima+hargaEmpat) );
 			}
@@ -118,63 +137,63 @@ public class IkanTravel{
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 60 dengan harga Rp."+hargaSatu );
 			}
-			else if ( penumpang <= 59 && penumpang >= 58 ) {
+			else if ( penumpang < kursiSatu && penumpang >= maLapan ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 45 dan 1 Bis dengan kursi 18 dengan harga Rp."+(hargaLima+hargaEmpat) );
 			}
-			else if (penumpang <= 57 && penumpang >= 51) {
+			else if (penumpang <= maJuh && penumpang >= maSatu) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 45 dan 1 Bis dengan kursi 12 dengan harga Rp."+(hargaDua+hargaLima) );
 			}
-			else if (penumpang <= 50 && penumpang >= 46) {
+			else if (penumpang <= maPuluh && penumpang > kursiDua) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 32 dan 1 Bis dengan kursi 18 dengan harga Rp."+(hargaTiga+hargaEmpat) );
 			}
-			else if (penumpang == 45 ) {
+			else if (penumpang == kursiDua ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 45 dengan harga Rp."+hargaDua );
 			}
-			else if ( penumpang <= 44 && penumpang >= 37 ) {
+			else if ( penumpang < kursiDua && penumpang >= tigaJuh ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 32 dan 1 Bis dengan kursi 12 dengan harga Rp."+(hargaTiga+hargaLima) );
 			}
-			else if ( penumpang <= 36 && penumpang >= 33 ) {
+			else if ( penumpang <= tigaNam && penumpang > kursiTiga ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis Dengan Kursi 18 dengan harga Rp."+(hargaEmpat+hargaEmpat) );
 			}
-			else if (penumpang == 32 ) {
+			else if (penumpang == kursiTiga ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 32 dengan harga Rp."+hargaTiga );
 			}
-			else if ( penumpang == 31 ) {
+			else if ( penumpang == tigaSatu ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis Dengan Kursi 18 dengan harga Rp."+(hargaEmpat+hargaEmpat) );
 			}
-			else if ( penumpang <= 30 && penumpang >= 25 ) {
+			else if ( penumpang <= tigaPuluh && penumpang >= duaMa ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 12 dan 1 bis dengan kursi 18 dengan harga Rp."+(hargaLima+hargaEmpat) );
 			}
-			else if ( penumpang <= 24 && penumpang >= 19 ) {
+			else if ( penumpang <= duaPat && penumpang > kursiEmpat ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis Dengan Kursi 12 dengan harga Rp."+(hargaLima+hargaLima) );
 			}
-			else if (penumpang == 18) {
+			else if (penumpang == kursiEmpat) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 18 dengan harga Rp."+hargaEmpat );
 			}
-			else if ( penumpang <= 17 && penumpang >= 13 ) {
+			else if ( penumpang < kursiEmpat && penumpang > kursiLima ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis Dengan Kursi 12 dengan harga Rp."+(hargaLima+hargaLima) );
 			}
-			else if (penumpang == 12) {
+			else if (penumpang == kursiLima) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 12 dengan harga Rp."+hargaLima);
 			}
-			else if ( penumpang < 12 && penumpang >= 7 ) {
+			else if ( penumpang < kursiLima && penumpang > kursiEnam ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("2 Bis Dengan Kursi 6 Executive dengan harga Rp."+(hargaEnam+hargaEnam));
 			}
-			else if ( penumpang <= 6 ) {
+			else if ( penumpang <= kursiEnam ) {
 				System.out.println("*Rekomendasi Bis Untuk anda");
 				System.out.println("1 Bis Dengan Kursi 6 Executive dengan harga Rp."+(hargaEnam) );
 			}
