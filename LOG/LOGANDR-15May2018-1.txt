@@ -1,0 +1,18 @@
+Menambahkan sub folder:
+	15May2018
+
+Menambahkan file:
+	Andrian/15May2018/TugasIfAlifhar1.java
+	Andrian/15May2018/TugasIfAlifhar3.java
+	Andrian/15May2018/TugasIfAndrian1.java
+	Andrian/15May2018/TugasIfAndrian2.java
+	Andrian/15May2018/TugasIfAndrian3.java
+	Andrian/15May2018/TugasIfArif1.java
+	Andrian/15May2018/TugasIfArif2.java
+	Andrian/15May2018/TugasIfChaudary1.java
+	Andrian/15May2018/TugasIfChaudary3.java
+	Andrian/15May2018/TugasIfMalik1.java
+	Andrian/15May2018/TugasIfMalik2.java
+	ndrian/15May2018/TugasIfRicha1.java
+	Andrian/15May2018/TugasIfRicha3.java
+	LOG/LOGANDR-15May2018-1.txt
