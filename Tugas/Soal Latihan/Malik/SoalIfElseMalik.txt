@@ -1,0 +1,92 @@
+1. Sebuah perusahaan konveksi akan mengekspor produknya ke beberapa negara dia asia dan eropa,
+   mereka memproduksi paling tidak 5 jenis produk berbeda. diantaranya jaket, kaos kaki, celana, topi, dan sweater.
+   menurut data target penjualan perusahaan, Setiap bulan mereka memproduksi produk dengan quantity tiap produknya, 10 ribu jaket tidak boleh kurang dari 6 ribu, 4 ribu kaos kaki (satuan) minimal 2 ribu, 8 ribu celana minimal 3200, topi 30% dari jumlah maks jaket dan minimal 70% dari jumlah maks topi, serta sweater 25% dari total maks keempat produk yang di produksi dan minimal 80% dari jumlah maks jaket. 
+   untuk mencapai target keuntungan, mereka harus meraup untung sebesar 50% dari jumlah seluruh produksi dengan hitungan harga 10 ribu rupiah untuk sepasang kaos kaki, 20 ribu untuk celana, 30 ribu untuk jaket , 5 ribu untuk topi, dan 15 ribu untuk sweater.
+   gaji karyawannya sebesar Rp. 2.000.000
+
+ - bila keuntungan produksi mencapai 
+   Rp. 294.375.000 maka :
+   SUKSES
+   gaji karyawan naik sebesar Rp. 0.2%
+
+ - bila keuntungan produksi kurang mencapai 
+   60% dari keuntungan maksimal maka :
+   CUKUP SUKSES
+   gaji karyawan naik sebesar Rp. 0%
+
+ - bila keuntungan produksi kurang mencapai 
+   50% dari keuntungan yang 60% maksimal maka :  
+   KURANG SUKSES
+   gaji karyawan turun sebesar Rp. 0.2% dari keuntungan tsb
+
+   
+
+   output :
+   =================
+   PABRIK KONVOIEKSI
+   =================
+
+   jumlah produksi jaket :  10000 
+   jumlah produksi kaos kaki :  4000 
+   jumlah produksi celana :  8000 
+   jumlah produksi topi :  3000 
+   jumlah produksi sweater :  6250 
+
+   ------------------
+   Selamat perusahaan ini SUKSES/CUKUP SUKSES/KURANG SUKSES
+
+   gaji karyawan naik Rp. 58750
+   gaji karyawan sebesar Rp. 2.058.750
+
+
+2. Andi ingin menentukan statistik bulan, mulai dari januari sampai desember.
+   baik berdasarkan nama dan hari. hari maksimal 31 hari. jika jumlah hari kurang
+   dari 29 maka tidak ada bulan dengan jumlah hari tsb.
+
+   output :
+
+   ====================
+       super month
+   ====================
+   apa yang ingin anda tentukan(nama bulan/jumlah hari) :
+
+   -- jika "nama bulan" --
+
+   Ketikan nama bulan (januari-desember) : januari
+
+   jumlah hari : 31 hari
+   jumlah minggu : 4 minggu 3 hari
+
+   -- jika "jumlah hari" --
+
+   ketikan jumlah hari : 31
+
+   jumlah bulan dengan 31 hari : januari, maret, dst;
+
+
+3. Budi ingin mengetahui seberapa baik dirinya melalui, mesin pendeteksi
+   kebaikan yang berada di CiMallik, Mall termegah di Wakanda. 
+
+   bila skala jujur seseorang mencapai 8, bohong dibawah 5, sombong tidak lebih dari 6, serta angkuh dibawah 7
+   maka seseorang tsb dianggap baik.
+   bila jujur seseorang mencapai 9, dan sombong tidak lebih dari 2, maka mereka dianggap baik walaupun bohong serta angkuh di atas rata rata 
+   bila jumlah skala 5 kebawah maka mereka dianggap kurang baik
+   bila jumlah seluruh skala diatas 35 mereka sangat baik
+   bila jumlah seluruh skala di bawah 15 mereka buruk
+
+   output
+   ===================================
+         DETECTED UR ATTITUDE
+   ===================================
+   skala jujur anda : 9
+   skala bohong anda : 9
+   skala sombong anda : 9
+   skala angkuh anda : 9
+   ------------------------------------
+   SELAMAT! anda sangat baik !     
+
+
+   
+
+
+
