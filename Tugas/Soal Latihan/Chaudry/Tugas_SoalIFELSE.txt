@@ -1,0 +1,86 @@
+1. 	Menentukan nilai Adi 
+	Di kelas 12 akhir semester ini, dibagikan nilai hasil ujian Try Out ke 3.
+	Dengan :
+		- nilai Standart 75
+		- Nilai pas Standart namun masih dibawah 85, maka keterangan nilai cukup
+		- Nilai diatas 84 sampai 90, keterangan nilai baik
+		- selebihnya sangat baik
+		- Nilai yang selaras dengan Standart akan diberi tawaran untuk mengikuti Ujian Remedial
+		- selain keterangan diatas maka nilai dinyatakan kurang dan harus mengikuti Ujian Remedial
+
+	*Note: satuan nilai dalam puluhan (Exp: 82)
+	
+	output :
+
+	+++++++++++++++++++++++++++++++
+	Nama 			 : ...
+	Nilai Math 		 : ...
+	Nilai Indonesia  : ...
+	Nilai Inggris 	 : ...
+
+	Rata-rata nilai  : ...
+	Keterangan nilai : ...
+	// code yang diperlukan
+	+++++++++++++++++++++++++++++++
+
+
+2.  Penggajian  	  Gaji Pokok
+	- golongan A 	  Rp. 1.500.000
+	- golongan B 	  Rp. 1.700.000
+	- golongan C 	  Rp. 2.500.000
+	- golongan D 	  Rp. 5.000.000
+
+	*Note:  - golongan A dengan masa kerja dari 0 sampai 1 tahun
+			- golongan B dengan masa kerja diatas 1 tahun dan tidak lebih dari 5 tahun
+			- golongan C dengan masa kerja setidaknya 5 tahun
+			- golongan D dengan masa kerja diatas 7 tahun
+			- MK = tahun sekarang - tahun masuk
+			- penambahan gaji sebesar Rp. 500.000 untuk karyawan berpengalaman kerja 5 tahun dan terus meningkat tiap tahunnya
+
+	output :
+
+	++++++++++++++++++++++++++++++++++++
+	LAPORAN PENGGAJIAN KARYAWAN BULANAN
+	++++++++++++++++++++++++++++++++++++
+
+	Nama 			: ...
+	Tahun masuk 	: ...
+	Masa kerja 		: ... tahun
+	Golongan 		: ...
+	Gaji Pokok 		: Rp ...
+	Bonus 			: Rp ...
+	Gaji Karyawan 	: Rp ...
+
+	++++++++++++++++++++++++++++++++++++
+
+
+3.  Perjalanan Adin menuju tempat kerja
+	- Jalan kaki 				10km
+	- Naik Sepeda		 		35km
+	- Naik Motor		  		72km
+	- Naik Mobil			 	100km
+	- Naik Helikopter 			150km
+
+
+	output :
+
+	++++++++++++++++++++++++++++++++++++
+	PERJALANANKU MENUJU TEMPAT KERJA :)
+	++++++++++++++++++++++++++++++++++++
+
+	// (Exp)
+	Masukan jarak rumah dengan perusahaan : 42
+
+	Perjalanan yang tersedia untuk anda : 
+	- jalan kaki
+	- Naik Sepeda
+
+
+
+
+
+
+
+
+
+
