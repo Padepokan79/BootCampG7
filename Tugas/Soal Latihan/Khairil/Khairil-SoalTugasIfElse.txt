@@ -1,0 +1,54 @@
+------------------------------------------------------------------------------------------------------------------
+
+1. >> 
+Inputan merupakan jumlah angka dadu dari 3 dadu. Tampilkan kombinasi angka dadu setiap masing-masing yang berbeda angka dan berbeda urutan.
+
+Inputan  : 4
+
+Peluang angka dadu ==============
+Angka dadu yang mungkin terjadi :
+1 / 1 / 2
+1 / 2 / 1
+2 / 1 / 1
+
+------------------------------------------------------------------------------------------------------------------
+
+2. >> 
+Nilai angka 1-100. Setiap inputan memiliki keistimewaan. 
+Tampilkan fizz dari setiap urutan untuk nilai kelipatan 4. 
+Tampilkan bizz dari setiap urutan untuk nilai kelipatan 8.
+Tampilkan fizzbizz dari setiap urutan untuk nilai kelipatan 13.
+Apabila ada nilai yang memiliki kelipatan yang sama (misal : 4 dan 8) 
+prioritaskan untuk kelipatan yang lebih besar
+
+Inputan : 20
+
+Nilai yang akan muncul ==========
+1, 2, 3, FIZZ, 5, 6, 7, BIZZ, 9, 10, 11, FIZZ, FIZZBIZZ, 14, 15, BIZZ, 17, 18, 19, FIZZ
+
+------------------------------------------------------------------------------------------------------------------
+
+3. >>
+KrisDew memiliki tiket kereta lokal. Setiap tiket berbeda tujuan. 
+kode A = PDL - CCL
+kode B = PDL - KAC
+kode C = BD  - CCL
+kode D = CCL - BD
+kode E = BD  - PDL
+kode F = PDL - BD
+kode G = KAC - CCL
+kode H = CCL - KAC
+kode I = KAC - PDL
+kode J = CCL - PDL
+Untuk mengecek tiket mana yang harus dibeli gunakan kode urutan kode sebagai berikut
+CCL - HRP - RCK - CMK - GDB - KAC - CTH - BD - CRY - CMD - CMI - GK - PDL
+begitupun sebaliknya
+
+CEK KODE TIKET ============================
+Inputan Asal  : CTH
+Inputan Tujuan: CMI
+
+Kode Tiket yang dapat dibeli ==============
+Kode I, Kode J
+
+------------------------------------------------------------------------------------------------------------------  
