@@ -1,0 +1,103 @@
+1. Budi mempunyai rencana belanja, jika Budi mempunyai uang sebesar lebih dari Rp. 90.000 Budi akan membeli Tas, lebih dari Rp. 100.000 akan membeli Tas dan Dompet, lebih dari Rp. 200.000 akan membeli Tas dan sepatu dan lebih dari Rp. 500.000 akan membeli jas.
+Jika Budi membeli jas maka Budi harus membeli kemeja dan dasi.
+Jika membeli tas atau dompet akan mendapatkan diskon 10% dari transaksi belanjanya.
+
+Berikut harga barang yang akan dibeli.
+Tas Rp. 60.000
+Dompet Rp. 40.000
+Sepatu Rp. 120.000
+Jas Rp. 250.000
+Kemeja seharga tas dan dompet
+Dasi seharga dompet
+
+Tampilkan apa yang dibeli oleh Budi dengan uangnya. Serta tampilkan sisa uang Budi.
+
+Contoh output 
+
+=============================
+Masukkan nominal uang Budi:
+150000
+
+Budi membeli tas seharag Rp. 60000
+Budi membeli dompet seharga Rp. 40000
+
+Sisa uang budi adalah Rp. 60000
+=============================
+
+2. Syarat beasiswa 79
+
+A. Jurusan Teknik Informatika (KODE: 345) & Sistem Informasi (KODE: 321)
+Syarat:
+- Semester 3 - 5
+- ipk min. 3.0
+- nilai prak. Algoritma : A
+- nilai prak. Basis Data : A atau prak Struktur Data : A
+
+B. Jurusan Teknik Komputer (KODE: 531)
+Syarat:
+- Semester 3 - 5
+- ipk min 3.25
+- nilai prak. Jaringan : A
+- nilai prak. Rakitan min. : B
+
+
+Contoh output:
+
+=============================
+Jurusan : 531
+Semester : 4
+Ipk : 3.5
+Nilai prak. Jaringan : A
+Nilai prak. Rakitan : A
+
+Anda memenuhi syarat untuk mendaftar beasiswa jurusan Teknik Komputer.
+=============================
+
+3. Budi mengikuti lomba 17an dan berkesempatan mendapatkan banyak hadiah jika mendapatkan banyak poin dengan jumlah poin adalah max. 25 poin/orang.
+Berikut adalah daftar hadiah beserta poinnya.
+Permen poin : 1
+Ciki poin : 3
+Es kepal Sisri poin : 5
+Soyjoy poin : 6
+Es kepal Milo poin : 10
+
+Tampilkan daftar hadiah yang dapat ditukar oleh Budi dengan poinnya.
+Serta tampilkan sisa poin Budi.
+Jika tidak tidak memiliki poin maka tidak bisa menukar poin.
+
+Contoh output:
+
+============================
+(Input) Masukkan poin Budi : 5
+
+Daftar yg dapat ditukar:
+- Es kepal Sisri poin : 5
+- Ciki poin : 3
+- Permen poin : 1
+
+(Input) Tukar poin : 3
+
+Menukar dengan Ciki poin 3
+Sisa poin adalah 2 poin
+
+=============================
+
+Daftar yang dapat ditukar:
+- Permen poin: 1
+
+(Input) Tukar poin : 1
+
+Menukar dengan Permen poin 1
+Sisa poin adalah 1 poin
+
+=============================
+
+Daftar yang dapat ditukar:
+- Permen poin: 1
+
+(Input) Tukar poin : 1
+
+Menukar dengan Permen poin 1
+Sisa poin adalah 0 poin
+
+=============================

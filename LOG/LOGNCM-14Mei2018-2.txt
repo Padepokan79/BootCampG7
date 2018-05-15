@@ -1,0 +1,24 @@
+- menambahkan folder Chaudhry dalam file TugasLatihan
+- ../../Chaudry/14-05-2018/Alifhar01.java
+- ../../Chaudry/14-05-2018/Alifhar02.java
+- ../../Chaudry/14-05-2018/Andrian01.java
+- ../../Chaudry/14-05-2018/Andrian02.java
+- ../../Chaudry/14-05-2018/Arief01.java
+- ../../Chaudry/14-05-2018/Arief02.java
+- ../../Chaudry/14-05-2018/Chaudhry01.java
+- ../../Chaudry/14-05-2018/Chaudhry02.java
+- ../../Chaudry/14-05-2018/Chaudhry03.java
+- ../../Chaudry/14-05-2018/Khairil01.java
+- ../../Chaudry/14-05-2018/Khairil02.java
+- ../../Chaudry/14-05-2018/Malik01.java
+- ../../Chaudry/14-05-2018/Malik02.java
+- ../../Chaudry/14-05-2018/Richa01.java
+- ../../Chaudry/14-05-2018/Richa02.java
+- ../../Chaudry/14-05-2018/Rizaldi01.java
+- ../../Chaudry/14-05-2018/Rizaldi02.java
+- ../../Chaudry/14-05-2018/Ryan01.java
+- ../../Chaudry/14-05-2018/Ryan02.java
+- ../../Chaudry/14-05-2018/Yana01.java
+- ../../Chaudry/14-05-2018/Yana02.java
+- Chaudhry/ClubReservation.java
+- Chaudhry/IkanTravel.java

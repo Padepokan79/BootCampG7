@@ -1,0 +1,21 @@
+add file :
+- AlifharBoolean1.java
+- AlifharBoolean2.java
+- AndrianBoolean1.java
+- AndrianBoolean2.java
+- AriefBoolean1.java
+- AriefBoolean2.java
+- KhairilBoolean1.java
+- KhairilBoolean2.java
+- RichaBoolean1.java
+- RichaBoolean2.java
+- RizaldiBoolean1.java
+- RizaldiBoolean2.java
+- RyanBoolean1.java
+- RyanBoolean2.java
+- RyanBoolean3.java
+- SoalMalikBoolean1.java
+- SoalMalikBoolean2.java
+- SoalMalikBoolean3.java
+- YanaBoolean1.java
+- YanaBoolean2.java

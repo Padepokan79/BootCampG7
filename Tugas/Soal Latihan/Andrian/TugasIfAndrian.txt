@@ -1,0 +1,79 @@
+1.	Ada tempat fotokopi "Unity Fotocopy" apabila dia pelanggan pada tempat
+	itu maka berapa lembar pun banyaknya dia fotokopi di dapat harga
+	Rp.75,-.
+
+	tapi jika dia bukan pelanggan maka :
+	a. jika dia fotokopi kurang dari 100 lembar maka dapet harga Rp.150,-
+	b. jika fotokopi sebanyak 100-200 lembar dapet harga Rp.100,-
+	c. tapi jika fotokopi lebih dari 200 lembar dia dapet harga Rp.80,-
+
+output:
+==============================================
+Apakah anda member (Y/N)		:....
+Banyak lembar yang akan di fotocopy	:....
+==============================================
+
+Harga 					=
+Bayar					= 
+============================================== 
+
+2.	Anda diharuskan membuat apliaksi yang dapat membantu para karyawan BUMN 
+	mengetahui berapa besar gaji yang mereka dapatkan, dimana dalam program
+	tersebut memmperlihatkan gaji pokok, tunjangan keluarga, pajak, gaji 
+	total. Gaji yang mereka dapatkan ditentukan dari seberapa tinggi
+	jabatan mereka dimana :
+	Golongan 2A	Gaji pokok = 1jt
+			tunjangan = 100rb
+	Golongan 2B	Gaji pokok = 1.5jt
+			tunjangan = 200rb
+	Golongan 3A	Gaji pokok = 2jt
+			tunjangan = 300rb
+	Golongan 3B	Gaji pokok = 2.5jt
+			tunjangan = 400rb
+	Golongan 4A	Gaji pokok = 3jt
+			tunjangan = 500rb
+	Golongan 4B	Gaji pokok = 3.5jt
+			tunjangan = 600rb
+
+	* pajak = 2% dari gajipokok dan tunjangan
+	* total gaji = gajipokok dan tunjangan dikurangi pajak
+
+output:
+==============================================
+Masukan nama	:
+Masukan NIK	:
+==============================================
+List golongan :
+1. Golongan 2A
+2. golongan 2B
+3. golongan 3A
+4. golongan 3B
+5. golongan 4A
+6. golongan 4B
+Masukan golongan anda :
+==============================================
+Gaji pokok		:
+Tunjangan		:
+Pajak			:
+Gaji yang diterima	:
+
+3. 	Hitung nilai akhir tingkat kelulusan mahasiswa dengan prosentase 
+	30% UTS + 30% UAS + 40% Tugas.
+
+	Input yang di harapkan adalah Nama Mahasiswa, UTS, UAS, dan Tugas. 
+	Output yang diharapakan sesuai dengan tabel di bawah ini :
+	Range Nilai 	Predikat 	Keterangan
+	80 – 100 	A 		Lulus
+	60 -79 		B 		Lulus
+	40 – 59 	C 		Tidak Lulus
+	20 – 39 	D 		Tidak Lulus
+	0 – 19 		E 		Tidak Lulus
+
+output:
+============================================
+Nama		:
+UTS		:
+UAS		:
+Tugas		:
+============================================
+Selamat "Nama" predikat yang anda dapatkan "predikat" dan anda dinyatakan "keterangan"

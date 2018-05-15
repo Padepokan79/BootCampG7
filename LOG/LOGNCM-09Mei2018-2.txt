@@ -1,0 +1,23 @@
+1. Menambahkan folder Tugas_Soal :
+	- menambahkan file java Ex14Drills2
+	- menambahkan file java Ex14Drills3
+	- menambahkan file java Ex14Drills4
+	- menambahkan file java Ex14Drills5
+	- menambahkan file java Ex14Drills6
+2. Menambahkan file java Ex8Drills5
+3. Menambahkan file java BMICalculator
+4. Menambahkan file java Ex9Drills1
+5. Menambahkan file java Ex9Drills2
+6. Menambahkan file java Sequencing
+7. Menambahkan file java Ex10Drills1
+8. Menambahkan file java Ex10Drills2
+9. Menambahkan file java Ex10Drills3
+10. Menambahkan file java VariableChangeShortcuts
+11. Menambahkan file java Ex11Drills1
+12. Menambahkan file java Ex11Drills2
+13. Menambahkan file java BooleanExpressions
+14. Menambahkan file java Ex12Drills1
+15. Menambahkan file java WeaselOrNot
+16. Menambahkan file java ShallowGrandmother
+17. Menambahkan file java Ex13Drills1
+18. Menambahkan file java Ex14Drills1

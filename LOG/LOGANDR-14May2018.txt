@@ -1,0 +1,29 @@
+Menambahkan subfolder :
+	14May2018
+
+Menambahkan file :
+ 	14May2018/AgeMessages.java
+ 	14May2018/BMICategories.java
+ 	14May2018/ClubBouncer.java
+ 	14May2018/CollegeAdmission.java
+ 	14May2018/CollegeAdmissionExpanded.java
+	14May2018/ComparingNumbers.java
+ 	14May2018/Ex15Drills1.java
+	14May2018/Ex15Drills2.java
+	14May2018/Ex15Drills3.java
+	14May2018/Ex16Drills1.java
+	14May2018/Ex16Drills2.java
+ 	14May2018/Ex17Drills1.java
+ 	14May2018/Ex18Drills1.java
+ 	14May2018/Ex18Drills2.java
+ 	14May2018/Ex18Drills3.java
+ 	14May2018/Ex18Drills4.java
+	14May2018/Ex19Drills1.java
+ 	14May2018/Ex19Drills2.java
+	14May2018/Ex20Drills1.java
+ 	14May2018/Ex20Drills2.java
+ 	14May2018/Ex20Drills3.java
+ 	14May2018/Ex21Drills1.java
+ 	14May2018/GenderTitles.java
+ 	14May2018/SecretWord.java
+	LOG/LOGANDR-14May2018.txt

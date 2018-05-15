@@ -1,0 +1,114 @@
+Soal if statement (Richa)
+
+1. Travel 79.
+bayangkan kamu ingin pergi untuk travelling namun kamu bingung untuk memilih destinasi
+yang sesuai dengan budget kamu. Travel 79 akan merekomendasikan destinasi
+yang sesuai dengan kondisi kamu. Berikut adalah pilihan destinasinya:
+
+-Lombok-
+tiket pesawat PP: 	Rp. 2.170.000,- per orang
+hotel		: 	Rp. 255.000,- per malam per 2 orang
+makan sehari	:	Rp. 75.000,- per hari per orang
+Snorkling**	:	Rp. 250.000,- per orang
+
+
+-Bangkok-
+tiket pesawat PP: 	Rp. 3.780.000,- per orang
+hotel		: 	Rp. 305.000,- per malam per 2 orang
+makan sehari	:	Rp. 55.000,- per hari per orang
+belanja**	:	Rp. 300.000,- per orang
+
+-Singapura-
+tiket pesawat PP: 	Rp. 1.200.000,- per orang
+hotel		: 	Rp. 335.000,- per malam per 2 orang
+makan sehari	:	Rp. 85.000,- per hari per orang
+unvrsl studio**	:	Rp. 360.000,- per orang
+
+-Tokyo-
+-Singapura-
+tiket pesawat PP: 	Rp. 4.760.000,- per orang
+hotel		: 	Rp. 355.000,- per malam per 2 orang
+makan sehari	:	Rp. 105.000,- per hari per orang
+ski**		:	Rp. 325.000,- per orang
+
+**optional
+
+output :
+
+========WELCOME TO TRAVEL 79.com==========
+
+Tentukan dengan mudah destinasi terbaikmu!
+Nama: Richa
+Berapa orang yang ikut travel bersamamu? 3
+Berapa hari kamu akan pergi? 3
+Budget kamu berapa, Richa? 10.000.000
+Destinasi rekomendasi kami untuk Richa adalah Lombok
+Gagal: (Mohon maaf kami tidak menemukan pilihan destinasi yang sesuai)
+
+Apakah kamu ingin snorkling? (Y/N)
+Y
+
+Total yang harus kamu bayar untuk ke Lombok adalah 9.465.000
+
+**rekomendasi adalah destinasi yang paling murah dan mendekati budget
+
+
+
+2. Rudi Tabuti berencana untuk menyisihkan sebagian gajinya untuk membeli rumah dan mobil secara kredit.
+Gaji bersih Rudi sebesar Rp 8.500.000,- / bulan. Ia juga menggunakan sebagian gajinya untuk kebutuhan sandang dan pangan.
+Besarnya kebutuhan sandang dan pangan tersebut bergantung pada besarnya kredit rumah dan mobil / bulannya.
+
+Jika:
+-kredit mobil <3% perbulan dan rumah <1% perbulan maka Rudi dapat menggunakan gajinya untuk kebutuhan sandang dan pangan sebesar 50% dari gajinya
+-kredit mobil <5% perbulan dan rumah <2% perbulan maka Rudi dapat menggunakan gajinya untuk kebutuhan sandang dan pangan sebesar 35% dari gajinya
+-kredit mobil <7% perbulan dan rumah <3% perbulan maka Rudi dapat menggunakan gajinya untuk kebutuhan sandang dan pangan sebesar 25% dari gajinya
+
+sisa gajinya ditabung oleh Rudi
+**persenan yang melebih syarat tersebut menghasilkan output => Maaf, uang Anda tidak mencukupi :(
+
+harga mobil = 45.000.000
+harga rumah = 125.000.000
+
+Output: 
+
+Kredit rumah per bulan (%): 2.35
+
+Kredit mobil per bulan (%): 1.5
+
+Tabungan Rudi Tabuti per bulan: 2.600.000
+
+
+3. Para Avengers sedang merencankan RAB tahun 2050 untuk upgrade senjata mereka. Iron man membutuhkan amunisi tambahkan untuk Jarvis sebesar $15000, Thor ingin membeli palu baru dengan kekuatan petir yang lebih dahsyat sebesar $32000, hulk ingin membeli peralatan lab sebesar $13500, captain america ingin membeli kendaraan baru yang diperkiran hingga $20500 dan Spiderman ingin membeli jaring laba-laba anti badai sebesar $5000. Tapi pengeluaran tersebut tidak harus dipenuhi tergantung dari performa masing-masing avenger. Total RAB untuk tahun 2050 hanya sebesar $50000
+
+skala performa 0.0-10.0
+
+performa < 3 => tidak mendapatkan apa2 justru dikenakan denda sebesar $1000
+performa 3 - 5 => mendapatkan dana sebesar 30% dari dana yang diajukan
+performa 5.1 -7 =>  mendapatkan dana sebesar 50% dari dana yang diajukan
+performa 7.1-9 => mendapatkan dana sebesar 75% dari dana yang diajukan
+perform 9.1-10.0 => mendapatkan 100% dana 
+
+output:
+
+Daftar performa avengers!
+Iron man: 5.6
+Thor: 2.5
+Hulk: 7.3
+Captain Amerika: 9
+Spiderman: 4
+
+(jika melebihi RAB, output => Sorry, RAB tidak mencukupi )
+total RAB yang digunakan: $34500
+
+sisa RAB termasuk denda: $16500
+
+
+
+ 
+
+
+
+
+
+
+
