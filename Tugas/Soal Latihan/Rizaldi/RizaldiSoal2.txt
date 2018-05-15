@@ -32,7 +32,8 @@ E = kurang dari 6
 - dinyatakan DO apabila semua nilai mata pelajaran berbobot "E" dengan keterangan Genius
 - dan dinyatakan DO apabila semua nilai mata pelajaran berbobot "A" dengan keterangan musthail.
 
-inputan ========================================
+inputan :
+====================================================
 nilai IPA :
 nilai IPB :
 nilai IPC :
@@ -41,14 +42,20 @@ nilai IPE :
 nilai IPF :
 nilai IPG :
 nilai IPH :
-=================================================
+====================================================
 keterangan  : lulus/tidak lulus/Drop Out(genius/mustahil)
 bobot nilai : A s/d E
- 
+====================================================
+End Soal no 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
 Soal no 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 skala nilai 1 sd 10
 
 inputan :
+====================================================
 skill drible    :
 speed           :
 body balance    :
@@ -58,13 +65,18 @@ accuracy        :
 stamina         :
 ===================================================
 posisi yang cocok adalah : (misal) center back.
-
+====================================================
 - untuk menjadi posisi Center Back kriteria = body balance > 9, jump >= 7, speed >= 7, atau stamina = 10.
 - untuk menjadi posisi Winger = speed dan skill drible wajib di atas 9.
 - untuk menjadi posisi striker = accuracy wajib 10 dan shooting power diatas 8. atau jump, speed dan body balance minimal 9.
 - jika semua kriteria nilai nya 10 kecuali stamina dibawah 4 maka posisinya adalah pelatih.
 - meskipun semua kriteria diatas 9 namun stamina dibawah 8 maka posisi nya adalah Cadangan Mati.
 - jika semua kriteria dibawah 2 kecuali stamina dan speed, posisi yang dambil adalah Wasit.
+
+End Soal no 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
 
 Soal no 3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 tono ingin membeli tiket liburan ke bulan seharga 32000000 usd.
@@ -76,9 +88,11 @@ berapa uang tono            : Rp
 uang tono kurang sebesar    : Rp
 lama tono harus menabung    : bulan
 keterangan                  : sebutkan persentase uang tono ke harga tiket + catatan
-
+====================================================
 berapa lama lagi tono harus menabung dari uang gaji bulanan nya ?
 
 - jika uang tono lebih dari 90% dari harga tiket tulis catatan di keterangan " Sabar ton bentar lagi..."
 - jika uang tono lebih dari 60% dari harga tiket tulis catatan di keterangan " jual rumah aja..."
 - jika uang tono kurang dari 40% dari harga tiket tulis catatan di keterangan " bisa pergi, gak usah pulang..."
+
+End Soal no 3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
