@@ -1,0 +1,84 @@
+/*
+ * File           : RizaldiSoal2.txt
+ * Project Name   : Soal If Else
+ * Project Path   : d:\xampp\htdocs\BootCampG7\Tugas\Soal Latihan\Rizaldi
+ * ---------------
+ * Author         : Rizaldi R_Nensia
+ * Email          : rizaldi.95@gmail.com
+ * File Created   : Monday, 14th May 2018 10:19:41 pm
+ * ---------------
+ * Modified By    : Rizaldi R_Nensia
+ * Last Modified  : Monday, 14th May 2018 10:19:44 pm
+ * ---------------
+ * Copyright Rizaldi R_Nensia - >R<
+ */
+
+
+
+
+Soal no 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+bobot nilai:
+A = 9 sd 10
+B = 8 sd 9
+C = 7 sd 8
+D = 6 sd 7
+E = kurang dari 6
+
+- ada 8 mata pelajaran : IPA, IPB, IPC, IPD, IPE, IPF, IPG, IPH
+- untuk dapat lulus minimal harus lulus 6 mata pelajaran. 
+- jika bobot nilai pelajaran D ke bawah, maka dinyatakan tidak lulus mata pelajaran
+- untuk dapat lulus sekolah, nilai rata-rata dari gabungan pelajaran harus berbobot "B"
+- meski nilai rata-rata gabungan nya berbobot "B" ke atas, namun jika terdapat satu pelajaran bernilai E maka di anggap tidak lulus
+- dinyatakan DO apabila semua nilai mata pelajaran berbobot "E" dengan keterangan Genius
+- dan dinyatakan DO apabila semua nilai mata pelajaran berbobot "A" dengan keterangan musthail.
+
+inputan ========================================
+nilai IPA :
+nilai IPB :
+nilai IPC :
+nilai IPD :
+nilai IPE :
+nilai IPF :
+nilai IPG :
+nilai IPH :
+=================================================
+keterangan  : lulus/tidak lulus/Drop Out(genius/mustahil)
+bobot nilai : A s/d E
+ 
+Soal no 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+skala nilai 1 sd 10
+
+inputan :
+skill drible    :
+speed           :
+body balance    :
+jump            :
+shooting power  :
+accuracy        :
+stamina         :
+===================================================
+posisi yang cocok adalah : (misal) center back.
+
+- untuk menjadi posisi Center Back kriteria = body balance > 9, jump >= 7, speed >= 7, atau stamina = 10.
+- untuk menjadi posisi Winger = speed dan skill drible wajib di atas 9.
+- untuk menjadi posisi striker = accuracy wajib 10 dan shooting power diatas 8. atau jump, speed dan body balance minimal 9.
+- jika semua kriteria nilai nya 10 kecuali stamina dibawah 4 maka posisinya adalah pelatih.
+- meskipun semua kriteria diatas 9 namun stamina dibawah 8 maka posisi nya adalah Cadangan Mati.
+- jika semua kriteria dibawah 2 kecuali stamina dan speed, posisi yang dambil adalah Wasit.
+
+Soal no 3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+tono ingin membeli tiket liburan ke bulan seharga 32000000 usd.
+gaji tono perbulan : Rp 1.000.000
+
+inputan :
+berapa uang tono            : Rp
+====================================================
+uang tono kurang sebesar    : Rp
+lama tono harus menabung    : bulan
+keterangan                  : sebutkan persentase uang tono ke harga tiket + catatan
+
+berapa lama lagi tono harus menabung dari uang gaji bulanan nya ?
+
+- jika uang tono lebih dari 90% dari harga tiket tulis catatan di keterangan " Sabar ton bentar lagi..."
+- jika uang tono lebih dari 60% dari harga tiket tulis catatan di keterangan " jual rumah aja..."
+- jika uang tono kurang dari 40% dari harga tiket tulis catatan di keterangan " bisa pergi, gak usah pulang..."
