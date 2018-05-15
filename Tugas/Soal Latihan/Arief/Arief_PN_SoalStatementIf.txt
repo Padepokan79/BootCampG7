@@ -1,0 +1,83 @@
+1. Tol Ganjil/Genap
+
+Plat nomor yang boleh masuk ditentukan berdasarkan tanggal, ganjil atau genap. Namun jika tanggal merah, dan hari libur, semua kendaraan boleh masuk. Kendaraan roda dua dengan kapasitas mesin dibawah 1000 CC dilarang masuk kapanpun itu, tetapi jika memiliki izin dari kepolisian dan dikawal langsung oleh polisi, kendaraan apapun boleh masuk.
+
+OUTPUT
+___________________________________________
+
+Jalan Bebas Hambatan dan Kenangan PasoePati
+___________________________________________
+
+Tanggal		:
+Hari Libur	:
+Jenis Kendaraan	:
+Kapasitas Mesin	:
+Surat Izin	:
+Pengawalan	:
+
+Status		: Diijinkan Memasuki Toll		>> Jika semua terpenuhi
+		  Kendaraan Roda 2 dilarang masuk	>> Jika kapasitas mesin tidak mencapai 1000CC
+		  Khusus kendaraan dengan plat ganjil	>> Jika kendaraan ber plat genap, begitu juga sebaliknya
+		  Bebas Masuk Hari Libur		>> Jika hari libur
+___________________________________________
+
+	Semoga Selamat Sampai Tujuan
+___________________________________________
+
+
+2. Laptop Keroro
+
+Keroro ingin membeli laptop baru agar bisa main game high-end terbaru, budget yang ia keluarkan ingin 7.000.000 dan tidak lebih dari 10.000.000 dengan spesifikasi RAM 8GB, HDD 1TB, Kecepatan Processor ada di rentang 2.8 GHz ~ 3.5 GHz, namun ia akan tetap membeli berapapun harganya jika Kecepatan processor setidaknya 4.2 GHz atau merek gaming ternama. disisi lain ia tidak suka laptop dengan spesifikasi RAM lebih sedikit dari 8 GB, atau HDD kurang dari 500GB
+
+OUTPUT
+___________________________________________
+
+	PORORO LAPTOP AND PC CENTER
+___________________________________________
+
+Merek		:
+RAM		:
+HDD		:
+Processor	:
+Harga		:
+
+Status		: Anda Fanboy			>> Jika Merek ternama yang dibeli
+		  Setuju untuk dibeli		>> Jika semua terpenuhi
+		  Laptop Ngelag			>> Ram / HDD dibawah keinginan
+		  Anda Sultan Fanboy		>> Jika Laptop Mahal dan Merk Ternama
+___________________________________________
+
+	     Semoga Bermanfaat
+___________________________________________
+
+
+3. Motor Pororo
+
+Pororo seorang rider, ia membutuhkan motor yang bisa mengimbangi skillnya di jalan. Ia ingin membeli motor dengan kapasitas mesin setidaknya 250CC untuk penggunaan sehari-hari, minimal 650CC untuk touring, yang akan ia gunakan di zona Indonesia, di jepang ia ingin memakai motor berkapasitas mesin 650CC untuk penggunaan harian, dan 1200CC untuk touring, sedangkan di UK (United Kingdom) ia ingin motor 900CC untuk keperluan harian ataupun untuk touring. Karna dia Fanboy, dia lebih suka motor merk Yamaha, BMW di indonesia, Kawasaki atau Honda di jepang, KTM, Husqwarna, atau BMW di UK, diluar zona itu ia memilih menggunakan pesawat pribadi. Selain itu ia memiliki motor impian nya yang pasti ia beli seperti, BMW 1200GS kapasitas 1200CC, kawasaki ZXR kapasitas 1200CC, Husqvarna Nuda kapasitas 900CC, KTM XBOW kapasitas 600CC, Yamaha TENERE kapasitas 1000CC.
+
+OUTPUT
+___________________________________________
+
+	  KERORO RIDING ENTHUSIAST
+___________________________________________
+
+Merek		:
+Tipe		:
+Kapasitas Mesin	:
+Keperluan	:	>> apakah untuk touring atau harian, dll
+Zona		:	>> dimana penggunaan kendaraan
+Harga		:
+
+Status		: Cocok untuk kondisi jalan (nama zona)			>> Disesuaikan dengan Zona
+		  Motor terlalu lambat					>> CC mesin dibawah standar
+		  Motor Khayalan (Tidak ada yang seperti itu)		>> Jika motor impian, Merek != Tipe != Kapasitas mesin
+		  Menggunakan pesawat pribadi, Sultan Mah Bebas		>> Diluar zona yang tersedia
+		  Khusus Harian						>> Jika CC dibawah kapasitas touring
+		  Bisa untuk Touring					>> Jika CC touring memungkinkan
+		  Saya Fanboy						>> Jika merk tidak diinginkan
+___________________________________________
+
+	      Have A Nice Ride
+___________________________________________
+
+NOTE : Output "Status" bisa lebih dari satu disesuaikan dengan input, tidak menutup kemungkinan jika ingin menambahkan "Status", ataupun inputan apabila ada yang dirasa kurang.
