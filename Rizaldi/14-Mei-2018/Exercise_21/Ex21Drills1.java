@@ -46,8 +46,8 @@ public class Ex21Drills1{
                     title="Ms";
                 }          
             }  
-            System.out.println( "\n" + title + " " + last );            
         }        
+        System.out.println( "\n" + title + " " + last );            
     }
 }
 // error karena title akan selalu berisi nilai, dan compiler tidak bisa memastikan dalam if bercabang
