@@ -1,0 +1,11 @@
+Add file:   Arief/15-05-2018/LatihanIfStatement/Alifhar/Alifhar01.java
+Add file:   Arief/15-05-2018/LatihanIfStatement/Alifhar/Alifhar02.java
+Add file:   Arief/15-05-2018/LatihanIfStatement/Andrian/Andrian01.java
+Add file:   Arief/15-05-2018/LatihanIfStatement/Andrian/Andrian03.java
+Add file:   Arief/15-05-2018/LatihanIfStatement/Arief/Arief01.java
+Add file:   Arief/15-05-2018/LatihanIfStatement/Arief/Arief02.java
+Add file:   Arief/15-05-2018/LatihanIfStatement/Chaudry/Chaudry01.java
+Add file:   Arief/15-05-2018/LatihanIfStatement/Chaudry/Chaudry03.java
+Add file:   Arief/15-05-2018/LatihanIfStatement/Rizaldi/Rizaldi02.java
+Add file:   Arief/15-05-2018/LatihanIfStatement/Rizaldi/Rizaldi03.java
+modified:   LOG/LOGAPN-15Mei2018.txt
