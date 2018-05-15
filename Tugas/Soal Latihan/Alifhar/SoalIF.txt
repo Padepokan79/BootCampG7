@@ -1,0 +1,40 @@
+Soal IF
+
+1. Buatlah program untuk mencari jenis sebuah bilangan
+Jenis bilangan
+Positif, negatif --> riil
+		 --> bulat --> genap
+			   --> ganjil
+=====================================
+Masukkan bilangan: 39
+=====================================
+Bilangan tersebut adalah
+Bilangan bulat ganjil positif
+=====================================
+contoh lain: -32.3 --> bilangan riil negatif
+	     12.00 --> bilangan bulat genap positif
+
+
+2. Buatlah program untuk mencari angka terdepan dan angka paling belakang dalam sebuah bilangan. Lalu tentukan nilai dari angka tersebut didalam bilangan. 
+*Bilangan harus bernilai antara 1 sampai 9999.
+*Jika bilangan hanya bernilai satuan, maka angka terdepan dan paling belakang akan bernilai sama
+=============================================
+Masukkan bilangan: 1996
+=============================================
+angka terdepan: 1 dengan nilai ribuan
+angka paling belakang: 6 dengan nilai satuan
+=============================================
+
+
+3. Diketahui sebuah persamaan ax^2 + bx + c = 0, dengan a, b dan c adalah konstanta. Carilah akar-akar dari persamaan tersebut dan tentukan jensnya. (akar kembar, akar berbeda, akar imajiner)
+===========================================================
+nilai a: 1
+nilai b: -5
+nilai c: 6
+
+persamaan kuadratnya adalah x^2 - 5x + 6 = 0
+===========================================================
+Maka didapatkan akar akar dari persamaan tersebut adalah:
+akar berbeda, dengan
+x1 = -2 dan x2 = -3
+===========================================================
