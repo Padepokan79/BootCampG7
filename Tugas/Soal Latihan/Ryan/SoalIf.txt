@@ -1,0 +1,15 @@
+1. Seorang anak mempunyai 3 buah mobil dengan rincian kecepatan
+	mobil 1 30km/jam asumsi bensin 1liter/15km
+	mobil 2 35km/jam asumsi bensin 1liter/10km
+	mobil 3 45km/jam asumsi bensin 1liter/20km
+
+Mobil mana yang cocok untuk menempuh jarak 200 km degan menunjukan semua mobil, dengan 1 rekomendasi mobil tercepat dan hemat
+
+2. Ana mempunyai 2 rumah yang akan dijadikan tempat kos dengan rincian harga dan rumah
+	R1 = 650rb/kamar, ada 4 kamar, maks perkamar 3 orang
+	R2 = 350rb/kamar, ada 7 kamar, maks perkamar 2 orang
+
+buatlah algoritma yang dapat menentukan ke kosan mana orang harus ngekos dengan harga minimum  
+
+3. ayah ingin membeli burung dengan spesifikasi berkicau 3x sehari, warna merah campur biru, harga 300ribu
+   setiap ada yang bisa berkicau 2x lebih dari  sehari ayah bisa membeli 1,5x/2x tambahan kicau dari harga yang ditawarkan diatas
