@@ -1,6 +1,7 @@
 /*
-created by : Malik Chaudhary
-time : 15-05-2018 1:32PM
+created by 	: Malik Chaudhary
+time 		: 15-05-2018 1:32PM
+
 Soal :
 
 Andi ingin menentukan statistik bulan, mulai dari januari sampai desember.

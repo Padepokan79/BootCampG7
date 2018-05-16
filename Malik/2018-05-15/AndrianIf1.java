@@ -1,6 +1,8 @@
 /*
-created by : Malik Chaudhary
-time : 15-05-2018 10:03AM
+created by 	: Malik Chaudhary
+time 		: 15-05-2018 10:03AM
+update		: 15-05=2018 8:28PM
+
 Soal :
 
 Ada tempat fotokopi "Unity Fotocopy" apabila dia pelanggan pada tempat
@@ -22,6 +24,7 @@ Harga 					=
 Bayar					= 
 ============================================== 
 */
+
 import java.util.Scanner;
 public class AndrianIf1{
 	public static void main(String[] args){
@@ -31,17 +34,17 @@ public class AndrianIf1{
 		int lembar, ratus, duaratus;
 		double minHarga, bayar, minHargaTiga, minHargaDua, minHargaSatu;
 
-		minHarga = 75;
-		minHargaSatu = 150;
-		minHargaDua = 100;
-		minHargaTiga = 80;
-		ratus = 100;
-		duaratus = 200;
+		minHarga 		= 75;
+		minHargaSatu 	= 150;
+		minHargaDua 	= 100;
+		minHargaTiga 	= 80;
+		ratus 			= 100;
+		duaratus 		= 200;
 
 		System.out.println("==============================");
-		System.out.print("Apakah anda member (Y/N) : ");
+		System.out.print("Apakah anda member (Y/N)	: ");
 		member = fotokopi.next();
-		System.out.print("Banyak lembar yang akan di fotocopy : ");
+		System.out.print("Banyak lembar yang akan di fotocopy 	: ");
 		lembar = fotokopi.nextInt();
 		System.out.println("==============================");
 
