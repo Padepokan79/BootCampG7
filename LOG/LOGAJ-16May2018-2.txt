@@ -1,0 +1,15 @@
+Add file in Tugas/TugasLatihan/Alifar/"Tugas For"
+	AllInt.java
+	EvenNumber.java
+	Fengshui.java
+	GuessingGame1.java
+	GuessingGame2.java
+	OddNumber.java
+	SplitWord.java
+	ThirtyWord.java
+	TugasFor1.java
+	TugasFor2.java
+	Word.java
+
+Add file in Alifhar/16May2018
+	CountingFor.java

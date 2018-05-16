@@ -1,0 +1,15 @@
+Menambahkan sub folder pada TugasLatuhan/Andrian/LatihanFor
+	LatihanFor
+
+Menambahkan file :
+	TugasFor
+	tugasFor
+	TugasForDotseparation
+	TugasForEvenNumber
+	TugasForOddNumber
+	TugasForGuessingGame1
+	TugasForGuessingGame2
+	TugasForHPFengsui
+	TugasForRepeatingword
+	TugasForSeperatingWord
+	TugasForStartingNumber

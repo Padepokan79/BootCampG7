@@ -1,0 +1,14 @@
+Add
+
+LtihanIfRicha1.java
+LatihanIfRicha2.java
+LatihanIfAndrian1.java
+LatihanIfAndrian2.java
+LatihanIfChaudry1.java
+LatihanIfChaudry2.java
+LatihanIfMalik1.java
+LatihanIfMalik2.java
+
+Modify
+
+SoalIf.txt
