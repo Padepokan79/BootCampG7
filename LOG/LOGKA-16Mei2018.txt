@@ -1,0 +1,19 @@
+10:59 
+
+Adding File Sendiri/LocalTrainRoute.java 
+create mode 100644 Khairil/16-05-2018/MalikIfElse2.java
+create mode 100644 Khairil/16-05-2018/MalikIfElse3.java
+create mode 100644 Khairil/16-05-2018/YanaIfElse1.java
+create mode 100644 Khairil/16-05-2018/YanaIfElse2.java
+
+15:48
+
+create mode 100644 Tugas/TugasLatihan/Khairil/LatihanFor/DotOnYourWord.java
+create mode 100644 Tugas/TugasLatihan/Khairil/LatihanFor/FengShui.java
+create mode 100644 Tugas/TugasLatihan/Khairil/LatihanFor/JavaGuessingNum.java
+create mode 100644 Tugas/TugasLatihan/Khairil/LatihanFor/JavaGuessingNum2.java
+create mode 100644 Tugas/TugasLatihan/Khairil/LatihanFor/PrintedEvenNumber.java
+create mode 100644 Tugas/TugasLatihan/Khairil/LatihanFor/PrintedOddNumber.java
+create mode 100644 Tugas/TugasLatihan/Khairil/LatihanFor/RepeatChar.java
+create mode 100644 Tugas/TugasLatihan/Khairil/LatihanFor/SeparateWord.java
+create mode 100644 Tugas/TugasLatihan/Khairil/LatihanFor/StartingValueEndingValue.java

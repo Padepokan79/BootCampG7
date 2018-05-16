@@ -1,6 +1,7 @@
 /*
-created by : Malik Chaudhary
-time : 15-05-2018 2:51PM
+created by 	: Malik Chaudhary
+time 		: 15-05-2018 2:51PM 
+
 Soal :
 Seorang anak mempunyai 3 buah mobil dengan rincian kecepatan
 	mobil 1 30km/jam asumsi bensin 1liter/15km
@@ -8,8 +9,8 @@ Seorang anak mempunyai 3 buah mobil dengan rincian kecepatan
 	mobil 3 45km/jam asumsi bensin 1liter/20km
 
 Mobil mana yang cocok untuk menempuh jarak 200 km degan menunjukan semua mobil, dengan 1 rekomendasi mobil tercepat dan hemat
-
 */
+
 import java.util.Scanner;
 public class RyanIf1{
 	public static void main(String[] args){

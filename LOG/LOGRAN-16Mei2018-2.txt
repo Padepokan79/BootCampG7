@@ -1,0 +1,13 @@
+Add
+
+AllInteger.java
+EvenNumber.java
+FengShui.java
+GuessingGame1.java
+GuessingGame2.java
+Octopus.java
+OddNumber.java
+RepeatWordByCharacters.java
+TugasForKelipatan.java
+TugasForPedagangKue.java
+TwoWordsAndDots.java

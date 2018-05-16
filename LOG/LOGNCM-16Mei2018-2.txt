@@ -1,0 +1,14 @@
+15.53
+
+- menambahkan file CountingFor.java
+- menambahkan file Fengshui.java
+- menambahkan file GameGuessing01.java
+- menambahkan file GameGuessing02.java
+- menambahkan file Octopus.java
+- menambahkan file PrintedEvenNumber.java
+- menambahkan file PrintedOddNumber.java
+- menambahkan file RepeatWord.java
+- menambahkan file TugasForCounting.java
+- menambahkan file TugasForCounting2.java
+- menambahkan file TwoWord.java
+- menambahkan file ValueEnding.java

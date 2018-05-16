@@ -1,6 +1,7 @@
 /*
-created by : Malik Chaudhary
-time : 15-05-2018 12:55AM
+created by 	: Malik Chaudhary
+time 		: 15-05-2018 12:55AM
+
 Soal :
 
 Menentukan nilai Adi 
