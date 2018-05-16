@@ -1,0 +1,8 @@
+Add
+
+LatihanIfArief1.java
+LatihanIfArief2.java
+LatihanIfYana1.java
+LatihanIfYana2.java
+LatihanIfVikri1.java
+LatihanIfVikri2.java
