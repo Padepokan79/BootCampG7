@@ -1,3 +1,18 @@
 08:04
 
 adding file to Khairil-SoalTugasIfElse.txt
+
+--------------------------------------------------------------
+
+15:55
+
+create mode 100644 Khairil/15-05-2018/AlifharIfElse1.java
+create mode 100644 Khairil/15-05-2018/AlifharIfElse3.java
+create mode 100644 Khairil/15-05-2018/AndrianIfElse1.java
+create mode 100644 Khairil/15-05-2018/AndrianIfElse3.java
+create mode 100644 Khairil/15-05-2018/AriefIfElse1.java
+create mode 100644 Khairil/15-05-2018/AriefIfElse2.java
+create mode 100644 Khairil/15-05-2018/ChaudhryIfElse1.java
+create mode 100644 Khairil/15-05-2018/ChaudhryIfElse3.java
+create mode 100644 Khairil/15-05-2018/Sendiri/PeluangDadu.java
+create mode 100644 Khairil/15-05-2018/Sendiri/FizzBizz.java
