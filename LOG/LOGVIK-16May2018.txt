@@ -1,0 +1,4 @@
+adding : new file:   SoalIfRizaldi2.java
+         new file:   SoalIfYana.java
+         new file:   SoalIfYana2.java
+         new file:   soalIfRizaldi.java
