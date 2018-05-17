@@ -24,7 +24,6 @@ Harga 					=
 Bayar					= 
 ============================================== 
 */
-
 import java.util.Scanner;
 public class AndrianIf1{
 	public static void main(String[] args){
