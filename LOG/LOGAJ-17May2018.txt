@@ -1,0 +1,5 @@
+Add file in Alifhar/17May2017
+	Komandan.java
+	Prime.java
+	Ketupat.java
+	
