@@ -1,6 +1,8 @@
 /*
-created by : Malik Chaudhary
-time : 15-05-2018 2:08PM
+created by  : Malik Chaudhary
+time        : 15-05-2018 2:08PM
+update      : 15-05-2018 8:39PM
+
 Soal :
 
 Budi ingin mengetahui seberapa baik dirinya melalui, mesin pendeteksi
@@ -32,6 +34,7 @@ public class MalikIf2{
       Scanner sifat = new Scanner(System.in);
 
       double jujur, bohong, sombong, angkuh;
+      int tigaLima, limaBelas, lima, delapan, enam, tujuh, sembilan, dua;
 
       System.out.println("======================");
       System.out.println(" DETECTED UR ATTITUDE ");
@@ -46,23 +49,31 @@ public class MalikIf2{
       angkuh = sifat.nextDouble();
       System.out.println("------------------------");
 
+      tigaLima    = 35;
+      limaBelas   = 15;
+      lima        = 5;
+      delapan     = 8;
+      enam        = 6;
+      tujuh       = 7
+      sembilan    = 9;
+      dua         = 2;
 
-      if ( ( jujur+bohong+angkuh+sombong ) > 35 ) {
+      if ( ( jujur+bohong+angkuh+sombong ) > tigaLima ) {
             System.out.print("SELAMAT! anda sangat baik");  
-      }else if ( ( jujur+bohong+angkuh+sombong ) < 15 ) {
+      }else if ( ( jujur+bohong+angkuh+sombong ) < limaBelas ) {
             System.out.print("SELAMAT! anda buruk"); 
-      }else if ( ( jujur+bohong+angkuh+sombong ) < 5 ) {
+      }else if ( ( jujur+bohong+angkuh+sombong ) < lima ) {
             System.out.print("SELAMAT! anda kurang baik"); 
-      }else if ( jujur == 8 ) {
-         if ( bohong < 5 ) {
-            if ( sombong <= 6 ) {
-               if ( angkuh < 7 ) {
+      }else if ( jujur == delapan ) {
+         if ( bohong < lima ) {
+            if ( sombong <= enam ) {
+               if ( angkuh < tujuh ) {
                   System.out.print("SELAMAT! anda baik");
                }
             }
          }
-      }else if ( jujur == 9 ) {
-         if ( sombong <= 2 ) {
+      }else if ( jujur == sembilan ) {
+         if ( sombong <= dua ) {
             System.out.print("SELAMAT! anda baik");
          }
       }else{

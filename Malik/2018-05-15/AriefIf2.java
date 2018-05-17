@@ -1,6 +1,7 @@
 /*
-created by : Malik Chaudhary
-time : 15-05-2018 11:32AM
+created by 	: Malik Chaudhary
+time 		: 15-05-2018 11:32AM
+
 Soal :
 
 Keroro ingin membeli laptop baru agar bisa main game high-end terbaru, budget yang ia keluarkan ingin 7.000.000 dan 

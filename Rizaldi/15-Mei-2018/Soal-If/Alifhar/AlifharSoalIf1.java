@@ -18,34 +18,45 @@
 
 import java.util.Scanner;
 
-public class AlifharSoalIf1{
-    public static void main(String[] args){
-        Scanner keyboard=new Scanner (System.in);
-        
-        Double number, oddNumber;        
+public class AlifharSoalIf1 {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
 
-        System.out.println("======================================================");
-        System.out.println("Masukkan bilangan :           : ");
-        number=keyboard.nextDouble();
-        System.out.println("======================================================");
+		double angka, zero, eveNumber, oddNumber;
+		boolean bulat;
 
-        oddNumber=number%2;    
-        // positif negativ
-        if(number>=0){
-            System.out.println("Bilangan Bulat genap positif");                            
-        }
-        else if(number<0){
-            System.out.println("Bilangan Bulat ganjil negatif");    
-        }
-        // genap ganjil
-        if(oddNumber==0){
-            System.out.println("Bilangan riil genap positif ");    
-        }
-        else if(oddNumber!=0){
-            System.out.println("Bilangan riil ganjil positif ");
-        }
+		zero = 0;
+		eveNumber = 1;
+		oddNumber = 2;
 
-        
-        
-    }
+		System.out.println("=====================================");
+		System.out.print("Masukan bilangan: ");
+		angka = keyboard.nextDouble();
+		System.out.println("=====================================");
+		System.out.println("Bilangan tersebut adalah");
+		System.out.print("Bilangan ");
+
+		if (angka % oddNumber == eveNumber || angka % eveNumber == zero) {
+			System.out.print("bulat ");
+
+			bulat = (angka % oddNumber ) == eveNumber;
+
+			if (bulat) {
+				System.out.print("ganjil ");
+			}else{
+				System.out.print("genap ");
+			}
+		}else{
+			System.out.print("riil ");
+		}
+
+		if (angka < zero) {
+			System.out.print("negatif ");
+		}else {
+			System.out.print("positif");
+		}
+
+		System.out.println("\n=====================================");
+
+	}
 }

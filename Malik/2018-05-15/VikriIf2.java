@@ -1,6 +1,8 @@
 /*
-created by : Malik Chaudhary
-time : 15-05-2018 2:37PM
+created by 	: Malik Chaudhary
+time 		: 15-05-2018 2:37PM
+update		: 15-05-2018 8:43PM
+
 Soal :
 siswa dinyatakan naik kelas jika tidak bernama andi dan nilai mtk tidak dibawah 72 dan nilai agama tidak dibawah 75, 
 tapi bisa juga naik kelas jika spp nya lunas dan utang uang pembangunan tidak lebih dari 0
@@ -18,7 +20,7 @@ public class VikriIf2{
 
 		minNilai = 72;
 		maxNilai = 75;
-		nol = 0;
+		nol 	 = 0;
 
 		System.out.print("Masukan nama anda : ");
 		nama = siswa.next();
@@ -32,9 +34,7 @@ public class VikriIf2{
 		hutang = siswa.nextDouble();
 
 		lunas = spp.equals("sudah");
-		proses = ( ( !( nama.equals("andi") && nilaiMtk >= minNilai && nilaiAgama >= maxNilai ) ) || ( lunas && hutang <= 0 ) );
-
-
+		proses = ( ( !( nama.equals("andi") && nilaiMtk >= minNilai && nilaiAgama >= maxNilai ) ) || ( lunas && hutang <= nol ) );
 		if ( proses ) {
 			System.out.print("Selamat anda naik kelas");
 		}else{
