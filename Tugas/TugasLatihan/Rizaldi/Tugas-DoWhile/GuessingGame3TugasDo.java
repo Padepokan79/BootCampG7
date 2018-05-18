@@ -1,14 +1,14 @@
 /*
- * File           : GuessingGame3TugasWhile.java
- * Project Name   : Tugas-While
- * Project Path   : d:\xampp\htdocs\BootCampG7\Tugas\TugasLatihan\Rizaldi\Tugas-While
+ * File           : GuessingGame3TugasDo.java
+ * Project Name   : Tugas-DoWhile
+ * Project Path   : d:\xampp\htdocs\BootCampG7\Tugas\TugasLatihan\Rizaldi\Tugas-DoWhile
  * ---------------
  * Author         : Rizaldi R_Nensia
  * Email          : rizaldi.95@gmail.com
- * File Created   : Thursday, 17th May 2018 1:31:41 pm
+ * File Created   : Friday, 18th May 2018 1:30:53 pm
  * ---------------
  * Modified By    : Rizaldi R_Nensia
- * Last Modified  : Thursday, 17th May 2018 1:32:11 pm
+ * Last Modified  : Friday, 18th May 2018 1:32:02 pm
  * ---------------
  * Copyright Rizaldi R_Nensia - >R<
  */
@@ -19,7 +19,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class GuessingGame3TugasWhile{
+public class GuessingGame3TugasDo{
     public static void main(String[] args){
         Scanner keyboard=new Scanner (System.in);        
         Random rand = new Random();
@@ -38,12 +38,12 @@ public class GuessingGame3TugasWhile{
 
             point=0;
         indexRound=1;
-        while(indexRound<=round){            
+        do{            
             number=rand.nextInt(10)+1;
             System.out.println("Round================================== "+indexRound);
             index=1;
 
-            while( index<=maxGuess ){                 
+            do{                 
                 System.out.println("Enter a Guess : ");                                            
                 gues=keyboard.nextInt();                 
                 
@@ -67,14 +67,14 @@ public class GuessingGame3TugasWhile{
             }            
             index++;
             indexRound=indexRound+1;
-        }        
+        }while( index<=maxGuess );        
             System.out.println("=========================================="); 
             System.out.println("Correct answer is : "+number); 
             System.out.println("you won "+point+" from round 10 !!!"); 
             System.out.println("=========================================="); 
                                   
             
-        }                                    
+        }while(indexRound<=round);                                    
             if(point>9){
                 System.out.println("you are hacker "); 
             }
