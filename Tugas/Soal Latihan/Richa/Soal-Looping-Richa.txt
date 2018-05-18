@@ -1,0 +1,49 @@
+Soal looping (Richa)
+
+1.
+
+25 tahun yang lalu gaji pak Jokowi hanya 1500.000. Setelah berkarir cukup lama gaji pak jokowi
+meningkat 5% per tahunnya dan tiap 5 tahun beliau mungkin naik pangkat hingga gajinya menjadi 2 kali lipat dari yang sebelumnya. Berapa gaji pak jokowi sekarang?
+
+output:
+
+==================
+ Gaji Pak Jokowi
+==================
+
+Umur: 31 tahun
+Naik pangkat? Tidak
+gaji : 1500000
+
+-------------------
+Umur: 32 tahun
+Naik pangkat? Tidak
+gaji : 1575000
+
+-------------------
+.
+.
+.
+.
+.
+.
+------------------
+Umur: 35 tahun
+Naik pangkat? (y/n)
+y
+gaji: 3472875
+
+------------------
+Umur: 36 tahun
+Naik pangkat? Tidak
+gaji: 3646518
+
+------------------
+.
+.
+.
+.
+.
+.
+dan seterusnya
+
