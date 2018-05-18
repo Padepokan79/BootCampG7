@@ -1,0 +1,23 @@
+pilih satu saja !!! kerjakan keduanya kalo tertarik.. :)
+Soal 1 tugas Looping >>>>>>>>>>>>>>>>>>
+>GameBlerrr
+- ada kartu 2 sampai 10 dengan nilai point seperti masing masing nomor kartu dan jack, queen dan king dengan nilai point 10,
+- as merupakan kartu yang bisa menutupi sisa point. jadi currentPoint+as=21point;
+- ada tiga pemain. kamu akan berlomba dengan komputer1 dan komputer2.
+- yang terlebih dahulu mencapai 21 point akan menang.
+-giliran pertama di mulai oleh manusia. lalu giliran dua comp1, giliran tiga comp3, dan berulang ke manusia hingga salah satu pemain mencapai point 21.
+- jika point lebih besar dari 21, point kembali ke nol dan hangus.
+- tidak ada batas ronde.
+- jika point hangus 3 kali manusia kalah
+- komputer tidak punya batas hangus
+=========================================
+Soal 2 tugas Looping >>>>>>>>>>>>>>>>>>
+>lotre
+- anda membeli lotre dengan kriteria
+- harga 100 kesempatan mendapat point 0s/d10
+- harga 200=0s/d20, 300=0s/d50, 500=0s/d100
+- yang pertama kali mencapai point 1000 menang.
+- yang uang nya habis, kalah dan point lotre nya tidak dapet.
+- yang menjadi pemain 2 orang manusia.
+- diberi modal awal 100.000.
+
