@@ -1,0 +1,14 @@
+ Add file in Alifhar
+	IfAlifhar1.java
+        Alifhar2.java
+        IfAlifhar3.java
+        IfKhairil1.java
+        IfKhairil2.java
+        IfYana2.java
+        
+ Add file in Tugas/TugasLatihan/Alifar/tugas while
+	GuessWhile.java
+        ImprovedGuessing.java
+        PigDiceGame.java
+        TugasWhile1.java
+        TugasWhile2.java
