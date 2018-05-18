@@ -1,0 +1,1 @@
+1. Saat ini Budi mempunyai 200 butir kelereng, dan akan bertambah 20 butir setiap 5 menit. Sedangkan saat ini Man mempunyai 10 butir kelereng dan akan bertambah 40 butir setiap 5 menit. Pada menit berapakah jumlah kelereng Man akan mengejar jumlah kelereng Budi?
