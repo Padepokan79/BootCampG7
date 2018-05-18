@@ -1,14 +1,14 @@
 /*
- * File           : GanjilKelipatan.java
- * Project Name   : Tugas_For
- * Project Path   : d:\xampp\htdocs\BootCampG7\Tugas\TugasLatihan\Rizaldi\Tugas_For
+ * File           : GanjilKelipatanTugasWhile.java
+ * Project Name   : Tugas-While
+ * Project Path   : d:\xampp\htdocs\BootCampG7\Tugas\TugasLatihan\Rizaldi\Tugas-While
  * ---------------
  * Author         : Rizaldi R_Nensia
  * Email          : rizaldi.95@gmail.com
- * File Created   : Wednesday, 16th May 2018 11:44:24 am
+ * File Created   : Thursday, 17th May 2018 1:07:07 pm
  * ---------------
  * Modified By    : Rizaldi R_Nensia
- * Last Modified  : Wednesday, 16th May 2018 11:44:26 am
+ * Last Modified  : Thursday, 17th May 2018 1:07:37 pm
  * ---------------
  * Copyright Rizaldi R_Nensia - >R<
  */
@@ -16,25 +16,26 @@
 
 
 
+
 import java.util.Scanner;
 
-public class GanjilKelipatan{
+public class GanjilKelipatanTugasWhile{
     public static void main(String[] args){
         Scanner keyboard=new Scanner (System.in);
         
-        int n, ganjil, mod;
+        int index, ganjil, mod;
 
         System.out.println("angka kelipatan 4 dan angka ganjil : ");            
         
-        n=1;
-        while(n<=1000){
-            ganjil=n%2; 
-            mod=n%4;
+        index=1;
+        while(index<=100){
+            ganjil=index%2; 
+            mod=index%4;
                        
             if(ganjil!=0||mod==0){
-                System.out.print(" " +n);                            
+                System.out.print(" " +index);                            
             }
-            n=n+1;
+            index=index+1;
         }
 
 
