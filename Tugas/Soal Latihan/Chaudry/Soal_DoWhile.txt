@@ -1,0 +1,13 @@
+1. Micheal sedang memainkan sebuah permainan classik tebak huruf. Dimana Pemain dinyatakan menang jika salah satu pemain memiliki nyawa mencapai 16.
+ - nyawa awal yang tersedia : - Player 1 nyawa
+			      - Komputer 1 nyawa 
+ - ada 2 kesempatan bermain dalam 1 ronde
+ - max 20 ronde, dan pemain dinyatakan menang.
+ - jika tebakan player sama dengan tebakan komputer, maka player mendapatkan 2 nyawa
+ - jika tebakan player salah, maka nyawa player berkurang 1 dan komputer bertambah 2 nyawa
+ 
+ - jika pemain palyer menang pada ronde <= 8 --> "CHEATER"
+   jika pemain palyer menang pada ronde > 8 && <= 11  --> "NICE"
+   jika pemain palyer menang pada ronde > 11 --> "NOOB"
+ 
+ - jika selisih nyawa player dengan nyawa komputer = 6, maka permainan dimenangkan oleh pemain yang memiliki nyawa lebih unggul
