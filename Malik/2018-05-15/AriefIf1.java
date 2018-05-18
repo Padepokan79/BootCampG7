@@ -1,6 +1,8 @@
 /*
-created by : Malik Chaudhary
-time : 15-05-2018 10:47AM
+created by 	: Malik Chaudhary
+time 		: 15-05-2018 10:47AM
+update		: 15-05-2018 8:34PM
+
 Soal :
 
 Tol Ganjil/Genap
@@ -30,15 +32,14 @@ ___________________________________________
 
 	Semoga Selamat Sampai Tujuan
 ___________________________________________
-
-
 */
+
 import java.util.Scanner;
 public class AriefIf1{
 	public static void main(String[] args){
 		Scanner tol = new Scanner(System.in);
 
-		int tgl, kapasitas, plat;
+		int tgl, kapasitas, plat, satu, tigaSatu, seribu;
 		String hari, jenis, surat, pengawalan;
 		boolean tglGanjil, tglGenap, platGenap, platGanjil;
 
@@ -60,12 +61,16 @@ public class AriefIf1{
 		System.out.print("Pengawalan (Y/N) : ");
 		pengawalan = tol.next();
 
-		tglGanjil = (( tgl % 2 ) < 0); 
-		tglGenap = (( tgl % 2 ) == 0);
-		platGenap = (( plat % 2 ) == 0);
-		platGanjil = (( plat % 2 ) < 0);
+		tglGanjil 	= (( tgl % 2 ) < 0); 
+		tglGenap 	= (( tgl % 2 ) == 0);
+		platGenap 	= (( plat % 2 ) == 0);
+		platGanjil 	= (( plat % 2 ) < 0);
 
-		if ( tgl > 1 && tgl <= 31 ) {
+		satu 		= 1;
+		tigaSatu	= 31;
+		seribu		= 1000;
+
+		if ( tgl > satu && tgl <= tigaSatu ) {
 			if ( hari.equals("Y") ) {
 				System.out.println("Status : Bebas Masuk Hari Libur");
 			}else{
@@ -75,7 +80,7 @@ public class AriefIf1{
 					System.out.println("Status : Khusus kendaraan plat Ganjil");
 				}else if ( tglGenap != platGanjil ) {
 					System.out.println("Status : Khusus kendaraan plat Genap");
-				}else if ( kapasitas < 1000 && jenis.equals("Motor") ) {
+				}else if ( kapasitas < seribu && jenis.equals("Motor") ) {
 					System.out.println("Status : Kendaraan roda dua dilarang masuk");
 				}
 			}
@@ -85,11 +90,5 @@ public class AriefIf1{
 		System.out.println("___________________________________________");
 		System.out.println("Selamat Sampai Tujuan");
 		System.out.println("___________________________________________");
-		
-		
-		
-		
-		
-
 	}
 }

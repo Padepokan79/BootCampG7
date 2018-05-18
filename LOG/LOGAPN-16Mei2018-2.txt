@@ -1,0 +1,11 @@
+Add file:   ../Tugas/TugasLatihan/Arief/For/EvenNumber.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/FengShui.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/GuessGame1.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/GuessGame2.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/InclusiveIntegers.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/OddNumber.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/TugasFor1.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/TugasFor2.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/Word.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/Word2.java
+Add file:   ../Tugas/TugasLatihan/Arief/For/Word3.java
