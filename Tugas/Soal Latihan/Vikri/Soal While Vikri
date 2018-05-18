@@ -1,0 +1,28 @@
+diketahui pertandingan persib dan arema digelar hari ini, tapi tidak disiarkan tv karna kendala Stasiun televisi nya dibajak. 
+agar tidak membuat para pendukung sepak bola tah air tidak kecewa, akhirnya panitia persib membuat kuis PERSIB VS AREMA, cara main nya adalah: 
+
+	- tebak berapa gol yang dicetak persib dan arema di babak 1, lalu tebak lagi berapa gol di babak kedua.
+
+	- kemudian gol dibabak ke 1 dan kedua akan dijumlahkan sebagai skor akhir;
+
+	- jika skor akhir antara persib dan arema bisa ditebak maka, pemenang bisa mendapatkan paket umroh gratis bareng pemain persib.
+
+	- dan jika berhasil menebak skor akhir dari salah satu tim akan diberi kaos atep
+
+*Example
+gunakan do While
+skala skor 1 sd 10
+
+====================================
+Masukan gol Persib babak ke 1: 1
+Masukan gol Arema babak ke 1: 1
+====================================
+Masukan gol Persib babak ke 2: 2
+Masukan gol Arema babak ke 2: 2
+====================================
+
+Skor Akhir nya adalah 1 : 4
+Skor Tebakan Anda 3 : 3
+====================================
+Maaf coba lagi minngu depan
+====================================
