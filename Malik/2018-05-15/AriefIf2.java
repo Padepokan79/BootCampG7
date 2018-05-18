@@ -31,6 +31,7 @@ ___________________________________________
 ___________________________________________
 
 */
+
 import java.util.Scanner;
 public class AriefIf2{
 	public static void main(String[] args){

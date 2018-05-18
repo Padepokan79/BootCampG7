@@ -1,0 +1,17 @@
+Add file:   Arief/16-05-2018/Khairil/Khairil01.java
+Add file:   Arief/16-05-2018/Khairil/Khairil02.java
+Add file:   Arief/16-05-2018/Richa/Richa01.java
+Add file:   Arief/16-05-2018/Richa/Richa03.java
+Add file:   Arief/16-05-2018/Ryan/Ryan01.java
+Add file:   Arief/16-05-2018/Ryan/Ryan02.java
+Add file:   Arief/16-05-2018/Yana/Yana03.java
+Add file:   Arief/ModulJava/Exercise_44/CountingFor.java
+Add file:   Tugas/TugasLatihan/Arief/For/DiamondStar.java
+Add file:   Tugas/TugasLatihan/Arief/For/Prima.java
+Add file:   Tugas/TugasLatihan/Arief/For/SegitigaKalimat.java
+Add file:   Tugas/TugasLatihan/Arief/While/GuessGame2While.java
+Add file:   Tugas/TugasLatihan/Arief/While/GuessGame3While.java
+Add file:   Tugas/TugasLatihan/Arief/While/PigGame.java
+Add file:   Tugas/TugasLatihan/Arief/While/TugasWhile01.java
+Add file:   Tugas/TugasLatihan/Arief/While/TugasWhile02.java
+
