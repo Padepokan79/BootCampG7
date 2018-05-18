@@ -1,0 +1,5 @@
+Add file:   Tugas/Soal Latihan/Arief/Arief_PN_SoalLooping.txt
+Add file:   Tugas/TugasLatihan/Arief/While/GuessGame3DoWhile.java
+Add file:   Tugas/TugasLatihan/Arief/While/TugasDoWhile01.java
+Add file:   Tugas/TugasLatihan/Arief/While/TugasDoWhile02.java
+Modified:   Tugas/TugasLatihan/Arief/While/TugasWhile02.java

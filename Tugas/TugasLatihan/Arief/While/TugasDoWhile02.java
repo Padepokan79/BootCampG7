@@ -1,12 +1,12 @@
 /*
-Date Created	: 17 May 2018
+Date Created	: 18 May 2018
 Author			: Arief Pinasti Nugraha
 Date Modified	:
 Modified By		:
 */
 import java.util.Scanner;
 
-class TugasWhile02 {
+class TugasDoWhile02 {
 	public static void main(String[] args) {
 		Scanner inputKey = new Scanner(System.in);
 
@@ -22,10 +22,10 @@ class TugasWhile02 {
 		totMenit = (jam * waktu) + menit;
 		index = totMenit;
 
-		while (index >= nol) {
+		do{
 			index -= loop;
 			kue-=kueJual;
-		}
+		} while (index >= nol);
 		
 		System.out.println("Sisa kue Pedagang: " + kue);
 
