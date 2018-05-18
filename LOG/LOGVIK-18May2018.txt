@@ -1,0 +1,17 @@
+adding :
+        new file:   16-Mei-2018/Ex44/CountingFor.java
+        new file:   16-Mei-2018/Ex44/Ex44D1.java
+        new file:   16-Mei-2018/Ex44/Ex44D2.java
+        new file:   16-Mei-2018/Ex44/SoalLatihan1.java
+        new file:   16-Mei-2018/Ex44/SoalLatihan2.java
+        new file:   16-Mei-2018/Ex44/SoalLatihan3.java
+        new file:   16-Mei-2018/Ex44/SoalLatihan4.java
+        new file:   16-Mei-2018/Ex44/SoalLatihan5.java
+        new file:   16-Mei-2018/Ex44/SoalLatihan6.java
+        new file:   16-Mei-2018/Ex44/SoalLatihan7.java
+        new file:   16-Mei-2018/Ex44/SoalLatihan8.java
+        new file:   16-Mei-2018/Ex44/SoalLatihan9.java
+        new file:   16-Mei-2018/SoalIfRicha3.java
+        new file:   17-Mei-2018/Tugas1.java
+        new file:   17-Mei-2018/Tugas2.java
+        new file:   17-Mei-2018/Tugas3.java
