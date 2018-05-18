@@ -1,0 +1,19 @@
+10.48
+
+- Menambahkan folder IF, 18-05-2018, While
+
+Menambahkan Program baru
+- /Chaudry/18-05-2018/TugasIf/Khairil01.java
+- /Chaudry/18-05-2018/TugasIf/Khairil02.java
+- /Chaudry/18-05-2018/TugasIf/Rizaldi01.java
+- /Chaudry/18-05-2018/TugasIf/Rizaldi02.java
+- /Chaudry/18-05-2018/TugasIf/Ryan01.java
+- /Chaudry/18-05-2018/TugasIf/Ryan02.java
+- /Tugas/TugasLatihan/Chaudhry/For/TugasPerulangan01.java
+- /Tugas/TugasLatihan/Chaudhry/For/TugasPerulangan02.java
+- /Tugas/TugasLatihan/Chaudhry/For/TugasPerulangan03.java
+- /Tugas/TugasLatihan/Chaudhry/While/WhileAngkaGanjil.java
+- /Tugas/TugasLatihan/Chaudhry/While/WhileGuessingGame.java
+- /Tugas/TugasLatihan/Chaudhry/While/WhileGuessingGameRound.java
+- /Tugas/TugasLatihan/Chaudhry/While/WhileGuessingGameRoundPC.java
+- /Tugas/TugasLatihan/Chaudhry/While/WhileKuePedagang.java
