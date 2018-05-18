@@ -1,0 +1,4 @@
+Adding file 
+ 	new file:   TugasLatihan/Vikri/dowhile/SoalDoWhile.java
+        new file:   TugasLatihan/Vikri/dowhile/SoalDoWhile2.java
+        new file:   TugasLatihan/Vikri/dowhile/SoalDoWhile3.java
