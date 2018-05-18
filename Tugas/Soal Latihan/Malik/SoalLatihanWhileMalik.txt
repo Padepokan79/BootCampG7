@@ -1,0 +1,17 @@
+Nama	: Malik Chaudhary
+Time	: 2018-05-18 3:04PM
+
+=========================================================================================================================
+Soal :
+
+Rangga menginputkan jumlah pensilnya sendiri 
+rangga akan menebak jumlah pensilnya sendiri yang diacak oleh komputer
+
+- pertama bermain player memiliki 5 kesempatan yang diberikan
+- bila tebakan player benar, maka player mendapatkan satu kesempatan dan menambahkan 10 poin untuk skor
+- kesempatan berlaku bila ia salah menebak, maka kesempatan yang dimiliki berkurang
+- bila player sudah tidak memiliki kesempatan, maka permainan berakhir atau GAME OVER
+- terkecuali bila player memiliki poin min 10 dan kesempatan sudah habis maka program akan bertanya, apakah ingin menukar 10
+  poin untuk 1 kesempatan.
+
+  *note : bila ada yang bingung bisa ditanyakan langsung
