@@ -1,0 +1,12 @@
+Menambahkan sub folder pada TugasLatuhan/Andrian/
+	LatihanWhile
+
+Menambahkan file :
+	PigDiceGame
+	TugasWhileGuessingGame2
+	TugasWhileGuessingGame2
+	TugasWhile1
+	TugasWhile2
+	PrFor1
+	Prfor2
+	Prfor3
