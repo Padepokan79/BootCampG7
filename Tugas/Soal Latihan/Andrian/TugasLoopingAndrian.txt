@@ -1,0 +1,66 @@
+/* 	Date 		: 18/5/2018    
+	Time 		: 13:20:39
+	Create by 	: Muhamad Rifan Andrian
+	Edited by 	: 
+				
+	*/
+
+
+Disebuah event war antar server yang diselenggarakan oleh sebuah perusahaan game online menyatakan bahwa selama event para player yang memiliki level minimal 50 mampu mengikuti event tersebut dan hadiah dari event tersebut adalah :
+-player hanya mampu melakukan hit sebanyak 10x
+-indeks dari level pemain yang dinputkan terdiri dari
+	>  (lvl/0.2)*1000 = demage
+	>  (lvl/0.8)*1000 = hp
+-pemain dengan demage 1000-11001 mendapatkan elixir x1
+-pemain dengan demage 12002-13003 mendapatkan potion x1
+-pemain dengan demage 14004-16005 mendapatkan gold 300k
+-pemain dengan demage 1600-20006 mendapatkan fragment Legendary weapon x1
+-pemain dengan demage spesial diantaranya 1734,1423,1933,1878,1656
+	>1734 = mendapatkan boot of speed
+	>1423 = mendapatkan arcana
+	>1933 = mendapatkan Alpine set ursa
+	>1878 = Golden baby roshan
+	>1656 = Legacy Ethereal Flames
+-namun setiap hit mampu miss
+-setelah 10 ronde selesai maka player akan bertemu dengan boss server yang memiliki hp 10x dari demage player, dan memiliki demage 0.1x dari hp player. dan item yang di dapat dari boss kill adalah 1 set Eternal pack, namun jika anda kalah anda tidak mendapatkan semua barang dalam event.
+-total semua item yang di dapat harus diperlihatkan.
+
+output :
+Ketika false
+==========================================
+       SELAMAT DATANG DI LYTA GAME
+==========================================
+==========================================
+Dengan ini anda dinyatakan telah menetujui
+semua kosekuensi yang ada
+
+==========================================
+sebelum memulai game masukan level anda :
+49
+BE GONE DUDE YOU'RE TO EASY GOT KILLED
+==========================================
+And Event Done !!
+This what you've got from this event 0
+============================================================
+============================================================
+ketika True
+==========================================
+       SELAMAT DATANG DI LYTA GAME
+==========================================
+==========================================
+Dengan ini anda dinyatakan telah menetujui
+semua kosekuensi yang ada
+
+==========================================
+sebelum memulai game masukan level anda :
+52
+Selamat bermain
+Let's the game begin!!
+Demage : 1500
+Demage success, you obtain xxx
+Demage success, you obtain xxx
+Demage success, you obtain xxx
+missed
+==========================================
+And Event Done !!
+This what you've got from this event xxx
