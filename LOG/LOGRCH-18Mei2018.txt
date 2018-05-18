@@ -1,0 +1,18 @@
+Menambahkan file:
+
+-Soal While 1
+
+-Soal while 2
+
+-Bilangan prima (for)
+
+-belah ketupat
+
+-komandan bersatu
+
+-Guessing game while
+
+-Guessing game while 2
+
+- Pig Like Dice game
+
