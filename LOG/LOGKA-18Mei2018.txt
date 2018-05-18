@@ -11,3 +11,6 @@ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanWhile/SoalWhile1.java
 create mode 100644 Tugas/TugasLatihan/Khairil/LatihanWhile/SoalWhile2.java
 create mode 100644 Tugas/TugasLatihan/Khairil/LatihanWhile/StartEnding.java
 
+15:12
+
+upload Soal-WhileFor.txt
