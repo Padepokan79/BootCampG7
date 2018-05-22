@@ -1,0 +1,26 @@
+Add file in Alifhar/22May2018
+	ArrayIntro.java
+        ArrayLinearSearch.java
+        ArraySlotAccess.java
+        Ex48Drills1.java
+        Ex49Drills1.java
+        Ex49Drills2.java
+        Ex51Drills1.java
+        ItemNotFound.java
+
+Add file in Tugas/TugasLatihan/Alifar/Tugas Array
+	LatArray.java
+        LatArray2.java
+        LatArray3.java
+        LatArray4.java
+        LatArray5.java
+        LatArray6.java
+        LatArray7.java
+        LatArray8.java
+        LatArray9.java
+        LatArray10.java
+        LatArray11.java
+        LatArray12.java
+        LatArray13.java
+        LatArray14.java
+        LatArray15.java
