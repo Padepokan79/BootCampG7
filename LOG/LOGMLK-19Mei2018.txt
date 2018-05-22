@@ -1,0 +1,7 @@
+add file :
+- KhairilIf1.java
+- KhairilIf2.java
+- RichaIf2.java
+- DoWhileBilangan.java
+- DoWhileGessingGame.java
+- DoWhileKue.java
