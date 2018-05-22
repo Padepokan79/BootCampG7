@@ -23,24 +23,26 @@ public class TugasArray6{
 	public static void main(String[] args){
 		Scanner keyboard = new Scanner(System.in);
 		int[] arr1 = {25,14,56,15,36,56,77,18,29,49};
-		int posisi, angka;
+		int[] arrbaru = new int[arr1.length-1];
+		int posisi, angka, res=0;
 		
 		System.out.println();
 		System.out.print("arr1 = {25,14,56,15,36,56,77,18,29,49}");
 		System.out.println();
-		System.out.print("Masukan posisi yang ingin dihapus : ");
+		System.out.print("Masukan index yang ingin dihapus : ");
 		posisi = keyboard.nextInt();
 		
 		for (int a=0; a<arr1.length; a++) {
-			arr1[posisi-1] -= arr1[posisi-1];
-			
+			if ( a != posisi ) {
+				arrbaru[res] = arr1[a];
+				res++;
+			}
 		}
 
 		System.out.print("Array = { ");
-		for (int a : arr1 ) {
-			if ( a != 0) {
+		for (int a : arrbaru ) {
 				System.out.print(a+" ");
-			}
+			
 		}
 		System.out.print("}");
 		System.out.println();
