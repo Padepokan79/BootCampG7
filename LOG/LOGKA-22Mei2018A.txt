@@ -31,4 +31,15 @@
  create mode 100644 Tugas/TugasLatihan/Khairil/SoalFor1.java
  create mode 100644 Tugas/TugasLatihan/Khairil/SoalFor2.java
 
+11:42 AM
 
+ create mode 100644 LOG/LOGKA-22Mei2018A.txt
+
+11:44 AM
+
+ create mode 100644 Khairil/21-05-2018/Exercise48/ArrayIntro.java
+ create mode 100644 Khairil/21-05-2018/Exercise48/ArrayStatement.java
+ create mode 100644 Khairil/21-05-2018/Exercise49/ArrayLinearSearch.java
+ create mode 100644 Khairil/21-05-2018/Exercise51/ArraySlotAccess.java
+ create mode 100644 Khairil/21-05-2018/Exercise51/CopyArrayToArray.java
+ create mode 100644 Khairil/21-05-2018/Exercise51/Drill1.java
