@@ -1,0 +1,39 @@
+Menambahkan sub folder pada ..TugasLatuhan/Andrian/
+	LatihanLooping
+	LatihanArray
+Menambahkan sub folder pada ..Andrian/
+	22May2018
+
+Menambahkan file :
+        new file:   Andrian/22May2018/ArrayIntro.java
+        new file:   Andrian/22May2018/ArrayLinearSearch.java
+        new file:   Andrian/22May2018/ArraysSlotAccess.java
+        new file:   Andrian/22May2018/CountingFor.java
+        new file:   Andrian/22May2018/Ex48Drills1.java
+        new file:   Andrian/22May2018/Ex49Drills1.java
+        new file:   Andrian/22May2018/Ex51Drill1.java
+        new file:   LOG/LOGANDR-22May2018.txt
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihamArray1.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray10.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray11.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray12.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray13.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray14.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray15.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray2.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray3.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray4.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray5.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray6.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray7.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray8.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray9.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanLooping/TugasLoopingAndrianV2.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanLooping/TugasLoopingArif.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanLooping/TugasLoopingChaudary.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanLooping/TugasLoopingMalik.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanLooping/TugasLoopingRicha.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanLooping/TugasLoopingRizaldi.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanLooping/TugasLoopingRyan.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanLooping/TugasLoopingVikry.java
+        new file:   Tugas/TugasLatihan/Andrian/LatihanLooping/TugasLoopingYana.java
