@@ -11,7 +11,7 @@ public class LatihanArray6 {
 		boolean cek = false;
 
 		int[] angka = {25,14,56,15,36,56,77,18,29,49};
-		int[] angka2= new int[angka.length];
+		int[] angka2= new int[angka.length-1];
 
 		System.out.print("Nilai : ");
 		for ( int number : angka) {
@@ -24,13 +24,11 @@ public class LatihanArray6 {
 			System.out.print("Input Index dihapus? ");
 			inputIndex = keyboard.nextInt();
 
-		for (int a = 0; a < angka2.length; a++) {
-			if (a == inputIndex) {
-				angka2[a] = angka2[a];
-				cek = true;
-			}else{
-				angka2[a] = angka[num];
+		for (int a = 0; a < angka2.length-1; a++) {
+			if (a != inputIndex) {
+				angka[num] = angka[a];
 				num++;
+				cek = true;
 			}
 		}
 			if (cek == false) {
@@ -40,7 +38,7 @@ public class LatihanArray6 {
 
 		System.out.println("");
 		System.out.print("Nilai : ");
-		for ( int numbers : angka2) {
+		for ( int numbers : angka) {
 			System.out.print(" "+numbers+" ");
 		}
 		System.out.println("");
