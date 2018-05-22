@@ -10,6 +10,12 @@ Soal 1 tugas Looping >>>>>>>>>>>>>>>>>>
 - tidak ada batas ronde.
 - jika point hangus 3 kali manusia kalah
 - komputer tidak punya batas hangus
+- komputer tidak punya kesempatan dapat kartu as
+- untuk pick kartu harus bayar
+    - bayar 3000 chance kartu 2 sd 10.
+    - bayar 5000 chance kartu 2 sd king.
+    - bayar 10000 chance kartu jack sd as.
+- anda di beri modal 60000 rb. uang habis kalah telak.
 =========================================
 Soal 2 tugas Looping >>>>>>>>>>>>>>>>>>
 >lotre
