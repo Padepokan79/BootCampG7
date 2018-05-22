@@ -1,14 +1,14 @@
 /*
-	 Program     : Tugas While - Java Guessing 2 (Advanced Version)
+	 Program     : Tugas Do While - Java Guessing 2 (Advanced Version)
      Creator     : Khairil
-     Created At  : 16 Mei 2018 13:31 PM     
+     Created At  : 18 Mei 2018 13:04 PM     
      Updated By  : 
      Update Date : 
 */
 import java.util.Scanner;
 import java.util.Random;
 
-public class JavaGuessingNumAdvanced {
+public class JavaGuessingNumAdv {
 	public static void main( String[] args ) {
 		Scanner keyboard = new Scanner(System.in);
 		int poin, hideNumber, guessNumber, repeater, tempCold, tempWarm, tempHot, goCold, goWarm, goHot, first, max, round, totalRound;
@@ -19,7 +19,7 @@ public class JavaGuessingNumAdvanced {
 		totalRound = 10;
 		poin = 0;
 
-		while(round <= totalRound) {
+		do {
 			hideNumber = r.nextInt(10) + 1; 			
 			
 			tempCold = hideNumber - 3;
@@ -36,8 +36,7 @@ public class JavaGuessingNumAdvanced {
 			System.out.println("Are You Lucky ?? Let's Try Guess");
 			System.out.println("Round " + round + " of " + totalRound);
 
-			while(repeater <= max) {
-
+			do {
 				System.out.println();
 				System.out.println("Enter a guess " + repeater);
 				guessNumber = keyboard.nextInt();
@@ -86,10 +85,15 @@ public class JavaGuessingNumAdvanced {
 				}
 				repeater = repeater + 1;
 			}
+
+			while(repeater <= max); 
+
 			round = round + 1;
 			System.out.println("Poin anda adalah : " + poin);
-			System.out.println("\n\n");
+			System.out.println("\n");
 		}
+
+		while(round <= 10);
 		
 		if(poin <= 7) {
 			System.out.println("You Are AMATEUR");
