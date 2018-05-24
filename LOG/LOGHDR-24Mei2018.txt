@@ -1,0 +1,23 @@
+Menambahkan File .java
+=======================
+AriefIf1
+AriefIf2
+ArrayIntro
+ArrayLinearSearch
+ArraySlotAcces
+Ex48Drills1
+Ex49Drills1
+Ex49Drills2
+Ex50Drills1
+GanjilKelipatan3
+GuessingGameWhile
+ItemNotFound
+KhairilIf1
+KhairilIf2
+PenjualKue
+PigLikeDiceGame
+BilanganPrima
+KetupatBintang
+KomandanBersatu
+RizaldiIf1
+RizaldiIf3
