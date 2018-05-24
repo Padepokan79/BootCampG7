@@ -1,0 +1,15 @@
+Add
+
+ Tugas/Looping/AduPenalti.java
+ Tugas/Looping/LatihanLoopAndrian.java
+ Tugas/Looping/LatihanLoopChaudry.java
+ Tugas/Looping/LatihanLoopVikri.java
+ Tugas/Looping/LatihanLoopYana.java
+ LatihanArray1.java
+ LatihanArray2.java
+ LatihanArray3.java
+ LatihanArray4.java
+ simGajiPNS.java
+ Exercise 48
+ Exercise 49
+ Exercise 51 
