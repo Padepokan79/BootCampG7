@@ -1,0 +1,18 @@
+Menambahkan File .java
+===========================
+AlifharIf1
+AlifharIf2
+AriefIf1
+AriefIf2
+ChaudryIf1
+ChaudryIf3
+GanjilKelipatan3
+GuessingGameWhile
+MalikIf2
+MalikIf3
+PenjualKue
+PigLikeDiceGame
+RichaIf2
+RichaIf3
+
+
