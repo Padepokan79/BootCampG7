@@ -26,3 +26,9 @@ int[] arr4 = new int[10];
 7. Copy isi arr1 ke arr2
 8. Tampilkan nilai minimum arr1
 9. Tampilkan nilai maksimum arr1
+
+10.Tampilkan bilangan2 yang duplikasi pada arr1
+11. Tampilkan bilangan2 yang sama2 ada di arr1 dan arr3
+12. Jumlahkan elemen arr1 dan arr3 simpan pada arr4
+13. Tukar nilai antara dua posisi pada arr1
+14. Mengurutkan nilai pada arr1
