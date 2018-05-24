@@ -1,0 +1,17 @@
+Menambahkan sub folder pada ..TugasLatuhan/Andrian/
+	LatihanSimGajiPns
+Menambahkan sub folder pada ..Andrian/
+	2May2018
+
+Menambahkan file :
+        new file:   Tugas/TugasLatihan/Andrian/LatihanArray/LatihanArray9.java
+        new file:   LOG/LOGANDR-24May2018.txt
+        copy file:   Andrian/22May2018/TugasLoopingAndrianV2.java
+        copy file:   Andrian/22May2018/TugasLoopingArif.java
+        copy file:   Andrian/22May2018/TugasLoopingChaudary.java
+        copy file:   Andrian/22May2018/TugasLoopingMalik.java
+        copy file:   Andrian/22May2018/TugasLoopingRicha.java
+        copy file:   Andrian/22May2018/TugasLoopingRizaldi.java
+        copy file:   Andrian/22May2018/TugasLoopingRyan.java
+        copy file:   Andrian/22May2018/TugasLoopingVikry.java
+        copy file:   Andrian/22May2018/TugasLoopingYana.java
