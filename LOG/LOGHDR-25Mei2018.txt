@@ -1,0 +1,28 @@
+Menambahkan File Tugas Latihan .java
+
+PNSBudi
+ProgrammerNurwan
+LadiesNight
+JombloNight
+MelodiesMemori
+BrondongNight
+PasanganKakek
+PasanganIbu
+PasanganAyah
+Ikan Travel
+EvenNumber
+OddNumber
+StartEndLoop
+WordRepeater
+Octopus
+TwoWord
+GuessingGame
+GeussingGame2
+FengshuiHp
+BilanganPrima
+KetupatBintang
+KomandanBersatu
+GanjilKelipatan3
+Penjualkue
+GuessingGaameWhile
+PigLikeDiceGame
