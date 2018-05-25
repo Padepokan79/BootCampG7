@@ -1,11 +1,11 @@
 Membuat kuis berhitung ceria. 
 Tiap Level memiliki kesulitan yang berbeda
 untuk level 1 hitungan angka 1-10
-untuk level 2 hitungan angka 1-100
-untuk level 3 hitungan angka 1-1000
-untuk level 4 hitungan angka 1-10000
-untuk level 5 hitungan angka 1-100000
-untuk level 6 hitungan angka 1-1000000
+untuk level 2 hitungan angka 10-100
+untuk level 3 hitungan angka 100-1000
+untuk level 4 hitungan angka 1000-10000
+untuk level 5 hitungan angka 10000-100000
+untuk level 6 hitungan angka 100000-1000000
 
 player dapat memilih level tersebut dengan jumlah soalnya
 max soal 100
@@ -18,14 +18,17 @@ jumlah benar akan diakumulasikan di akhir soal
 jumlah benar player 25% lebih kecil dari jumlah benar : 
 Coba lagi ya. atau ngulang sd nya
 
-jumlah benar player lebih besar sama dengan 25% dan 50% lebih kecil dari jumlah benar : 
+jumlah benar player lebih besar sama dengan 25% dan 50% lebih kecil dari jumlah soal : 
 oke lah masih mending
 
-jumlah benar player lebih besar sama dengan 50% dan 75% lebih kecil dari jumlah benar : 
+jumlah benar player lebih besar sama dengan 50% dan 75% lebih kecil dari jumlah soal : 
 sip lah masih di atas standar
 
-jumlah benar player lebih besar sama dengan 75% dan 99% lebih kecil dari jumlah benar : 
+jumlah benar player lebih besar sama dengan 75% dan 99% lebih kecil dari jumlah soal : 
 anda benar-benar matematika wan
 
 dan jumlah benar 100%
 PURRRRRFECT!! 
+
+nilai akan direset ketika mencoba kembali
+

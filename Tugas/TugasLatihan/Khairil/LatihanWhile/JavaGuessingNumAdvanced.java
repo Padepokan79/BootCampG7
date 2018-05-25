@@ -19,7 +19,7 @@ public class JavaGuessingNumAdvanced {
 		totalRound = 10;
 		poin = 0;
 
-		while(round <= 10) {
+		while(round <= totalRound) {
 			hideNumber = r.nextInt(10) + 1; 			
 			
 			tempCold = hideNumber - 3;

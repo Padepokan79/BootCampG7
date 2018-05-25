@@ -1,0 +1,32 @@
+adding file: 
+        new file:   18-Mei-2018/SoalAndrianWhile.java
+        new file:   18-Mei-2018/SoalAriefWhile.java
+        new file:   18-Mei-2018/SoalChaudryWhile.java
+        new file:   18-Mei-2018/SoalKhairilWhile.java
+        new file:   18-Mei-2018/SoalMalikWhile.java
+        new file:   18-Mei-2018/SoalRichaWhile.java
+        new file:   18-Mei-2018/SoalRizaldiWhile.java
+        new file:   18-Mei-2018/SoalRyanWhile.java
+        new file:   18-Mei-2018/SoalVikriDoWhile.java
+        new file:   18-Mei-2018/SoalYanaWhile.java
+        new file:   21-Mei-2018/Ex48D1.java
+        new file:   21-Mei-2018/Ex49D1.java
+        new file:   21-Mei-2018/Ex51D1.java
+        new file:   21-Mei-2018/LatihanArray1.java
+        new file:   21-Mei-2018/LatihanArray10.java
+        new file:   21-Mei-2018/LatihanArray2.java
+        new file:   21-Mei-2018/LatihanArray3.java
+        new file:   21-Mei-2018/LatihanArray4.java
+        new file:   21-Mei-2018/LatihanArray5.java
+        new file:   21-Mei-2018/LatihanArray6.java
+        new file:   21-Mei-2018/LatihanArray7.java
+        new file:   21-Mei-2018/LatihanArray8.java
+        new file:   21-Mei-2018/LatihanArray9.java
+        new file:   21-Mei-2018/SoalArray.txt
+        new file:   22-mei-2018/LatihanArray11.java
+        new file:   22-mei-2018/LatihanArray12.java
+        new file:   22-mei-2018/LatihanArray13.java
+        new file:   22-mei-2018/LatihanArray14.java
+        new file:   22-mei-2018/LatihanArray15.java
+
+a

@@ -1,0 +1,45 @@
+11:38 AM
+
+ create mode 100644 Khairil/19-05-2018/AndrianForWhileApps.java
+ create mode 100644 Khairil/19-05-2018/AriefForWhileApps.java
+ create mode 100644 Khairil/19-05-2018/ChaudhryForWhileApps.java
+ create mode 100644 Khairil/20-05-2018/MalikForWhileApps.java
+ create mode 100644 Khairil/20-05-2018/RichaForWhileApps.java
+ create mode 100644 Khairil/20-05-2018/RizaldiForWhileApps.java
+ create mode 100644 Khairil/20-05-2018/RyanForWhileApps.java
+ create mode 100644 Khairil/20-05-2018/VikriForWhileApps.java
+ create mode 100644 Khairil/20-05-2018/YanaForWhileApps.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/ClubReservation.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArrayFindIndex.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArrayFindIndex1.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArrayMaximum.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArrayMinimum.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArrayMyArray.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArrayRemove.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArraySisipPosisi.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArraySorting.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArraySumBetweenArray.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArraySwitchPosition.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArrayTwinFind.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArrayTwinFindArr.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/ArrayUbahPosisi.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/CopyArrayToArray.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArray/CopyArrayToArray1.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanDoWhile/JavaGuessingNumAdv.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanDoWhile/SoalDoWhile1.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanDoWhile/SoalDoWhile2.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/SoalFor1.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/SoalFor2.java
+
+11:42 AM
+
+ create mode 100644 LOG/LOGKA-22Mei2018A.txt
+
+11:44 AM
+
+ create mode 100644 Khairil/21-05-2018/Exercise48/ArrayIntro.java
+ create mode 100644 Khairil/21-05-2018/Exercise48/ArrayStatement.java
+ create mode 100644 Khairil/21-05-2018/Exercise49/ArrayLinearSearch.java
+ create mode 100644 Khairil/21-05-2018/Exercise51/ArraySlotAccess.java
+ create mode 100644 Khairil/21-05-2018/Exercise51/CopyArrayToArray.java
+ create mode 100644 Khairil/21-05-2018/Exercise51/Drill1.java

@@ -46,6 +46,7 @@ public class PigDiceGame{
                 compPoint+=tossComp;
             }            
             System.out.println("======================================================");
+                    
                                     
             while(tossHuman!=1&&humanPoint<maxPoint&&toss.equals("y")&&compPoint<maxPoint){
                 tossHuman=rand.nextInt(6)+1;    
