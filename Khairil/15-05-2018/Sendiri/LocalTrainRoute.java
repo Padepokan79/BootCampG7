@@ -205,24 +205,15 @@ public class LocalTrainRoute {
 		//asal HRP - CCL
 		hrpccl  = inputAsal.equals(hrp) && inputTujuan.equals(ccl);
 
-		rangeA  = pdlgk || pdlcmi || pdlcmd || pdlcry || pdlbd || pdlcth || pdlkac || pdlgdb || pdlcmk || pdlrck || pdlhrp || pdlccl || gkcmi || gkcmd || gkcry || gkbd || gkcth || gkkac || gkgdb || gkcmk || gkrck || gkhrp || gkccl || cmicmd || cmicry || cmibd || cmicth || cmikac || cmigdb || cmicmk || cmirck || cmihrp || cmiccl || cmdcry || cmdbd || cmdcth || cmdkac || cmdgdb || cmdcmk || cmdrck || cmdhrp || cmdccl || crybd || crycth || crykac || crygdb || crycmk || cryrck || cryhrp || cryccl || bdcth || bdkac || bdgdb || bdcmk || bdrck || bdhrp || bdccl || cthkac || cthgdb || cthcmk || cthrck || cthhrp || cthccl || kacgdb || kaccmk || kacrck || kachrp || kacccl || gdbcmk || gdbrck || gdbhrp || gdbccl || cmkrck || cmkhrp || cmkccl || rckhrp || rckccl || hrpccl;
-		
+		rangeA = pdlgk || pdlcmi || pdlcmd || pdlcry || pdlbd || pdlcth || pdlkac || pdlgdb || pdlcmk || pdlrck || pdlhrp || pdlccl || gkcmi || gkcmd || gkcry || gkbd || gkcth || gkkac || gkgdb || gkcmk || gkrck || gkhrp || gkccl || cmicmd || cmicry || cmibd || cmicth || cmikac || cmigdb || cmicmk || cmirck || cmihrp || cmiccl || cmdcry || cmdbd || cmdcth || cmdkac || cmdgdb || cmdcmk || cmdrck || cmdhrp || cmdccl || crybd || crycth || crykac || crygdb || crycmk || cryrck || cryhrp || cryccl || bdcth || bdkac || bdgdb || bdcmk || bdrck || bdhrp || bdccl || cthkac || cthgdb || cthcmk || cthrck || cthhrp || cthccl || kacgdb || kaccmk || kacrck || kachrp || kacccl || gdbcmk || gdbrck || gdbhrp || gdbccl || cmkrck || cmkhrp || cmkccl || rckhrp || rckccl || hrpccl;
 		rangeB = pdlgk || pdlcmi || pdlcmd || pdlcry || pdlbd || pdlcth || pdlkac || gkcmi || gkcmd || gkcry || gkbd || gkcth || gkkac || cmicmd || cmicry || cmibd || cmicth || cmikac || cmdcry || cmdbd || cmdcth || cmdkac || crybd || crycth || crykac || bdcth || bdkac || cthkac;
-
 		rangeC = bdcth || bdkac || bdgdb || bdcmk || bdrck || bdhrp || bdccl || cthkac || cthgdb || cthcmk || cthrck || cthhrp || cthccl || kacgdb || kaccmk || kacrck || kachrp || kacccl || gdbcmk || gdbrck || gdbhrp || gdbccl || cmkrck || cmkhrp || cmkccl || rckhrp || rckccl || hrpccl;
-
 		rangeD = cclhrp || cclrck || cclcmk || cclgdb || cclkac || cclcth || cclbd || hrprck || hrpcmk || hrpgdb || hrpkac || hrpcth || hrpbd || rckcmk || rckgdb || rckkac || rckcth || rckbd || cmkgdb || cmkkac || cmkcth || cmkbd || gdbkac || gdbcth || gdbbd || cthbd;
-
 		rangeE = bdcry || bdcmd || bdcmi || bdgk || bdpdl || crycmd || crycmi || crygk || crypdl || cmdcmi || cmdgk || cmdpdl || cmigk || cmipdl || gkpdl;
-
 		rangeF = pdlgk || pdlcmi || pdlcmd || pdlcry || pdlbd || gkcmi || gkcmd || gkcry || gkbd || cmicmd || cmicry || cmibd || cmdcry || cmdbd || crybd;
-
 		rangeG = kacgdb || kaccmk || kacrck || kachrp || kacccl || gdbcmk || gdbrck || gdbhrp || gdbccl || cmkrck || cmkhrp || cmkccl || rckhrp || rckccl || hrpccl;
-
 		rangeH = cclhrp || cclrck || cclcmk || cclgdb || cclkac || hrprck || hrpcmk || hrpgdb || hrpkac || rckcmk || rckgdb || rckkac || cmkgdb || cmkkac || gdbkac;
-
 		rangeI = kaccth || kacbd || kaccry || kaccmd || kaccmi || kacgk || kacpdl || cthbd || cthcry || cthcmd || cthcmi || cthgk || cthpdl || bdcry || bdcmd || bdcmi || bdgk || bdpdl || crycmd || crycmi || crygk || crypdl || cmdcmi || cmdgk || cmdpdl || cmigk || cmipdl || gkpdl;
-
 		rangeJ = cclhrp || cclrck || cclcmk || cclgdb || cclkac || cclcth || cclbd || cclcry || cclcmd || cclcmi || cclgk || cclpdl || hrprck || hrpcmk || hrpgdb || hrpkac || hrpcth || hrpbd || hrpcry || hrpcmd || hrpcmi || hrpgk || hrppdl || rckcmk || rckgdb || rckkac || rckcth || rckbd || rckcry || rckcmd || rckcmi || rckgk || rckpdl || cmkgdb || cmkkac || cmkcth || cmkbd || cmkcry || cmkcmd || cmkcmi || cmkgk || cmkpdl || gdbkac || gdbcth || gdbbd || gdbcry || gdbcmd || gdbcmi || gdbgk || gdbpdl || kaccth || kacbd || kaccry || kaccmd || kaccmi || kacgk || kacpdl || cthbd || cthcry || cthcmd || cthcmi || cthgk || cthpdl || bdcry || bdcmd || bdcmi || bdgk || bdpdl || crycmd || crycmi || crygk || crypdl || cmdcmi || cmdgk || cmdpdl || cmigk || cmipdl || gkpdl; 
 
 		kodeA = "Kode A = PDL - CCL";
