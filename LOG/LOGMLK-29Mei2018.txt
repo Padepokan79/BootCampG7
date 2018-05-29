@@ -1,0 +1,6 @@
+Add file :
+QuizSatuMalik.java
+QuizDuaMalik.java
+QuizTigaMalik.java
+QuizEmpatMalik.java
+QuizLimaMalik.java
