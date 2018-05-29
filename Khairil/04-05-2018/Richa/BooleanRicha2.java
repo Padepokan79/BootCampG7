@@ -36,7 +36,7 @@ class BooleanRicha2 {
 		y = "Ya";
 		t = "Tidak";
 
-		orangBaik = ( inputTeman > temanBaik && inputKriminal < maxJahat ) || ( inputSenyum.equals(y) && inputKriminal < maxJahat ) || ( inputTeman > temanBaik && inputSenyum.equals(y) ) ;
+		orangBaik = ( inputTeman => temanBaik && inputKriminal < maxJahat ) || ( inputSenyum.equals(y) && inputKriminal < maxJahat ) || ( inputTeman => temanBaik && inputSenyum.equals(y) ) ;
 
 		System.out.println( "Baiklah," );
 		System.out.println( "Apakah " + inputNama + " adalah orang yang baik? " + orangBaik );		
