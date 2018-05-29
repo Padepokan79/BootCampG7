@@ -1,0 +1,5 @@
+Add file:   Tugas/ExamBootcamp/Arief/Quizz1Fibonacci.java
+Add file:   Tugas/ExamBootcamp/Arief/Quizz2Pascal.java
+Add file:   Tugas/ExamBootcamp/Arief/Quizz3Tabungan.java
+Add file:   Tugas/ExamBootcamp/Arief/Quizz4Shifting.java
+Add file:   Tugas/ExamBootcamp/Arief/Quizz5Sisipkan.java
