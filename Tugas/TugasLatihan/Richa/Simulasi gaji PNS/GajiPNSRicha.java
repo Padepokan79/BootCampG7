@@ -25,7 +25,7 @@ public class GajiPNSRicha {
 		int validJmlAnak=1, validEselon = 0, validKeahlian =0, validTrans = 0, validSeminar =0, validListrik =0, validLain = 0;
 
 		String [] jenisGolongan = {"IA", "IB", "IC", "ID", "IIA", "IIB", "IIC", "IID", "IIIA", "IIIB", "IIIC", "IIID", "IVA", "IVB", "IVC", "IVD", "IVD", "IVE"};
-		String [] jenisPendidikan = {"SD", "SMP", "SMA", "SMK", "S1", "S2", "S3"};
+		String [] jenisPendidikan = {"SD", "SMP", "SMA", "SMK", "D1", "D2", "D3", "S1", "S2", "S3"};
 		String [] jenisEselon = {"Ia", "Ib", "IIa","IIb","IIIa","IIIb","IVa","IVb","Va"};
 
 		//golongan 1
@@ -70,7 +70,6 @@ public class GajiPNSRicha {
 		do {
 			System.out.print("Nama Lengkap: ");
 			namaLengkap = keyboard2.nextLine ();
-			System.out.println(namaLengkap.length());
 			if (namaLengkap.matches ("[A-Z,. a-z]+") && namaLengkap.length() <= panjangMaksNama && namaLengkap.length() >= panjangMinNama) {
 				validName=1;
 			}
@@ -84,7 +83,6 @@ public class GajiPNSRicha {
 		do {	
 			System.out.print("NIP: ");
 			nip = keyboard.next ();
-			System.out.println(nip.length());
 			if (nip.matches ("[0-9]+") && nip.length() <= jumlahMaksNIP && nip.length() >= jumlahMinNIP) {
 				validNIP=1;
 			}
@@ -636,7 +634,7 @@ public class GajiPNSRicha {
 			else if (golonganInput.equals("IIID")) {
 				tunjPapua = arrTunjPapua [11];
 			}
-			else if (arrTunjPapua.equals("IVA")) {
+			else if (golonganInput.equals("IVA")) {
 				tunjPapua = arrTunjPapua [12];
 			}
 			else if (golonganInput.equals("IVB")) {
@@ -695,7 +693,7 @@ public class GajiPNSRicha {
 				ptkp = 36000000 + (3000000*3);
 			}
 		}
-		else if (nikahInput.equals("ya") && jmlAnakInt <= 3 && jmlAnakInt >=0) {
+		else if (nikahInput.equals("ya")) {
 			if (jmlAnakInt>=0 && jmlAnakInt <= 3) {
 				ptkp = 39000000 + (3000000*jmlAnakInt);
 			}
@@ -713,50 +711,65 @@ public class GajiPNSRicha {
 			pkp=0;
 		}
 		
-
+		pphSetaun=0;
 		if (pkp > 500000000) {
-			pphSetaun4 = (pkp - 500000000)*pph4;
-			pphSetaun4 = pphSetaun4 + (250000000*pph3) + (200000000*pph2) + (50000000*pph1);
+			pphSetaun = (pkp - 500000000)*pph4;
+			pphSetaun = pphSetaun4 + (250000000*pph3) + (200000000*pph2) + (50000000*pph1);
 		}
 		else if (pkp> 250000000 && pkp <= 500000000) {
-			pphSetaun3 = (pkp - 250000000)*pph3;
-			pphSetaun3 = pphSetaun3 + (200000000*pph2) + (50000000*pph1);
+			pphSetaun = (pkp - 250000000)*pph3;
+			pphSetaun = pphSetaun3 + (200000000*pph2) + (50000000*pph1);
 		}
 		else if (pkp> 50000000 && pkp <= 250000000 ) {
-			pphSetaun2 = (pkp - 50000000)*pph2;
-			pphSetaun2 = pphSetaun2 + 500000000*pph1;
+			pphSetaun = (pkp - 50000000)*pph2;
+			pphSetaun = pphSetaun2 + 50000000*pph1;
 		}
 		else if (pkp > 0 && pkp <= 50000000) {
-			pphSetaun1 = pkp*pph1;
+			pphSetaun = pkp*pph1;
 		}
 
 		else if (pkp <=0) {
 			pph=0;
 		}
 
-		pphSetaun = pphSetaun1 + pphSetaun2 + pphSetaun3 + pphSetaun4;
 		pph = pphSetaun/12;
 
-		System.out.println("T. Pajak*:\tRp. " + pph + ",-");
+		System.out.printf("T. Pajak*:\tRp. %.2f", pph);
+		System.out.print(",-");
+		System.out.println();
 
 		
 		System.out.println();
-		System.out.println("Penghasilan kotor: Rp. "+ penghasilanKotor+ ",-");
+		System.out.printf("Penghasilan kotor: Rp. %.2f",penghasilanKotor);
+		System.out.print(",-");
+		System.out.println();
 		System.out.println("*tidak termasuk T.pajak");
 		//print pemotongan	
 		System.out.println("_________________________________________________________");
 		System.out.println("Rincian pemotongan");
-		System.out.println("IWP:\t\tRp. " + iwp+ ",-");
+		System.out.printf("IWP:\t\tRp. %.2f", iwp);
+		System.out.print(",-");
+		System.out.println();
 		System.out.println("Taperum:\tRp. " + taperum+ ",-");
 		System.out.println("Rumah Dinas:\tRp. " + rumahDinas + ",-");
-		System.out.println("Penghasilan netto: Rp. " + penghasilanBersih + ",-");
+		System.out.printf("Penghasilan netto: Rp. %.2f",penghasilanBersih);
+		System.out.print(",-");
 		System.out.println();
-		System.out.println("PTKP:\t\tRp. " + ptkp + ",-");
-		System.out.println("PKP:\t\tRp. "+ pkp + ",-");
-		System.out.println("Pph Setahun:\tRp. " + pphSetaun+ ",-");
-		System.out.println("Pph :\t\tRp. " + pph+ ",-");
+		System.out.printf("PTKP:\t\tRp. %.2f",ptkp);
+		System.out.print(",-");
+		System.out.println();
+		System.out.printf("PKP:\t\tRp. %.2f",pkp);
+		System.out.print(",-");
+		System.out.println();
+		System.out.printf("Pph Setahun:\tRp. %.2f", pphSetaun);
+		System.out.print(",-");
+		System.out.println();
+		System.out.printf("Pph :\t\tRp. %.2f", pph);
+		System.out.print(",-");
+		System.out.println();
 		penghasilanFix = penghasilanBersih - (pph);
-		System.out.println("Penghasilan yang diterima: Rp. " + penghasilanFix + ",-");
-
+		System.out.printf("Penghasilan yang diterima: Rp. %.2f", penghasilanFix);
+		System.out.print(",-");
+		System.out.println();
 	}
 }
