@@ -1,0 +1,40 @@
+11.54
+
+- Menambahkan folder 21-05-2018 di dalam folder Chaudhry
+- Menambahkan folder Array di dalam folder TugasLatihan/Chaudhry
+- Menambahkan 21-05-2018/ArrayLinearSearch.java
+- Menambahkan 21-05-2018/Ex48Drills1.java
+- Menambahkan 21-05-2018/Ex49Drills1.java
+- Menambahkan 21-05-2018/Ex49Drills2.java
+- Menambahkan 21-05-2018/Ex51Drills1.java
+
+- Menambahkan Array/LatihanArray1.java
+- Menambahkan Array/LatihanArray10.java
+- Menambahkan Array/LatihanArray11.java
+- Menambahkan Array/LatihanArray12.java
+- Menambahkan Array/LatihanArray13.java
+- Menambahkan Array/LatihanArray14.java
+- Menambahkan Array/LatihanArray15.java
+- Menambahkan Array/LatihanArray2.java
+- Menambahkan Array/LatihanArray3.java
+- Menambahkan Array/LatihanArray4.java
+- Menambahkan Array/LatihanArray5.java
+- Menambahkan Array/LatihanArray6.java
+- Menambahkan Array/LatihanArray7.java
+- Menambahkan Array/LatihanArray8.java
+- Menambahkan Array/LatihanArray9.java
+
+- Menambahkan DoWhileAndrian.java
+- Menambahkan DoWhileArief.java
+- Menambahkan DoWhileKhairil.java
+- Menambahkan DoWhileMalik.java
+- Menambahkan DoWhileRicha.java
+- Menambahkan DoWhileRizaldi.java
+- Menambahkan DoWhileRyan.java
+- Menambahkan DoWhileVikri.java
+- Menambahkan DoWhileYana.java
+
+
+- Memodifikasi DoWhileChaudhry.java
+ Perubahan : 
+	1. Penambahan fungsi untuk menampilkan output keterangan bila permainan berakhir

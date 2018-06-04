@@ -1,0 +1,11 @@
+Add file in Alifhar/28May2018
+	LoopAndrian.java
+	LoopArief.java
+	LoopChaudry.java
+	LoopKhairil.java
+	LoopMalik.java
+	LoopRicha.java
+	LoopRizaldi.java
+	LoopRyan.java
+	LoopVikri.java
+	LoopYana.java

@@ -1,0 +1,4 @@
+12.22
+
+- Memodifikasi file program array/LatihanArray6.java
+Perubahan : - merubah bentuk fungsi coding pada line 28

@@ -1,0 +1,24 @@
+Menambahkan file .java
+======================
+Array1
+Array2
+Array3
+Array4
+Array5
+Array6
+Array7
+Array8
+Array9
+Array10
+Array11
+Array12
+Array13
+Array14
+LoopingArief
+LoopingChaudry
+LoopingKhairil
+LoopingMalik
+LoopingRicha
+LoopingRizaldi
+LoopingRyan
+LoopingVikri
