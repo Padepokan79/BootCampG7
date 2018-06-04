@@ -13,6 +13,7 @@ Paper		> Paper covers Rock, Paper disproves Spock
 Scissors	> Scissors cut Paper, Scissors decapitate Lizard
 Spock		> Spock vaporizes Rock, Spock smashes Scissors
 Lizard		> Lizard poisons Spock, Lizard eats Paper
+
 Other Notes
 "GODSPEED" win 3 Game
 "Palladins" win 2 Game
