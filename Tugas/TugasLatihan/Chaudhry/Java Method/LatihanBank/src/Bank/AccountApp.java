@@ -22,12 +22,9 @@ public class AccountApp {
 			namaNasabah = valid.inputValidasi("Silahkan Masukan Nama Anda : ", cek, input, key);
 			noIdentitas = Integer.toString(valid.inputValidasiAngka("Masukan Nomor Identitas                : ", cek, input, key));
 			saldo 		= Integer.toString(valid.inputValidasiAngka("Silahkan Besar Deposit pertama anda    : ", cek, input, key));
+			Account acc = new Account(namaNasabah, Integer.parseInt(noIdentitas), Integer.parseInt(saldo));
 			
-			System.out.println("");
-			System.out.println("Selamat Datang, "+namaNasabah);
-			System.out.println("Akun anda adalah "+noIdentitas+" a/n "+namaNasabah+" Dengan saldo sebesar "+saldo);
-			System.out.println("");
-			System.out.println("---------------------------");
+			acc.printBiodata();
 		
 		do {	
 			System.out.println("Menu:");
@@ -38,7 +35,7 @@ public class AccountApp {
 			
 			do {
 				pilihan = valid.inputValidasiAngka("Inputkan Pilihan : ", cek, input, key);
-				if(pilihan < 1) {
+				if(pilihan < 1 && !Integer.toString(pilihan).equals("000")) {
 					System.out.println("Input perintah tidak boleh kurang dari 1");
 					
 				}else if(pilihan > 3) {
@@ -49,23 +46,27 @@ public class AccountApp {
 				}
 			}while(cek == false);
 			
-			Account acc = new Account(Integer.parseInt(saldo));
+			
 			if(pilihan == 1) {
-				System.out.println("Sisa Saldo anda saat ini Sebesar Rp "+acc.cekSaldo());
-				System.out.println("");
+				acc.printSaldo();
 				
 			}else if(pilihan == 2) {
 				menabung = Integer.toString(valid.inputValidasiAngka("Masukan Besar uang yang akan ditabungkan : ", cek, input, key));
-				System.out.println("Selamat Uang sebesar Rp "+menabung+" telah ditambahkan");
-				System.out.println("");
-				acc.addDeposit();
+				acc.addDeposit(Integer.parseInt(menabung));
+				acc.printMenabung();
 				
 			}else if(pilihan == 3) {
-				mengambil = Integer.toString(valid.inputValidasiAngka("Masukan Besar uang yang akan diambil : ", cek, input, key));
-				System.out.println("");
-				acc.mengambil();
+				do {
+					mengambil = Integer.toString(valid.inputValidasiAngka("Masukan Besar uang yang akan diambil : ", cek, input, key));
+					if( acc.saldo < Integer.parseInt(mengambil) ) {
+						System.out.println("Uang saldo yang anda punya tidak cukup");
+					}
+				}while(acc.saldo < Integer.parseInt(mengambil));
+				
+				acc.mengambil(Integer.parseInt(mengambil));
+				acc.printMenarik();
 			}
-		}while(pilihan != 000);
+		}while(!Integer.toString(pilihan).equals("000"));
 		
 		System.out.println("Selesai ...");
 	}
