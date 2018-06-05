@@ -58,15 +58,13 @@ public class AccountApp {
 			else {
 				System.out.println("Inputan harus angka.");
 				System.out.println("Coba lagi");				
-				step = false;
+				ahem = false;
 			}
-			deposits = vals.convertInt(inputDeposit);
-			
 		}
 		while(ahem == false);
 		
 //		while(step == false) {
-			
+		deposits = vals.convertInt(inputDeposit);			
 		System.out.println("Selamat Datang " + inputNama + ".");
 		System.out.print("Akun anda adalah " + inputNoId + " a/n " + inputNama);
 		accs.welcomeScreen(deposits);
@@ -139,19 +137,18 @@ public class AccountApp {
 								inAccount = false;
 								anotherStep = true;
 							}
+							else {
+								System.out.println("Pilihan anda tidak ditemukan");
+								System.out.println("Coba lagi");
+								inAccount = true;
+							}
 //						}
 					}
 				}
 				else {
-					if(vals.convertInt(inputMenu) < 1 && vals.convertInt(inputMenu) > 3) {
-						System.out.println("Inputan salah.");
-						System.out.println("Coba lagi");
-						anotherStep = false;					
-					}
-					else {
-						anotherStep = true;
-					}
-				
+					System.out.println("Inputan harus angka.");
+					System.out.println("Coba lagi");
+					anotherStep = false;
 				}
 			}
 //		}
