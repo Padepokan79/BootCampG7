@@ -1,0 +1,7 @@
+        new file:   KhairilIf1.java
+        new file:   KhairilIf2.java
+        new file:   RizaldiIf1.java
+        new file:   RizaldiIf2.java
+	new project: Person
+	new project: Buku
+	new project: Bank
