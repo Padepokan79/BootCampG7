@@ -1,0 +1,24 @@
+Menambahkan file
+================
+
+ Bangun/Lingkaran.java
+ Bangun/PerhitunganBangunDatar.java
+ Bangun/PerhitunganBangunRuang.java
+ Bangun/SegiEmpat.java
+ Bangun/Segitiga.java
+ Bangun/Validasi.java
+ Bank/.classpath
+ Bank/.project
+ Bank/.settings/org.eclipse.jdt.core.prefs
+ Bank/src/Account.java
+ Bank/src/AccountApp.java
+ Bank/src/Validasi.java
+ latihan/FlashDisk.java
+ latihan/Headset.java
+ latihan/Motor.java
+ latihan/Person.java
+ latihan/Test3Objek.java
+ latihan/TestBuatPerson.java
+ latihan/TestFlashDisk.java
+ latihan/TestHeadset.java
+ latihan/TestMotor.java
