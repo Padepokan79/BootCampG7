@@ -20,21 +20,28 @@ public class AccountApp {
 		do {
 			System.out.println("Silahkan Masukan Nama anda :");
 			inputNama =key.nextLine();
-			valid = acc.menuValidasiNama(inputNama, valid);
+			valid = acc.menuValidasiHuruf(inputNama, valid);
 		} while (valid<validasi);
 		
 		System.out.println();
 		do {
 			System.out.println("Masukan Nomor identitas :");
 			inputId = key.next();
-			valid = acc.menuValidasiId(inputId, valid);
+			valid = acc.menuValidasiAngka(inputId, valid);
+			if (inputId.length()>12) {
+				valid++;									
+			}
+			else {
+				System.out.println("Nomor identitas yang anda masukan kurang dari 12");
+				valid=0;
+			}
 		} while (valid<validasi);
 		
 		System.out.println();
 		do {
 			System.out.println("Silahkan Besar Deposit pertama anda :");
 			inputDeposit = key.next();
-			valid = acc.menuValidasiInput(inputDeposit, valid);
+			valid = acc.menuValidasiAngka(inputDeposit, valid);
 		} while (valid<validasi);
 		
 		depositInt = Integer.parseInt(inputDeposit); 
@@ -54,7 +61,7 @@ public class AccountApp {
 				System.out.println("3. Withdraw/Mengambil");
 				System.out.println("000. Exit");
 				inputDeposit = key.next();
-				valid = acc.menuValidasiInput(inputDeposit, valid);
+				valid = acc.menuValidasiAngka(inputDeposit, valid);
 				if (valid==1) {
 					if (Integer.parseInt(inputDeposit)>3) {
 						System.out.println("nilai yang anda masukan melebihi indeks");
@@ -77,9 +84,9 @@ public class AccountApp {
 				do {
 					System.out.println("Masukan Besar uang yang akan ditabungkan");
 					inputDeposit = key.next();
-					valid = acc.menuValidasiInput(inputDeposit, valid);
+					valid = acc.menuValidasiAngka(inputDeposit, valid);
 					depositInt = Integer.parseInt(inputDeposit);
-					validMinus = acc.menuValidasiMinus(depositInt, valid);					
+					validMinus = acc.menuValidasiMinus(depositInt, valid);	
 				} while (valid<validasi);
 				System.out.println();
 				System.out.println("Selamat Uang sebesar Rp "+depositInt+" telah ditambahkan");
@@ -92,16 +99,22 @@ public class AccountApp {
 				do {
 					System.out.println("Masukan Besar uang yang akan diambil");
 					inputDeposit = key.next();
-					valid = acc.menuValidasiInput(inputDeposit, valid);
+					valid = acc.menuValidasiAngka(inputDeposit, valid);
 					depositInt = Integer.parseInt(inputDeposit);
-					validMinus = acc.menuValidasiMinus(depositInt, valid);					
+					validMinus = acc.menuValidasiMinus(depositInt, valid);
+					System.out.println();
+					if (depositInt > saldo ) {
+						System.out.println("Maaf saldo anda tidak mencukupi");
+						valid=0;
+					}
+					else {
+						saldo-=depositInt;
+						System.out.println("Selamat Uang sebesar Rp "+depositInt+" berhasil diambil");
+						System.out.println("Akun anda adalah "+inputId+" a/n "+inputNama+
+								" Dengan Saldo Sebesar Rp. "+saldo);
+						valid+=1;					
+					}	
 				} while (valid<validasi);
-				depositInt = Integer.parseInt(inputDeposit);
-				System.out.println();
-				System.out.println("Selamat Uang sebesar Rp "+depositInt+" berhasil diambil");
-				saldo-=depositInt;
-				System.out.println("Akun anda adalah "+inputId+" a/n "+inputNama+
-						" Dengan Saldo Sebesar Rp. "+saldo);
 				valid=0;
 			}
 			else if (Integer.parseInt(inputDeposit)==000) {
