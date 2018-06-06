@@ -1,0 +1,35 @@
+12:58
+
+ create mode 100644 Khairil/16-05-2018/Exercise44/CountingFor.java
+ create mode 100644 Khairil/16-05-2018/Exercise44/Drills1.java
+ create mode 100644 Khairil/16-05-2018/RichaIfElse1.java
+ create mode 100644 Khairil/16-05-2018/RichaIfElse2.java
+ create mode 100644 Khairil/16-05-2018/RizaldiIfElse1.java
+ create mode 100644 Khairil/16-05-2018/RizaldiIfElse2.java
+ create mode 100644 Khairil/16-05-2018/RyanIfElse1.java
+ create mode 100644 Khairil/16-05-2018/RyanIfElse2.java
+ create mode 100644 Khairil/17-05-2018/VikriIfElse1.java
+ create mode 100644 Khairil/17-05-2018/VikriIfElse2.java
+ rename Khairil/29-04-2018/{Ex1Drills1 => Exercise1}/Drills1.java (100%)
+ rename Khairil/29-04-2018/{Ex1Drills1 => Exercise1}/FirstProg.java (100%)
+ rename Khairil/29-04-2018/{Ex2Drills1 => Exercise2}/Drills1.java (100%)
+ rename Khairil/29-04-2018/{Ex2Drills1 => Exercise2}/Drills2.java (100%)
+ rename Khairil/29-04-2018/{Ex2Drills1 => Exercise2}/GasolineReceipt.java (100%)
+ rename Khairil/29-04-2018/{Ex3Drills1 => Exercise3}/Drills1.java (100%)
+ rename Khairil/29-04-2018/{Ex3Drills1 => Exercise3}/PrintingChoices.java (100%)
+ rename Khairil/29-04-2018/{Ex4Drills1 => Exercise4}/EscapeSequencesComments.java (100%)
+ rename Khairil/29-04-2018/{Ex4Drills1 => Exercise4}/PrintingChoicesEscapes.java (100%)
+ rename Khairil/29-04-2018/{Ex5Drills1 => Exercise5}/CreatingVariables.java (100%)
+ rename Khairil/29-04-2018/{Ex5Drills1 => Exercise5}/Drills1.java (100%)
+ rename Khairil/29-04-2018/{Ex5Drills1 => Exercise5}/Drills2.java (100%)
+ rename Khairil/29-04-2018/{Ex6Drills1 => Exercise6}/Drills.java (100%)
+ rename Khairil/29-04-2018/{Ex6Drills1 => Exercise6}/Drills2.java (100%)
+ rename Khairil/29-04-2018/{Ex6Drills1 => Exercise6}/MathOperations.java (100%)
+
+13:00
+
+ create mode 100644 Tugas/ExamBootcamp/QuizKhairil/QuizKhairil1.java
+ create mode 100644 Tugas/ExamBootcamp/QuizKhairil/QuizKhairil2.java
+ create mode 100644 Tugas/ExamBootcamp/QuizKhairil/QuizKhairil3.java
+ create mode 100644 Tugas/ExamBootcamp/QuizKhairil/QuizKhairil4.java
+ create mode 100644 Tugas/ExamBootcamp/QuizKhairil/QuizKhairil5.java
