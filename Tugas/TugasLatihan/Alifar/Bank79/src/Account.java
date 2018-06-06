@@ -10,6 +10,8 @@ public class Account {
 	}
 	
 	void cekSaldo() {
+		System.out.println("Nama            : "+nama);
+		System.out.println("Nomor Identitas : "+id);
 		System.out.println("Sisa Saldo anda sebesar Rp. "+tabungan);
 	}
 	
