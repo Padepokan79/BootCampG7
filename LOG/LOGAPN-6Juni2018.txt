@@ -1,0 +1,9 @@
+Add file:   Tugas/TugasLatihan/Arief/penulis/App.java
+Add file:   Tugas/TugasLatihan/Arief/penulis/Author.java
+Add file:   Tugas/TugasLatihan/Arief/penulis/Book.java
+Add file:   Tugas/TugasLatihan/Arief/perhitunganBangun/Lingkaran.java
+Add file:   Tugas/TugasLatihan/Arief/perhitunganBangun/PerhitunganBangunDatar.java
+Add file:   Tugas/TugasLatihan/Arief/perhitunganBangun/PerhitunganBangunRuang.java
+Add file:   Tugas/TugasLatihan/Arief/perhitunganBangun/SegiEmpat.java
+Add file:   Tugas/TugasLatihan/Arief/perhitunganBangun/SegiTiga.java
+Add file:   Tugas/TugasLatihan/Arief/perhitunganBangun/Validation.java
