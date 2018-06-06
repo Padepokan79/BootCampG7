@@ -1,0 +1,73 @@
+menambahnkan file tugas latihan OOP, bank 79, Person(inherit), Books
+menghapus file tugas pada tanggal 4 june 2018 dan dipindahkan ke folder tugas latihan
+
+        deleted:    Rizaldi/June-04-2018/Bank79/.classpath
+        deleted:    Rizaldi/June-04-2018/Bank79/.project
+        deleted:    Rizaldi/June-04-2018/Bank79/.settings/org.eclipse.jdt.core.prefs
+        deleted:    Rizaldi/June-04-2018/Bank79/src/Account.java
+        deleted:    Rizaldi/June-04-2018/Bank79/src/AccountApp.java
+        deleted:    Rizaldi/June-04-2018/Bank79/src/Validasi.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/.classpath
+        deleted:    Rizaldi/June-04-2018/latihanOOP/.project
+        deleted:    Rizaldi/June-04-2018/latihanOOP/.settings/org.eclipse.jdt.core.prefs
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/geometry/BangunDatar.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/geometry/BangunRuang.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/geometry/Lingkaran.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/geometry/Persegi.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/geometry/Segitiga.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/geometry/ValidateAlpha.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/geometry/ValidateNumber.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihan/Dispenser.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihan/G7.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihan/Kipas.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihan/Person.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihan/RunObject.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihan/TestPerson.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihanOOP/Dispenser.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihanOOP/G7.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihanOOP/Kipas.java
+        deleted:    Rizaldi/June-04-2018/latihanOOP/src/latihanOOP/RunObject.java
+
+
+        new file:   LOG/LOGRIZ-05Juni2018-26
+        deleted:    Rizaldi/June-04-2018/Bank79/src/Account.java
+        deleted:    Rizaldi/June-04-2018/Bank79/src/AccountApp.java
+        deleted:    Rizaldi/June-04-2018/Bank79/src/Validasi.java
+        renamed:    Rizaldi/June-04-2018/Bank79/.classpath -> Tugas/TugasLatihan/Rizaldi/Bank/.classpath
+        renamed:    Rizaldi/June-04-2018/Bank79/.project -> Tugas/TugasLatihan/Rizaldi/Bank/.project
+        renamed:    Rizaldi/June-04-2018/Bank79/.settings/org.eclipse.jdt.core.prefs -> Tugas/TugasLatihan/Rizaldi/Bank/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Rizaldi/Bank/src/Account.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Bank/src/AccountApp.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/.classpath -> Tugas/TugasLatihan/Rizaldi/Books/.classpath
+        new file:   Tugas/TugasLatihan/Rizaldi/Books/.project
+        renamed:    Rizaldi/June-04-2018/latihanOOP/.settings/org.eclipse.jdt.core.prefs -> Tugas/TugasLatihan/Rizaldi/Books/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Rizaldi/Books/src/Author.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Books/src/Books.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Books/src/RunApp.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Bank/.classpath
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Bank/.project
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Bank/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Bank/src/Account.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Bank/src/AccountApp.java
+        new file:   Tugas/TugasLatihan/Rizaldi/latihanOOP/.classpath
+        renamed:    Rizaldi/June-04-2018/latihanOOP/.project -> Tugas/TugasLatihan/Rizaldi/latihanOOP/.project
+        new file:   Tugas/TugasLatihan/Rizaldi/latihanOOP/.settings/org.eclipse.jdt.core.prefs
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/geometry/BangunDatar.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/geometry/BangunDatar.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/geometry/BangunRuang.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/geometry/BangunRuang.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/geometry/Lingkaran.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/geometry/Lingkaran.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/geometry/Persegi.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/geometry/Persegi.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/geometry/Segitiga.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/geometry/Segitiga.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/geometry/ValidateAlpha.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/geometry/ValidateAlpha.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/geometry/ValidateNumber.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/geometry/ValidateNumber.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihan/Dispenser.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihan/Dispenser.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihan/G7.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihan/G7.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihan/Kipas.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihan/Kipas.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihan/Person.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihan/Person.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihan/RunObject.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihan/RunObject.java
+        new file:   Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihan/Student.java
+        new file:   Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihan/Teacher.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihan/TestPerson.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihan/TestPerson.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihanOOP/Dispenser.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihanOOP/Dispenser.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihanOOP/G7.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihanOOP/G7.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihanOOP/Kipas.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihanOOP/Kipas.java
+        renamed:    Rizaldi/June-04-2018/latihanOOP/src/latihanOOP/RunObject.java -> Tugas/TugasLatihan/Rizaldi/latihanOOP/src/latihanOOP/RunObject.java

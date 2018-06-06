@@ -8,6 +8,7 @@ public class TestPerson {
 		Person secondPerson = new Person("Rizalddi", "Rnensia", "Male", "Music, Food", 21);//instansiasi by konstruktor
 		Person thirdPerson = new Person("Arul", "Aral", "Male", "soccer", 30);//instansiasi by konstruktor
 		
+		
 		firstPerson.firstName	= "Rizaldi";// instansiasi by reference variable
 		firstPerson.lastName	= "Rnensia";
 		firstPerson.age			= 29;
@@ -24,8 +25,24 @@ public class TestPerson {
 		thirdPerson.biodata();// instansiasi by method
 		thirdPerson.greeting();
 		thirdPerson.sayThanks();
-
 		
+		Teacher firstTeacher = new Teacher();
+		firstTeacher.firstName	= "asep";
+		firstTeacher.lastName	= "Sutiawan";
+		firstTeacher.age		= 29;
+		firstTeacher.gender		= "Male";
+		firstTeacher.interest	= "noodles";
+		firstTeacher.subject	= "Math";
+		
+		System.out.println("\nGuru ke 1 : ");
+		firstTeacher.biodata();
+		firstTeacher.greeting();
+
+		Student firstStudent = new Student("Richa", "Fitria", "Female", "Makan", 20);
+		
+		System.out.println("\nMurid ke 1 : ");
+		firstStudent.biodata();
+		firstStudent.greeting();
 	}
 
 }
