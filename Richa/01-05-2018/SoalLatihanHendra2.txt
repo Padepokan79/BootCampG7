@@ -1,0 +1,28 @@
+Nurwan adalah seorang Programmer disebuah perusahaan IT dibandung, yang memiliki gaji pokok sebesar 120% dari UMK(UMK mengikuti Penempatan Kerja).
+Mendapatkan tunjangan kesehatan sebesar 2% dari gaji Pokok, Mendapatkan bonus sebesar 500.000 untuk setiap project yang diselesaikan.
+Serta mendapatkan uang Lembur sebesar 1,5 x 1/173 x Gaji Pokok per jam nya. 
+Serta Mendapatkan tunjangan transportasi Sebesar 750.000 jika dia bekerja diluar kota bandung.
+
+Mendapatkan potongan PPH sebesar 5% dari Gaji Perbulan(Gaji Perbulan didapat dari jumlah Gaji Pokok, Bonus, Lembur, Tunjangan Kesehatan, Tunjangan Transportasi)
+
+Hitunglah Take Home Pay Nurwan Perbulannya dan Total Take Home Pay Nurwan Selama 3 bulan. Jika:
+Bulan April menyelesaikan 2 project dan melakukan lembur selama 10 jam.
+Bulan Mei melakukan lembur selama 5 jam.
+Bulan Juni ditempatkan di Jakarta Pusat. menyelesaikan 1 project dan melakukan 12 jam lembur.
+
+OutPut yang Diinginkan:
+
+Salalry Bulan April
+*******************************
+Nama : Nurwan
+Posisi : Programmer
+*******************************
+Gaji Pokok 	:
+T.Kesehatan	:
+Bonus		:
+Lembur		:
+
+PPH		:
+===============================
+Take Home Pay	:
+===============================

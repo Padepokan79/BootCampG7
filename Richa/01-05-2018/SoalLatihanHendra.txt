@@ -1,0 +1,35 @@
+Budi adalah Seorang PNS yang sudah menikah dan mempunyai 2 orang anak, memiliki Basic Salary sebesar 2.456.700, dan mendapatkan Family Allowance
+sebesar 10% dari basic salary, mendapatkan Children Allowance 2% dari basic salary untuk setiap anaknya, Functional Allowance 500.000,
+mendapatkan Rice Allowance sebesar 10Kg peranggota keluarganya, dimana Harga beras PerKilogramnya adalah 13.000. 
+
+Namun Mendapatkan Potongan retriment Contribution sebesar 4.75% dari bruto Salary (bruto salary didapat dari jumlah basic salary + total seluruh allowance),
+Potongan Functional expenses contribution sebesar 5% dari bruto salary, Potongan Taperum Contribution = 10.000.
+Potongan PPH sebesar 5% dari netto salary (netto salary didapat dari Bruto salary dikurangi jumlah semua contribution).
+
+Berapakah Take Home Pay dari Budi? (Take home pay didapat dari netto salary dikurangi PPH)
+
+
+
+Outpuh Yang di inginkan:
+
+=====================================
+NAMA : Budi Anto
+NIP  : 19020390209
+=====================================
+ 
+Basic Salary		: 
+Total Allowance		: 
+=====================================
+Bruto Salary		: 
+=====================================
+
+Salary Cut		:
+=====================================
+Netto Salary		: 
+
+=====================================
+PPH Salary		:
+
+=====================================
+Take Home Pay       	:
+=====================================

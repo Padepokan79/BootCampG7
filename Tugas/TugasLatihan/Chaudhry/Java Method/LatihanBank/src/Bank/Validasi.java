@@ -9,7 +9,6 @@ public class Validasi {
 	public static boolean cekValidasiHuruf(String validasi, boolean cek) {
 		if(validasi.matches("[A-Z a-z]*")) {
 			cek = true;
-		
 		}else {
 			System.out.println("Inputan hanya berupa huruf!");
 		}
@@ -18,8 +17,11 @@ public class Validasi {
 	public static boolean cekValidasiAngka(String validasi, boolean cek) {
 		if(validasi.matches("[0-9]*")) {
 			cek = true;
-			
-		}else {
+		}
+		else if(validasi.indexOf("-") == 0) {
+			System.out.println("Inputan hanya berupa bilangan positif!");
+		}
+		else {
 			System.out.println("Inputan hanya berupa angka!");
 		}
 		return cek;
