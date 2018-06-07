@@ -1,0 +1,50 @@
+
+public class SegiTiga {
+	int panjang, lebar, tinggi, luas, keliling, volume, sisi;
+	
+	public SegiTiga() {
+		
+	}
+	public SegiTiga(int sisi) {
+		this.sisi = sisi;
+	}
+	public SegiTiga(int p, int l) {
+		panjang = p;
+		lebar = l;
+	}
+	public SegiTiga(int p, int l, int t) {
+		panjang = p;
+		lebar = l;
+		tinggi = t;
+	}
+	
+	void luasDanKelilingPersegi() {
+	luas = sisi * sisi;
+	keliling = 4 * sisi;		
+	}
+	
+	int luasPersegi() {
+		luas = sisi * sisi;	
+		return luas;
+	}
+	
+	
+	void luasDanKelilingPersegiPanjang() {
+		luas = panjang * lebar;
+		keliling = (2*panjang) + (2*lebar);
+	}
+	void volumeKubus() {
+		volume = sisi * sisi * sisi;
+	}
+	void volumeBalok() {
+		volume = panjang * lebar * tinggi;
+	}
+	
+	void printLuasDanKeliling() {
+		System.out.println("Luas bangun datar tersebut adalah " + luas);
+		System.out.println("Keliling bangun datar tersebut adalah " + keliling);
+	}
+	void printVolume() {
+		System.out.println("Volume bangun ruang tersebut adalah " + volume);
+	}
+}

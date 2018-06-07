@@ -1,0 +1,15 @@
+Add
+
+ new file:   Tugas/TugasLatihan/Ryan/Buku/.classpath
+ new file:   Tugas/TugasLatihan/Ryan/Buku/.project
+ new file:   Tugas/TugasLatihan/Ryan/Buku/.settings/org.eclipse.jdt.core.prefs
+ new file:   Tugas/TugasLatihan/Ryan/Buku/src/Author.java
+ new file:   Tugas/TugasLatihan/Ryan/Buku/src/Book.java
+ new file:   Tugas/TugasLatihan/Ryan/Buku/src/Test.java
+ new file:   Tugas/TugasLatihan/Ryan/Person/.classpath
+ new file:   Tugas/TugasLatihan/Ryan/Person/.project
+ new file:   Tugas/TugasLatihan/Ryan/Person/.settings/org.eclipse.jdt.core.prefs
+ new file:   Tugas/TugasLatihan/Ryan/Person/src/Person/Person.java
+ new file:   Tugas/TugasLatihan/Ryan/Person/src/Person/Student.java
+ new file:   Tugas/TugasLatihan/Ryan/Person/src/Person/Teachers.java
+ new file:   Tugas/TugasLatihan/Ryan/Person/src/Person/TestPerson.java

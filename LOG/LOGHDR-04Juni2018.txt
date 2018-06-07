@@ -1,0 +1,17 @@
+menambahkan file
+======================
+ new file:   Bangun/Lingkaran.java
+ new file:   Bangun/PerhitunganBangunDatar.java
+ new file:   Bangun/PerhitunganBangunRuang.java
+ new file:   Bangun/SegiEmpat.java
+ new file:   Bangun/Segitiga.java
+ new file:   Bangun/Validasi.java
+ new file:   latihan/FlashDisk.java
+ new file:   latihan/Headset.java
+ new file:   latihan/Motor.java
+ new file:   latihan/Person.java
+ new file:   latihan/Test3Objek.java
+ new file:   latihan/TestBuatPerson.java
+ new file:   latihan/TestFlashDisk.java
+ new file:   latihan/TestHeadset.java
+ new file:   latihan/TestMotor.java

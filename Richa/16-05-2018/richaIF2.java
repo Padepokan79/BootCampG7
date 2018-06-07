@@ -4,7 +4,8 @@ Date/hour			: 16 Mei 2018/ 10.01 AM
 Updated by			:
 Updated Date/hour	:
 
-*/import java.util.Scanner;
+*/
+import java.util.Scanner;
 
 public class RichaIF2 {
 	public static void main (String [] args) {

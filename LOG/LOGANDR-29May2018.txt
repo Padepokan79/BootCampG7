@@ -1,0 +1,7 @@
+Menambahkan file :
+        new file:   Tugas/TugasLatihan/Exam/Andrian/Kuis1Andrian.java
+	new file:   Tugas/TugasLatihan/Exam/Andrian/Kuis2Andrian.java
+	new file:   Tugas/TugasLatihan/Exam/Andrian/Kuis3Andrian.java
+	new file:   Tugas/TugasLatihan/Exam/Andrian/Kuis4Andrian.java
+	new file:   Tugas/TugasLatihan/Exam/Andrian/Kuis5Andrian.java
+	new file:   LGANDRN-29May2018.txt

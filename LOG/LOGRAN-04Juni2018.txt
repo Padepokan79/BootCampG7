@@ -1,0 +1,17 @@
+Add
+
+new file:   Ryan/04062018/G7/.classpath
+new file:   Ryan/04062018/G7/.project
+new file:   Ryan/04062018/G7/.settings/org.eclipse.jdt.core.prefs
+new file:   Ryan/04062018/G7/src/Bangun/BangunDatar.java
+new file:   Ryan/04062018/G7/src/Bangun/BangunRuang.java
+new file:   Ryan/04062018/G7/src/Bangun/Lingkaran.java
+new file:   Ryan/04062018/G7/src/Bangun/Persegi.java
+new file:   Ryan/04062018/G7/src/Bangun/Segitiga.java
+new file:   Ryan/04062018/G7/src/Bangun/Validasi.java
+new file:   Ryan/04062018/G7/src/Person/Person.java
+new file:   Ryan/04062018/G7/src/Person/TestPerson.java
+new file:   Ryan/04062018/G7/src/TigaObjek/Flashdisk.java
+new file:   Ryan/04062018/G7/src/TigaObjek/Headset.java
+new file:   Ryan/04062018/G7/src/TigaObjek/Motor.java
+new file:   Ryan/04062018/G7/src/TigaObjek/Tampil.java
