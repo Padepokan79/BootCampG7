@@ -8,13 +8,16 @@ public class Book extends Author{
 	Author auth = new Author();
 	char gender;
 	
-	public Book(String name, Author author, int price) {
+	public Book(String name, Author auth, int price) {
 //		super(name, email, gender);
+		this.auth = auth;
 		this.price = price;
 	}
 	
-	public Book(String name, Author author, int price, int qty) {
+	public Book(String name, Author auth, int price, int qty) {
 //		super(name, email, gender);
+		this.name = name;
+		this.auth = auth;
 		this.price = price;
 		this.qty = qty;
 	}
@@ -44,6 +47,6 @@ public class Book extends Author{
 	}
 	
 	String printString (){
-		return "Book [name=" + name + ", " + super.printString() + ", price=" + price + ", qty=" + qty + "]";
+		return "Book [name=" + name + ", " + auth.printString() + ", price=" + price + ", qty=" + qty + "]";
 	}
 }
