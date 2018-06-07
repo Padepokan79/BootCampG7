@@ -9,7 +9,7 @@ public class Alifhar {
 		String sad2="2. Tidak peduli dengan sesama";
 		String sad3="3. Mementingkan diri sendiri";
 		String sad4="4. Ketidakjujuran";
-		String sad5="5. Melihat ketidakalian";
+		String sad5="5. Melihat ketidakadilan";
 		String regret="1. Tidak pernah mendaki gunung";
 		String regret2="2. Tidak masuk BEM ketika kuliah";
 		String regret3="3. Tidak mencari beasiswa ketika kuliah";

@@ -1,30 +1,34 @@
 /*
-	 Program     : Tugas While - Java Guessing 2 (Advanced Version)
+	 Program     : Pig Dice Game - Using Dice Pic
      Creator     : Khairil
-     Created At  : 17 Mei 2018 13:41 PM     
+     Created At  : 30 Mei 2018 00:55 AM     
      Updated By  : 
      Update Date : 
 */
 import java.util.Scanner;
 import java.util.Random;
 
-class PigDiceGame {
+class PigDiceLikeGame {
 	public static void main (String[] args) {
 		Scanner input = new Scanner(System.in);
 		Random numRan = new Random();
 		String choose;
 		int diceNum, diceCom, diceSelf, point, points, choose2, fairCom, fairSelf, pointSelf, pointCom, round, rolls;
-		Boolean play;
+		Boolean play, match, com;
 
 		play = true;
+		match = true;
+		com = true;
 		point = 0;
 		pointSelf = 0;
 		pointCom = 0;
 		points = 100;
 		round = 1;
 		rolls = 3;
+		choose = "";
+		diceSelf = 0;
 
-		while(pointCom < points && pointSelf < points && play == true) {
+		while(pointCom < points && pointSelf < points && match == true) {
 
 			choose2 = 1;
 
@@ -37,24 +41,26 @@ class PigDiceGame {
 
 			while(diceCom <= rolls) {
 				fairCom = numRan.nextInt(6) + 1;
-				System.out.println("Com Dice " + diceCom + " : " + fairCom);
+				System.out.println("Com Dice " + diceCom + " : ");
+				showDice(fairCom);
 				System.out.println("=======================");
 				pointCom = pointCom + fairCom;
 				diceCom++;
+
+				System.out.println("Comp point " + pointCom);
+				System.out.println("=======================");
+
+				fairSelf = 0;
+				diceSelf = 0;
 			}
 
-			System.out.println("Comp point " + pointCom);
-			System.out.println("=======================");
+				System.out.println("Your Turn");	
+				System.out.println("Roll Now !! ");
+				System.out.println("==============================");
+				System.out.println("Press R to Roll");
+				System.out.println("==============================");
+				choose = input.next();
 
-			fairSelf = 0;
-			diceSelf = 0;
-
-			System.out.println("Your Turn");	
-			System.out.println("Roll Now !! ");
-			System.out.println("==============================");
-			System.out.println("Press R to Roll");
-			System.out.println("==============================");
-			choose = input.next();
 
 			while(( choose.equals("R") || choose.equals("r") ) && pointCom < points && choose2 == 1 && play == true) {
 
@@ -63,7 +69,8 @@ class PigDiceGame {
 				if(fairSelf == 1) {
 					System.out.println();
 					System.out.println("HAHAHAHAHAHAHAHAHAHAHA...");
-					System.out.println("Your Dice  " + fairSelf);
+					System.out.println("Your Dice  ");
+					showDice(fairSelf);
 					System.out.println("Game Over !!");
 					System.out.println("==============================");
 					System.out.println("Your last point 0");
@@ -74,7 +81,8 @@ class PigDiceGame {
 				}
 				else {
 					System.out.println();
-					System.out.println("Your Dice  " + fairSelf);
+					System.out.println("Your Dice  ");
+					showDice(fairSelf);					
 					pointSelf = pointSelf + fairSelf;					
 					play = true;
 					System.out.println();
@@ -93,6 +101,7 @@ class PigDiceGame {
 					}
 					else {
 						play = false;
+						match = true;
 					}
 				}
 			}
@@ -105,6 +114,42 @@ class PigDiceGame {
 			System.out.println("==============================");
 		}
 	}
+
+	public static void showDice( int roll ) {
+
+		System.out.println("+---+");
+		if ( roll == 1 ) {
+			System.out.println("|   |");
+			System.out.println("| o |");
+			System.out.println("|   |");
+		}
+		else if ( roll == 2 ) {
+			System.out.println("| o |");
+			System.out.println("|   |");
+			System.out.println("| o |");
+		}
+		else if ( roll == 3 ) {
+			System.out.println("| o |");
+			System.out.println("| o |");
+			System.out.println("| o |");
+		}
+		else if ( roll == 4 ) {
+			System.out.println("|o o|");
+			System.out.println("|   |");
+			System.out.println("|o o|");
+		}
+		else if ( roll == 5 ) {
+			System.out.println("|o o|");
+			System.out.println("| o |");
+			System.out.println("|o o|");
+		}
+		else if ( roll == 6 ) {
+			System.out.println("|o o|");
+			System.out.println("|o o|");
+			System.out.println("|o o|");
+		}
+		System.out.println("+---+");
+	}	
 }
 /*
 Pig-like Dice Game

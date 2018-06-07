@@ -12,18 +12,26 @@ class HitungGajiPns {
 		Scanner keyboard = new Scanner(System.in);
 		Scanner number = new Scanner(System.in);
 		Scanner dualLine = new Scanner(System.in);
-		String noLetter, noNum, tglPeriod, nip, namaPegawai, gol, eselon, statPegawai, masaKerja, tunjTerpencil, tanyaTunjStruktural, tanyaTunjFungsional, inputNamaTunjLain, inputNomTunjLain, tanyaJenisFungsional, tunjPajak, tanyaTunjPapua, tanyaTunjLain, ambilAngka, ambilAngka1, tanyasewaRumah, bbnSeminar, bbnListrik, bbnAir;
-		int jumAnak, keluarga, mmasaKerja, exp3, tunjTerpencilI, pkpLvl1, pkpLvl2, pkpLvl3, ptkpSingle, ptkpMarried, ptkpAnak, gapok, tunjBeras, tunjUmum, tunjPapua, tunjStruktur, tunjFungsi, tunjLain, transport, bbnPotBeras, bbnTaperum, sewaRumah, bbnSeminarI, bbnListrikI, bbnAirI, jumKotor, jumPot, jumBersih, countTunj;
+		String noLetter, noNum, tglPeriod, nip, namaPegawai, gol, eselon, statPegawai, masaKerja, jumAnak1, tunjTerpencil, tanyaTunjStruktural, tanyaTunjFungsional, inputNamaTunjLain, inputNomTunjLain, tanyaJenisFungsional, tunjPajak, tanyaTunjPapua, tanyaTunjLain, ambilAngka, ambilAngka1, tanyasewaRumah, bbnSeminar, bbnListrik, bbnAir, statInputNoBlank, statInputMustNum, statInputMustLetter, statInputOnlyYN;
+		int jumAnak, keluarga, mmasaKerja, exp3, tunjTerpencilI, pkpLvl1, pkpLvl2, pkpLvl3, ptkpSingle, ptkpMarried, ptkpAnak, gapok, tunjBeras, tunjUmum, tunjPapua, tunjStruktur, tunjFungsi, tunjLain, transport, bbnPotBeras, bbnTaperum, sewaRumah, bbnSeminarI, bbnListrikI, bbnAirI, jumKotor, jumPot, jumBersih, countTunj, hargaBeras;
 		double tier1, tier2, tier3, tier4, persenpkp1, persenpkp2, persenpkp3, persenpkp4, totalGajiKotor, totalBebanKotor, bbnPPh, totalGajiBersih, gajiSetelahPPh, ptkp, pkp, gajiBersihSetahun, tunjAnak, bbnIwp, tunjKel, bbnPphBln;
+		boolean clap;
 
 		masaKerja = ""; mmasaKerja = 0; gapok = 0; nip = ""; namaPegawai = ""; gol = ""; statPegawai = "";
-		tunjAnak = 0; tunjBeras = 0; keluarga = 0; noLetter = "[A-Za-z]"; noNum = "[0-9]"; tunjStruktur = 0;
+		tunjAnak = 0; tunjBeras = 0; keluarga = 0; noNum = "[A-Za-z., ]+"; noLetter = "[0-9]+"; tunjStruktur = 0;
 		tanyaJenisFungsional = ""; tglPeriod = ""; bbnPPh = 0; tunjUmum = 0; eselon = ""; tunjStruktur = 0;
 		tanyaTunjFungsional = ""; tunjFungsi = 0; tunjPapua = 0; bbnTaperum = 0; countTunj = 0; inputNamaTunjLain = "";
 		inputNomTunjLain = ""; tunjLain = 0; pkpLvl1 = 50000000; pkpLvl2 = 250000000; pkpLvl3 = 500000000;
 		persenpkp1 = 0.05; persenpkp2 = 0.15; persenpkp3 = 0.25; persenpkp4 = 0.3; gajiSetelahPPh = 0;
 		ptkpSingle = 36000000; ptkpMarried = ptkpAnak = 3000000; ptkp = 0; pkp = 0; gajiBersihSetahun = 0;
-		totalGajiBersih = 0;
+		totalGajiBersih = 0; clap = false; jumAnak = 0; hargaBeras = 14000; tanyaTunjStruktural = ""; tunjTerpencilI = 0;
+		sewaRumah = 0; tanyaTunjPapua = ""; tunjTerpencil = ""; tanyaTunjLain = ""; bbnSeminar = ""; bbnAir = ""; bbnListrik = "";
+
+		statInputNoBlank = "Inputan Tidak Boleh Kosong";
+		statInputMustLetter = "Inputan hanya boleh huruf";
+		statInputMustNum = "Inputan hanya boleh angka";
+		statInputOnlyYN = "Inputan hanya Y (Ya) atau N (Tidak)";
+
 		//golongan I
 		int[] gapok1a = {1486500, 1486500, 1533400, 1533400, 1581700, 1581700, 1631500, 1631500, 1682900, 1682900, 1735900, 1735900, 1790500, 1790500, 1846900, 1846900, 1905100, 1905100, 1965100, 1965100, 2027000, 2027000, 2090800, 2090800, 2156700, 2156700, 2224600, 2224600};
 		int[] gapok1b = {1623400, 1623400, 1674500, 1674500, 1727300, 1727300, 1781700, 1781700, 1837800, 1837800, 1895700, 1895700, 1955400, 1955400, 2016900, 2016900, 2080500, 2080500, 2146000, 2146000, 2213600, 2213600, 2283300, 2283300, 2355200};
@@ -49,85 +57,127 @@ class HitungGajiPns {
 		System.out.println("----------------------------------------------------------------------");
 		System.out.println();
 		System.out.println();
-		while(nip.matches(noLetter) || nip.length() < 12 || nip.length() > 18) {
+		while(clap == false) {
 			System.out.print("NIP : ");
 			nip = number.nextLine();	
-			if(nip.matches("[\n]+")) {
-				System.out.println();
-			}
-			else {
-				if(nip.matches("[-]")) {
-					System.out.println("NIP harus diisi");
-				}
-				else if(nip.matches(noLetter)) {
-					System.out.println("Inputan tidak boleh huruf");
-				}
-				else if(nip.length() < 12) {
+			if(nip.matches("[0-9]+")) {
+				if(nip.length() < 12) {
 					System.out.println("Minimal 12 digit");
+					clap = false;
 				}
 				else if(nip.length() > 18) {
 					System.out.println("Maksimal 18 digit");
+					clap = false;
 				}
+				else {
+					clap = true;
+				}
+			}
+			else if(nip.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;				
+			}
+			else {
+				System.out.println(statInputMustNum);
+				clap = false;
 			}
 		}
 
 		System.out.println();
 
-		while(namaPegawai.length() == 0 || namaPegawai.length() > 32 || namaPegawai.equals("") || namaPegawai.matches(noNum))	{
+		clap = false;
+
+		while(clap == false)	{
 			System.out.print("Nama	: ");
 			namaPegawai = dualLine.nextLine();	
 			if(namaPegawai.matches(noNum) ) {
-				System.out.println("Inputan harus huruf");
+				if(namaPegawai.length() > 32) {
+					System.out.println("Maksimal Inputan 32 digit");
+					clap = false;
+				}
+				else if(namaPegawai.length() > 0 && namaPegawai.length() <= 32) {
+					clap = true;
+				}				
 			}
-			else if(namaPegawai.length() < 1) {
-				System.out.println("Inputan minimal 1 Karakter");
+			else if(namaPegawai.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
 			}
-			else if(namaPegawai.length() > 32) {
-				System.out.println("Maksimal Inputan 32 digit");
-			}
-			else if(namaPegawai.equals("")) {
-				System.out.println("Nama pegawai harus diisi");
+			else {
+				System.out.println(statInputMustLetter);
+				clap = false;
 			}
 		}
 
 		System.out.println();
 
-		while(!statPegawai.matches("[KTKDJ]")) {
+		clap = false;
+
+		while(clap == false) {
 			System.out.print("Status Perkawinan : ");
 			System.out.println();
-			System.out.println("TK | K | D | J");			
-			statPegawai = keyboard.next();
-			if(statPegawai.equals("TK") || statPegawai.equals("D") || statPegawai.equals("J") ) {
-				keluarga = 1;
+			System.out.println("TK = Tidak Kawin | K = Kawin | D = Duda | J = Janda");			
+			statPegawai = keyboard.nextLine();
+			if(statPegawai.matches("[KDJ]+") || statPegawai.matches("[TK]+")) {
+				if(statPegawai.equals("D") || statPegawai.equals("J") || statPegawai.equals("TK")) {
+					keluarga = 0;
+					clap = true;
+				}
+				else if(statPegawai.equals("K")) {
+					keluarga = 1; //tidak termasuk anak;
+					clap = true;
+				}
 			}
-			else if(statPegawai.equals("K")) {
-				keluarga = 1; //tidak termasuk anak;
+			else if(statPegawai.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
 			}
-			else if(!statPegawai.matches("[KTKDJ]")) {
-				System.out.println("Kode Tidak Sesuai");
+			else {
+				System.out.println("Kode Input Tidak Dikenal. Case sensitive");
+				clap = false;
 			}
 		}
 
 		System.out.println();
 
-		while(!gol.matches("[1-5A-Ea-e]"))	{
+		clap = false;
+
+		while(clap == false)	{
 			System.out.print("Golongan	: ");
 			System.out.println();
 			System.out.println("1A | 1B | 1C | 1D | 2A | 2B | 2C | 2D | 3A | 3B | 3C | 3D | 4A | 4B | 4C | 4D | 4E");
-			gol = number.next();	
-			if(gol.length() < 1) {
-				System.out.println("Tidak Boleh Kosong");
+			gol = dualLine.nextLine();	
+			if(gol.matches("[1-3A-Da-d]+") || gol.matches("[4A-Ea-e]+")) {
+				clap = true;
 			}
-			else if(gol.matches("[1-5A-Ea-e]")) {
-				System.out.println("Golongan tersebut tidak dikenal");
+			else if(gol.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}
+			else {
+				System.out.println("Inputan Golongan " + gol + " Tidak Dikenal");
+				clap = false;
 			}
 		}
 
 		System.out.println();		
 
-		while(!masaKerja.equals("[0-9]")) {
-			System.out.print("Masa Kerja :");
-			masaKerja = number.next();
+		clap = false;
+
+		while(clap == false) {
+			System.out.print("Masa Kerja : ");
+			masaKerja = keyboard.nextLine();
+			if(masaKerja.matches(noLetter)) {
+				clap = true;
+			}
+			else if(masaKerja.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}
+			else {
+				System.out.println(statInputMustNum);
+				clap = false;				
+			}
 		}
 
 		System.out.println();
@@ -290,233 +340,489 @@ class HitungGajiPns {
 
 		tunjKel = gapok * 0.1;
 
-		System.out.print("Jumlah Anak : ");
-		jumAnak = number.nextInt();
+		clap = false;
 
-		if(jumAnak <= 2) {
-			tunjAnak = gapok * 0.02 * jumAnak;	
+		while(clap == false) {
+			System.out.print("Jumlah Anak : ");
+			jumAnak1 = keyboard.nextLine();
+
+			if(jumAnak1.matches(noLetter)) {
+				jumAnak = Integer.parseInt(jumAnak1);
+				if(jumAnak <= 2) {
+					tunjAnak = gapok * 0.02 * jumAnak;	
+					clap = true;
+				}
+				else if(jumAnak > 2) {
+					tunjAnak = gapok * 0.02 * 2;
+					clap = true;
+				}
+			}
+			else if(jumAnak1.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}		
+			else {
+				System.out.println(statInputMustNum);
+				clap = false;
+			}
+			
 		}
-		else if(jumAnak > 2) {
-			tunjAnak = gapok * 0.02 * 2;
+
+
+		System.out.println();
+
+		tunjBeras = 10 * hargaBeras * (jumAnak + keluarga);
+
+		clap = false;
+
+		while(clap == false) {
+			System.out.print("Tunjangan Struktural ");
+			System.out.print("\t Y (Ya) | N (Tidak) : ");
+			tanyaTunjStruktural = number.nextLine();
+
+			if(tanyaTunjStruktural.matches("[YN]+")) {
+
+				if(tanyaTunjStruktural.equals("Y")) {
+					clap = false;
+					while(clap == false) {
+						System.out.print("Eselon : ");
+						System.out.println();
+						System.out.println("IA | IB | IIA | IIB | IIIA | IIIB | IVA | IVB | VA");
+						eselon = dualLine.nextLine();
+
+						if(eselon.matches("[IA-B]+") || eselon.matches("[IIA-B]+") || eselon.matches("[IIIA-B]+") || eselon.matches("[IVA-B]+") || eselon.matches("[VA]+") ) {
+
+							if(eselon.equals("IA")) {
+								tunjStruktur = 5500000;
+								clap = true;
+							}
+							else if(eselon.equals("IB")) {
+								tunjStruktur = 4375000;	
+								clap = true;
+							}
+							else if(eselon.equals("IIA")) {
+								tunjStruktur = 3250000;	
+								clap = true;
+							}
+							else if(eselon.equals("IIB")) {
+								tunjStruktur = 2025000;
+								clap = true;
+							}
+							else if(eselon.equals("IIIA")) {
+								tunjStruktur = 1260000;
+								clap = true;
+							}
+							else if(eselon.equals("IIIB")) {
+								tunjStruktur = 980000;
+								clap = true;
+							}
+							else if(eselon.equals("IVA")) {
+								tunjStruktur = 540000;
+								clap = true;
+							}
+							else if(eselon.equals("IVB")) {
+								tunjStruktur = 490000;
+								clap = true;
+							}
+							else if(eselon.equals("VA")) {
+								tunjStruktur = 380000;
+								clap = true;
+							}
+						}
+
+						else if(eselon.length() == 0) {
+							System.out.println(statInputNoBlank);
+							clap = false;
+						}
+
+						else {
+							System.out.println("Inputan " + eselon + " tidak dikenal");
+							clap = false;
+						}
+					}
+				}
+
+				else if(tanyaTunjStruktural.equals("N")) {
+					clap = false;
+					while(clap == false) {
+
+						System.out.print("Tunjangan Fungsional ");
+						System.out.print("\t Y (Ya) | N (Tidak) : ");
+						tanyaTunjFungsional = keyboard.nextLine();
+
+						System.out.println();
+
+						if(tanyaTunjFungsional.matches("[YN]+")) {
+
+							if(tanyaTunjFungsional.equals("Y")) {
+								clap = false;
+								while(clap == false) {
+
+									System.out.print("Jenis Fungsional : ");
+									System.out.println("Keahlian || Keterampilan");
+									tanyaJenisFungsional = dualLine.nextLine();
+
+									if(tanyaJenisFungsional.equals("Keahlian")) {
+										if(gol.equals("4D") || gol.equals("4E")) {
+											tunjFungsi = 1000000;
+											clap = true;
+										}
+										else if(gol.equals("4A") || gol.equals("4B") || gol.equals("4C") ) {
+											tunjFungsi = 900000;
+											clap = true;
+										}
+										else if(gol.equals("3C") || gol.equals("3D") ) {
+											tunjFungsi = 800000;
+											clap = true;
+										}
+										else if(gol.equals("3A") || gol.equals("3B") ) {
+											tunjFungsi = 700000;
+											clap = true;
+										}
+										else {
+											tunjFungsi = 0;
+											clap = true;											
+										}
+									}
+
+									else if(tanyaJenisFungsional.equals("Keterampilan") ) {
+										if(gol.equals("3C") || gol.equals("3D") ) {
+											tunjFungsi = 600000;
+											clap = true;
+										}
+										else if(gol.equals("3A") || gol.equals("3B") ) {
+											tunjFungsi = 500000;
+											clap = true;
+										}
+										else if(gol.equals("2B") || gol.equals("2C") || gol.equals("2D") ) {
+											tunjFungsi = 400000;
+											clap = true;
+										}
+										else if(gol.equals("2A") ) {
+											tunjFungsi = 300000;
+											clap = true;
+										}
+										else {
+											tunjFungsi = 0;
+											clap = true;
+										}
+									}
+
+									else {
+										if(tanyaJenisFungsional.length() == 0) {
+											System.out.println(statInputNoBlank);
+											clap = false;											
+										}
+										else {
+											System.out.println("Jenis Fungsional hanya Keahlian dan Keterampilan");
+											clap = false;
+										}
+									}
+								}
+							}
+
+							else if(tanyaTunjFungsional.equals("N")) {
+								ambilAngka = gol.substring(0,1);
+								if(ambilAngka.equals("1")) {
+									tunjUmum = 175000;
+									clap = true;
+								}
+								else if(ambilAngka.equals("2")) {
+									tunjUmum = 180000;
+									clap = true;
+								}
+								else if(ambilAngka.equals("3")) {
+									tunjUmum = 185000;
+									clap = true;
+								}
+								else if(ambilAngka.equals("4")) {
+									tunjUmum = 190000;
+									clap = true;
+								}
+							}	
+
+						}
+
+						else if(tanyaTunjFungsional.length() == 0) {
+							System.out.println(statInputNoBlank);
+							clap = false;
+						}
+
+						else {
+							System.out.println(statInputOnlyYN);
+							clap = false;
+						}
+
+					}					
+
+				}
+
+			}
+
+			else if(tanyaTunjStruktural.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}
+
+			else {
+				System.out.println(statInputOnlyYN);
+				clap = false;
+			}
+
 		}
 
 		System.out.println();
 
-		tunjBeras = 10 * 14000 * (jumAnak + keluarga);
 
-		System.out.print("Tunjangan Struktural : ");
-		tanyaTunjStruktural = keyboard.next();
+		clap = false;
+		while(clap == false) {
 
-		while(tanyaTunjStruktural.matches("[YN]")) {
+			System.out.print("Tunjangan Papua  ");
+			System.out.print("\t Y (Ya) | N (Tidak) : ");
+			tanyaTunjPapua = keyboard.nextLine();
 
-			if(tanyaTunjStruktural.equals("Y")) {
-				System.out.print("Eselon : ");
-				System.out.println();
-				System.out.println("IA | IB | IIA | IIB | IIIA | IIIB | IVA | IVB | VA");
-				eselon = keyboard.next();
-
-				if(eselon.equals("IA")) {
-					tunjStruktur = 5500000;
-				}
-				else if(eselon.equals("IB")) {
-					tunjStruktur = 4375000;	
-				}
-				else if(eselon.equals("IIA")) {
-					tunjStruktur = 3250000;	
-				}
-				else if(eselon.equals("IIB")) {
-					tunjStruktur = 2025000;
-				}
-				else if(eselon.equals("IIIA")) {
-					tunjStruktur = 1260000;
-				}
-				else if(eselon.equals("IIIB")) {
-					tunjStruktur = 980000;
-				}
-				else if(eselon.equals("IVA")) {
-					tunjStruktur = 540000;
-				}
-				else if(eselon.equals("IVB")) {
-					tunjStruktur = 490000;
-				}
-				else if(eselon.equals("VA")) {
-					tunjStruktur = 380000;
-				}
-			}
-
-			else if(tanyaTunjStruktural.equals("N")) {
-				System.out.print("Tunjangan Fungsional : ");
-				tanyaTunjFungsional = keyboard.next();
-
-				System.out.println();
-
-				if(tanyaTunjFungsional.equals("Y")) {
-					System.out.print("Jenis Fungsional : ");
-					tanyaJenisFungsional = keyboard.next();
-
-					if(tanyaJenisFungsional.equals("Keahlian")) {
-						if(gol.equals("4D") || gol.equals("4E")) {
-							tunjFungsi = 1000000;
-						}
-						else if(gol.equals("4A") || gol.equals("4B") || gol.equals("4C") ) {
-							tunjFungsi = 900000;
-						}
-						else if(gol.equals("3C") || gol.equals("3D") ) {
-							tunjFungsi = 800000;
-						}
-						else if(gol.equals("3A") || gol.equals("3B") ) {
-							tunjFungsi = 700000;
-						}
-						else {
-							tunjFungsi = 0;
-						}
+			if(tanyaTunjPapua.matches("[YN]+")) {
+				if(tanyaTunjPapua.equals("Y")) {
+					if(gol.equals("1A")) {
+						tunjPapua = 200000;
+						clap = true;
 					}
-
-					else if(tanyaJenisFungsional.equals("Keterampilan") ) {
-						if(gol.equals("3C") || gol.equals("3D") ) {
-							tunjFungsi = 600000;
-						}
-						else if(gol.equals("3A") || gol.equals("3B") ) {
-							tunjFungsi = 500000;
-						}
-						else if(gol.equals("2B") || gol.equals("2C") || gol.equals("2D") ) {
-							tunjFungsi = 400000;
-						}
-						else if(gol.equals("2A") ) {
-							tunjFungsi = 300000;
-						}
-						else {
-							tunjFungsi = 0;
-						}
+					else if(gol.equals("1B")) {
+						tunjPapua = 225000;
+						clap = true;
+					}
+					else if(gol.equals("1C")) {
+						tunjPapua = 250000;
+						clap = true;
+					}
+					else if(gol.equals("1D")) {
+						tunjPapua = 275000;
+						clap = true;
+					}
+					else if(gol.equals("2A")) {
+						tunjPapua = 300000;
+						clap = true;
+					}
+					else if(gol.equals("2B")) {
+						tunjPapua = 325000;
+						clap = true;
+					}
+					else if(gol.equals("2C")) {
+						tunjPapua = 350000;
+						clap = true;
+					}
+					else if(gol.equals("2D")) {
+						tunjPapua = 375000;
+						clap = true;
+					}
+					else if(gol.equals("3A")) {
+						tunjPapua = 425000;
+						clap = true;
+					}
+					else if(gol.equals("3B")) {
+						tunjPapua = 450000;
+						clap = true;
+					}
+					else if(gol.equals("3C")) {
+						tunjPapua = 475000;
+						clap = true;
+					}
+					else if(gol.equals("3D")) {
+						tunjPapua = 500000;
+						clap = true;
+					}
+					else if(gol.equals("4A")) {
+						tunjPapua = 525000;
+						clap = true;
+					}
+					else if(gol.equals("4B")) {
+						tunjPapua = 550000;
+						clap = true;
+					}
+					else if(gol.equals("4C")) {
+						tunjPapua = 575000;
+						clap = true;
+					}
+					else if(gol.equals("4D")) {
+						tunjPapua = 600000;
+						clap = true;
+					}
+					else if(gol.equals("4E")) {
+						tunjPapua = 625000;
+						clap = true;
 					}
 				}
-
 				else {
-					ambilAngka = gol.substring(0,1);
-					if(ambilAngka.equals("1")) {
-						tunjUmum = 175000;
-					}
-					else if(ambilAngka.equals("2")) {
-						tunjUmum = 180000;
-					}
-					else if(ambilAngka.equals("3")) {
-						tunjUmum = 185000;
-					}
-					else if(ambilAngka.equals("4")) {
-						tunjUmum = 190000;
-					}
-
+					tunjPapua = 0;
+					clap = true;
 				}
-
 			}
-
+			else if(tanyaTunjStruktural.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}
+			else {
+				System.out.println(statInputOnlyYN);
+				clap = false;				
+			}
 		}
 
 		System.out.println();
 
-		System.out.print("Tunjangan Papua  : ");
-		tanyaTunjPapua = keyboard.next();
+		clap = false;
+		while(clap == false) {
+			System.out.print("Tunjangan Terpencil : ");
+			tunjTerpencil = number.nextLine();
 
-		if(tanyaTunjPapua.equals("Y")) {
-			if(gol.equals("1A")) {
-				tunjPapua = 200000;
+			if(tunjTerpencil.matches("[0-9]+")) {
+				tunjTerpencilI = Integer.parseInt(tunjTerpencil);
+				clap = true;
 			}
-			else if(gol.equals("1B")) {
-				tunjPapua = 225000;
+			else if(tunjTerpencil.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
 			}
-			else if(gol.equals("1C")) {
-				tunjPapua = 250000;
+			else {
+				System.out.println(statInputMustNum);				
+				clap = false;
 			}
-			else if(gol.equals("1D")) {
-				tunjPapua = 275000;
-			}
-			else if(gol.equals("2A")) {
-				tunjPapua = 300000;
-			}
-			else if(gol.equals("2B")) {
-				tunjPapua = 325000;
-			}
-			else if(gol.equals("2C")) {
-				tunjPapua = 350000;
-			}
-			else if(gol.equals("2D")) {
-				tunjPapua = 375000;
-			}
-			else if(gol.equals("3A")) {
-				tunjPapua = 425000;
-			}
-			else if(gol.equals("3B")) {
-				tunjPapua = 450000;
-			}
-			else if(gol.equals("3C")) {
-				tunjPapua = 475000;
-			}
-			else if(gol.equals("3D")) {
-				tunjPapua = 500000;
-			}
-			else if(gol.equals("4A")) {
-				tunjPapua = 525000;
-			}
-			else if(gol.equals("4B")) {
-				tunjPapua = 550000;
-			}
-			else if(gol.equals("4C")) {
-				tunjPapua = 575000;
-			}
-			else if(gol.equals("4D")) {
-				tunjPapua = 600000;
-			}
-			else if(gol.equals("4E")) {
-				tunjPapua = 625000;
-			}
-		}
-		else {
-			tunjPapua = 0;
-		}
-
-		System.out.println();
-		System.out.print("Tunjangan Terpencil : ");
-		tunjTerpencil = number.next();
-
-		tunjTerpencilI = Integer.parseInt(tunjTerpencil);
-
-		System.out.print("Tunjangan Lain   : ");
-		tanyaTunjLain = keyboard.next();
-
-		System.out.println();
-
-		if(tanyaTunjLain.equals("Y")) {
-			System.out.print("Input Nama Tunjangan : ");
-			inputNamaTunjLain = dualLine.nextLine();
-			System.out.print("Nominal : ");
-			inputNomTunjLain = number.next();
-			tunjLain = Integer.parseInt(inputNomTunjLain);
-		}
-
-		else if(tanyaTunjLain.equals("N")) {
-			tunjLain = 0;
 		}
 
 		System.out.println();
 
-		System.out.print("Sewa Rumah : ");
-		tanyasewaRumah = number.next();
+		clap = false;
+		while(clap == false) {
+			System.out.print("Tunjangan Lain ");
+			System.out.print("\t Y (Ya) | N (Tidak) : ");
+			tanyaTunjLain = dualLine.nextLine();
 
-		if(tanyasewaRumah.equals("Y")) {
-			sewaRumah = 450000;
+			System.out.println();
+
+			if(tanyaTunjLain.matches("[YN]+") ) {
+				if(tanyaTunjLain.equals("Y")) {
+					clap = false;
+					while(clap == false) {
+						System.out.print("Input Nama Tunjangan : ");
+						inputNamaTunjLain = keyboard.nextLine();
+						if(inputNamaTunjLain.matches(noNum)) {
+							tunjLain = Integer.parseInt(inputNomTunjLain);
+							clap = true;
+						}
+						else if(inputNamaTunjLain.length() == 0) {
+							System.out.println("Inputan Nama Tunjangan tidak boleh kosong");							
+							clap = false;
+						}
+						else {
+							System.out.println(statInputMustLetter);
+							clap = false;
+						}						
+						System.out.print("Nominal : ");
+						inputNomTunjLain = number.nextLine();
+						if(inputNomTunjLain.matches(noLetter)) {
+							tunjLain = Integer.parseInt(inputNomTunjLain);
+							clap = true;
+						}
+						else if(inputNomTunjLain.length() == 0) {
+							System.out.println("Inputan nominal Tunjangan tidak boleh kosong");							
+							clap = false;
+						}
+						else {
+							System.out.println(statInputMustNum);
+						}
+					}
+				}
+				else if(tanyaTunjLain.equals("N")) {
+					tunjLain = 0;
+					clap = true;
+				}
+			}
+			else if(tanyaTunjLain.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}
+			else {
+				System.out.println(statInputOnlyYN);
+				clap = false;
+			}
 		}
-		else {
-			sewaRumah = 0;
+
+		System.out.println();
+
+		clap = false;
+		while(clap == false) {
+			System.out.print("Sewa Rumah : ");
+			System.out.print("\t Y (Ya) | N (Tidak) : ");
+			tanyasewaRumah = number.nextLine();
+			if(tanyasewaRumah.matches("[YN]+")) {
+				if(tanyasewaRumah.equals("Y")) {
+					sewaRumah = 450000;
+					clap = true;
+				}
+				else {
+					sewaRumah = 0;
+					clap = true;
+				}				
+			}
+			else if(tanyasewaRumah.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}
+			else {
+				System.out.println(statInputOnlyYN);
+				clap = false;
+			}
 		}
 
-		System.out.print("Seminar : ");
-		bbnSeminar = number.next();
+		clap = false;
+		while(clap == false) { 		
+			System.out.print("Seminar : ");
+			bbnSeminar = keyboard.nextLine();
+			if(bbnSeminar.matches("[0-9]+")) {
+				clap = true;
+			}
+			else if(bbnSeminar.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}
+			else {
+				System.out.println(statInputMustNum);				
+				clap = false;
+			}			
+		}
 
-		System.out.print("Listrik : ");
-		bbnListrik = number.next();
+		clap = false;
+		while(clap == false) { 		
+			System.out.print("Listrik : ");
+			bbnListrik = dualLine.nextLine();
+			if(bbnListrik.matches("[0-9]+")) {
+				clap = true;
+			}
+			else if(bbnListrik.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}
+			else {
+				System.out.println(statInputMustNum);				
+				clap = false;
+			}						
+		}
 
-		System.out.print("Air : ");
-		bbnAir = number.next();
+		clap = false;
+		while(clap == false) { 		
+			System.out.print("Air : ");
+			bbnAir = number.nextLine();
+			if(bbnAir.matches("[0-9]+")) {
+				clap = true;
+			}
+			else if(bbnAir.length() == 0) {
+				System.out.println(statInputNoBlank);
+				clap = false;
+			}
+			else {
+				System.out.println(statInputMustNum);				
+				clap = false;
+			}									
+		}
 
 		ambilAngka1 = gol.substring(0,1);
 		
@@ -621,69 +927,86 @@ class HitungGajiPns {
 			bbnPPh = (tier1 + tier2 + tier3 + tier4);
 		}
 
-
 		System.out.println("==========================================");
 		System.out.println("Berikut adalah Rincian Gaji "+ namaPegawai);
 		System.out.println("==========================================");
 		System.out.println("=====PENDAPATAN===== ");
-		System.out.println("Gaji Pokok Anda " + gapok);
-		System.out.println("Tunjangan Keluarga " + tunjKel);
-		System.out.println("Tunjangan Anak " + tunjAnak);
-		System.out.println("Tunjangan Beras " + tunjBeras);
+		System.out.print("Gaji Pokok Anda "); System.out.print("\t : Rp " + gapok);
+		System.out.println();
+		System.out.print("Tunjangan Keluarga "); System.out.print("\t : Rp " + tunjKel);
+		System.out.println();
+		System.out.print("Tunjangan Anak "); System.out.print("\t : Rp " + tunjAnak);
+		System.out.println();
+		System.out.print("Tunjangan Beras "); System.out.print("\t : Rp " + tunjBeras);
+		System.out.println();		
 		if(tanyaTunjStruktural.equals("Y")) {
 			countTunj = tunjStruktur;	
-			System.out.println("Eselon : " + eselon);
-			System.out.println("Tunjangan Struktural " + tunjStruktur);
+			System.out.print("Eselon "); System.out.print("\t : Rp " + eselon);
+			System.out.println();
+			System.out.print("Tunjangan Struktural "); System.out.print("\t : Rp " + tunjStruktur);
+			System.out.println();
 		}
 		else if(tanyaTunjFungsional.equals("Y")) {
 			countTunj = tunjFungsi;
-			System.out.println("Jenis Fungsional : " + tanyaJenisFungsional);
-			System.out.println("Tunjangan Fungsional " + tunjFungsi);	
+			System.out.print("Jenis Fungsional "); System.out.print("\t : Rp " + tanyaJenisFungsional);
+			System.out.println();
+			System.out.print("Tunjangan Fungsional "); System.out.print("\t : Rp " + tunjFungsi);	
+			System.out.println();
 		}
 		else {
 			countTunj = tunjUmum;
-			System.out.println("Tunjangan Umum " + tunjUmum);
+			System.out.print("Tunjangan Umum "); System.out.print("\t : Rp " + tunjUmum);
+			System.out.println();
 		}
 
 		if(tanyaTunjPapua.equals("Y")) {
-			System.out.println("Tunjangan Papua : " + tunjPapua);
+			System.out.print("Tunjangan Papua "); System.out.print("\t : Rp " + tunjPapua);
+			System.out.println();
 		}
 		else if(tanyaTunjPapua.equals("N")) {
 			tunjPapua = 0;
-			System.out.println("Tunjangan Papua : " + tunjPapua);
+			System.out.print("Tunjangan Papua "); System.out.print("\t : Rp " + tunjPapua);
+			System.out.println();
 		}
-		System.out.println("Tunjangan Terpencil : " + tunjTerpencil);
+		System.out.print("Tunjangan Terpencil "); System.out.print("\t : Rp " + tunjTerpencil);
+		System.out.println();
 
 		if(tanyaTunjLain.equals("Y")) {
-			System.out.println(inputNamaTunjLain + " : " + tunjLain);
-		}		
+			System.out.print(inputNamaTunjLain + " "); System.out.print("\t : Rp " + tunjLain);
+			System.out.println();
+		}
 
 		System.out.println();
 		System.out.println("=====PENGELUARAN===== ");
-		System.out.println("IWP 10 % " + bbnIwp);
-		System.out.println("Potongan Taperum : " + bbnTaperum);
-		System.out.println("Sewa Rumah : " + sewaRumah);
-		System.out.println("Seminar : " + bbnSeminar);
-		System.out.println("Air : " + bbnAir);
-		System.out.println("Listrik : " + bbnListrik);	
-		System.out.println(); 
-		System.out.println("Total Gaji Kotor :" + totalGajiKotor);
+		System.out.print("IWP 10 % "); System.out.print("\t : Rp " + bbnIwp);
 		System.out.println();
-		System.out.println("Total Beban : " + totalBebanKotor);
+		System.out.print("Potongan Taperum "); System.out.print("\t : Rp " + bbnTaperum);
+		System.out.println();
+		System.out.print("Sewa Rumah "); System.out.print("\t : Rp " + sewaRumah);
+		System.out.println();
+		System.out.print("Seminar "); System.out.print("\t : Rp " + bbnSeminar);
+		System.out.println();
+		System.out.print("Air "); System.out.print("\t : Rp " + bbnAir);
+		System.out.println();
+		System.out.print("Listrik "); System.out.print("\t : Rp " + bbnListrik);	
+		System.out.println(); 
+		System.out.print("Total Gaji Kotor "); System.out.print("\t : Rp " + totalGajiKotor);
+		System.out.println();
+		System.out.print("Total Beban "); System.out.print("\t : Rp " + totalBebanKotor);
 		System.out.println();		
-		System.out.println("Gaji Bersih : " + totalGajiBersih);
+		System.out.print("Gaji Bersih "); System.out.print("\t : Rp " + totalGajiBersih);
 		System.out.println();
 		// System.out.println("PKTP " + ptkp);
 		// System.out.println("PKP " + pkp);
 		bbnPphBln = bbnPPh / 12;
 
-		System.out.printf("PPh : Rp %.2f",bbnPphBln);
+		System.out.print("PPh "); System.out.print("\t : Rp " + bbnPphBln);
 		System.out.println();
 		gajiSetelahPPh = totalGajiBersih - bbnPphBln;
 		System.out.println("=================================================");
 		System.out.println("=================================================");
 		System.out.println("=================================================");				
-		System.out.printf("Gaji yang anda terima : Rp %.2f",gajiSetelahPPh);
+		System.out.printf("Gaji yang anda terima : Rp %.2f", gajiSetelahPPh);
 		System.out.println();
 		System.out.println("=================================================");
 		System.out.println("=================================================");
