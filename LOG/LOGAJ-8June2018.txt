@@ -1,0 +1,6 @@
+add java project in Tugas/TugasLatihan/Alifar/8 Juni 2018
+	BeautyCare project
+	PNS Project
+		-Perhitungan gaji menggunakan OOP
+	SoalOOp Project
+		-soal latihan OOP dari teman-teman G7
