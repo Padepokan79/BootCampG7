@@ -1,0 +1,18 @@
+07:54
+
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/AuthorBook/.classpath
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/AuthorBook/.project
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/AuthorBook/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/AuthorBook/src/Auth/Author.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/AuthorBook/src/Auth/Book.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/AuthorBook/src/Auth/package-info.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/AuthorBook/src/MainBook.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Personable/.classpath
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Personable/.project
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Personable/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Personable/src/TestPerson.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Personable/src/child/Student.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Personable/src/child/Teacher.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Personable/src/child/package-info.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Personable/src/parent/Person.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Personable/src/parent/package-info.java

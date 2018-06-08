@@ -1,0 +1,13 @@
+07.55
+
+Add :
+	- Add folder Inheritance dalam folder TugasLatihan/Chaudhry
+
+	- Inheritance/LatihanInheritance/src/Author.java
+	- Inheritance/LatihanInheritance/src/Book.java
+	- Inheritance/LatihanInheritance/src/MainApp.java
+
+	- Inheritance/Person/src/MainApp.java
+	- Inheritance/Person/src/Person.java
+	- Inheritance/Person/src/Student.java
+	- Inheritance/Person/src/Teacher.java
