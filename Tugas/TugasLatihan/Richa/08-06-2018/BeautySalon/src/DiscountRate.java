@@ -1,0 +1,15 @@
+/* 
+Created by  		: Richa Fitria
+Date/hour			: 06 Juni 2018/ 09.05 AM
+Updated by			:
+Updated Date/hour	:
+*/
+
+public interface DiscountRate {
+	final double serviceDiscountPremium = 0.2;
+	final double serviceDiscountGold = 0.15;
+	final double serviceDiscountSilver = 0.1;
+	final double productDiscountPremium = 0.1;
+	final double productDiscountGold = 0.1;
+	final double productDiscountSilver = 0.1;
+}

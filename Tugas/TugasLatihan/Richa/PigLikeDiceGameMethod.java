@@ -9,12 +9,12 @@ Updated Date/hour	:
 import java.util.Scanner;
 import java.util.Random;
 
-	public class PigLikeDiceGame {
+	public class PigLikeDiceGameMethod {
 		public static void main( String[] args ) {
 		Scanner keyboard = new Scanner(System.in);
 		Random rand = new Random();
 
-		int totalPoin, poinComp, poinPlayer, maksPoin, round, compTurn, playerTurn, angkaPlayer, angkaComp, totalPoinCom, totalPoinPlayer,nol, maksDadu;
+		int totalPoin, poinComp, poinPlayer, maksPoin, round, compTurn, playerTurn, angkaPlayer, angkaComp, totalPoinCom, totalPoinPlayer,nol, maksDadu, daduPlayer;
 		String playerAgain;
 
 		poinPlayer = 0;
@@ -24,6 +24,7 @@ import java.util.Random;
 		nol= 0;
 		maksDadu = 6;
 		round=1;
+		
 
 			while (round >= 1 && (totalPoinCom <= maksPoin && totalPoinPlayer <= maksPoin)) { //total poin salah satu. Player atau Computer
 				//loop computer's turns
@@ -35,14 +36,15 @@ import java.util.Random;
 				while (compTurn <= 3 ) { 
 					System.out.println ("Kocok dadu! ");
 					angkaComp = (rand.nextInt (maksDadu) + 1);
-					System.out.println("Dadu ke-" + compTurn + " Computer: " + angkaComp);
+					System.out.println("Dadu ke-" + compTurn + " Computer: ");
+					gambarDadu(angkaComp);
 					poinComp = poinComp + angkaComp;
 					compTurn++;
 				}
 				System.out.println();
 				System.out.println("Total poin Computer saat round " + round + " adalah " + poinComp);
 				totalPoinCom = totalPoinCom + poinComp; 
-				System.out.cprintln("TOTAL POIN COMPUTER: " + totalPoinCom);
+				System.out.println("TOTAL POIN COMPUTER: " + totalPoinCom);
 				System.out.println("-------------------------------------------");
 				//loop players turns
 				if (totalPoinCom >= maksPoin) {
@@ -50,14 +52,16 @@ import java.util.Random;
 				}
 				playerTurn = 1;
 				poinPlayer = 0;
-	
+				
+				daduPlayer = 1;
 				while (playerTurn >= 1 && totalPoinCom <= 100) {
 					if (playerTurn ==1) {
 						System.out.println("Waktunya Player untuk main!");
 					}
 					System.out.println ("Kocok dadu! ");
 					angkaPlayer = (rand.nextInt (maksDadu) + 1);
-					System.out.println("Dadu ke-" + playerTurn + " Player: " + angkaPlayer);
+					System.out.println("Dadu ke-" + daduPlayer + " Player: ");
+					gambarDadu (angkaPlayer);
 						if (angkaPlayer == 1) {
 							poinPlayer = 0;
 							System.out.println();
@@ -70,7 +74,9 @@ import java.util.Random;
 							System.out.println();
 							if (playerAgain.equals("Ya")){
 								poinPlayer = poinPlayer + angkaPlayer;
-								playerTurn++;
+								System.out.println("aku");
+								daduPlayer++;
+
 							}
 							else if (playerAgain.equals ("Tidak")) {
 								poinPlayer = poinPlayer + angkaPlayer;
@@ -78,7 +84,6 @@ import java.util.Random;
 								playerTurn= playerTurn - 100; //biar berhenti loopingnya
 							}
 						}
-				
 				}
 				totalPoinPlayer = totalPoinPlayer + poinPlayer;
 				System.out.println("TOTAL POIN PLAYER: " + totalPoinPlayer);
@@ -90,7 +95,41 @@ import java.util.Random;
 
 				round++;
 			}
-}
+	}
+	public static void gambarDadu (int roll) {
+		System.out.println("+---+");
+		if ( roll == 1 ) {
+			System.out.println("|   |");
+			System.out.println("| o |");
+			System.out.println("|   |");
+		}
+		else if ( roll == 2 ) {
+			System.out.println("|o  |");
+			System.out.println("|   |");
+			System.out.println("|  o|");
+			}
+		else if ( roll == 3 ) {
+			System.out.println("|o  |");
+			System.out.println("| o |");
+			System.out.println("|  o|");
+		}
+		else if ( roll == 4 ) {
+			System.out.println("|o o|");
+			System.out.println("|   |");
+			System.out.println("|o o|");
+		}
+		else if ( roll == 5 ) {
+			System.out.println("|o o|");
+			System.out.println("| o |");
+			System.out.println("|o o|");
+		}
+		else if ( roll == 6 ) {
+			System.out.println("|o o|");
+			System.out.println("|o o|");
+			System.out.println("|o o|");
+		}
+		System.out.println("+---+");		
+	}
 }
 
 /*Pig-like Dice Game

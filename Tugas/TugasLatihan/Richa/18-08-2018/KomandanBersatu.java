@@ -15,7 +15,7 @@ public class KomandanBersatu {
 	int batasSegitiga, kalimatLen, baris, spasi, urutanHuruf, indexHuruf =0;
 	String kalimat;
 
-		System.out.println("Kalimat: ");
+	System.out.println("Kalimat: ");
 	kalimat = keyboard.nextLine();
 	System.out.print("Batas Segitiga: ");
 
