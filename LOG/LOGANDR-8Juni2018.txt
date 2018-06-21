@@ -1,0 +1,45 @@
+Menambahkan folder :
+	- Salon
+	- Andrian-Arif-Khairil
+	- Yana-Malik-Alifhar
+	- Ryan-Hendra-Chaudhary
+	- Rizaldi-Richa-Vikry
+
+Menambahkan file :
+	new file:   LOG/LOGANDR-8Juni2018.txt
+        new file:   Tugas/TugasLatihan/Andrian/Andrian-Arif-Khairil/App.java
+        new file:   Tugas/TugasLatihan/Andrian/Andrian-Arif-Khairil/Buah.java
+        new file:   Tugas/TugasLatihan/Andrian/Andrian-Arif-Khairil/BuahNaga.java
+        new file:   Tugas/TugasLatihan/Andrian/Andrian-Arif-Khairil/Kanker.java
+        new file:   Tugas/TugasLatihan/Andrian/Andrian-Arif-Khairil/KankerPankreas.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/Analis.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/App.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/BPJS.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/Karyawan.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/Person.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/Programmer.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/Tester.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/TunjanganMenikah.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/TunjanganTransport.java
+        new file:   Tugas/TugasLatihan/Andrian/Gaji/Umk.java
+        new file:   Tugas/TugasLatihan/Andrian/Richa-Rizaldi-Vikrry/App.java
+        new file:   Tugas/TugasLatihan/Andrian/Richa-Rizaldi-Vikrry/Flue.java
+        new file:   Tugas/TugasLatihan/Andrian/Richa-Rizaldi-Vikrry/Jaket.java
+        new file:   Tugas/TugasLatihan/Andrian/Richa-Rizaldi-Vikrry/Pakaian.java
+        new file:   Tugas/TugasLatihan/Andrian/Richa-Rizaldi-Vikrry/Penyakit.java
+        new file:   Tugas/TugasLatihan/Andrian/Ryan-Hendre-Chaudry/App.java
+        new file:   Tugas/TugasLatihan/Andrian/Ryan-Hendre-Chaudry/Burung.java
+        new file:   Tugas/TugasLatihan/Andrian/Ryan-Hendre-Chaudry/Laptop.java
+        new file:   Tugas/TugasLatihan/Andrian/Ryan-Hendre-Chaudry/Merek.java
+        new file:   Tugas/TugasLatihan/Andrian/Ryan-Hendre-Chaudry/Unggas.java
+        new file:   Tugas/TugasLatihan/Andrian/Salon/AbstracPerson.java
+        new file:   Tugas/TugasLatihan/Andrian/Salon/Costumer.java
+        new file:   Tugas/TugasLatihan/Andrian/Salon/DiscountRate.java
+        new file:   Tugas/TugasLatihan/Andrian/Salon/TestSubject.java
+        new file:   Tugas/TugasLatihan/Andrian/Salon/Validasi.java
+        new file:   Tugas/TugasLatihan/Andrian/Salon/Visit.java
+        new file:   Tugas/TugasLatihan/Andrian/Yana-Malik-Alifhar/Animal.java
+        new file:   Tugas/TugasLatihan/Andrian/Yana-Malik-Alifhar/App.java
+        new file:   Tugas/TugasLatihan/Andrian/Yana-Malik-Alifhar/Athlete.java
+        new file:   Tugas/TugasLatihan/Andrian/Yana-Malik-Alifhar/AthleteFootball.java
+        new file:   Tugas/TugasLatihan/Andrian/Yana-Malik-Alifhar/Carnivora.java
