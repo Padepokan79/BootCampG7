@@ -1,0 +1,11 @@
+Add
+
+        new file:   Tugas/TugasLatihan/Ryan/CobaArrayList/.classpath
+        new file:   Tugas/TugasLatihan/Ryan/CobaArrayList/.project
+        new file:   Tugas/TugasLatihan/Ryan/CobaArrayList/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Ryan/CobaArrayList/src/List1.java
+        new file:   Tugas/TugasLatihan/Ryan/CobaArrayList/src/PerhitunganPenghasilanKereta/Kereta.java
+        new file:   Tugas/TugasLatihan/Ryan/CobaArrayList/src/PerhitunganPenghasilanKereta/PenghasilanKereta.java
+        new file:   Tugas/TugasLatihan/Ryan/CobaArrayList/src/Person.java
+        new file:   Tugas/TugasLatihan/Ryan/CobaArrayList/src/TukangBuah/Buah.java
+        new file:   Tugas/TugasLatihan/Ryan/CobaArrayList/src/TukangBuah/TukangBuah.java
