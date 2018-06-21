@@ -1,0 +1,23 @@
+Adding file: 
+	new file:   ../GajiIT/.classpath
+        new file:   ../GajiIT/.gitignore
+        new file:   ../GajiIT/.project
+        new file:   ../GajiIT/.settings/org.eclipse.jdt.core.prefs
+        new file:   ../GajiIT/src/iFace/Karyawan.java
+        new file:   ../GajiIT/src/iFace/Person.java
+        new file:   ../GajiIT/src/iFace/Programmer.java
+        new file:   ../GajiIT/src/iFace/TestKaryawan.java
+        new file:   ../GajiIT/src/iFace/Tunjangan.java
+        new file:   ../GajiIT/src/iFace/TunjanganPotongan.java
+        new file:   ../GajiIT/src/iFace/Validasi.java
+ 	
+	new file:   .classpath
+        new file:   .gitignore
+        new file:   .project
+        new file:   .settings/org.eclipse.jdt.core.prefs
+        new file:   src/customer/Customer.java
+        new file:   src/customer/DiscountRate.java
+        new file:   src/customer/Person.java
+        new file:   src/customer/TestCustomer.java
+        new file:   src/customer/Validasi.java
+        new file:   src/customer/Visit.java
