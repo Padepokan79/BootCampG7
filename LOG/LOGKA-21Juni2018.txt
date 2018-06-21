@@ -1,0 +1,10 @@
+22:24
+
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArrayList/.classpath
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArrayList/.project
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArrayList/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArrayList/src/Kereta.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArrayList/src/Passenger.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArrayList/src/PedagangBuah/Buah.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArrayList/src/PedagangBuah/PedagangBuah.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanArrayList/src/PedagangBuah/package-info.java
