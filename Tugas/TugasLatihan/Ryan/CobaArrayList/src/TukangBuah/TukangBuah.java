@@ -8,18 +8,17 @@ public class TukangBuah {
 
 	public static void main(String[] args) {
 		Scanner key = new Scanner(System.in);
-		int menu, temp=0, cek=0;
+		int menu, temp=0, cek=0,temp1=0,temp2=0,temp3=0;
 		String hari, pilihan1,pilihan2;
 		Buah semangka = new Buah("Semangka", 18000, 12, 15, 11, 8, 20, 10, 14);
 		Buah pisang = new Buah("Pisang", 15000, 10, 14, 15, 7, 20, 13, 16);
 		Buah mangga = new Buah("Mangga", 10000, 13, 12, 9, 15, 20, 9, 13);
 		
-		ArrayList<String> namaHari = new ArrayList<>(Arrays.asList("Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu"));
 		ArrayList<Buah> buah = new ArrayList<Buah>();
 		buah.add(semangka);
 		buah.add(pisang);
 		buah.add(mangga);
-		
+		ArrayList<String> namaHari = new ArrayList<>(Arrays.asList("Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu"));
 		ArrayList<Integer> penghasilan = new ArrayList<Integer>();
 		for (int i = 0; i < namaHari.size(); i++) {
 			temp = 0;
@@ -95,22 +94,91 @@ public class TukangBuah {
 		else if (menu == 6) {
 			System.out.print("Masukan Hari pertama : ");
 			pilihan1 = key.next();
+			for (String har : namaHari) {
+				if (har.equalsIgnoreCase(pilihan1)) {
+					temp1 = penghasilan.get(namaHari.indexOf(pilihan1));
+				}
+			}
 			System.out.print("Masukan Hari kedua : ");
 			pilihan2 = key.next();
+			for (String har : namaHari) {
+				if (har.equalsIgnoreCase(pilihan2)) {
+					temp2 = penghasilan.get(namaHari.indexOf(pilihan2));
+				}
+			}
+			if (temp1<temp2) {
+				int perbandingan = temp2 - temp1;
+				System.out.println("Perbandingan antara Hari "+pilihan1+" dan "+pilihan2+" adalah "+perbandingan+", pendapatan hari "+temp2+"  lebih besar");
+			}
+			else if (temp1>temp2) {
+				int perbandingan = temp1 - temp2;
+				System.out.println("Perbandingan antara Hari "+pilihan1+" dan "+pilihan2+" adalah "+perbandingan+", pendapatan hari "+pilihan1+"  lebih besar");
+			}
 		}
 		else if (menu == 7) {
-			for (Buah buah1 : buah) {
-				
+			temp1 = 0;
+			temp2 = 0;
+			temp3 = 0;
+			for (int i = 0; i < mangga.terjual.size(); i++) {
+				temp1 = temp1 + mangga.terjual.get(i);
+				temp2 = temp2 + semangka.terjual.get(i);
+				temp3 = temp3 + pisang.terjual.get(i);
+			}
+			if (temp1 > temp2 && temp1 > 3) {
+				System.out.println("Buah Mangga paling banyak terjual dengan total "+temp1);
+			}
+			else if (temp2 > temp1 && temp2 > 3) {
+				System.out.println("Buah Semangka paling banyak terjual dengan total "+temp2);
+			}
+			else if (temp3 > temp1 && temp3 > 2) {
+				System.out.println("Buah Pisang paling banyak terjual dengan total "+temp3);
 			}
 		}
 		else if (menu == 8) {
-//			mangga.terjual
+			temp1 = 0;
+			temp2 = 0;
+			temp3 = 0;
+			for (int i = 0; i < mangga.terjual.size(); i++) {
+				temp1 = temp1 + mangga.terjual.get(i)*mangga.getHargaBuah();
+				temp2 = temp2 + semangka.terjual.get(i)*semangka.getHargaBuah();
+				temp3 = temp3 + pisang.terjual.get(i)*pisang.getHargaBuah();
+			}
+			if (temp1 > temp2 && temp1 > 3) {
+				System.out.println("Buah Mangga Memiliki penghasilan terbesar dengan total Rp."+temp1);
+			}
+			else if (temp2 > temp1 && temp2 > 3) {
+				System.out.println("Buah Semangka Memiliki penghasilan terbesar dengan total Rp."+temp2);
+			}
+			else if (temp3 > temp1 && temp3 > 2) {
+				System.out.println("Buah Pisang  Memiliki penghasilan terbesar dengan total Rp."+temp3);
+			}
 		}
 		else if (menu == 9) {
-			
+			temp1 = 0;
+			temp2 = 0;
+			temp3 = 0;
+			for (int i = 0; i < mangga.terjual.size(); i++) {
+				temp1 = temp1 + mangga.terjual.get(i)*mangga.getHargaBuah();
+				temp2 = temp2 + semangka.terjual.get(i)*semangka.getHargaBuah();
+				temp3 = temp3 + pisang.terjual.get(i)*pisang.getHargaBuah();
+			}
+			if (temp1 < temp2 && temp1 < 3) {
+				System.out.println("Buah Mangga Memiliki penghasilan terkecil dengan total Rp."+temp1);
+			}
+			else if (temp2 < temp1 && temp2 < 3) {
+				System.out.println("Buah Semangka Memiliki penghasilan terkecil dengan total Rp."+temp2);
+			}
+			else if (temp3 < temp1 && temp3 < 2) {
+				System.out.println("Buah Pisang  Memiliki penghasilan terkecil dengan total Rp."+temp3);
+			}
 		}
 		else if (menu == 10) {
-			
+			temp = 0;
+			for (Buah buah2 : buah) {
+				temp = temp + buah2.penghasilanMingguan()*4;
+			}
+			temp = temp*20/100;
+			System.out.println("Penghasilan perbulan Rp."+temp);
 		}
 		
 	}
