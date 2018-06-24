@@ -1,0 +1,48 @@
+Add
+
+3 Project
+	BeutySaloon
+	LatihanOOP
+	PenggajianIT
+
+        new file:   Tugas/TugasLatihan/Ryan/BeautySaloon/.classpath
+        new file:   Tugas/TugasLatihan/Ryan/BeautySaloon/.project
+        new file:   Tugas/TugasLatihan/Ryan/BeautySaloon/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Ryan/BeautySaloon/src/Costumer.java
+        new file:   Tugas/TugasLatihan/Ryan/BeautySaloon/src/DisconRate.java
+        new file:   Tugas/TugasLatihan/Ryan/BeautySaloon/src/MainSaloon.java
+        new file:   Tugas/TugasLatihan/Ryan/BeautySaloon/src/Person.java
+        new file:   Tugas/TugasLatihan/Ryan/BeautySaloon/src/Visit.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/.classpath
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/.project
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/HendraChaudryRyan/Laptop/Laptop.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/HendraChaudryRyan/Laptop/MacBook.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/HendraChaudryRyan/Laptop/MainLaptop.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/HendraChaudryRyan/Unggas/Burung.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/HendraChaudryRyan/Unggas/MainUnggas.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/HendraChaudryRyan/Unggas/Unggas.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/KhairilAriefAndrian/Kanker/Kanker.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/KhairilAriefAndrian/Kanker/KankerPankreas.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/KhairilAriefAndrian/Kanker/MainKanker.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/MalikYanaAlifar/Athlete/Athlete.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/MalikYanaAlifar/Athlete/AthleteFootball.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/MalikYanaAlifar/Athlete/MainAthlete.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/RizaldiRicha/Pakaian/Jaket.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/RizaldiRicha/Pakaian/Kaos.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/RizaldiRicha/Pakaian/MainPakaian.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/RizaldiRicha/Pakaian/Pakaian.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/RizaldiRicha/Penyakit/Flue.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/RizaldiRicha/Penyakit/Maag.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/RizaldiRicha/Penyakit/MainPenyakit.java
+        new file:   Tugas/TugasLatihan/Ryan/LatihanOOP/src/RizaldiRicha/Penyakit/Penyakit.java
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/.classpath
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/.project
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/src/Analyst.java
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/src/HitungBonus.java
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/src/Karyawan.java
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/src/PenggajianIT.java
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/src/Pph.java
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/src/Programmer.java
+        new file:   Tugas/TugasLatihan/Ryan/PenggajianIT/src/Tester.java

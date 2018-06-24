@@ -1,0 +1,33 @@
+        menambahkan project folder tugas ke repository di tugas latihan.
+        
+        
+        
+        new file:   LOG/LOGRIZ-07Juni2018-27
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/.classpath
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/.project
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/.vs/OOPTugasInherit/v15/.suo
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/.vs/ProjectSettings.json
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/.vs/VSWorkspaceState.json
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/.vs/config/applicationhost.config
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/.vs/slnx.sqlite
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/.vs/tasks.vs.json
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AlifharMalikYana/Animal.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AlifharMalikYana/Athlete.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AlifharMalikYana/AthleteFootball.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AlifharMalikYana/Carnivore.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AlifharMalikYana/RunAnimal.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AlifharMalikYana/RunAthlete.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AndrianAriefKhairil/Buah.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AndrianAriefKhairil/BuahPisang.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AndrianAriefKhairil/Kanker.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AndrianAriefKhairil/KankerPankreas.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AndrianAriefKhairil/RunBuah.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/AndrianAriefKhairil/RunKanker.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/ChaudaryHendraRyan/Asus.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/ChaudaryHendraRyan/Bebek.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/ChaudaryHendraRyan/InterfaceSpring.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/ChaudaryHendraRyan/Laptop.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/ChaudaryHendraRyan/RunAnimal.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/ChaudaryHendraRyan/RunLaptop.java
+        new file:   Tugas/TugasLatihan/Rizaldi/Tugas_Kelompok_RizaldiRichaVikri/OOPTugasInherit/src/ChaudaryHendraRyan/Unggas.java
