@@ -4,3 +4,6 @@
 
 3. di bandara husein penumpang yang diperbolehkan masuk ke bisnis lounge adalah pemegang tiket pesawat kelas bisnis yang memiliki subkelas D atau F baik untuk laki-laki terbang 20x dan perempuan terbang 15x. (subkelas T dengan syarat laki/perempuan terbang 30x)
 
+D = LEFT($C$25;1)
+F = MID($C$25;3;1)
+T = RIGHT($C$25;1)

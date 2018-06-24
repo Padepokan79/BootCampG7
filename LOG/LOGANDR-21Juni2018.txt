@@ -1,0 +1,8 @@
+Menambahkan folder :
+	- LatihanArraylist
+
+Menambahkan file :
+	- kereta
+	- keretaApp
+	- Buah
+	- AppPedagang

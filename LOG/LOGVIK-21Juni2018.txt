@@ -1,0 +1,12 @@
+adding file 
+	new file:   ArrayList/.classpath
+        new file:   ArrayList/.gitignore
+        new file:   ArrayList/.project
+        new file:   ArrayList/.settings/org.eclipse.jdt.core.prefs
+        new file:   ArrayList/src/Buah/Buah.java
+        new file:   ArrayList/src/Buah/TestBuah.java
+        new file:   ArrayList/src/kereta/Kereta.java
+        new file:   ArrayList/src/kereta/TestKereta.java
+        new file:   ArrayList/src/latihan1/ArrayList1.java
+        new file:   ArrayList/src/latihan1/Person.java
+        new file:   ArrayList/src/latihan1/TestPerson.java

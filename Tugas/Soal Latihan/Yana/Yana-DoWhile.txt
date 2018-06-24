@@ -1,6 +1,7 @@
-1. Saat ini Budi mempunyai 200 butir kelereng, dan akan bertambah 40 butir setiap 2 menit. Sedangkan saat ini Man mempunyai 10 butir kelereng dan akan bertambah 120 butir setiap 3 menit. Pada waktu yang sama Tono memiliki kelereng 50 butir dan setiap menit akan bertambah sebanyak nilai dadu yang dikocok Tono. Pada saat jumlah kelereng Man mengejar jumlah kelereng Budi, kelereng Tono juga akan bertambah sebanyak jumlah kelereng Budi saat itu. Pada menit berapakah jumlah kelereng Man akan mengejar jumlah kelereng Tono?
+1. Saat ini Budi mempunyai 200 butir kelereng, dan akan bertambah 40 butir setiap 2 menit. Sedangkan saat ini Man mempunyai 10 butir kelereng dan akan bertambah 120 butir setiap 3 menit. Pada waktu yang sama Tono memiliki kelereng 500 butir dan setiap menit akan bertambah sebanyak nilai dadu yang dikocok Tono. Pada saat jumlah kelereng Man mengejar jumlah kelereng Budi, kelereng Tono juga akan bertambah sebanyak jumlah kelereng Budi saat itu. Pada menit berapakah jumlah kelereng Man akan mengejar jumlah kelereng Tono?
 
 -Tono mengocok dadu sebanyak 2 kali.
 -pertama saat kelerengnya berjumlah 50 butir,
 -kedua saat setelah jumlah kelereng Man mengejar jumlah kelereng Budi
 *gunakan random dan perulangan dowhile
+

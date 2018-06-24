@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-RunAnimal",
+      "appliesTo": "src/ChaudaryHendraRyan/RunAnimal.java",
+      "type": "command"
+    }
+  ]
+}

@@ -70,7 +70,7 @@
    bila skala jujur seseorang mencapai 8, bohong dibawah 5, sombong tidak lebih dari 6, serta angkuh dibawah 7
    maka seseorang tsb dianggap baik.
    bila jujur seseorang mencapai 9, dan sombong tidak lebih dari 2, maka mereka dianggap baik walaupun bohong serta angkuh di atas rata rata 
-   bila jumlah skala 5 kebawah maka mereka dianggap kurang baik
+   bila jumlah seluruh skala 5 kebawah maka mereka dianggap kurang baik
    bila jumlah seluruh skala diatas 35 mereka sangat baik
    bila jumlah seluruh skala di bawah 15 mereka buruk
 
