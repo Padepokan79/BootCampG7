@@ -1,0 +1,3 @@
+Add Java Project in Tugas/Tugas Latihan/Alifar/22 Juni 2018/
+	Soal Array List : soal1, soal2, soal3, soal4, soalYana
+	KeretaApi

@@ -1,0 +1,31 @@
+Adding and Renamed file
+
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray1.java -> ../../TugasLatihan/Vikri/Array/LatihanArray1.java
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray10.java -> ../../TugasLatihan/Vikri/Array/LatihanArray10.java
+        renamed:    ../../../Vikri/22-mei-2018/LatihanArray11.java -> ../../TugasLatihan/Vikri/Array/LatihanArray11.java
+        renamed:    ../../../Vikri/22-mei-2018/LatihanArray12.java -> ../../TugasLatihan/Vikri/Array/LatihanArray12.java
+        renamed:    ../../../Vikri/22-mei-2018/LatihanArray13.java -> ../../TugasLatihan/Vikri/Array/LatihanArray13.java
+        renamed:    ../../../Vikri/22-mei-2018/LatihanArray14.java -> ../../TugasLatihan/Vikri/Array/LatihanArray14.java
+        renamed:    ../../../Vikri/22-mei-2018/LatihanArray15.java -> ../../TugasLatihan/Vikri/Array/LatihanArray15.java
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray2.java -> ../../TugasLatihan/Vikri/Array/LatihanArray2.java
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray3.java -> ../../TugasLatihan/Vikri/Array/LatihanArray3.java
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray4.java -> ../../TugasLatihan/Vikri/Array/LatihanArray4.java
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray5.java -> ../../TugasLatihan/Vikri/Array/LatihanArray5.java
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray6.java -> ../../TugasLatihan/Vikri/Array/LatihanArray6.java
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray7.java -> ../../TugasLatihan/Vikri/Array/LatihanArray7.java
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray8.java -> ../../TugasLatihan/Vikri/Array/LatihanArray8.java
+        renamed:    ../../../Vikri/21-Mei-2018/LatihanArray9.java -> ../../TugasLatihan/Vikri/Array/LatihanArray9.java
+        new file:   ../../TugasLatihan/Vikri/Gaji PNS/SistemGajiPNS.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalAndrianWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalAndrianWhile.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalAriefWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalAriefWhile.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalChaudryWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalChaudryWhile.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalKhairilWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalKhairilWhile.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalMalikWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalMalikWhile.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalRichaWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalRichaWhile.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalRizaldiWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalRizaldiWhile.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalRyanWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalRyanWhile.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalVikriDoWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalVikriDoWhile.java
+        renamed:    ../../../Vikri/18-Mei-2018/SoalYanaWhile.java -> ../../TugasLatihan/Vikri/dowhile/SoalYanaWhile.java
+        new file:   ../../../Vikri/21-Mei-2018/LatihanArray14.java
+        modified:   ../../../Vikri/21-Mei-2018/SoalArray.txt
+        new file:   ../../../Vikri/23-Mei-2018/SistemGajiPNS.java

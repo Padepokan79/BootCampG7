@@ -2,4 +2,3 @@ coba buat game adu penalti dengan 5 penendang vs komputer.
 untuk menentukan bola masuk atau tidak, menggunakan teknik random dimana yang mendapat random lebih tinggi itu yang berhasil memasukan/menangkap bola.
 tapi random untuk player, diperintah dengan masukan tendang/tangkap
 jika player memasukan perintah yang tidak sama dengan instruksi, random kekuatan player = 0
-

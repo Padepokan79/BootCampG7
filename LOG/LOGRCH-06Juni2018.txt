@@ -1,0 +1,12 @@
+-Push seluruh folder Richa untuk update 
+
+-Memindahkan folder file:
+folder Bank dan geometriBangun dari Richa ke Folder Tugaslatihan 04-06-2018
+
+Menambahkan file:
+-class teacher dan student folder TugasLatihan 06-06-2018
+-Tugas Latihan Book Author pada folder 06-06-2018
+
+Memodifikasi file:
+-Folder simulasi bank 79 
+Modif: pembuatan method dan tambahan validasi untuk withdraw folder TugasLatihan 06-06-2018

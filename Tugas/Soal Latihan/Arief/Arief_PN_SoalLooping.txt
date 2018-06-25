@@ -4,7 +4,7 @@ This is just another version of Rock Paper Scissors Game, the diffrence is that 
 There are TWO ways to USE a symbol as a weapon, and there are TWO ways to be DEFEATED by other symbols. You can read the rules below. Two player is enough (Player & Enemy).
 Game, play for 3 games, each game has 5 rounds, player could win 1 Game if player win at least (>=) 4 round.
 
-					 	RULES
+RULES
 Symbol 1	> Symbol 1 ATTACK Symmbol 2
 
 WIN CONDITION
@@ -13,6 +13,7 @@ Paper		> Paper covers Rock, Paper disproves Spock
 Scissors	> Scissors cut Paper, Scissors decapitate Lizard
 Spock		> Spock vaporizes Rock, Spock smashes Scissors
 Lizard		> Lizard poisons Spock, Lizard eats Paper
+
 Other Notes
 "GODSPEED" win 3 Game
 "Palladins" win 2 Game

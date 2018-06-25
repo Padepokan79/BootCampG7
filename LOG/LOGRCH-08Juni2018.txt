@@ -1,0 +1,5 @@
+- menambahkan folder
+
+1. Soal inheritance dari teman-teman G7
+2. Beauty Salon
+3. Gaji IT

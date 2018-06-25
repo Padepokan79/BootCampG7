@@ -1,0 +1,6 @@
+	new file:   Kuis1Yana.java
+	new file:   Kuis2Yana.java
+	new file:   Kuis3Yana.java
+	new file:   Kuis4Yana.java
+	new file:   Kuis5Yana.java
+

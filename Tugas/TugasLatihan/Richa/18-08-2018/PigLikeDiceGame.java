@@ -42,7 +42,7 @@ import java.util.Random;
 				System.out.println();
 				System.out.println("Total poin Computer saat round " + round + " adalah " + poinComp);
 				totalPoinCom = totalPoinCom + poinComp; 
-				System.out.println("TOTAL POIN COMPUTER: " + totalPoinCom);
+				System.out.cprintln("TOTAL POIN COMPUTER: " + totalPoinCom);
 				System.out.println("-------------------------------------------");
 				//loop players turns
 				if (totalPoinCom >= maksPoin) {

@@ -1,0 +1,14 @@
+Menambahkan subfolder pada folder TugasLatihan :
+	-Bank
+	-Person
+	-Buku
+	
+Menambahkan file :
+	-Account
+	-AccountAppV1
+	-Buku
+	-Author
+	-Person
+	-Student
+	-Teacher
+	

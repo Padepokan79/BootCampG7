@@ -1,0 +1,42 @@
+Delete
+
+ deleted:    Ryan/04062018/G7/.classpath
+ deleted:    Ryan/04062018/G7/.project
+ deleted:    Ryan/04062018/G7/.settings/org.eclipse.jdt.core.prefs
+ deleted:    Ryan/04062018/G7/src/Bangun/BangunDatar.java
+ deleted:    Ryan/04062018/G7/src/Bangun/BangunRuang.java
+ deleted:    Ryan/04062018/G7/src/Bangun/Lingkaran.java
+ deleted:    Ryan/04062018/G7/src/Bangun/Persegi.java
+ deleted:    Ryan/04062018/G7/src/Bangun/Segitiga.java
+ deleted:    Ryan/04062018/G7/src/Bangun/Validasi.java
+ deleted:    Ryan/04062018/G7/src/Person/Person.java
+ deleted:    Ryan/04062018/G7/src/Person/TestPerson.java
+ deleted:    Ryan/04062018/G7/src/TigaObjek/Flashdisk.java
+ deleted:    Ryan/04062018/G7/src/TigaObjek/Headset.java
+ deleted:    Ryan/04062018/G7/src/TigaObjek/Motor.java
+ deleted:    Ryan/04062018/G7/src/TigaObjek/Tampil.java
+
+Add And Modify
+
+        new file:   LOG/LOGRAN-05Juni2018.txt
+        renamed:    Ryan/04062018/G7/.classpath -> Tugas/TugasLatihan/Ryan/Bank/.classpath
+        new file:   Tugas/TugasLatihan/Ryan/Bank/.project
+        renamed:    Ryan/04062018/G7/.settings/org.eclipse.jdt.core.prefs -> Tugas/TugasLatihan/Ryan/Bank/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Ryan/Bank/src/Account.java
+        new file:   Tugas/TugasLatihan/Ryan/Bank/src/AccountApp.java
+        new file:   Tugas/TugasLatihan/Ryan/Bank/src/Validasi.java
+        new file:   Tugas/TugasLatihan/Ryan/G7/.classpath
+        renamed:    Ryan/04062018/G7/.project -> Tugas/TugasLatihan/Ryan/G7/.project
+        new file:   Tugas/TugasLatihan/Ryan/G7/.settings/org.eclipse.jdt.core.prefs
+        renamed:    Ryan/04062018/G7/src/Bangun/BangunDatar.java -> Tugas/TugasLatihan/Ryan/G7/src/Bangun/BangunDatar.java
+        renamed:    Ryan/04062018/G7/src/Bangun/BangunRuang.java -> Tugas/TugasLatihan/Ryan/G7/src/Bangun/BangunRuang.java
+        renamed:    Ryan/04062018/G7/src/Bangun/Lingkaran.java -> Tugas/TugasLatihan/Ryan/G7/src/Bangun/Lingkaran.java
+        renamed:    Ryan/04062018/G7/src/Bangun/Persegi.java -> Tugas/TugasLatihan/Ryan/G7/src/Bangun/Persegi.java
+        renamed:    Ryan/04062018/G7/src/Bangun/Segitiga.java -> Tugas/TugasLatihan/Ryan/G7/src/Bangun/Segitiga.java
+        renamed:    Ryan/04062018/G7/src/Bangun/Validasi.java -> Tugas/TugasLatihan/Ryan/G7/src/Bangun/Validasi.java
+        renamed:    Ryan/04062018/G7/src/Person/Person.java -> Tugas/TugasLatihan/Ryan/G7/src/Person/Person.java
+        renamed:    Ryan/04062018/G7/src/Person/TestPerson.java -> Tugas/TugasLatihan/Ryan/G7/src/Person/TestPerson.java
+        renamed:    Ryan/04062018/G7/src/TigaObjek/Flashdisk.java -> Tugas/TugasLatihan/Ryan/G7/src/TigaObjek/Flashdisk.java
+        renamed:    Ryan/04062018/G7/src/TigaObjek/Headset.java -> Tugas/TugasLatihan/Ryan/G7/src/TigaObjek/Headset.java
+        renamed:    Ryan/04062018/G7/src/TigaObjek/Motor.java -> Tugas/TugasLatihan/Ryan/G7/src/TigaObjek/Motor.java
+        renamed:    Ryan/04062018/G7/src/TigaObjek/Tampil.java -> Tugas/TugasLatihan/Ryan/G7/src/TigaObjek/Tampil.java

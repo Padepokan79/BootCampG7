@@ -1,4 +1,4 @@
-1. Micheal sedang memainkan sebuah permainan classik tebak huruf. Dimana Pemain dinyatakan menang jika salah satu pemain memiliki nyawa mencapai 16.
+1. Michael sedang memainkan sebuah permainan classik tebak huruf. Dimana Pemain dinyatakan menang jika salah satu pemain memiliki nyawa mencapai 16.
  - nyawa awal yang tersedia : - Player 1 nyawa
 			      - Komputer 1 nyawa 
  - ada 2 kesempatan bermain dalam 1 ronde

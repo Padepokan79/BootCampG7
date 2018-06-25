@@ -1,0 +1,5 @@
+15.54
+add : 
+	- folder java method dalam folder Tugas
+	- Menambahkan file project Latihan
+	- Menambahkan file project LatihanBank

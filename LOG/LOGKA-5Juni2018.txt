@@ -1,0 +1,24 @@
+09:44
+
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Banks/.classpath
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Banks/.project
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Banks/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Banks/src/AccountApp.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Banks/src/backend/Account.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Banks/src/backend/Validasi.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/.classpath
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/.project
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/src/HitungLK.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/src/HitungVol.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/src/luasKeliling/Lingkaran.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/src/luasKeliling/SegiEmpat.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/src/luasKeliling/Segitiga.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/src/validasi/ValidAngka.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/src/volumeBangun/Bola.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/src/volumeBangun/KubusBalok.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/OOP/Latihan/src/volumeBangun/Tabung.java
+
+10:04
+
+ 2 files changed, 18 insertions(+), 16 deletions(-)

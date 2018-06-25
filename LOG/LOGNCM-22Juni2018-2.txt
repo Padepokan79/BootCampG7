@@ -1,0 +1,18 @@
+16.21
+
+Add :
+- Soal Latihan/Chaudhry/Soal ArrayList.txt
+
+- SoalArrayList/src/SoalAlifharAndrianRyan/Cinema.java
+- SoalArrayList/src/SoalAlifharAndrianRyan/MainApp.java
+
+- SoalArrayList/src/SoalHendraYN/MainAppSoal01.java
+- SoalArrayList/src/SoalHendraYN/MainAppSoal03.java
+- SoalArrayList/src/SoalHendraYN/Soal04CreditCard.java
+- SoalArrayList/src/SoalHendraYN/Soal04IuranTahunan.java
+
+- SoalArrayList/src/SoalRizaldiKhairilRicha/MainApp.java
+- SoalArrayList/src/SoalRizaldiKhairilRicha/TiketBioskop.java
+
+- SoalArrayList/src/SoalYanaAriefVikri/MainApp.java
+- SoalArrayList/src/SoalYanaAriefVikri/Penjualan.java
