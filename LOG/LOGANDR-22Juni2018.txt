@@ -1,0 +1,9 @@
+Menambahkan folder :
+	- LatihanArraylist(Jumat)
+
+Menambahkan file :
+	- soal1
+	- soal2
+	- soal3
+	- soal4
+	- soalYanaArifVikry
