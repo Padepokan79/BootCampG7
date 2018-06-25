@@ -1,0 +1,14 @@
+Menambahkan file java
+======================
+
+ ArrayListPedagangBuah/Buah.java
+ ArrayListPedagangBuah/TestBuah.java
+ ArrayListPedagangBuah/Validasi.java
+ Kereta/Kereta.java
+ Kereta/TestKereta.java
+ LatihanArray/Maintest.java
+ LatihanArray/Person.java
+ SoalAlifarAndrianRyan/Cinema.java
+ SoalAlifarAndrianRyan/MainApp.java
+ SoalYanaAriefVikri/Barang.java
+ SoalYanaAriefVikri/MainApp.java
