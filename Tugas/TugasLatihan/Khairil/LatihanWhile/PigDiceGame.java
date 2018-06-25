@@ -14,7 +14,9 @@ class PigDiceGame {
 		Random numRan = new Random();
 		String choose;
 		int diceNum, diceCom, diceSelf, point, points, choose2, fairCom, fairSelf, pointSelf, pointCom, round, rolls;
+		Boolean play;
 
+		play = true;
 		point = 0;
 		pointSelf = 0;
 		pointCom = 0;
@@ -22,7 +24,7 @@ class PigDiceGame {
 		round = 1;
 		rolls = 3;
 
-		while(pointCom < points && pointSelf < points) {
+		while(pointCom < points && pointSelf < points && play == true) {
 
 			choose2 = 1;
 
@@ -54,7 +56,7 @@ class PigDiceGame {
 			System.out.println("==============================");
 			choose = input.next();
 
-			while(fairSelf != 1 && ( choose.equals("R") || choose.equals("r") ) && pointCom < points && choose2 == 1) {
+			while(( choose.equals("R") || choose.equals("r") ) && pointCom < points && choose2 == 1 && play == true) {
 
 				fairSelf = numRan.nextInt(6) + 1;
 
@@ -68,11 +70,13 @@ class PigDiceGame {
 					System.out.println("==============================");
 					pointSelf = 0;
 					diceSelf = 0;
+					play = false;
 				}
 				else {
 					System.out.println();
 					System.out.println("Your Dice  " + fairSelf);
 					pointSelf = pointSelf + fairSelf;					
+					play = true;
 					System.out.println();
 					System.out.println();
 					System.out.println("Your point in round " + round++ + " : " + fairSelf);
@@ -84,6 +88,12 @@ class PigDiceGame {
 					System.out.println();
 					System.out.println();
 					choose2 = input.nextInt();
+					if(choose2 == 1) {
+						play = true;
+					}
+					else {
+						play = false;
+					}
 				}
 			}
 

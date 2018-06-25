@@ -1,0 +1,4 @@
+Add file:   ../Tugas/TugasLatihan/Arief/ArrayList/amazon/Struk.java
+Add file:   ../Tugas/TugasLatihan/Arief/ArrayList/amazon/Toko.java
+Add file:   ../Tugas/TugasLatihan/Arief/ArrayList/bioskop/Cinema.java
+Add file:   ../Tugas/TugasLatihan/Arief/ArrayList/bioskop/Premiere.java

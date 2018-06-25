@@ -5,7 +5,6 @@
 				
 	*/
 
-
 Disebuah event war antar server yang diselenggarakan oleh sebuah perusahaan game online menyatakan bahwa selama event para player yang memiliki level minimal 50 mampu mengikuti event tersebut dan hadiah dari event tersebut adalah :
 -player hanya mampu melakukan hit sebanyak 10x
 -indeks dari level pemain yang dinputkan terdiri dari

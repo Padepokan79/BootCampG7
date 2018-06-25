@@ -1,0 +1,19 @@
+Add
+
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/.classpath
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/.project
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra1/Soal1.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra2/CreditCard.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra2/Insentif.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra2/MainCreditcard.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra2/MasterTitanium.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra2/MasterWorldMiles.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra2/VisaGold.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra2/VisaPlatinum.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra3/Soal3.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra4/CreditCard.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra4/IuranBulanan.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalKangHendra4/MainIuranCreditCard.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalYanaAriefVikri/Minimarket.java
+        new file:   Tugas/TugasLatihan/Ryan/SoalArrayList/src/soalYanaAriefVikri/Object.java

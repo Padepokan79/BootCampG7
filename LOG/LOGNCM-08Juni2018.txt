@@ -1,0 +1,50 @@
+13.21
+
+Add :
+
+- Latihan07Juni/src/Customer.java	
+- Latihan07Juni/src/DiscountRate.java
+- Latihan07Juni/src/MainApp.java
+- Latihan07Juni/src/Person.java
+- Latihan07Juni/src/Validasi.java
+- Latihan07Juni/src/Visit.java
+
+- PenggajianKaryawan/src/Karyawan.java
+- PenggajianKaryawan/src/MainApp.java
+- PenggajianKaryawan/src/NominalDefault.java
+- PenggajianKaryawan/src/PenentuGapok.java
+- PenggajianKaryawan/src/Person.java
+- PenggajianKaryawan/src/Programmer.java
+- PenggajianKaryawan/src/SistemAnalis.java
+- PenggajianKaryawan/src/SistemInformasi.java
+- PenggajianKaryawan/src/Tester.java
+
+- SoalInheritance/src/Andrian/Buah.java
+- SoalInheritance/src/Andrian/Jeruk.java
+- SoalInheritance/src/Andrian/Kanker.java
+- SoalInheritance/src/Andrian/KankerPankreas.java
+- SoalInheritance/src/Andrian/MainAppBuah.java
+- SoalInheritance/src/Andrian/MainAppKanker.java
+- SoalInheritance/src/Chaudhry/Apple.java
+- SoalInheritance/src/Chaudhry/Asus.java
+- SoalInheritance/src/Chaudhry/BurungGagak.java
+- SoalInheritance/src/Chaudhry/BurungUnta.java
+- SoalInheritance/src/Chaudhry/Laptop.java
+- SoalInheritance/src/Chaudhry/MainAppLaptop.java
+- SoalInheritance/src/Chaudhry/MainAppUnggas.java
+- SoalInheritance/src/Chaudhry/Unggas.java
+- SoalInheritance/src/Malik/Animal.java
+- SoalInheritance/src/Malik/Athlete.java
+- SoalInheritance/src/Malik/Carnivora.java
+- SoalInheritance/src/Malik/Football.java
+- SoalInheritance/src/Malik/Herbivora.java
+- SoalInheritance/src/Malik/MainAppAnimal.java
+- SoalInheritance/src/Malik/MainAppAthlete.java
+- SoalInheritance/src/Rizaldi/Flue.java
+- SoalInheritance/src/Rizaldi/Jaket.java
+- SoalInheritance/src/Rizaldi/Kaos.java
+- SoalInheritance/src/Rizaldi/Maag.java
+- SoalInheritance/src/Rizaldi/MainAppPakaian.java
+- SoalInheritance/src/Rizaldi/MainAppPenyakit.java
+- SoalInheritance/src/Rizaldi/Pakaian.java
+- SoalInheritance/src/Rizaldi/Penyakit.java
