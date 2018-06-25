@@ -1,0 +1,5 @@
+        new file:   HashMapKereta/.classpath
+        new file:   HashMapKereta/.project
+        new file:   HashMapKereta/.settings/org.eclipse.jdt.core.prefs
+        new file:   HashMapKereta/src/Kereta.java
+        new file:   HashMapKereta/src/MainKereta.java
