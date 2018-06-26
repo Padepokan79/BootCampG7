@@ -1,0 +1,18 @@
+Add
+
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/.classpath
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/.project
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/.settings/org.eclipse.jdt.core.prefs
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/Coba1.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/HashMapObject/HashMapObject.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/Kereta/Kereta.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/Kereta/PenghasilanKereta.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/PenggajianKaryawan/BasicSalary.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/PenggajianKaryawan/GajiPNS.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/PenggajianKaryawan/Karyawan.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/PenggajianKaryawan/Potongan.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/PenggajianKaryawan/Programmer.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/PenggajianKaryawan/SistemAnalis.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/PenggajianKaryawan/Tester.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/PenggajianKaryawan/Tunjangan.java
+        new file:   Tugas/TugasLatihan/Ryan/HashMap/src/inputValidation/Input.java
