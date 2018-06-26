@@ -1,0 +1,27 @@
+16.25
+
+Add :
+- Folder Chaudhry/25-06-2018
+- 25-06-2018/HashMap/src/Book.java
+- 25-06-2018/HashMap/src/ContohHasMap.java
+- 25-06-2018/HashMap/src/HashMapBiasa.java
+- 25-06-2018/HashMap/src/MapApp.java
+- 25-06-2018/HashMap/src/Person.java
+
+- Folder file TugasHashMap
+- TugasHashMap/src/Kereta.java
+- TugasHashMap/src/MainAppKereta.java
+
+- SoalArrayList/src/SoalHendraYN/MainAppSoal02.java
+- SoalArrayList/src/SoalHendraYN/MainAppSoal04.java
+- SoalArrayList/src/SoalHendraYN/Soal02Credit.java
+- SoalArrayList/src/SoalHendraYN/Soal02CreditCard.java
+- SoalArrayList/src/SoalHendraYN/Soal02IntensifCreditCard.java
+
+
+
+Modified :
+- SoalArrayList/src/SoalHendraYN/MainAppSoal01.java
+- SoalArrayList/src/SoalHendraYN/Soal04CreditCard.java
+- SoalArrayList/src/SoalHendraYN/Soal04IuranTahunan.java
+- SoalArrayList/src/SoalRizaldiKhairilRicha/MainApp.java

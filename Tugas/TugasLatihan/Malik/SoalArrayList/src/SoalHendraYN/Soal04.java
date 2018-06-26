@@ -7,14 +7,21 @@
 package SoalHendraYN;
 
 public class Soal04 implements IuranTahunan{
-	private double iuranTahun;
+	String namaKeluarga;
+	int qtyGold, qtyTitanium, qtyPlatinum, qtyWorldmiles;
 	
 	
 	Soal04(){
 		
 	}
 	
-	Soal04(String namaKredit){
-		
+	Soal04(String namaKeluarga, int qtyGold, int qtyTitanium, int qtyPlatinum, int qtyWorldmiles) {
+		super();
+		this.namaKeluarga = namaKeluarga;
+		this.qtyGold = qtyGold;
+		this.qtyTitanium = qtyTitanium;
+		this.qtyPlatinum = qtyPlatinum;
+		this.qtyWorldmiles = qtyWorldmiles;
 	}
+
 }
