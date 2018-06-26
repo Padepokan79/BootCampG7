@@ -1,0 +1,27 @@
+16:20
+
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/.classpath
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/.project
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/ContohHashMap/ContohHasMap.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/ContohHashMap/Person.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/ContohHashMap/package-info.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/ContohHashMap1/Book.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/ContohHashMap1/MapExample.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/ContohHashMap1/package-info.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/Analis.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/App.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/BPJS.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/Karyawan.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/Person.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/Pph.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/Programmer.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/Tester.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/TunjanganTransport.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/Umk.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/bonus.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/package-info.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/GajiKaryawan/tunjanganPegawai.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/Kereta/Kereta.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/Kereta/Passenger.java
+ create mode 100644 Tugas/TugasLatihan/Khairil/HashMapLatihan/src/Kereta/package-info.java

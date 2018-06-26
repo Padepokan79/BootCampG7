@@ -138,7 +138,7 @@ public class TiketBioskopApp {
 			System.out.println("Rata rata jumlah penjualan tiket "+arrNamaTiket.get(1)+" perhari selama sebulan adalah "+((arrQtyTiket.get(1)*4)/30));
 			System.out.println("Rata rata jumlah penjualan tiket "+arrNamaTiket.get(2)+" perhari selama sebulan adalah "+((arrQtyTiket.get(2)*4)/30));
 		}else if (menu == 6) {
-			int rasioRegular, rasioVip, rasioVvip;
+			double rasioRegular, rasioVip, rasioVvip, kenaikan = 0.05;
 			maxRegular  = maxRegular*7;
 			maxVip 		= maxVip*7;
 			maxVvip 	= maxVvip*7;
@@ -146,12 +146,112 @@ public class TiketBioskopApp {
 			rasioRegular = (qtyRegular*100)/maxRegular;
 			rasioVip 	 = (qtyVip*100)/maxVip;
 			rasioVvip	 = (qtyVvip*100)/maxVvip;
-			for(int index = 0; index < 4; index++) {
+
+//			System.out.println(qtyRegular);
+//			System.out.println(qtyVip);
+//			System.out.println(qtyVvip);
+
+			for(int index = 1; index <= 4; index++) {
+				System.out.println("Minggu ke "+index);
+				System.out.println("Persentase penjualan tiket regular adalah "+rasioRegular+"%");
+				System.out.println("Persentase penjualan tiket vip adalah "+rasioVip+"%");
+				System.out.println("Persentase penjualan tiket vvip adalah "+rasioVvip+"%");
+				System.out.println();
+				
+				for(TiketBioskop tiket : arrQtyRegular) {
+					double senin, selasa, rabu, kamis, jumat, sabtu, minggu;
+					senin 	= Math.round(tiket.qtySenin*kenaikan);
+					selasa 	= Math.round(tiket.qtySelasa*kenaikan);
+					rabu 	= Math.round(tiket.qtyRabu*kenaikan);
+					kamis 	= Math.round(tiket.qtyKamis*kenaikan);
+					jumat 	= Math.round(tiket.qtyJumat*kenaikan);
+					sabtu 	= Math.round(tiket.qtySabtu*kenaikan);
+					minggu 	= Math.round(tiket.qtyMinggu*kenaikan);
+					if (tiket.qtySenin == 100) {
+						senin = 0;
+					}if (tiket.qtySelasa == 100) {
+						selasa = 0;
+					}if (tiket.qtyRabu == 100) {
+						rabu = 0;
+					}if (tiket.qtyKamis == 100) {
+						kamis = 0;
+					}if (tiket.qtyJumat == 100) {
+						jumat = 0;
+					}if (tiket.qtySabtu == 100) {
+						sabtu = 0;
+					}if (tiket.qtyMinggu == 100) {
+						minggu = 0;
+					}
+					qtyRegular = (int) (senin+selasa+rabu+kamis+jumat+sabtu+minggu+qtyRegular);
+					
+				}
+				
+				for(TiketBioskop tiket : arrQtyVip) {
+					double senin, selasa, rabu, kamis, jumat, sabtu, minggu;
+					senin 	= Math.round(tiket.qtySenin*kenaikan);
+					selasa 	= Math.round(tiket.qtySelasa*kenaikan);
+					rabu 	= Math.round(tiket.qtyRabu*kenaikan);
+					kamis 	= Math.round(tiket.qtyKamis*kenaikan);
+					jumat 	= Math.round(tiket.qtyJumat*kenaikan);
+					sabtu 	= Math.round(tiket.qtySabtu*kenaikan);
+					minggu 	= Math.round(tiket.qtyMinggu*kenaikan);
+					if (tiket.qtySenin == 60) {
+						senin = 0;
+					}if (tiket.qtySelasa == 60) {
+						selasa = 0;
+					}if (tiket.qtyRabu == 60) {
+						rabu = 0;
+					}if (tiket.qtyKamis == 60) {
+						kamis = 0;
+					}if (tiket.qtyJumat == 60) {
+						jumat = 0;
+					}if (tiket.qtySabtu == 60) {
+						sabtu = 0;
+					}if (tiket.qtyMinggu == 60) {
+						minggu = 0;
+					}
+					qtyVip = (int) (senin+selasa+rabu+kamis+jumat+sabtu+minggu+qtyVip);
+					
+				}
+				
+				for(TiketBioskop tiket : arrQtyVvip) {
+					double senin, selasa, rabu, kamis, jumat, sabtu, minggu;
+					senin 	= Math.round(tiket.qtySenin*kenaikan);
+					selasa 	= Math.round(tiket.qtySelasa*kenaikan);
+					rabu 	= Math.round(tiket.qtyRabu*kenaikan);
+					kamis 	= Math.round(tiket.qtyKamis*kenaikan);
+					jumat 	= Math.round(tiket.qtyJumat*kenaikan);
+					sabtu 	= Math.round(tiket.qtySabtu*kenaikan);
+					minggu 	= Math.round(tiket.qtyMinggu*kenaikan);
+					if (tiket.qtySenin == 40) {
+						senin = 0;
+					}if (tiket.qtySelasa == 40) {
+						selasa = 0;
+					}if (tiket.qtyRabu == 40) {
+						rabu = 0;
+					}if (tiket.qtyKamis == 40) {
+						kamis = 0;
+					}if (tiket.qtyJumat == 40) {
+						jumat = 0;
+					}if (tiket.qtySabtu == 40) {
+						sabtu = 0;
+					}if (tiket.qtyMinggu == 40) {
+						minggu = 0;
+					}
+					qtyVvip = (int) (senin+selasa+rabu+kamis+jumat+sabtu+minggu+qtyVvip);
+					
+				}
+				
+				rasioRegular = (qtyRegular*100)/maxRegular;
+				rasioVip 	 = (qtyVip*100)/maxVip;
+				rasioVvip	 = (qtyVvip*100)/maxVvip;
+				
+				kenaikan += 0.05;
+				
+				
 				
 			}
-			System.out.println("Persentase penjualan tiket regular adalah "+rasioRegular+"%");
-			System.out.println("Persentase penjualan tiket vip adalah "+rasioVip+"%");
-			System.out.println("Persentase penjualan tiket vvip adalah "+rasioVvip+"%");
+		
 		}
 	}
 
