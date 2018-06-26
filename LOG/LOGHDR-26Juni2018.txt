@@ -1,0 +1,27 @@
+Menambahkan File
+================
+
+
+ .classpath
+ .project
+ .settings/org.eclipse.jdt.core.prefs
+ src/ChaudharyMalikHendraK/MainApp.java
+ src/ChaudharyMalikHendraK/TokoAmazon.java
+ src/KhairilRizaldiRicha/Bioskop.java
+ src/KhairilRizaldiRicha/MainApp.java
+ src/SoalAlifarAndrianRyan/Cinema.java
+ src/SoalAlifarAndrianRyan/MainApp.java
+ src/SoalHendraYN/MainTest.java
+ src/SoalHendraYN/SoalKeduaAbstract.java
+ src/SoalHendraYN/SoalKeduaCreditCard.java
+ src/SoalHendraYN/SoalKeduaInterface.java
+ src/SoalHendraYN/SoalKeduaMainApp.java
+ src/SoalHendraYN/SoalKeempatCreditCard.java
+ src/SoalHendraYN/SoalKeempatInterface.java
+ src/SoalHendraYN/SoalKeempatMain.java
+ src/SoalHendraYN/SoalKetiga.java
+ src/SoalHendraYN/SoalPertama.java
+ src/SoalYanaAriefVikri/Barang.java
+ src/SoalYanaAriefVikri/MainApp.java
+ ../../LatihanSQL/LatihanSoalBasicSoccerDatabase.txt
+ LOGHDR-26Juni2018.txt
