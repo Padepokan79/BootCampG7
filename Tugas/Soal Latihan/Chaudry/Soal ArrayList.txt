@@ -1,0 +1,66 @@
+TOKO AMAZON
+Ada 5 jenis Barang yang dijual :
+- Fanta dengan harga 7000
+- Taro dengan harga 3000
+- Shampoo Clear dengan harga 12000
+- Tissuee dengan harga 2000
+- Ice Cream Magnum dengan harga 10000
+
+Pada minggu pertama
+Hari ke Senin :
+- Taro terjual 10 item.
+- Fanta terjual 3 item.
+
+Hari ke Selasa :
+- Tissuee terjual 3 item.
+- Ice Cream magnum terjual 12 item.
+- Taro terjual 20 item.
+- Fanta terjual 15 item
+
+Hari ke Rabu :
+- Shampoo clear terjual 3 item.
+
+Hari ke Kamis :
+- Ice Cream Magnum terjual 2 item.
+- Taro terjual 18 item.
+
+Hari ke jumat :
+- libur
+
+Hari ke Sabtu :
+- Tissuee terjual 10 item.
+- Shampoo Clear terjual 12 item.
+- Ice Cream Magnum terjual 15 item.
+- Fanta terjual 5 item.
+- Taro terjual 6 item.
+
+Hari ke Minggu :
+- Ice Cream Magnum terjual 2 item.
+- Fanta terjual 3 item.
+- Taro terjual 3 item.
+
+
+*Ketentuan :
+- Promo hari minggu sebesar 20% untuk semua barang.
+- minggu kedua item terjual bertambah 2 item dari penjualan minggu pertama
+  contoh : 
+  
+  Minggu Pertama
+  Hari ke Senin :
+  Taro terjual 10 item.
+  Fanta terjual 3 item.
+
+  Minggu Kedua
+  Hari ke Senin :
+  Taro terjual 12 item.
+  Fanta terjual 5 item.
+
+- minggu ketiga item terjual berkurang 1 item dari penjualan minggu kerdua
+- minggu keempat item terjual berkurang 2 item dari penjualan minggu pertama
+
+
+1. Hitung penghasilan minggu ketiga
+2. Hitung selisih penghasilan pada minggu ketiga dan minggu keempat
+3. item paling banyak terjual dalam sebulan
+
+**Properti dan method disesuaikan masing masing

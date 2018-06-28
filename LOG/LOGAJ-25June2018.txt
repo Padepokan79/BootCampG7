@@ -1,0 +1,4 @@
+Add java project in Tugas/Tugas Latihan/Alifar/25 Juni 2018
+	HashMap
+	KaryawanHashMap
+	Soal Array List

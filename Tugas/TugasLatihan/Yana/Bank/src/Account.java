@@ -1,19 +1,16 @@
 
 public class Account {
-	String 	idA, namaA;
-	int 	depositA, withdrawA, uangTabunganA;
+	String 	namaA;
+	int 	idA, depositA, withdrawA, uangTabunganA;
 	
 	public Account() {
 	}
 	
-//	public Account(String id, int deposit) {
-//		idA 		= id;
-//		depositA 	= deposit;
-//	}
-
-//	public Account(int deposit) {
-//		depositA = deposit;
-//	}
+	public Account(String nama, int id, int deposit) {
+		namaA 		= nama;
+		idA 		= id;
+		depositA 	= deposit;
+	}
 	
 	int saldo() {
 		return uangTabunganA;

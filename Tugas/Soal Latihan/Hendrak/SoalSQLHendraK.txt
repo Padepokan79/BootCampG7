@@ -1,0 +1,21 @@
+//Tanggal 28 Juni 2018
+//Hendra Kurniawan
+Soal Sql
+========
+1.Tampilkan nip, nama, nama pangkat , masa kerja
+dengan masa kerja lebih dari 21 tahun
+limit 20
+sample tabel mstpegawai_01, pangkat_tbl
+
+2.Tampilkan nip, nama , agama , gaji pokok
+dengan gaji pokok > 4000000
+sample tabel mstpegawai, agama_tbl
+limit 20
+
+3. Tampilkan nip, nama , status kawin, nama gol, nama pangkat, gaji pokok 
+dengan pendidikan terakhir sarjana dan status janda/duda
+urutkan secara ascending berdasarkan nama 
+limit 20
+sample tabel mstpegawai_01, pangkat_tbl, stawin_tbl
+
+

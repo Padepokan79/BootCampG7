@@ -1,0 +1,29 @@
+Menambahkan file
+================
+
+LOGHDR-28Juni2018.txt
+       	new file:   ../../../Soal Latihan/Hendrak/SoalSQLHendraK.txt
+        new file:   ../LatihanArrayList/SoalArrayListHendra/.classpath
+        new file:   ../LatihanArrayList/SoalArrayListHendra/.project
+        new file:   ../LatihanArrayList/SoalArrayListHendra/.settings/org.eclipse.jdt.core.prefs
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/ChaudharyMalikHendraK/MainApp.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/ChaudharyMalikHendraK/TokoAmazon.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/KhairilRizaldiRicha/Bioskop.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/KhairilRizaldiRicha/MainApp.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalAlifarAndrianRyan/Cinema.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalAlifarAndrianRyan/MainApp.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/MainTest.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/SoalKeduaAbstract.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/SoalKeduaCreditCard.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/SoalKeduaInterface.java
+
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/SoalKeduaMainApp.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/SoalKeempatCreditCard.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/SoalKeempatInterface.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/SoalKeempatMain.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/SoalKetiga.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalHendraYN/SoalPertama.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalYanaAriefVikri/Barang.java
+        new file:   ../LatihanArrayList/SoalArrayListHendra/src/SoalYanaAriefVikri/MainApp.java
+        modified:   LatihanSoalBasicSoccerDatabase.txt
+

@@ -1,0 +1,14 @@
+07.44
+
+Add :
+
+- Folder file TugasHashMapArrayList
+- TugasHashMapArrayList/src/Interface/PengalamanKerja.java
+- TugasHashMapArrayList/src/Interface/Potongan.java
+- TugasHashMapArrayList/src/Interface/Tunjangan.java
+- TugasHashMapArrayList/src/Interface/UmkKota.java
+- TugasHashMapArrayList/src/MainApp.java
+- TugasHashMapArrayList/src/Sistem/Karyawan.java
+- TugasHashMapArrayList/src/Sistem/Programmer.java
+- TugasHashMapArrayList/src/Sistem/SistemAnalis.java
+- TugasHashMapArrayList/src/Sistem/Tester.java

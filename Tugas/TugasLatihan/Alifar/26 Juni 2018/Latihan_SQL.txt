@@ -1,0 +1,75 @@
+1. 10 Venues
+-----------------
+SELECT COUNT(Venue_id) AS VenueNumber
+FROM Soccer_Venue;
+
+2. 29 Countries
+-----------------
+SELECT COUNT(DISTINCT team_id) AS CountriesNumber
+FROM Player_Mast;
+
+3. 97 Goals
+-----------------
+SELECT COUNT(goal_id) AS NumberGoalsinNT
+FROM Goal_Details
+WHERE goal_schedule='NT';
+
+4. 40 Matches
+-----------------
+SELECT COUNT(match_no) AS MatchesWithResult
+FROM Match_Mast
+WHERE results='WIN';
+
+5. 11 Matches
+-----------------
+SELECT COUNT(match_no) AS MatchesDraw
+FROM Match_Mast
+WHERE results='DRAW';
+
+6. 2016, June 11
+-----------------
+SELECT MIN(Play_Date) AS BeginDate
+FROM Match_Mast;
+
+7. 3 Goals
+-----------------
+SELECT COUNT(goal_id) AS SelfGoals
+FROM Goal_Details
+WHERE Goal_type='O';
+
+8. 25 Matches
+-----------------
+SELECT COUNT(match_no) AS GroupWithResults
+FROM Match_Mast
+WHERE Play_Stage='G' AND results='WIN';
+
+9. 3 Matches
+-----------------
+SELECT COUNT(DISTINCT match_no) AS PenaltyResultsMatches
+FROM Penalty_Shootout;
+
+10. 1 Matches
+-----------------
+SELECT COUNT(DISTINCT match_no) AS PenaltyONR16
+FROM Match_Mast
+WHERE Play_Stage='R' AND decided_by='P';
+
+11. Goals Scored in Every Matches Within NT
+-----------------
+SELECT Match_No, COUNT(Match_no)
+FROM Goal_Details
+WHERE goal_schedule='NT'
+GROUP BY match_no
+ORDER BY match_no;
+
+12.
+-----------------
+SELECT Match_No, play_date, goal_score
+FROM Match_Mast
+WHERE stop1_sec=0;
+
+13.
+-----------------
+SELECT COUNT(*)
+FROM Match_Mast
+WHERE play_stage='G' AND goal_score='0-0';
