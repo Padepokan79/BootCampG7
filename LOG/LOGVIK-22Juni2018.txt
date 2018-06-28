@@ -1,0 +1,13 @@
+Adding File 
+	new file:   JawabSoalArrayList/.classpath
+        new file:   JawabSoalArrayList/.gitignore
+        new file:   JawabSoalArrayList/.project
+        new file:   JawabSoalArrayList/.settings/org.eclipse.jdt.core.prefs
+        new file:   JawabSoalArrayList/src/bioskop/Bioskop.java
+        new file:   JawabSoalArrayList/src/bioskop/TestBioskop.java
+        new file:   JawabSoalArrayList/src/cgv79/Cgv.java
+        new file:   JawabSoalArrayList/src/cgv79/TestCgv.java
+        new file:   JawabSoalArrayList/src/tokoAmazon/TestTokoAmazon.java
+        new file:   JawabSoalArrayList/src/tokoAmazon/TokoAmazon.java
+        new file:   JawabSoalArrayList/src/warung/TestWarung.java
+        new file:   JawabSoalArrayList/src/warung/Warung.java

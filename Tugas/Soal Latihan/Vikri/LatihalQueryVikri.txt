@@ -1,0 +1,12 @@
+Vikri R
+SoalSQL
+28/06/2018
+
+1.Coba Tampilkan Nama Pegawai, nama agama, dan nama pangkat
+Dari tabel mstpegawai
+
+2. coba tampilkan 10 pegawai dengan gaji pokok tertinggi
+dari tabel mstpegawai dan gaji_13_tmp
+
+3. Coba jumlahkan berapa pegawai yang agamanya islam dari tabel 
+mstpegawai
