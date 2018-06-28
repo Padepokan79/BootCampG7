@@ -1,0 +1,156 @@
+Chaudry
+
+1.
+select peg.Nama, peg.NIP, agama.NMAGAMA as Agama, hut.NMHUTANG as "Jenis Hutang", hutang.JMLHUTANG as "Jumlah Hutang"
+from mstpegawai as peg, agama_tbl as agama, hutang, hutang_tbl as hut
+where peg.AGAMA=agama.KDAGAMA and hutang.NIP=peg.NIP and hut.KDHUTANG=hutang.KDHUTANG and hutang.JMLHUTANG>4200000
+order by jmlhutang desc, nama asc
+limit 70;
+
+2.
+select agama.NMAGAMA as Agama, count(*) as Jumlah
+from mstpegawai as peg, agama_tbl as agama
+where peg.AGAMA=agama.KDAGAMA
+group by peg.agama;
+
+3.
+select count(*) as Jumlah
+from mstpegawai as peg, agama_tbl as agama, hutang
+where peg.AGAMA=agama.KDAGAMA and peg.NIP=hutang.NIP and jmlhutang<1000000 and pendidikan="SLTA" and nmagama<>"ISLAM"
+order by jmlhutang;
+
+===========================================================================================================================
+Arief
+
+1.
+select nama, if(peg.kdjenkel=1, "Laki-laki", "Perempuan") as "Jenis Kelamin", agama.NMAGAMA as Agama
+from mstpegawai as peg, agama_tbl as agama
+where peg.AGAMA=agama.KDAGAMA;
+
+2.
+select nama, TGLLHR
+from mstpegawai
+where tgllhr>"1957-06-28"
+order by tgllhr;
+
+3.
+select Nama, agama.nmagama as Agama, Pendidikan
+from mstpegawai as peg, agama_tbl as agama
+where peg.agama=agama.KDAGAMA and (peg.PENDIDIKAN="SLTA" or peg.PENDIDIKAN="SMA");
+
+===========================================================================================================================
+Hendra K
+
+1.
+select peg.NIP, peg.Nama, pangkat.NMPANGKAT as Pangkat, peg.MASKER as "Masa Kerja"
+from mstpegawai_01 as peg, pangkat_tbl as pangkat
+where peg.KDPANGKAT=pangkat.KDPANGKAT and peg.MASKER>21;
+
+2.
+select peg.NIP, peg.Nama, agama.NMAGAMA as Agama, peg.GAPOK as "Gaji Pokok"
+from mstpegawai_01 as peg, agama_tbl as agama
+where peg.AGAMA=agama.KDAGAMA and gapok>4000000
+limit 20;
+
+3.
+select peg.NIP, peg.Nama, kawin.nmstawin as Status, pangkat.NMGOL as Golongan, pangkat.NMPANGKAT as Pangkat, peg.GAPOK as "Gaji Pokok"
+from mstpegawai_01 as peg, stawin_tbl as kawin, pangkat_tbl as pangkat
+where peg.KDSTAWIN=kawin.kdstawin and peg.KDPANGKAT=pangkat.KDPANGKAT and peg.PENDIDIKAN="Sarjana" and kawin.nmstawin="JANDA/DUDA"
+order by peg.NAMA
+limit 20;
+
+===========================================================================================================================
+Khairil
+
+1.
+select peg.TGLGAJI as Tanggal, peg.NIP, peg.NAMA, if(peg.KDJENKEL=1, "Laki-laki", "Perempuan") as "Jenis Kelamin", peg.TGLLHR as "Tanggal Lahir", kawin.nmstawin as "Status", peg.MASKER as "Masa Kerja"
+from fgaji_baru as peg, stawin_tbl as kawin
+where peg.KDSTAWIN=kawin.kdstawin and peg.KDJNSTRANS=5;
+
+2.
+select peg.NIP, peg.Nama, agama.NMAGAMA as Agama, hut.NMHUTANG as "Jenis Hutang", hutang.JMLHUTANG as "Jumlah Hutang", hutang.JMLCICILAN as "Jumlah Cicilan", hutang.CICILANAKHIR as "Ciccilan Terakhir", hutang.JMLBULAN as "Jumlah Bulan"
+from mstpegawai as peg, agama_tbl as agama, hutang, hutang_tbl as hut
+where peg.AGAMA=agama.KDAGAMA and peg.NIP=hutang.NIP and hutang.KDHUTANG=hut.KDHUTANG;
+
+3.
+select peg.NIP, peg.Nama, if(peg.KDJENKEL=1, "Laki-laki", "Perempuan") as "Jenis Kelamin", peg.TGLLHR as "Tanggal Lahir", kawin.nmstawin as "Status", pangkat.NMPANGKAT as Pangkat, peg.MASKER as "Masa Kerja", eselon.URAIAN as Eselon
+from mstpegawai as peg, stawin_tbl as kawin, pangkat_tbl as pangkat, eselon_tbl as eselon
+where peg.KDSTAWIN=kawin.kdstawin and peg.KDPANGKAT=pangkat.KDPANGKAT and peg.KDESELON=eselon.KDESELON;
+
+===========================================================================================================================
+Malik
+
+1.
+select peg.NIP, peg.Nama, peg.TGLLHR as "Tanggal Lahir", agama.NMAGAMA as Agama, hut.NMHUTANG as "Nama Hutang", hutang.JMLHUTANG as "Jumlah Hutang"
+from mstpegawai as peg, hutang, hutang_tbl as hut, agama_tbl as agama
+where peg.NIP=hutang.NIP and hutang.KDHUTANG=hut.KDHUTANG and peg.AGAMA=agama.KDAGAMA
+order by peg.TGLLHR desc;
+
+2.
+select peg.NIP, peg.Nama, zakat.mulai as "Tanggal Mulai Zakat"
+from mstpegawai as peg, zakat_tdk as zakat
+where peg.NIP=zakat.nip and nama="H.ABDUL RACHMAN, SKM, MM";
+
+3.
+select kdsatker as "Kode Satuan Kerja", count(*) as Jumlah
+from data_rapel
+group by data_rapel.KDSATKER;
+
+===========================================================================================================================
+Richa
+
+1.
+select NIP, Nama, kawin.nmstawin as "Status", eselon.URAIAN as Eselon, peg.KDTERPENCIL as "Golongan Terpencil", terpencil.TJDAERAH as "Tunjangan Terpencil", peg.BERSIH
+from fgaji_03 as peg, stawin_tbl as kawin, eselon_tbl as eselon, terpencil_tbl as terpencil
+where peg.KDSTAWIN=kawin.kdstawin and eselon.KDESELON=peg.KDESELON and peg.KDTERPENCIL=terpencil.KDDAERAH and terpencil.KDDAERAH<>000;
+
+2.
+select peg.NIP, peg.NAMA, keluarga.NMKEL as "Nama Keluarga", hubkel.NMHUBKEL as "Hubungan", jab.NMJABATAN as "Jabatan Khusus", peg.gapok as "Gaji Pokok", jab.JML as"Tunjangan Jabatan", peg.BERSIH as "Gaji Bersih"
+from gaji_13_tmp as peg, keluarga, hubkel_tbl as hubkel, jabatankhusus_tbl as jab
+where peg.NIP=keluarga.NIP and keluarga.KDHUBKEL=hubkel.KDHUBKEL and peg.KDFUNGSI=jab.KDJABATAN and peg.KDFUNGSI<>0
+order by jab.JML asc, peg.NAMA asc;
+
+3.
+select peg.NIP, peg.Nama, peg.KDFUNGSI as "Kode Fungsi", fungsi.namafungsi as "Nama Fungsi", guru.NMGURU as "Nama Jenis Guru", peg.GAPOK as "Gaji Pokok", fungsi.rp as "Tunjangan Fungsi", peg.BERSIH as "Gaji Bersih"
+from fgaji_01 as peg, fungsi, guru_tbl as guru
+where fungsi.kdjabatan=peg.KDFUNGSI and peg.KDGURU=guru.KDGURU
+order by fungsi.rp;
+
+===========================================================================================================================
+Vikri
+
+1.
+select Nama, agama.NMAGAMA as Agama, pangkat.NMPANGKAT as "Nama Pangkat"
+from mstpegawai as peg, agama_tbl as agama, pangkat_tbl as pangkat
+where peg.AGAMA=agama.KDAGAMA and pangkat.KDPANGKAT=peg.KDPANGKAT;
+
+2.
+select peg.Nama, gaji13.gapok
+from mstpegawai as peg, gaji_13_tmp as gaji13
+where peg.NIP=gaji13.NIP
+order by gaji13.gapok desc
+limit 10;
+
+3.
+select count(*) as Jumlah
+from mstpegawai as peg, agama_tbl as agama
+where peg.AGAMA=agama.KDAGAMA and agama.NMAGAMA="ISLAM";
+
+===========================================================================================================================
+Yana
+
+1.
+select count(DISTINCT jabatan_fungsi.KDFUNGSI) as "Jumlah Jabatan Fungsi" , count(DISTINCT jabatankhusus_tbl.KDJABATAN) as "Jumlah Jabatan Khusus"
+from jabatan_fungsi, jabatankhusus_tbl;
+
+2.
+select peg.Nama, hutang.JMLHUTANG as "Jumlah Hutang", hut.NMHUTANG as "Nama Hutang"
+from vwpegawai as peg, hutang, hutang_tbl as hut
+where peg.NIP=hutang.NIP and hutang.KDHUTANG=hut.KDHUTANG and hut.NMHUTANG="HUTANG KELEBIHAN BAYAR GAJI"
+order by hutang.JMLHUTANG desc
+limit 10;
+
+3.
+select peg.Nama, peg.NMSATKER as "Satuan Kerja", agama.NMAGAMA as "Agama"
+from vwpegawai as peg, agama_tbl as agama
+where peg.AGAMA=agama.KDAGAMA and peg.NAMA like "H.%";
