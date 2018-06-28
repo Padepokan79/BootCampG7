@@ -18,3 +18,4 @@ Ketentuan :
 Tabel : agama_tbl, mstpegawai
 
 3. TAmpilkan total jumlah pegawai yang memiliki hutang dibawah 1000000 dan pendidikan SLTA dan beragama bukan islam
+Tabel : hutang, mstpegawai, agama_tbl
