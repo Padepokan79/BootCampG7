@@ -1,0 +1,11 @@
+1. Tampilkan Biodata pegawai dengan ketentuan "Nama Lengkap" pegawai yang berisi gelar dan nama, jenis kelamin, dan agama.
+
+Table : mstPegawai
+
+2. Tampilkan Nama Pegawai beserta tanggal lahirnya dengan usia kurang dari 60 tahun
+
+Table : mstPegawai
+
+3. Tampilkan nama pegawai beragama islam dengan pendidikan Setara SMA.
+
+Table : mstPegawai
