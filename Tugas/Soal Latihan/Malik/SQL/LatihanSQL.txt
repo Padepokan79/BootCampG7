@@ -1,0 +1,26 @@
+/*
+AUTHOR 		: MALIK CHAUDHARY
+DATE CREATE 	: 2018-28-06
+*/
+
+1. Tampilkan 
+	
+	NIP,  Nama Pegawai, Tgl Lahir, Agama, Nama Hutang, Jumlah Hutang
+
+Tabel : hutang, hutang_tbl, mstpegawai, agama_tbl
+
+tampilkan dari tanggal lahir paling besar
+
+2. Tampilkan 
+	Nip, Nama, Tgl Mulai Zakat
+	untuk H.ABDUL RACHMAN, SKM, MM
+tabel : zakat_tdk, mstpegawai
+
+3. Tampilkan jumlah pegawai berdasarkan kode satuan kerja
+contoh :
+kode 		jumlah
+D23463636	123
+D23523532	50
+
+Tabel : data_rapel	
+
