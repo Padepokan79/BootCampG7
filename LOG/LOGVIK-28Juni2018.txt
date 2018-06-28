@@ -1,0 +1,2 @@
+ADding :
+	- new file:   LatihalQueryVikri.txt
