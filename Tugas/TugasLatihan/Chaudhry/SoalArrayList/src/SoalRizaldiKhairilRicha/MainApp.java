@@ -14,8 +14,8 @@ public class MainApp {
 		Scanner key = new Scanner(System.in);
 		String inputAngka;
 		int incomeSenin = 0, incomeSelasa = 0, incomeRabu = 0, incomeKamis = 0, incomeJumat = 0, incomeSabtu = 0, incomeMinggu = 0, incomeSeminggu = 0;
-		int totalReguler = 0, totalVip = 0, totalVvip = 0, indexTiket = 0, maxReguler = 100, maxVip = 60, maxVvip = 40;
-		double rasio = 0;
+		int indexTiket = 0, maxReguler = 100, maxVip = 60, maxVvip = 40;
+		double totalReguler = 0, totalVip = 0, totalVvip = 0, rasioReguler = 0, rasioVip = 0, rasioVvip = 0, kenaikan = 5.0;
 		maxReguler *= 7;
 		maxVip *= 7;
 		maxVvip *= 7;
@@ -49,7 +49,7 @@ public class MainApp {
 			totalReguler += tiketReguler.tiketSabtu;					totalVip += tiketVip.tiketSabtu;					totalVvip += tiketVvip.tiketSabtu;
 			totalReguler += tiketReguler.tiketMinggu;					totalVip += tiketVip.tiketMinggu;					totalVvip += tiketVvip.tiketMinggu;
 		}															}													}
-		ArrayList<Integer> totalTiket = new ArrayList<Integer>();
+		ArrayList<Double> totalTiket = new ArrayList<Double>();
 		totalTiket.add(totalReguler*4);
 		totalTiket.add(totalVip*4);
 		totalTiket.add(totalVvip*4);
@@ -113,12 +113,118 @@ public class MainApp {
 			System.out.println("Rata rata jumlah penjualan Tiket "+namaTiket.get(2)+" perhari selama sebulan adalah "+totalTiket.get(2)/30);
 		
 		}else if (inputAngka.equals("6")) {
-			rasio = (totalReguler*100)/maxReguler;
-			System.out.println("Persentase tiket "+namaTiket.get(0)+" adalah "+rasio+"%");
-			rasio = (totalVip*100)/maxVip;
-			System.out.println("Persentase tiket "+namaTiket.get(1)+" adalah "+rasio+"%");
-			rasio = (totalVvip*100)/maxVvip;
-			System.out.println("Persentase tiket "+namaTiket.get(2)+" adalah "+rasio+"%");
+			for(int index = 1; index <= 4; index++) {
+				System.out.println("Minggu ke "+index);
+				rasioReguler = (totalReguler*100)/maxReguler;
+				System.out.println("Persentase tiket "+namaTiket.get(0)+" adalah "+Math.round(rasioReguler)+"% ");
+				rasioVip = (totalVip*100)/maxVip;
+				System.out.println("Persentase tiket "+namaTiket.get(1)+" adalah "+Math.round(rasioVip)+"%");
+				rasioVvip = (totalVvip*100)/maxVvip;
+				System.out.println("Persentase tiket "+namaTiket.get(2)+" adalah "+Math.round(rasioVvip)+"%");
+				System.out.println("");
+				
+
+				double totalSenin, totalSelasa, totalRabu, totalKamis, totalJumat, totalSabtu, totalMinggu;
+				for (TiketBioskop tiket : totalQtyReguler) {
+					totalSenin 	= Math.round(tiket.tiketSenin*kenaikan/100);
+					totalSelasa = Math.round(tiket.tiketSelasa*kenaikan/100);
+					totalRabu 	= Math.round(tiket.tiketRabu*kenaikan/100);
+					totalKamis 	= Math.round(tiket.tiketKamis*kenaikan/100);
+					totalJumat 	= Math.round(tiket.tiketJumat*kenaikan/100);
+					totalSabtu 	= Math.round(tiket.tiketSabtu*kenaikan/100);
+					totalMinggu = Math.round(tiket.tiketMinggu*kenaikan/100);
+					
+					if (tiket.tiketSenin == 100) {
+						totalSenin = 0;
+					}
+					if (tiket.tiketSelasa == 100) {
+						totalSelasa = 0;
+					}
+					if (tiket.tiketRabu == 100) {
+						totalRabu = 0;
+					}
+					if (tiket.tiketKamis == 100) {
+						totalKamis = 0;
+					}
+					if (tiket.tiketJumat == 100) {
+						totalJumat = 0;
+					}
+					if (tiket.tiketSabtu == 100) {
+						totalSabtu = 0;
+					}
+					if (tiket.tiketMinggu == 100) {
+						totalMinggu = 0;
+					}
+					totalReguler = totalSenin + totalSelasa + totalRabu + totalKamis + totalJumat + totalSabtu + totalMinggu + totalReguler;
+				}
+				for (TiketBioskop tiket : totalQtyVip) {
+					totalSenin 	= Math.round(tiket.tiketSenin*kenaikan/100);
+					totalSelasa = Math.round(tiket.tiketSelasa*kenaikan/100);
+					totalRabu 	= Math.round(tiket.tiketRabu*kenaikan/100);
+					totalKamis 	= Math.round(tiket.tiketKamis*kenaikan/100);
+					totalJumat 	= Math.round(tiket.tiketJumat*kenaikan/100);
+					totalSabtu 	= Math.round(tiket.tiketSabtu*kenaikan/100);
+					totalMinggu = Math.round(tiket.tiketMinggu*kenaikan/100);
+					
+					if (tiket.tiketSenin == 60) {
+						totalSenin = 0;
+					}
+					if (tiket.tiketSelasa == 60) {
+						totalSelasa = 0;
+					}
+					if (tiket.tiketRabu == 60) {
+						totalRabu = 0;
+					}
+					if (tiket.tiketKamis == 60) {
+						totalKamis = 0;
+					}
+					if (tiket.tiketJumat == 60) {
+						totalJumat = 0;
+					}
+					if (tiket.tiketSabtu == 60) {
+						totalSabtu = 0;
+					}
+					if (tiket.tiketMinggu == 60) {
+						totalMinggu = 0;
+					}
+					totalVip = totalSenin + totalSelasa + totalRabu + totalKamis + totalJumat + totalSabtu + totalMinggu + totalVip;
+				}
+				for (TiketBioskop tiket : totalQtyVvip) {
+					totalSenin 	= Math.round(tiket.tiketSenin*kenaikan/100);
+					totalSelasa = Math.round(tiket.tiketSelasa*kenaikan/100);
+					totalRabu 	= Math.round(tiket.tiketRabu*kenaikan/100);
+					totalKamis 	= Math.round(tiket.tiketKamis*kenaikan/100);
+					totalJumat 	= Math.round(tiket.tiketJumat*kenaikan/100);
+					totalSabtu 	= Math.round(tiket.tiketSabtu*kenaikan/100);
+					totalMinggu = Math.round(tiket.tiketMinggu*kenaikan/100);
+					
+					if (tiket.tiketSenin == 40) {
+						totalSenin = 0;
+					}
+					if (tiket.tiketSelasa == 40) {
+						totalSelasa = 0;
+					}
+					if (tiket.tiketRabu == 40) {
+						totalRabu = 0;
+					}
+					if (tiket.tiketKamis == 40) {
+						totalKamis = 0;
+					}
+					if (tiket.tiketJumat == 40) {
+						totalJumat = 0;
+					}
+					if (tiket.tiketSabtu == 40) {
+						totalSabtu = 0;
+					}
+					if (tiket.tiketMinggu == 40) {
+						totalMinggu = 0;
+					}
+					totalVvip = totalSenin + totalSelasa + totalRabu + totalKamis + totalJumat + totalSabtu + totalMinggu + totalVvip;
+				
+				}
+
+				kenaikan += 5.0;
+			}
 		
 		}
 	}
