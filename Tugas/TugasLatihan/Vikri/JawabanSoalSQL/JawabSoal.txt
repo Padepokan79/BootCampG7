@@ -1,0 +1,258 @@
+JAWAB SOAL VIKRI
+
+1.Coba Tampilkan Nama Pegawai, nama agama, dan nama pangkat
+Dari tabel mstpegawai
+
+#	SELECT NAMA, NMAGAMA, NMPANGKAT
+	FROM mstpegawai AS peg, agama_tbl AS ag, pangkat_tbl AS pang
+	WHERE peg.AGAMA=ag.KDAGAMA AND peg.KDPANGKAT=pang.KDPANGKAT
+
+2. coba tampilkan 10 pegawai dengan THR tertinggi
+dari tabel mstpegawai dan gaji_13_tmp
+
+#	SELECT *
+	FROM gaji_13_tmp AS gaji AND mstpegawai AS peg
+	WHERE gaji.NIP=peg.NIP 
+	ORDER BY gaji.GAPOK DESC
+	LIMIT 10
+
+3. Coba jumlahkan berapa pegawai yang agamanya islam dari tabel 
+mstpegawai
+
+#	SELECT COUNT(*)
+	FROM mstpegawai AS peg, agama_tbl AS ag
+	WHERE mstpegawai.AGAMA=ag.KDAGAMA AND NMAGAMA='ISLAM'
+
+JAWAB Soal yana
+
+1. Tampilkan jumlah jabatan fungsi dan jumlah jabatan khusus
+
+SELECT COUNT(DISTINCT jk.KDJABATAN) AS Jabatan Khusus, COUNT(DISTINCT jf.KDFUNGSI) AS Jabatan Fungsi
+FROM jabatan_fungsi AS jf, jabatankhusus_tbl AS jk
+
+2. Tampilkan 10 orang pegawai yang memiliki jumlah HUTANG KELEBIHAN BAYAR GAJI paling besar 
+
+SELECT NAMA, JMLHUTANG, NMHUTANG
+FROM vwpegawai AS peg, hutang AS h, hutang_tbl AS nh
+WHERE peg.NIP=h.NIP AND h.KDHUTANG=nh.KDHUTANG 
+ORDER BY JMLHUTANG DESC LIMIT 10
+
+3. Tampilkan data pegawai yang beragama Islam, memiliki gelar nama H. dan satuan kerjanya bukan di Dinas
+
+SELECT NAMA, NMAGAMA, NMSATKER
+FROM vwpegawai AS p, agama_tbl AS ag
+WHERE ag.KDAGAMA=p.AGAMA AND NAMA LIKE 'H.%'
+
+JAWAB Soal MALIK
+
+1. Tampilkan 
+	
+	NIP,  Nama Pegawai, Tgl Lahir, Agama, Nama Hutang, Jumlah Hutang
+
+Tabel : hutang, hutang_tbl, mstpegawai, agama_tbl
+
+tampilkan dari tanggal lahir paling besar
+
+# 	SELECT peg.NIP, NAMA, peg.TGLLHR, NMAGAMA, NMHUTANG, JMLHUTANG 
+	FROM mstpegawai AS peg, agama_tbl AS ag, hutang AS h, hutang_tbl AS th
+	WHERE peg.NIP=h.NIP AND peg.AGAMA=ag.KDAGAMA AND h.KDHUTANG=th.KDHUTANG
+	ORDER BY peg.TGLLHR ASC
+
+2. Tampilkan 
+	Nip, Nama, Tgl Mulai Zakat
+	untuk H.ABDUL RACHMAN, SKM, MM
+tabel : zakat_tdk, mstpegawai
+
+#	SELECT peg.NIP, NAMA, mulai
+	FROM mstpegawai AS peg, zakat_tdk AS zak
+	WHERE peg.NIP=zak.nip AND NAMA='H.ABDUL RACHMAN, SKM, MM'
+
+3. Tampilkan jumlah pegawai berdasarkan kode satuan kerja
+contoh :
+kode 		jumlah
+D23463636	123
+D23523532	50
+
+Tabel : data_rapel	
+
+# 	SELECT DISTINCT KDSATKER, COUNT(NIP) AS Jumlah
+	FROM data_rapel
+	GROUP BY KDSATKER
+
+JAWAB SOAL CHAUDRY
+
+1. Tampilkan data dengan Field:
+
+	NIP - NAMA PEGAWAI - AGAMA - NAMA HUTANG - JML HUTANG   
+
+Tabel : hutang, hutang_tbl, mstpegawai, agama_tbl
+Ketentuan : 
+ - Tampilkan data dengan JML HUTANG diatas 4.200.000
+ - menampilkan data dimulai dari jumlah hutang terbesar dan nama pegawai dari abjad terkecil
+ - tampilkan data 70 teratas
+
+# 	SELECT peg.NIP, peg.NAMA, NMAGAMA, NMHUTANG, JMLHUTANG 
+	FROM mstpegawai AS peg, agama_tbl AS ag, hutang AS h, hutang_tbl AS th
+	WHERE peg.NIP=h.NIP AND peg.AGAMA=ag.KDAGAMA AND h.KDHUTANG=th.KDHUTANG
+	AND JMLHUTANG > 4200000
+	ORDER BY JMLHUTANG DESC, NAMA ASC
+	LIMIT 70
+
+2. Tampilkan Jumlah data pegawai berdasarkan agama
+Tabel : agama_tbl, mstpegawai
+
+	SELECT DISTINCT NMAGAMA, COUNT(NIP) AS Jumlah
+	FROM mstpegawai AS peg, agama_tbl AS ag
+	WHERE peg.AGAMA=ag.KDAGAMA
+	GROUP BY NMAGAMA
+
+3. TAmpilkan total jumlah pegawai yang memiliki hutang dibawah 1000000 dan pendidikan SLTA dan beragama bukan islam
+
+	SELECT COUNT(*) AS Jumlah
+	FROM mstpegawai AS peg, hutang AS hut, agama_tbl AS ag
+	WHERE peg.NIP=hut.NIP AND peg.PENDIDIKAN !='SLTA' AND ag.KDAGAMA=peg.AGAMA AND ag.NMAGAMA != 'ISLAM'
+
+JAWAB SOAL HENDRAK
+
+1.Tampilkan nip, nama, nama pangkat , masa kerja
+dengan masa kerja lebih dari 21 tahun
+limit 20
+sample tabel mstpegawai_01, pangkat_tbl
+
+#	SELECT peg.NIP, NAMA, NMPANGKAT, MASKER
+	FROM mstpegawai_01 AS peg, pangkat_tbl AS pang
+	WHERE peg.KDPANGKAT=pang.KDPANGKAT AND MASKER > 21
+	LIMIT 20
+
+2.Tampilkan nip, nama , agama , gaji pokok
+dengan gaji pokok > 4000000
+sample tabel mstpegawai, agama_tbl
+limit 20
+
+#	SELECT peg.NIP, NAMA, NMAGAMA, GAPOK
+	FROM mstpegawai AS peg, agama_tbl AS ag
+	WHERE peg.AGAMA = ag.KDAGAMA AND GAPOK > 4000000
+	LIMIT 20
+
+3. Tampilkan nip, nama , status kawin, nama gol, nama pangkat, gaji pokok 
+dengan pendidikan terakhir sarjana dan status janda/duda
+urutkan secara ascending berdasarkan nama 
+limit 20
+sample tabel mstpegawai_01, pangkat_tbl, stawin_tbl
+
+#	SELECT peg.NIP, NAMA, nmstawin, NMGOL, NMPANGKAT, GAPOK
+	FROM mstpegawai_01 AS peg, pangkat_tbl AS pang, stawin_tbl AS stwin
+	WHERE peg.KDSTAWIN=stwin.kdstawin AND peg.KDPANGKAT=pang.KDPANGKAT AND nmstawin = 'JANDA/DUDA' AND peg.PENDIDIKAN!='SLTA'
+
+JAWAB SOAL RICHA
+
+1. Tampilkan tabel gaji pegawai pada bulan ketiga tahun 2014 yang tinggal di daerah terpencil (NIP, Nama Karyawan, status kawin, jenis eselon, golongan terpencil, tunjangan terpencil, Gaji bersih) selain non eselon dan urutkan dari penghasilan terkecil hingga paling besar limit tampilan 100.
+
+#	SELECT peg.NIP, peg.NAMA, nmstawin, URAIAN, NMDAERAH, TJDAERAH, BERSIH
+	FROM fgaji_03 AS g3, mstpegawai AS peg, stawin_tbl AS stwin, eselon_tbl AS es, terpencil_tbl AS terpencil
+	WHERE g3.NIP=peg.NIP AND peg.KDSTAWIN=stwin.kdstawin AND 
+	peg.KDESELON=es.KDESELON AND terpencil.KDDAERAH=g3.KDTERPENCIL AND
+	URAIAN!='NON ESELON' ORDER BY BERSIH ASC
+
+2.Tampilkan tabel THR pegawai yang memiliki jabatan KHUSUS (NIP, Nama karyawan, nama keluarga, jenis hubungan, jabatan, gaji pokok tunjangan jabatan, gaji bersih) dan urutkan dari tunjangan jabatan yang paling rendah dan nama karyawan sesuai abjad (termasuk gelar depan).
+
+#	SELECT peg.NIP, peg.NAMA, kel.NMKEL, NMHUBKEL, NMJABATAN, gaji.GAPOK+JML, BERSIH
+	FROM gaji_13_tmp AS gaji, mstpegawai AS peg, keluarga AS kel, hubkel_tbl AS hubkel, jabatankhusus_tbl AS jk
+	WHERE peg.NIP=kel.NIP AND hubkel.KDHUBKEL=kel.KDHUBKEL AND gaji.KDTJKHUSUS=jk.KDJABATAN
+	ORDER BY jk.
+
+3. Tampilkan tabel gaji pegawai pada bulan pertama tahun 2014 (NIP, Nama Karyawan, kode fungsi, nama fungsi, nama jenis guru, gaji pokok, tunjangan fungsi, gaji bersih) urutkan dari yang memiliki tunjangan fungsi paling kecil.
+
+	SELECT peg.NIP, peg.NAMA, fung.kdjabatan, fung.namafungsi, NMGURU, GAPOK, rp, 
+	FROM mstpegawai AS peg, fungsi AS fung, guru_tbl AS guru, fgaji_01 AS gaji 
+	WHERE peg.KDFUNGSI=fung.kdjabatan AND peg.KDGURU=guru.KDGURU AND gaji.NIP=peg.NIP
+	ORDER BY rp ASC
+
+JAWAB SOAL ALIFHAR
+
+1. Tampilkan Nama, NIP, Jabatan guru, Nama SKPD dan Gaji Pokok dari Pegawai yang Janda/Duda dari tabel fgaji_01
+
+#	SELECT peg.NAMA, peg.NIP, NMGURU, NMSKPD, gaji.GAPOK
+	FROM  stawin_tbl AS stwin,fgaji_01 AS gaji, mstpegawai AS peg,guru_tbl AS guru, skpdimport AS skpd
+	WHERE gaji.NIP=peg.NIP AND gaji.KDSKPD=skpd.KDSKPD AND
+	stwin.kdstawin=peg.KDSTAWIN AND stwin.nmstawin='JANDA/DUDA'
+
+2. Tampilkan Jumlah pegawai dari setiap jabatan guru yang mempunyai 1 anak dari tabel fgaji_01
+
+	SELECT COUNT(NIP)
+	FROM fgaji_01 AS gaji
+	WHERE gaji.KDGURU!='0' AND gaji.JANAK='1'
+
+3. Tampilkan Nama, tanggal lahir, Nama Pangkat dan jabatan eselon dari pegawai yang berumur 30 tahun atau kurang dari tabel fgaji_01
+
+	SELECT peg.NAMA, peg.TGLLHR, pangkat.NMPANGKAT, es.URAIAN
+	FROM mstpegawai AS peg, fgaji_01 AS gaji, pangkat_tbl AS pangkat, eselon_tbl AS es
+	WHERE peg.NIP=gaji.NIP AND gaji.KDPANGKAT=pangkat.KDPANGKAT AND es.KDESELON=gaji.KDESELON
+	AND YEAR(peg.TGLLHR) < 1990
+
+JAWAB SOAL ARIEF
+
+1. Tampilkan Biodata pegawai dengan ketentuan "Nama Lengkap" pegawai yang berisi gelar dan nama, jenis kelamin, dan agama.
+
+Table : mstPegawai
+
+#	SELECT NAMA, IF(peg.KDJENKEL='1','Laki-Laki','Perempuan') AS JK, NMAGAMA
+	FROM mstpegawai AS peg, agama_tbl AS ag
+	WHERE peg.AGAMA = ag.KDAGAMA
+
+2. Tampilkan Nama Pegawai beserta tanggal lahirnya dengan usia kurang dari 60 tahun
+
+Table : mstPegawai
+
+#	SELECT NAMA, TGLLHR
+	FROM mstpegawai
+	WHERE YEAR(TGLLHR) < 1968
+
+3. Tampilkan nama pegawai beragama islam dengan pendidikan Setara SMA.
+
+Table : mstPegawai
+
+# 	SELECT NAMA, NMAGAMA, PENDIDIKAN
+	FROM mstpegawai AS peg, agama_tbl AS ag
+	WHERE peg.AGAMA = ag.KDAGAMA AND NMAGAMA='ISLAM' AND peg.PENDIDIKAN='SLTA'
+
+JAWAB SOAL KHAIRIL
+
+1. Tampilkan data tanggal gaji, nip, nama, jenis kelamin, tgl lahir, status perkawinan, masker dengan kdjnstrans sama dengan 5
+
+   Output :
+
+   tanggal    | nip       | nama              | jeniskelamin | tanggallahir | statuskawin | masakerja
+   2012-01-01 | 080037047 | IR. YUSFIQ RIZAL  | Laki-laki    | 1952-07-20   | KAWIN       | 32 tahun
+
+#	SELECT TGLGAJI, NIP, NAMA, IF(KDJENKEL='1','Pria','WANITA') AS JKelamin, gaji.TGLLHR, stwin.nmstawin
+	FROM fgaji_baru AS gaji, stawin_tbl AS stwin
+	WHERE gaji.KDSTAWIN=stwin.kdstawin AND gaji.MASKER='5' AND gaji.KDJNSTRANS='5'
+
+=======================================================================================================================================
+
+
+2. Tampilkan data hutang terdiri dari nip, namapegawai, agama, jenis hutang, jumlah hutang, jumlah cicilan, cicilan terakhir dan jumlah    bulannya
+
+   Output :
+
+   nip	              |  namakaryawan    | agama  | jenishutang                 | jumhutang  | jumcicilan| cicilanterakhir | jumlahbulan
+   195205111987111001 |  dr.H. FAISAL MM |  ISLAM | HUTANG KELEBIHAN BAYAR GAJI | Rp 1700000 | Rp 200000 | Rp 100000       | 9 bulan
+
+#	SELECT peg.NIP, NAMA, NMAGAMA, NMHUTANG, JMLHUTANG, h.JMLCICILAN, h.JMLBULAN
+	FROM mstpegawai AS peg, agama_tbl AS ag, hutang AS h, hutang_tbl AS th
+	WHERE peg.NIP=h.NIP AND peg.AGAMA=ag.KDAGAMA AND h.KDHUTANG=th.KDHUTANG
+	ORDER BY peg.TGLLHR ASC
+=======================================================================================================================================
+
+
+3. tampilkan data pegawai berupa nip, nama, jenis kelamin, tanggal lahir, status perkawinan, pangkat, masa kerja dan eselonnya
+
+   Output : 
+
+   nip         |  nama             | jeniskelamin | tanggallahir | statuskawin | pangkat | masakerja | eselon 
+   010122831   |  MARSIMAN, S.Sos  | Laki-laki	  |  1963-12-17	 | KAWIN       | Pembina | 22 tahun  | NON ESELON	
+
+#	SELECT NIP, NAMA, IF(KDJENKEL='1','PRIA','WANITA'), TGLLHR, stwin.nmstawin, pang.NMPANGKAT, MASKER, URAIAN
+	FROM mstpegawai AS peg, stawin_tbl As stwin, pangkat_tbl AS pang, eselon_tbl AS es
+	WHERE peg.KDSTAWIN=stwin.kdstawin AND peg.KDPANGKAT=pang.KDPANGKAT AND peg.KDESELON=es.KDESELON
