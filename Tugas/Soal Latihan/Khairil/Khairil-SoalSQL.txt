@@ -1,0 +1,30 @@
+SOal SQL
+
+1. Tampilkan data tanggal gaji, nip, nama, jenis kelamin, tgl lahir, status perkawinan, masker dengan kdjnstrans sama dengan 5
+
+   Output :
+
+   tanggal    | nip       | nama              | jeniskelamin | tanggallahir | statuskawin | masakerja
+   2012-01-01 | 080037047 | IR. YUSFIQ RIZAL  | Laki-laki    | 1952-07-20   | KAWIN       | 32 tahun
+
+
+=======================================================================================================================================
+
+
+2. Tampilkan data hutang terdiri dari nip, namapegawai, agama, jenis hutang, jumlah hutang, jumlah cicilan, cicilan terakhir dan jumlah    bulannya
+
+   Output :
+
+   nip	              |  namakaryawan    | agama  | jenishutang                 | jumhutang  | jumcicilan| cicilanterakhir | jumlahbulan
+   195205111987111001 |  dr.H. FAISAL MM |  ISLAM | HUTANG KELEBIHAN BAYAR GAJI | Rp 1700000 | Rp 200000 | Rp 100000       | 9 bulan
+
+
+=======================================================================================================================================
+
+
+3. tampilkan data pegawai berupa nip, nama, jenis kelamin, tanggal lahir, status perkawinan, pangkat, masa kerja dan eselonnya
+
+   Output : 
+
+   nip         |  nama             | jeniskelamin | tanggallahir | statuskawin | pangkat | masakerja | eselon 
+   010122831   |  MARSIMAN, S.Sos  | Laki-laki	  |  1963-12-17	 | KAWIN       | Pembina | 22 tahun  | NON ESELON	                                                            
