@@ -1,0 +1,64 @@
+PENJUALAN MINIMARKET
+
+Properti class object :
+1. namaHari
+2. namaBarang
+3. hargaBarang
+
+-----------------------------------
+Penjualan
+
+Hari Senin :
+1. Sari Roti Cheese Rp. 4500
+2. Silver Queen Rp. 11200
+3. Lifebouy Lemonfresh Rp. 6500
+4. Paseo 200 pl	Rp. 11500
+
+Hari Selasa :
+1. Silver Queen Rp. 11200
+2. Ultramilk Coklat Rp. 4500
+3. Quacker oats Rp. 9500
+
+Hari Rabu :
+1. Mogu mogu Rp. 7800
+2. Silver Queen Rp. 11200
+3. Lifebouy Lemonfresh Rp. 6500
+4. Paseo 200 pl	Rp. 11500
+
+Hari Kamis :
+1. Bear Brand 	Rp. 8500
+2. Ultramilk Coklat Rp. 4500
+3. Quacker oats Rp. 9500
+
+Hari Jumat:
+1. Teh Kotak Rp. 11200
+2. Ultramilk Coklat Rp. 4500
+3. Quacker oats Rp. 9500
+
+Hari Sabtu:
+1. Cadbury Rp. 12500
+2. Silver Queen Rp. 11200
+3. AQUA Rp. 2500
+4. Paseo 200 pl	Rp. 11500
+
+Hari Minggu :
+1. Floridina Rp. 3200
+2. Ultramilk Coklat Rp. 4500
+3. Tic tac Rp. 9500
+
+Contoh output :
+==================================
+ 	   MINIMARKET
+==================================
+
+Menu :
+1. Penghasilan setiap hari
+2. Penghasilan seminggu
+3. Penghasilan sebulan
+
+Masukkan pilihan Anda :
+2
+
+Penghasilan seminggu adalah Rp. 6000000
+
+Pilih menu lagi? (Y/T) 
