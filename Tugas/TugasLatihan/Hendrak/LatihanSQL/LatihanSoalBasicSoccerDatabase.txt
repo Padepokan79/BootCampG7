@@ -109,38 +109,54 @@ WHERE in_out = 'I' AND play_schedule = 'ET';
 
 
 21.Write a query in SQL to compute a list to show the number of substitute happened in various stage of play for the entire tournament.
+SELECT play_half,play_schedule,COUNT(*) 
+FROM player_in_out 
+WHERE in_out='I'
+GROUP BY play_half,play_schedule
+ORDER BY play_half,play_schedule,count(*);
 
+22.Write a query in SQL to find the number of shots taken in penalty shootout matches
+SELECT COUNT (kick_no)
+FROM penalty_shootout
 
+23.Write a query in SQL to find the number of shots socred goal in penalty shootout matches
+SELECT COUNT (score_goal )
+FROM penalty_shootout
+WHERE score_goal = 'Y'
 
+24.Write a query in SQL to find the number of shots missed or saved in penalty shootout matches
+SELECT COUNT (score_goal )
+FROM penalty_shootout
+WHERE score_goal = 'N'
 
+25.Write a query in SQL to prepare a list of players with number of shots they taken in penalty shootout matches.
+SELECT c.match_no,a.country_name, 
+b.jersey_no, b.player_name, c.score_goal ,c.kick_no
+FROM soccer_country a, penalty_shootout c, player_mast b
+WHERE c.team_id=a.country_id
+AND c.player_id=b.player_id;
 
+26.Write a query in SQL to find the number of penalty shots taken by the teams.
+SELECT a.country_name, COUNT(b.*) 
+FROM soccer_country a, penalty_shootout b
+WHERE b.team_id=a.country_id
+GROUP BY a.country_name;
 
+27.Write a query in SQL to find the number of booking happened in each half of play within normal play schedule
+SELECT play_half, play_schedule, count(*) AS jmlbooking
+FROM player_booked
+WHERE play_schedule = 'NT'
+GROUP BY play_half, play_schedule
 
+28.Write a query in SQL to find the number of booking happened in stoppage time.
+SELECT play_half, play_schedule, count(*) AS jmlbooking
+FROM player_booked
+WHERE play_schedule = 'ST'
+GROUP BY play_half, play_schedule
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+29.Write a query in SQL to find the number of booking happened in extra time.
+SELECT play_half, play_schedule, count(*) AS jmlbooking
+FROM player_booked
+WHERE play_schedule = 'ET'
+GROUP BY play_half, play_schedule
+ORDER BY play_half
