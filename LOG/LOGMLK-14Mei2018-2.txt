@@ -1,5 +1,4 @@
 add file :
-<<<<<<< HEAD
 new file:   AgeMessage.java
 new file:   BmiCategories.java
 new file:   ClubBouncer.java
@@ -20,4 +19,3 @@ new file:   Ex20Drill2.java
 new file:   Ex21Drill1.java
 new file:   GenderTitles.java
 new file:   SecretWord.java
-
