@@ -1,0 +1,5 @@
+1. Tampilkan Nama, NIP, Jabatan guru, Nama SKPD dan Gaji Pokok dari Pegawai yang Janda/Duda dari tabel fgaji_01
+
+2. Tampilkan Jumlah pegawai dari setiap jabatan guru yang mempunyai 1 anak dari tabel fgaji_01
+
+3. Tampilkan Nama, tanggal lahir, Nama Pangkat dan jabatan eselon dari pegawai yang berumur 30 tahun atau kurang dari tabel fgaji_01
