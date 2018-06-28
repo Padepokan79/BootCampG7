@@ -90,3 +90,5 @@ WHERE in_out = 'I' and play_schedule = 'ST';]
 SELECT COUNT (time_in_out) 
 FROM player_in_out
 WHERE in_out = 'I' and play_half = 1;
+
+19.

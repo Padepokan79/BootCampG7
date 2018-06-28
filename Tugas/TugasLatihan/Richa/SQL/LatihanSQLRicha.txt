@@ -1,0 +1,135 @@
+SOAL LATIHAN SQL dbgajido
+================================================================================================
+JAWABAN SOAL RICHA
+
+1. Tampilkan tabel gaji pegawai pada bulan ketiga tahun 2014 yang tinggal di daerah terpencil (NIP, Nama Karyawan, status kawin, jenis eselon, golongan terpencil, tunjangan terpencil, Gaji bersih) selain non eselon dan urutkan dari penghasilan terkecil hingga paling besar limit tampilan 100.
+
+SELECT gaji.NIP, gaji.nama, kawin.nmstawin, esel.URAIAN,  terpencil.NMDAERAH, terpencil.TJDAERAH, gaji.BERSIH
+FROM fgaji_03 as gaji, stawin_tbl as kawin, eselon_tbl as esel, terpencil_tbl as terpencil
+where gaji.KDESELON != 00 AND gaji.KDESELON = esel.KDESELON AND gaji.KDTERPENCIL = terpencil.KDDAERAH AND gaji.KDSTAWIN = kawin.kdstawin
+ORDER BY gaji.BERSIH
+LIMIT 100;
+
+2.Tampilkan tabel THR pegawai yang memiliki jabatan KHUSUS (NIP, Nama karyawan, nama keluarga, jenis hubungan, jabatan, gaji pokok tunjangan jabatan, gaji bersih) dan urutkan dari tunjangan jabatan yang paling rendah dan nama karyawan sesuai abjad (termasuk gelar depan).
+
+SELECT gaji.NIP, gaji.nama, kel.NMKEL, hubkel.NMHUBKEL, jabkus.NMJABATAN, gaji.GAPOK, gaji.TJFUNGSI, gaji.BERSIH
+FROM gaji_13_tmp as gaji, keluarga as kel,  hubkel_tbl as hubkel, jabatankhusus_tbl as jabkus
+where gaji.nip = kel.NIP AND kel.KDHUBKEL = hubkel.KDHUBKEL AND gaji.KDFUNGSI = jabkus.KDJABATAN AND gaji.KDFUNGSI <> 00
+ORDER BY gaji.TJFUNGSI, gaji.NAMA;
+
+3. Tampilkan tabel gaji pegawai pada bulan pertama tahun 2014 (NIP, Nama Karyawan, kode fungsi, nama fungsi, nama jenis guru, gaji pokok, tunjangan fungsi, gaji bersih) urutkan dari yang memiliki tunjangan fungsi paling kecil.
+
+SELECT gaji.NIP, gaji.nama, gaji.KDFUNGSI, fung.namafungsi, guru.NMGURU, gaji.GAPOK, gaji.TJFUNGSI,  gaji.BERSIH
+FROM fgaji_01 as gaji, fungsi as fung, guru_tbl as guru
+WHERE gaji.KDFUNGSI = fung.kdjabatan AND gaji.KDGURU = guru.KDGURU
+ORDER BY gaji.TJFUNGSI
+
+===============================================================================================
+JAWABAN SOAL ALIFHAR
+
+1. Tampilkan Nama, NIP, Jabatan guru, Nama SKPD dan Gaji Pokok dari Pegawai yang Janda/Duda dari tabel fgaji_01
+
+SELECT gaji.NAMA, gaji.NIP, guru.NMGURU, skpd.NMSKPD, gaji.GAPOK
+FROM fgaji_01 as gaji, guru_tbl as guru, skpd_tbl as skpd
+WHERE gaji.KDSTAWIN = 2 OR gaji.KDSTAWIN = 3;
+
+2. Tampilkan Jumlah pegawai dari setiap jabatan guru yang mempunyai 1 anak dari tabel fgaji_01
+
+SELECT gaji.KDGURU, COUNT(guru.KDGURU) as jumlhGuru
+FROM fgaji_01 as gaji, guru_tbl as guru
+WHERE guru.KDGURU = gaji.KDGURU AND gaji.JANAK = 1 AND guru.KDGURU <> 000
+GROUP BY guru.KDGURU;
+
+3. Tampilkan Nama, tanggal lahir, Nama Pangkat dan jabatan eselon dari pegawai yang berumur 30 tahun atau kurang dari tabel fgaji_01
+
+SELECT gaji.NAMA, gaji.TGLLHR, pang.NMPANGKAT, esel.URAIAN
+FROM fgaji_01 as gaji, pangkat_tbl as pang, eselon_tbl as esel
+WHERE gaji.KDPANGKAT = pang.KDPANGKAT AND gaji.KDESELON = esel.KDESELON AND gaji.TGLLHR > '1987-06-27';
+
+================================================================================================
+JAWABAN SOAL ARIEF
+
+1. Tampilkan Biodata pegawai dengan ketentuan "Nama Lengkap" pegawai yang berisi gelar dan nama, jenis kelamin, dan agama.
+
+Table : mstPegawai
+
+SELECT CONCAT (mstpegawai.GLRDEPAN, mstpegawai.NAMA, mstpegawai.GLRBELAKANG) as NamaLEngkap,  agama_tbl.NMAGAMA, IF(mstpegawai.KDJENKEL = 1, 'Laki-Laki' , 'Perempuan') as jeniskel
+FROM mstPegawai, agama_tbl
+WHERE mstpegawai.AGAMA = agama_tbl.KDAGAMA;
+
+
+2. Tampilkan Nama Pegawai beserta tanggal lahirnya dengan usia kurang dari 60 tahun
+
+Table : mstPegawai
+
+SELECT mstpegawai.NAMA, mstpegawai.TGLLHR
+FROM mstPegawai
+WHERE mstpegawai.TGLLHR > '1958-06-27';
+
+
+3. Tampilkan nama pegawai beragama islam dengan pendidikan Setara SMA.
+
+Table : mstPegawai
+
+SELECT mstpegawai.NAMA
+FROM mstPegawai, agama_tbl
+WHERE agama_tbl.KDAGAMA = 1 AND mstpegawai.PENDIDIKAN = 'SMA';
+
+
+=================================================================================================
+JAWABAN SOAL CHAUDARY
+
+1. Tampilkan data dengan Field:
+
+	NIP - NAMA PEGAWAI - AGAMA - NAMA HUTANG - JML HUTANG   
+
+Tabel : hutang, hutang_tbl, mstpegawai, agama_tbl
+Ketentuan : 
+ - Tampilkan data dengan JML HUTANG diatas 4.200.000
+ - menampilkan data dimulai dari jumlah hutang terbesar dan nama pegawai dari abjad terkecil
+ - tampilkan data 70 teratas
+
+SELECT mst.NIP, mst.NAMA, agama.NMAGAMA, hutnama.NMHUTANG, hut.JMLHUTANG
+FROM hutang as hut, hutang_tbl as hutnama, mstpegawai as mst, agama_tbl as agama
+WHERE hut.KDHUTANG = hutnama.KDHUTANG AND hut.NIP = mst.NIP AND hut.JMLHUTANG > 4200000
+ORDER BY hut.JMLHUTANG DESC, mst.NAMA ASC
+LIMIT 70;
+
+2. Tampilkan Jumlah data pegawai berdasarkan agama
+Tabel : agama_tbl, mstpegawai
+
+SELECT agama.NMAGAMA, COUNT(agama.KDAGAMA)
+FROM  mstpegawai as mst, agama_tbl as agama
+WHERE mst.AGAMA = agama.KDAGAMA
+GROUP BY agama.KDAGAMA;
+
+3. TAmpilkan total jumlah pegawai yang memiliki hutang dibawah 1000000 dan pendidikan SLTA dan beragama bukan islam
+
+SELECT COUNT(mst.NAMA) as jumlahPegawai
+FROM  mstpegawai as mst, hutang as hut, agama_tbl as agama
+WHERE mst.NIP = hut.NIP AND mst.AGAMA = agama.KDAGAMA AND mst.PENDIDIKAN = 'SLTA' AND agama.KDAGAMA <> 1 AND hut.JMLHUTANG< 1000000;
+
+================================================================================================
+JAWABAN SOAL YANA
+
+1. Tampilkan jumlah jabatan fungsi dan jumlah jabatan khusus
+
+Contoh OUTPUT:
+JUMLAH JABATAN FUNGSI  JUMLAH JABATAN KHUSUS
+39			45
+
+
+
+
+2. Tampilkan 10 orang pegawai yang memiliki jumlah HUTANG KELEBIHAN BAYAR GAJI paling besar 
+
+Contoh Output:
+NAMA LENGKAP			JUMLAH HUTANG	NAMA HUTANG
+dr. SRI UTAMI FAJARIYAH, Sp.A 	42750000	HUTANG KELEBIHAN BAYAR GAJI
+
+
+3. Tampilkan data pegawai yang beragama Islam, memiliki gelar nama H. dan satuan kerjanya bukan di Dinas
+
+Contoh Output:
+NAMA LENGKAP			SATUAN KERJA 	AGAMA
+H.A. CHAIRIL BURHAN, BSc	PERKEBUNAN    	ISLAM                                             
