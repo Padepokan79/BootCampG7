@@ -1,0 +1,2 @@
+Add .txt file in Tugas/Soal Latihan/Alifhar
+	Soal_SQL.txt
