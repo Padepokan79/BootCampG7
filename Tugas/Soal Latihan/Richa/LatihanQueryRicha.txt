@@ -1,0 +1,8 @@
+Soal SQL Richa
+Database: dbgajido
+
+1. Tampilkan tabel gaji pegawai pada bulan ketiga tahun 2014 yang tinggal di daerah terpencil (NIP, Nama Karyawan, status kawin, jenis eselon, golongan terpencil, tunjangan terpencil, Gaji bersih) selain non eselon dan urutkan dari penghasilan terkecil hingga paling besar limit tampilan 100.
+
+2.Tampilkan tabel THR pegawai yang memiliki jabatan KHUSUS (NIP, Nama karyawan, nama keluarga, jenis hubungan, jabatan, gaji pokok tunjangan jabatan, gaji bersih) dan urutkan dari tunjangan jabatan yang paling rendah dan nama karyawan sesuai abjad (termasuk gelar depan).
+
+3. Tampilkan tabel gaji pegawai pada bulan pertama tahun 2014 (NIP, Nama Karyawan, kode fungsi, nama fungsi, nama jenis guru, gaji pokok, tunjangan fungsi, gaji bersih) urutkan dari yang memiliki tunjangan fungsi paling kecil.
