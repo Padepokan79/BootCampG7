@@ -1,0 +1,4 @@
+add
+  Tugas/Soal Latihan/Ryan/SoalSql.txt
+  Tugas/TugasLatihan/Ryan/SQL/JawabanSoalSQL.txt
+  Tugas/TugasLatihan/Ryan/SQL/LatihanSqlJoinSoccerDatabase.txt
