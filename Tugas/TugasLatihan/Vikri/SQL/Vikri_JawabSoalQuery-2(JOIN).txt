@@ -1,0 +1,166 @@
+1. Tampilkan nama, gajipokok bulan ke 1, bulan ke 2, bulan ke 3, bulan ke 4, total gaji dari bulan 1 sampai 4, status kawin, nama eselon, dan pangkat, dari pegawai yang mempunyai eselon, diurutkan dari total gaji terbesar
+tbl: mstpegawai, dll
+
+#	SELECT DISTINCT gaj.NAMA, gaj.GAPOK, gaj2.GAPOK, gaj3.GAPOK, gaj4.GAPOK, (gaj.GAPOK+gaj2.GAPOK+gaj3.GAPOK+gaj4.GAPOK) AS total,stwin.nmstawin, es.URAIAN, pang.NMPANGKAT
+FROM fgaji_01 gaj
+INNER JOIN fgaji_02 gaj2
+ON gaj2.NIP=gaj.NIP
+INNER JOIN fgaji_03 gaj3
+ON gaj3.NIP=gaj.NIP
+INNER JOIN fgaji_04 gaj4
+ON gaj4.NIP=gaj.NIP
+INNER JOIN stawin_tbl stwin
+ON stwin.kdstawin=gaj.KDSTAWIN
+INNER JOIN eselon_tbl es
+ON es.KDESELON = gaj.KDESELON
+INNER JOIN pangkat_tbl pang
+ON pang.KDPANGKAT=gaj.KDPANGKAT
+WHERE uraian!='NON ESELON'
+GROUP BY gaj.NAMA
+ORDER BY total DESC
+
+2. Tampilkan nama, Umur, Agama, jenisKelamin, dan THP
+dari pegawai yang THP nya lebih dari 0, dan punya anak 2
+urutkan berdasarkan thp tertinggi
+tbl: mstpegawai, hit_pajak
+
+#	SELECT peg.NAMA, YEAR(NOW())-YEAR(peg.TGLLHR) AS Umur,NMAGAMA AS Agama, IF(KDJENKEL='1','Pria','Wanita') AS JKelamin, THP
+	FROM mstpegawai peg
+	INNER JOIN hit_pajak paj
+	ON peg.NIP=paj.nip
+	INNER JOIN agama_tbl ag
+	ON peg.AGAMA=ag.KDAGAMA
+	WHERE thp > 0 AND paj.anak='2'
+	ORDER BY thp ASC
+
+JAWAB SOAL YANA
+
+1. Tampilkan Data pegawai beserta total hutangnya, urutkan data berdasarkan jumlah total hutang terbesar
+
+Contoh output:
+NIP                        NAMA                                JUMLAH HUTANG
+197811152006041016        dr. YUSUF ENDANG                42750000
+197602052005022004        dr. SRI UTAMI FAJARIYAH, Sp.A        42750000
+
+#	SELECT peg.NIP, peg.NAMA, hut.JMLHUTANG
+FROM mstpegawai peg
+INNER JOIN hutang hut
+ON peg.NIP=hut.NIP
+ORDER BY JMLHUTANG DESC
+
+2. Tampilkan data pegawai yang meiliki total hutang lebih besar sama dengan gaji pokok per tahunnya. Urutkan berdasarkan total hutang terkecil
+
+Contoh Output:
+NIP                        NAMA                                GAPOK                JUMLAH HUTANG
+197803301997022001        SRI ENDANG MARTINA                3052200                42573824
+197811152006041016        dr. YUSUF ENDANG                3350600                42750000
+
+#	SELECT DISTINCT peg.NIP, peg.NAMA, GAPOK*12 AS Gapok, SUM(JMLHUTANG)
+	FROM mstpegawai peg
+	INNER JOIN hutang hut
+	ON peg.NIP=hut.NIP
+	WHERE hut.JMLHUTANG >= peg.GAPOK*12
+	GROUP BY peg.NIP
+	ORDER BY JMLHUTANG ASC
+
+JAWAB SOAL
+
+//////////// 1
+Tampilkan NIP, Nama, Tgl Lahir, Agama, Pendidikan, Nama Hutang, Jml Hutang dengan ketentuan :
+- Agama Non muslim
+- Pegawai berusia sama dengan 40 tahun kebawah
+- Pegawai dengan kode pangkat 3B
+- Ditampilkan dari pemilik JML hutang terbesar - terkecil
+Tabel : mstpegawai, hutang, hutang_tbl, pangkat_tbl, agama_tbl
+
+#	SELECT peg.NIP, peg.NAMA, TGLLHR, NMAGAMA, PENDIDIKAN, NMHUTANG, JMLHUTANG 
+	FROM mstpegawai peg
+	INNER JOIN agama_tbl ag
+	ON peg.AGAMA=ag.KDAGAMA
+	INNER JOIN hutang hut
+	ON hut.NIP=peg.NIP
+	INNER JOIN hutang_tbl hut2
+	ON hut2.KDHUTANG=hut.KDHUTANG
+	INNER JOIN pangkat_tbl pang
+	ON peg.KDPANGKAT=pang.KDPANGKAT
+	WHERE NMAGAMA!='ISLAM' AND YEAR(TGLLHR)-YEAR(TGLLHR) <= 40
+	AND peg.KDPANGKAT='3B'
+	ORDER BY JMLHUTANG DESC
+
+//////////// 2
+Perusahaan ingin mengetahu pegawai mana saja yang memiliki hutang dan yang tidak
+Field : Nama pegawai, Nama Hutang, Jumlah hutang
+- pegawai dengan pendidikan terakhir SMA atau SLTA
+- khusus untuk pegawai dengan nama inisial selain 'a'
+- Ditampilkan dengan jumlah hutang terbesar - terkecil
+
+#	SELECT peg.NIP, peg.NAMA, TGLLHR, NMAGAMA, PENDIDIKAN, NMHUTANG, JMLHUTANG 
+	FROM mstpegawai peg
+	LEFT JOIN agama_tbl ag
+	ON peg.AGAMA=ag.KDAGAMA
+	LEFT JOIN hutang hut
+	ON hut.NIP=peg.NIP
+	LEFT JOIN hutang_tbl hut2
+	ON hut2.KDHUTANG=hut.KDHUTANG
+	WHERE NAMA NOT LIKE 'a%'
+	ORDER BY JMLHUTANG DESC
+
+JAWAB SOAL ALIFHAR
+
+1. Tampilkan jumlah pegawai dari setiap Satuan Kerja beserta skpd-nya pada tabel mstpegawai
+
+-- Output :
+-- Kode Satuan Kerja | Satuan Kerja | Kode SKPD | SKPD | Jumlah
+
+Tabel : mstpegawai, satker_tbl, skpd_tbl
+
+#	SELECT DISTINCT sat.KDSATKER, sat.NMSATKER, sk.KDSKPD, sk.NMSKPD, COUNT(NIP) AS Jumlah
+	FROM mstpegawai peg
+	INNER JOIN satker_tbl sat
+	ON sat.KDSATKER=peg.KDSATKER
+	INNER JOIN skpd_tbl sk
+	ON sk.KDSKPD=peg.KDSKPD
+	GROUP BY sk.NMSKPD
+
+2. Carilah jumlah dari setiap pangkat yang memiliki golongan 41 atau lebih
+
+-- Output
+-- Pangkat | Golongan | Jumlah
+
+tabel : mstpegawai, pangkat_tbl
+
+#	SELECT DISTINCT pang.NMPANGKAT, pang.NMGOL, COUNT(NIP) AS JUMLAH
+FROM mstpegawai peg
+INNER JOIN pangkat_tbl pang
+ON peg.KDPANGKAT=pang.KDPANGKAT
+GROUP BY pang.NMPANGKAT
+
+JAWAB SOAL MALIK
+
+1. Tampilkan Nama Pegawai, Jenis kelamin, Agama, Nama Pangkat, Nama Eselon, Nama Kepala Satuan Kerja
+Ketentuan : 
+Hanya menampilkan pegawai yang beralamat di mahakam, yang tidak memiliki gelar Haji, yang memiliki nomor pokok wajib pajak, dan lokasi satuan kerja di kota bengkulu
+Tabel : mstpegawai, agama_tbl, pangkat_tbl, eselon_tbl, staker_tbl
+
+#	SELECT NAMA, IF(KDJENKEL='1','Pria','Wanita') AS Kelamin, NMAGAMA, NMPANGKAT, URAIAN, NMSATKER, peg.NPWP
+FROM mstpegawai peg
+INNER JOIN agama_tbl ag
+ON peg.AGAMA=ag.KDAGAMA
+INNER JOIN pangkat_tbl pang
+ON peg.KDPANGKAT=pang.KDPANGKAT
+INNER JOIN eselon_tbl es
+ON peg.KDESELON=es.KDESELON
+INNER JOIN satker_tbl sat
+ON peg.KDSATKER=sat.KDSATKER
+WHERE peg.ALAMAT LIKE '%mahakam%' AND peg.NAMA NOT LIKE 'H.%' AND peg.NAMA NOT LIKE '%.H.%' AND KOTA='BENGKULU' AND peg.NPWP !='00.000.00.0-000.000'
+
+2. Tampilkan Nama Eselon dan Jumlah Pegawai dari tiap Eselon, beserta jumlah besaran total dari tiap eselonnya
+Tampilkan eselon yang hanya memiliki jumlah pegawai lebih dari 5
+Tabel : eselon_tbl, mstpegawai
+
+#	SELECT DISTINCT URAIAN, COUNT(NIP) AS JML
+FROM mstpegawai peg
+INNER JOIN eselon_tbl es
+ON peg.KDESELON=es.KDESELON
+GROUP BY URAIAN
+HAVING JML < 5
