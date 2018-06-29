@@ -1,0 +1,4 @@
+
+        new file:   LATIHAN SOAL BASIC SOCCER DATABASE.txt
+        new file:   LATIHAN SOAL JOIN BASIC SOCCER.txt
+        new file:   LatihanSoalSQLG7JOIN.txt

@@ -1,0 +1,122 @@
+YANA
+
+1. Tampilkan Data pegawai beserta total hutangnya,
+urutkan data berdasarkan jumlah total hutang terbesar
+
+Contoh output:
+NIP			NAMA				JUMLAH HUTANG
+197811152006041016	dr. YUSUF ENDANG		42750000
+197602052005022004	dr. SRI UTAMI FAJARIYAH, Sp.A	42750000
+
+
+SELECT mstpegawai.NIP, mstpegawai.NAMA, SUM(hutang.JMLHUTANG) AS 'JUMLAH HUTANG'
+FROM mstpegawai
+LEFT JOIN hutang ON mstpegawai.NIP = hutang.NIP
+GROUP BY mstpegawai.NIP
+ORDER BY SUM(hutang.JMLHUTANG) DESC;
+
+
+2. Tampilkan data pegawai yang meiliki total hutang lebih besar sama dengan gaji pokok per tahunnya. Urutkan berdasarkan total hutang terkecil
+
+Contoh Output:
+NIP			NAMA				GAPOK		JUMLAH HUTANG
+197803301997022001	SRI ENDANG MARTINA		3052200		42573824
+197811152006041016	dr. YUSUF ENDANG		3350600		42750000
+
+
+SELECT mstpegawai.NIP, mstpegawai.NAMA, mstpegawai.GAPOK AS 'GAJI POKOK', SUM(hutang.JMLHUTANG) AS 'JUMLAH HUTANG'
+FROM mstpegawai
+INNER JOIN hutang ON mstpegawai.NIP = hutang.NIP
+GROUP BY mstpegawai.NIP
+HAVING SUM(hutang.JMLHUTANG) >= (mstpegawai.GAPOK * 12)
+ORDER BY hutang.JMLHUTANG ASC;
+
+************************************************************************************************
+
+VIKRI
+
+1. Tampilkan nama, gajipokok bulan ke 1, bulan ke 2, bulan ke 3, bulan ke 4, total gaji dari bulan 1 sampai 4, status kawin, nama eselon, dan pangkat, dari pegawai yang mempunyai eselon, diurutkan dari total gaji terbesar
+tbl: mstpegawai, dll
+
+
+SELECT pegawai.NIP, pegawai.NAMA, gaji1.GAPOK AS 'Gapok Bulan 1', gaji2.GAPOK AS 'Gapok Bulan 2', gaji3.GAPOK AS 'Gapok Bulan 3', gaji4.GAPOK AS 'Gapok Bulan 4', (gaji1.GAPOK + gaji2.GAPOK + gaji3.GAPOK + gaji4.GAPOK) AS 'TOTAL GAPOK', kawin.nmstawin AS 'Status Kawin', eselon.URAIAN AS 'Nama Eselon', pangkat.NMPANGKAT AS 'Nama Pangkat'
+FROM (((((((mstpegawai AS pegawai
+INNER JOIN fgaji_01 AS gaji1 ON gaji1.NIP = pegawai.NIP)
+INNER JOIN fgaji_02 AS gaji2 ON gaji2.NIP = pegawai.NIP)
+INNER JOIN fgaji_03 AS gaji3 ON gaji3.NIP = pegawai.NIP)
+INNER JOIN fgaji_04 AS gaji4 ON gaji4.NIP = pegawai.NIP)
+INNER JOIN stawin_tbl AS kawin ON pegawai.KDSTAWIN = kawin.kdstawin)
+INNER JOIN eselon_tbl AS eselon ON pegawai.KDESELON = eselon.KDESELON)
+INNER JOIN pangkat_tbl AS pangkat ON pegawai.KDPANGKAT = pangkat.KDPANGKAT)
+ORDER BY (gaji1.GAPOK + gaji2.GAPOK + gaji3.GAPOK + gaji4.GAPOK) DESC;
+
+
+2. Tampilkan nama, Umur, Agama, jenisKelamin, dan THP
+dari pegawai yang THP nya lebih dari 0, dan punya anak 2
+urutkan berdasarkan thp tertinggi
+tbl: mstpegawai, hit_pajak
+
+SELECT pegawai.NIP, pegawai.NAMA, 2018-YEAR(pegawai.TGLLHR) AS Umur, agama.NMAGAMA AS Agama, IF (pegawai.KDJENKEL = 1, "Laki-laki", "Perempuan") AS 'Jenis Kelahin', pajak.thp AS THP 
+FROM ((mstpegawai AS pegawai
+INNER JOIN hit_pajak AS pajak ON pegawai.NIP = pajak.nip)
+INNER JOIN agama_tbl AS agama ON pegawai.AGAMA = agama.KDAGAMA)
+WHERE pajak.thp > 0 AND pegawai.JANAK = 2;
+
+************************************************************************************************
+MALIK
+
+1. Tampilkan Nama Pegawai, Jenis kelamin, Agama, Nama Pangkat, Nama Eselon, Nama Kepala Satuan Kerja
+Ketentuan : 
+Hanya menampilkan pegawai yang beralamat di mahakam, yang tidak memiliki gelar Haji, yang memiliki nomor pokok wajib pajak, dan lokasi satuan kerja di kota bengkulu
+Tabel : mstpegawai, agama_tbl, pangkat_tbl, eselon_tbl, staker_tbl
+
+
+SELECT pegawai.NIP, pegawai.NAMA, agama.NMAGAMA AS Agama, IF (pegawai.KDJENKEL = 1, "Laki-laki", "Perempuan") AS 'Jenis Kelamin',
+eselon.URAIAN AS 'Nama Eselon', pangkat.NMPANGKAT AS 'Nama Pangkat', satker.NMKEPALA AS 'Kepala'
+FROM ((((mstpegawai AS pegawai
+LEFT JOIN eselon_tbl AS eselon ON pegawai.KDESELON = eselon.KDESELON)
+LEFT JOIN agama_tbl AS agama ON pegawai.AGAMA = agama.KDAGAMA)
+LEFT JOIN pangkat_tbl AS pangkat ON pangkat.KDPANGKAT = pegawai.KDPANGKAT)
+LEFT JOIN satker_tbl AS satker ON pegawai.KDSATKER = satker.KDSATKER)
+WHERE satker.KOTA = 'BENGKULU' AND pegawai.NAMA NOT LIKE 'H.%' AND pegawai.NPWP IS NOT NULL;
+
+
+2. Tampilkan Nama Eselon dan Jumlah Pegawai dari tiap Eselon, beserta jumlah besaran total dari tiap eselonnya
+Tampilkan eselon yang hanya memiliki jumlah pegawai lebih dari 5
+Tabel : eselon_tbl, mstpegawai
+
+SELECT eselon.URAIAN AS 'Nama Eselon', COUNT(pegawai.NIP) AS 'Jumlah Pegawai', SUM(eselon.RP_ESELON) AS Jumlah
+FROM eselon_tbl AS eselon
+INNER JOIN mstpegawai AS pegawai ON eselon.KDESELON = pegawai.KDESELON
+GROUP BY eselon.URAIAN;
+
+***********************************************************************************************
+
+ANDRIAN
+
+1. Tampilkan NIP, Nama, NamaGolongan, NamaJabatan, NamaJabatanGuru yang memiliki masa kerja kurang dari 20 tahun dan menduduki jabatan 'Guru sekaligus Kepala SLTA'
+tabel yang digunakan : fgaji_01, pangkat_tbl, fungsi, guru_tbl
+
+SELECT pegawai.NIP, pegawai.NAMA, fungsi.namafungsi AS 'Jabatan'
+FROM (((fgaji_01 AS pegawai
+LEFT JOIN pangkat_tbl AS pangkat ON pegawai.KDPANGKAT = pangkat.KDPANGKAT)
+LEFT JOIN fungsi ON pegawai.KDFUNGSI = fungsi.kdjabatan) 
+LEFT JOIN guru_tbl AS guru ON pegawai.KDGURU = guru.KDGURU)
+WHERE fungsi.namafungsi = 'Guru sekaligus Kepala SLTA' AND pegawai.MASKER < 20;
+
+
+2. Tampilkan jumlah hutang yang dimiliki oleh PNS yang terdapat pada mstpegawai
+syarat        >Inputer = 'Endik'
+        >jumlah hutang < 300000
+        >gunakan left join
+            >tabel2 = hutang
+
+
+SELECT SUM(hutang.JMLHUTANG) as Jumlah
+FROM mstpegawai AS pegawai
+LEFT JOIN hutang ON pegawai.NIP = hutang.NIP
+WHERE pegawai.INPUTER = 'Endik'
+GROUP BY pegawai.NIP
+HAVING SUM(hutang.JMLHUTANG) < 300000;
+
+

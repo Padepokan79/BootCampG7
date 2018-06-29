@@ -1,0 +1,138 @@
+1.
+
+SELECT soccer_venue.venue_name AS Venue
+FROM ((soccer_venue
+INNER JOIN soccer_city ON soccer_venue.city_id = soccer_city.city_id)
+INNER JOIN match_mast ON soccer_venue.venue_id = match_mast.venue_id);
+
+
+2.
+
+SELECT soccer_country.country_name AS Team, COUNT(match_details.goal_score) AS Score
+FROM match_details
+LEFT JOIN soccer_country ON match_details.team_id = soccer_country.country_id
+WHERE match_details.decided_by = 'N'
+GROUP BY soccer_country.country_name;
+
+
+3.
+
+SELECT  player_mast.player_name AS Name, count(goal_details.player_id) AS Goal
+FROM goal_details
+INNER JOIN player_mast ON goal_details.player_id = player_mast.player_id
+WHERE goal_details.goal_schedule = 'NT'
+GROUP BY player_mast.player_name
+ORDER BY count(goal_details.player_id) DESC;
+
+
+4. 
+
+SELECT  player_mast.player_name AS Name, count(goal_details.player_id)
+FROM goal_details
+INNER JOIN player_mast ON goal_details.player_id = player_mast.player_id
+GROUP BY player_mast.player_name
+ORDER BY count(goal_details.player_id) DESC
+LIMIT 1;
+
+
+5.
+
+SELECT  player_mast.player_name AS Name, soccer_country.country_name AS Country, player_mast.jersey_no AS 'Jersey No'
+FROM ((goal_details
+INNER JOIN player_mast ON goal_details.player_id = player_mast.player_id)
+INNER JOIN soccer_country ON goal_details.team_id = soccer_country.country_id)
+WHERE goal_details.play_stage = 'F';
+
+
+6.
+
+SELECT DISTINCT soccer_country.country_name AS Country
+FROM ((soccer_venue
+INNER JOIN soccer_city ON soccer_venue.city_id = soccer_city.city_id)
+INNER JOIN soccer_country ON soccer_city.country_id = soccer_country.country_id);
+
+
+7.
+
+SELECT player_mast.player_name AS Name
+FROM goal_details
+INNER JOIN player_mast ON goal_details.player_id = player_mast.player_id
+ORDER BY goal_details.goal_id ASC
+LIMIT 1;
+
+8.
+
+SELECT referee_mast.referee_name AS Referee, soccer_country.country_name AS Country
+FROM ((match_mast
+INNER JOIN referee_mast ON match_mast.referee_id = referee_mast.referee_id)
+INNER JOIN soccer_country ON referee_mast.country_id = soccer_country.country_id)
+ORDER BY match_mast.match_no ASC
+LIMIT 1;
+
+
+9.
+
+SELECT referee_mast.referee_name AS Referee, soccer_country.country_name AS Country
+FROM ((match_mast
+INNER JOIN referee_mast ON match_mast.referee_id = referee_mast.referee_id)
+INNER JOIN soccer_country ON referee_mast.country_id = soccer_country.country_id)
+ORDER BY match_mast.match_no DESC
+LIMIT 1;
+
+
+10.
+
+SELECT asst_referee_mast.ass_ref_name AS Name, soccer_country.country_name AS Country
+FROM ((match_details
+INNER JOIN asst_referee_mast ON match_details.ass_ref = asst_referee_mast.ass_ref_id)
+INNER JOIN soccer_country ON asst_referee_mast.country_id = soccer_country.country_id)
+ORDER BY match_details.match_no ASC
+LIMIT 1;
+
+
+11.
+
+SELECT asst_referee_mast.ass_ref_name AS Name, soccer_country.country_name AS Country
+FROM ((match_details
+INNER JOIN asst_referee_mast ON match_details.ass_ref = asst_referee_mast.ass_ref_id)
+INNER JOIN soccer_country ON asst_referee_mast.country_id = soccer_country.country_id)
+ORDER BY match_details.match_no DESC
+LIMIT 1;
+
+
+12.
+
+SELECT soccer_city.city AS City
+FROM ((match_mast
+INNER JOIN soccer_venue ON match_mast.venue_id = soccer_venue.venue_id)
+INNER JOIN soccer_city ON soccer_venue.city_id = soccer_city.city_id)
+ORDER BY match_mast.match_no ASC
+LIMIT 1;
+
+
+13.
+
+SELECT soccer_venue.venue_name AS Stadium, soccer_venue.aud_capacity AS Capacity, match_mast.audence  AS Audence
+FROM match_mast
+INNER JOIN soccer_venue ON match_mast.venue_id = soccer_venue.venue_id
+ORDER BY match_mast.match_no ASC
+LIMIT 1;
+
+
+14.
+
+SELECT soccer_venue.venue_name AS Stadium, soccer_city.city, COUNT(match_mast.match_no) AS Match
+FROM ((match_mast
+INNER JOIN soccer_venue ON match_mast.venue_id = soccer_venue.venue_id)
+INNER JOIN soccer_city ON soccer_venue.city_id = soccer_city.city_id)
+GROUP BY soccer_venue.venue_name, soccer_city.city;
+
+
+15.
+
+SELECT player_mast.player_name AS Name
+FROM player_mast
+INNER JOIN player_booked ON player_mast.player_id = player_booked.player_id
+WHERE player_booked.sent_off = 'Y'
+ORDER BY player_booked.match_no ASC
+LIMIT 1;
