@@ -1,0 +1,4 @@
+Add file
+	Latihan/Alifhar/Soal_SQL_2.txt
+	TugasLatihan/Alifar/29 Juni 2018/Jawaban_SQL_2.txt
+	TugasLatihan/Alifar/29 Juni 2018/Latihan_Join.txt

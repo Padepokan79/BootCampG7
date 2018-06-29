@@ -1,0 +1,79 @@
+Alifhar
+
+1.
+select peg.KDSATKER as "Kode Satuan Kerja", satker.NMSATKER as "Satuan Kerja", peg.KDSKPD as "Kode SKPD", skpd.NMSKPD as "SKPD", count(NIP) as "Jumlah"
+from mstpegawai as peg
+left join satker_tbl as satker on peg.KDSATKER=satker.KDSATKER
+left join skpd_tbl as skpd on peg.KDSKPD=skpd.KDSKPD
+group by peg.KDSATKER, peg.KDSKPD;
+
+2.
+select pangkat.NMPANGKAT as Pangkat, pangkat.GOL as Golongan, count(peg.NIP) as Jumlah
+from mstpegawai as peg
+right join pangkat_tbl as pangkat on peg.KDPANGKAT=pangkat.KDPANGKAT
+where pangkat.GOL>'40'
+group by pangkat.GOL, pangkat.NMPANGKAT;
+
+=========================================================================
+Andrian
+
+1. 
+select NIP, nama, pt.NMGOL, f.namafungsi, gt.NMGURU, masker
+from fgaji_01 fg
+inner join pangkat_tbl pt on pt.KDPANGKAT=fg.KDPANGKAT
+inner join fungsi f on f.kdjabatan=fg.KDFUNGSI
+inner join guru_tbl gt on gt.KDGURU=fg.KDGURU
+where masker<20 AND f.namafungsi='Guru sekaligus Kepala SLTA';
+
+2. 
+select mp.NIP, mp.NAMA, h.JMLHUTANG
+from mstpegawai mp
+left join hutang h on h.nip = mp.NIP
+where mp.inputer='Endik' AND h.JMLHUTANG<300000
+group by h.JMLHUTANG;
+
+=====================================================================================================================
+Yana
+
+1.
+select peg.NIP, peg.NAMA as Nama, sum(hutang.JMLHUTANG) as "Jumlah Hutang"
+from mstpegawai as peg
+left join hutang on hutang.NIP=peg.NIP
+group by peg.NIP
+order by sum(hutang.JMLHUTANG) desc;
+
+2.
+select peg.NIP, peg.NAMA as "Nama", peg.GAPOK*12 as "Gaji Pokok per Tahun", hutang.JMLHUTANG as "Jumlah Hutang"
+from mstpegawai as peg
+left join hutang on hutang.NIP=peg.NIP
+where hutang.JMLHUTANG>(peg.GAPOK*12)
+order by hutang.JMLHUTANG;
+
+=====================================================================================================================
+Ryan
+
+1.
+select NMPANGKAT,NMGOL,count(C_GOLONGAN) as Jumlah_Pegawai
+from pangkat_tbl as pangkat
+right join urtnip as pegawai on pangkat.NMGOL=pegawai.C_GOLONGAN
+Group by pangkat.NMPANGKAT;
+
+2.
+select nip.NIP,NAMA,JMLHUTANG
+from hutang
+inner join mstpegawai as nip on nip.NIP = hutang.NIP;
+
+=====================================================================================================================
+Malik
+
+1.
+select peg.NAMA, if(peg.KDJENKEL=1, "Laki-laki", "Perempuan") as "Jenis Kelamin", agama.NMAGAMA as "Agama", pangkat.NMPANGKAT as "Pangkat", eselon.URAIAN as "Eselon", satker.NMKEPALA as "Kepala Satuan Kerja"
+from mstpegawai as peg
+left join agama_tbl as agama on peg.AGAMA=agama.KDAGAMA
+left join pangkat_tbl as pangkat on peg.KDPANGKAT=pangkat.KDPANGKAT
+left join eselon_tbl as eselon on peg.KDESELON=eselon.KDESELON
+left join satker_tbl as satker on peg.KDSATKER=satker.KDSATKER
+where peg.ALAMAT like "%Mahakam%"
+and peg.NAMA not like "H.%"
+and peg.NPWP > "1"
+and satker.KOTA="BENGKULU";
