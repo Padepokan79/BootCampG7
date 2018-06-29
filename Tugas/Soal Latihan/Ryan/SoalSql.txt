@@ -1,0 +1,4 @@
+1. Coba Tampilkan Jumlah Pegawai berdasarkan golongan pegawai
+ dari table pegawai_tbl dan urtnip
+
+2. Cari orang orang dari mstpegawai yang mempunyai hutang dari table hutang
