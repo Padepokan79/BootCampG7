@@ -1,0 +1,74 @@
+/*
+AUTHOR 		: Malik Chaudhary
+DATE CREATE 	: 2018-29-06
+*/
+
+1. Soal Vikri
+	1. Tampilkan nama, gajipokok bulan ke 1, bulan ke 2, bulan ke 3, bulan ke 4, total gaji dari bulan 1 sampai 4, status kawin, nama eselon, dan pangkat, dari pegawai yang mempunyai eselon, diurutkan dari total gaji terbesar
+
+	QUERY :
+	SELECT mstpegawai.NAMA, fgaji_01.GAPOK AS 'Bulan 1', fgaji_02.GAPOK  AS 'Bulan 2', fgaji_03.GAPOK  AS 'Bulan 3', fgaji_04.GAPOK AS 'Bulan 4', (fgaji_01.GAPOK+fgaji_02.GAPOK+fgaji_03.GAPOK+fgaji_04.GAPOK) AS Total, stawin_tbl.nmstawin AS Status, eselon_tbl.URAIAN AS 'Nama Eselon', pangkat_tbl.NMPANGKAT
+	FROM mstpegawai
+	INNER JOIN fgaji_01 ON mstpegawai.NIP = fgaji_01.NIP
+	INNER JOIN fgaji_02 ON mstpegawai.NIP = fgaji_02.NIP
+	INNER JOIN fgaji_03 ON mstpegawai.NIP = fgaji_03.NIP
+	INNER JOIN fgaji_04 ON mstpegawai.NIP = fgaji_04.NIP
+	INNER JOIN stawin_tbl ON mstpegawai.KDSTAWIN = stawin_tbl.kdstawin
+	INNER JOIN eselon_tbl ON mstpegawai.KDESELON = eselon_tbl.KDESELON
+	INNER JOIN pangkat_tbl ON mstpegawai.KDPANGKAT = pangkat_tbl.KDPANGKAT
+	WHERE eselon_tbl.URAIAN <> 'NON ESELON'
+	ORDER BY Total DESC;
+
+	2. Tampilkan nama, Umur, Agama, jenisKelamin, dan THP
+	dari pegawai yang THP nya lebih dari 0, dan punya anak 2
+	urutkan berdasarkan thp tertinggi
+
+	QUERY :
+
+
+2. Soal Khairil
+	1. Tampilkan Karyawan yang memiliki hubungan suami atau istri dan memiliki jenjang pendidikan bukan SMA dan SLTA
+	
+	QUERY :
+
+
+3. Soal Alifhar
+	1. Tampilkan jumlah pegawai dari setiap Satuan Kerja beserta skpd-nya pada tabel mstpegawai
+
+	QUERY :
+
+
+
+4. Soal Malik
+	1. Tampilkan Nama Pegawai, Jenis kelamin, Agama, Nama Pangkat, Nama Eselon, Nama Kepala Satuan Kerja
+	Ketentuan : 
+	Hanya menampilkan pegawai yang beralamat di mahakam, yang tidak memiliki gelar Haji, yang memiliki nomor pokok wajib pajak, dan lokasi satuan kerja di kota bengkulu
+	Tabel : mstpegawai, agama_tbl, pangkat_tbl, eselon_tbl, staker_tbl
+	QUERY :
+
+	SELECT NIP, NAMA, IF(KDJENKEL = 1,'Pria','Wanita') AS 'Jenis Kelamin', NMAGAMA AS Agama, NMPANGKAT AS Pangkat, URAIAN AS Eselon, NMKEPALA AS 'Nama Kepala', mstpegawai.ALAMAT 
+	FROM mstpegawai
+	INNER JOIN agama_tbl ON mstpegawai.AGAMA = agama_tbl.KDAGAMA
+	INNER JOIN pangkat_tbl ON mstpegawai.KDPANGKAT = pangkat_tbl.KDPANGKAT
+	INNER JOIN eselon_tbl ON mstpegawai.KDESELON = eselon_tbl.KDESELON
+	INNER JOIN satker_tbl ON mstpegawai.KDSATKER = satker_tbl.KDSATKER
+	WHERE mstpegawai.ALAMAT LIKE '%MAHAKAM%'
+	AND NAMA NOT LIKE 'H.%'
+	AND mstpegawai.NPWP > 0
+	AND satker_tbl.KOTA = 'BENGKULU'; 
+
+	2. Tampilkan Nama Eselon dan Jumlah Pegawai dari tiap Eselon, beserta jumlah besaran total dari tiap eselonnya
+	Tampilkan eselon yang hanya memiliki jumlah pegawai lebih dari 5
+
+	Tabel : eselon_tbl, mstpegawai
+	QUERY :
+
+	SELECT eselon_tbl.URAIAN, COUNT(*) AS 'Jumlah Data', SUM(RP_ESELON) AS 'Total Eselon'
+	FROM eselon_tbl 
+	LEFT JOIN mstpegawai ON eselon_tbl.KDESELON = mstpegawai.KDESELON
+	WHERE URAIAN <> 'NON ESELON'
+	GROUP BY eselon_tbl.URAIAN
+	HAVING COUNT(*) > 5
+	ORDER BY URAIAN;
+
+
