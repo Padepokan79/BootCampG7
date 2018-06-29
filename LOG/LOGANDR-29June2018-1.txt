@@ -1,0 +1,4 @@
+Menambahkan file :
+	new file:   Tugas/TugasLatihan/Andrian/SoalG7SQL-2.txt
+	new file:   Tugas/TugasLatihan/Andrian/SoalJoinSoccerSQL.txt
+	new file:   LGANDRN-29June2018-1.txt

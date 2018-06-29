@@ -1,0 +1,260 @@
+
+Author	: Alifhar
+
+1. Tampilkan jumlah pegawai dari setiap Satuan Kerja beserta skpd-nya pada tabel mstpegawai
+
+-- Output :
+-- Kode Satuan Kerja | Satuan Kerja | Kode SKPD | SKPD | Jumlah
+
+Tabel : mstpegawai, satker_tbl, skpd_tbl
+
+Jawaban :
+
+SELECT NIP, nama, pt.NMGOL, f.namafungsi, gt.NMGURU, masker
+FROM fgaji_01 fg
+INNER JOIN pangkat_tbl pt on pt.KDPANGKAT=fg.KDPANGKAT
+INNER JOIN fungsi f on f.kdjabatan=fg.KDFUNGSI
+INNER JOIN guru_tbl gt on gt.KDGURU=fg.KDGURU
+WHERE masker<20 AND f.namafungsi='Guru sekaligus Kepala SLTA'
+;
+
+
+
+2. Carilah jumlah dari setiap pangkat yang memiliki golongan 41 atau lebih
+
+-- Output
+-- Pangkat | Golongan | Jumlah
+
+tabel : mstpegawai, pangkat_tbl
+
+Jawaban :
+SELECT mp.NIP, mp.NAMA, h.JMLHUTANG
+FROM mstpegawai mp
+LEFT JOIN hutang h on h.nip = mp.NIP
+WHERE mp.inputer='Endik' AND h.JMLHUTANG<300000
+GROUP BY h.JMLHUTANG
+;
+
+
+
+===============================================================================
+
+Author	: Andrian
+
+1. Tampilkan NIP, Nama, NamaGolongan, NamaJabatan, NamaJabatanGuru yang memiliki masa kerja kurang dari 20 tahun dan menduduki jabatan 'Guru sekaligus Kepala SLTA'
+tabel yang digunakan : fgaji_01, pangkat_tbl, fungsi, guru_tbl
+
+SELECT NIP, nama, pt.NMGOL, f.namafungsi, gt.NMGURU
+FROM fgaji_01 fg
+INNER JOIN pangkat_tbl pt on pt.KDPANGKAT=fg.KDPANGKAT
+INNER JOIN fungsi f on f.kdjabatan=fg.KDFUNGSI
+INNER JOIN guru_tbl gt on gt.KDGURU=fg.KDGURU
+WHERE masker<20 AND f.namafungsi='Guru sekaligus Kepala SLTA'
+;
+
+2. Tampilkan jumlah hutang yang dimiliki oleh PNS yang terdapat pada mstpegawai
+tabel yang digunakan : mstpegawai, hutang
+syarat	>Inputer = 'Endik'
+	>jumlah hutang < 300000
+	>gunakan left join
+
+SELECT mp.NIP, mp.NAMA, h.JMLHUTANG
+FROM mstpegawai mp
+LEFT JOIN hutang h on h.nip = mp.NIP
+WHERE mp.inputer='Endik' AND h.JMLHUTANG<300000
+GROUP BY h.JMLHUTANG
+;
+
+
+
+===============================================================================
+
+Author	: NURDHIAT CHAUDHARY MALIK
+1
+Tampilkan NIP, Nama, Tgl Lahir, Agama, Pendidikan, Nama Hutang, Jml Hutang dengan ketentuan :
+- Agama Non muslim
+- Pegawai berusia sama dengan 40 tahun kebawah
+- Pegawai dengan kode pangkat 3B
+- Ditampilkan dari pemilik JML hutang terbesar - terkecil
+Tabel : mstpegawai, hutang, hutang_tbl, pangkat_tbl, agama_tbl
+
+
+2
+Perusahaan ingin mengetahu pegawai mana saja yang memiliki hutang dan yang tidak
+Field : Nama pegawai, Nama Hutang, Jumlah hutang
+- pegawai dengan pendidikan terakhir SMA atau SLTA
+- khusus untuk pegawai dengan nama inisial selain 'a'
+- Ditampilkan dengan jumlah hutang terbesar - terkecil
+
+
+
+===============================================================================
+
+Author	: Hendra Kurniawan
+
+1. Tampilkan nip, nama , status kawin, nama gol, nama pangkat, gaji pokok 
+dengan pendidikan terakhir Sarjana, status kawin yang gaji pokoknya diatas 
+rata-rata, urutkan berdasarkan gapok dari yang terkecil
+
+sample tabel mstpegawai_01, pangkat_tbl, stawin_tbl
+
+
+
+2. Tampilkan nip, nama, jenis_kelamin, agama, nama pangkat, status kawin, nama status pegawai, 
+nama jenis pegawai, jabatan eselon, gapok dengan ketentuan gapok lebih besar dari 3500000 
+dan lebih kecil 5000000
+urutkan gapok dari yang terkecil
+
+sample tabel mstpegawai, agama_tbl, pangkat_tbl ,stapeg_tbl ,jenis_peg, eselon_tbl 
+
+
+
+
+===============================================================================
+
+Author	: Khairil
+
+1. Tampilkan Karyawan yang memiliki hubungan suami atau istri dan memiliki jenjang pendidikan bukan SMA dan SLTA
+tabel yang dibutuhkan :
+   - mstpegawai
+   - keluarga
+   - hubkel_tbl
+
+   pake ineur
+
+   output :
+   NIP | Nama Karyawan | Nama Istri_Suami | Hubungan | Jenjang karyawan | jenjang istri_suami
+
+2. Tampilkan semua data dari mstpegawai yang memiliki jumlah cicilan antara 100000 s.d. 500000, beragama islam, dan berusia di atas 28 tahun
+tabel yang dibutuhkan :
+   - hutang
+   - hutang_tbl
+   - stawin_tbl
+   - mstpegawai
+
+   pake lep
+
+   Output :
+   NIP | Nama | Usia | Status | Jenis Hutang | Jumlah Cicilan | Keterangan 
+
+
+
+	                                                            
+
+===============================================================================
+
+AUTHOR 		: MALIK Chaudhary
+1. Tampilkan Nama Pegawai, Jenis kelamin, Agama, Nama Pangkat, Nama Eselon, Nama Kepala Satuan Kerja
+Ketentuan : 
+Hanya menampilkan pegawai yang beralamat di mahakam, yang tidak memiliki gelar Haji, yang memiliki nomor pokok wajib pajak, dan lokasi satuan kerja di kota bengkulu
+Tabel : mstpegawai, agama_tbl, pangkat_tbl, eselon_tbl, staker_tbl
+
+Jawaban :
+SELECT mp.NAMA, if(mp.KDJENKEL=1, "Laki-laki","Perempuan"), agt.NMAGAMA, pt.NMPANGKAT, et.URAIAN, st.NMSATKER
+FROM mstpegawai mp
+JOIN agama_tbl agt on agt.KDAGAMA=mp.AGAMA
+JOIN pangkat_tbl pt on pt.KDPANGKAT=mp.KDPANGKAT
+JOIN eselon_tbl et on et.KDESELON=mp.KDESELON
+join satker_tbl st on st.KDSATKER=mp.KDSATKER
+WHERE mp.ALAMAT LIKE '%mahakam%' 
+	AND mp.NAMA NOT LIKE 'H.%'
+	AND mp.NPWP > 1 AND st.KOTA='Bengkulu'
+;
+
+2. Tampilkan Nama Eselon dan Jumlah Pegawai dari tiap Eselon, beserta jumlah besaran total dari tiap eselonnya
+Tampilkan eselon yang hanya memiliki jumlah pegawai lebih dari 5
+Tabel : eselon_tbl, mstpegawai
+
+Jawaban :
+SELECT et.URAIAN, count(mp.KDESELON), et.RP_ESELON
+FROM mstpegawai mp
+RIGHT JOIN eselon_tbl et ON mp.KDESELON=et.KDESELON
+GROUP BY et.URAIAN
+HAVING count(mp.KDESELON) > 5
+;
+
+
+===============================================================================
+
+Soal SQL Richa
+
+
+
+===============================================================================
+
+Soal SQL Ryan
+
+1. Coba Tampilkan Jumlah Pegawai berdasarkan golongan pegawai
+ dari table pegawai_tbl dan urtnip 
+
+Jawaban :
+select NMPANGKAT,NMGOL,count(C_GOLONGAN) as Jumlah_Pegawai
+from pangkat_tbl as pangkat
+right join urtnip as pegawai on pangkat.NMGOL=pegawai.C_GOLONGAN
+Group by pangkat.NMPANGKAT;
+
+
+2. Cari orang orang dari mstpegawai yang mempunyai hutang dari table hutang
+
+Jawaban :
+select nip.NIP,NAMA,JMLHUTANG
+from hutang
+inner join mstpegawai as nip on nip.NIP = hutang.NIP;
+
+===============================================================================
+
+Author	: Vikry
+
+1. 	Tampilkan nama, gajipokok bulan ke 1, bulan ke 2, bulan ke 3, bulan ke 4, total gaji dari bulan 1 sampai 4, status kawin, nama eselon, dan pangkat, dari pegawai yang mempunyai eselon, diurutkan dari total gaji terbesar
+tbl: mstpegawai, dll
+
+jawaban :
+>>>Belumselesai
+SELECT mp.NAMA, mp.GAPOK, mp.GAPOK*2, mp.GAPOK*3, mp.GAPOK*4 
+FROM mstpegawai mp
+LEFT JOIN hutang h on h.nip = mp.NIP
+
+
+2. Tampilkan nama, Umur, Agama, jenisKelamin, dan THP
+dari pegawai yang THP nya lebih dari 0, dan punya anak 2
+urutkan berdasarkan thp tertinggi
+tbl: mstpegawai, hit_pajak
+
+
+
+===============================================================================
+
+Author	: Yana
+
+1. Tampilkan seluruh Data pegawai beserta total hutangnya, urutkan data berdasarkan jumlah total hutang terbesar
+
+Contoh output:
+NIP                        NAMA                                JUMLAH HUTANG
+197811152006041016        dr. YUSUF ENDANG                42750000
+197602052005022004        dr. SRI UTAMI FAJARIYAH, Sp.A        42750000
+
+tables: mstpegawai, hutang
+
+Jawaban :
+SELECT mp.NIP, mp.NAMA, h.JMLHUTANG
+FROM mstpegawai mp
+LEFT JOIN hutang h on h.nip = mp.NIP
+GROUP BY mp.NIP;
+
+
+2. Tampilkan data pegawai yang meiliki total hutang lebih besar sama dengan gaji pokok per tahunnya. Urutkan berdasarkan total hutang terkecil
+
+Contoh Output:
+NIP                        NAMA                                GAPOK                JUMLAH HUTANG
+197803301997022001        SRI ENDANG MARTINA                3052200                42573824
+197811152006041016        dr. YUSUF ENDANG                3350600                42750000
+
+tables: mstpegawai, hutang
+
+Jawaban :
+SELECT mp.NIP, mp.NAMA, mp.GAPOK, h.JMLHUTANG 
+FROM mstpegawai mp
+LEFT JOIN hutang h on h.nip = mp.NIP
+WHERE h.JMLHUTANG>=mp.GAPOK*12
+ORDER BY h.JMLHUTANG;
+
