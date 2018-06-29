@@ -1,0 +1,104 @@
+1.
+select match_no, venue_name, city
+from (match_mast as m
+Inner Join soccer_venue as s on m.venue_id=s.venue_id)
+Inner Join soccer_city as c on c.city_id=s.city_id
+where play_stage='F';
+
+2.
+select match_no, country_name, goal_score
+from match_details as match
+inner join soccer_country as team on match.team_id=team.country_id
+where decided_by='N';
+
+3.
+select player_name, count(goal_id) 
+from player_mast as play
+left join goal_details as match on match.player_id=play.player_id
+where goal_type='N'
+group by player_name
+order by count(goal_id) desc, player_name;
+
+4.
+select player_name, count(goal_id) 
+from player_mast as play
+inner join goal_details as match on match.player_id=play.player_id
+group by player_name
+order by count(goal_id) desc
+limit 1;
+
+5.
+select player_name, country_name, jersey_no
+from player_mast as play
+inner join goal_details as match on match.player_id=play.player_id
+inner join soccer_country as country on play.team_id=country.country_id
+where play_stage='F';
+
+6.
+select distinct country_name
+from soccer_venue as venue
+inner join soccer_city as city on venue.city_id=city.city_id
+inner join soccer_country as country on city.country_id=country.country_id;
+
+7.
+select player_name, country_name, jersey_no
+from player_mast as play
+inner join goal_details as match on match.player_id=play.player_id
+inner join soccer_country as country on play.team_id=country.country_id
+where goal_id=1;
+
+8.
+select referee_name, country_name
+from referee_mast as referee
+inner join match_mast as match on match.referee_id=referee.referee_id
+inner join soccer_country as country on referee.country_id=country.country_id
+where match_no=1;
+
+9.
+select referee_name, country_name
+from referee_mast as referee
+inner join match_mast as match on match.referee_id=referee.referee_id
+inner join soccer_country as country on referee.country_id=country.country_id
+where play_stage='F';
+
+10.
+select ass_ref_name, country_name
+from match_details as match
+inner join asst_referee_mast as asst on match.ass_ref=asst.ass_ref_id
+inner join soccer_country as country on asst.country_id=country.country_id
+where match_no=1;
+
+11.
+select ass_ref_name, country_name
+from match_details as match
+inner join asst_referee_mast as asst on match.ass_ref=asst.ass_ref_id
+inner join soccer_country as country on asst.country_id=country.country_id
+where play_stage='F';
+
+12.
+select city
+from match_mast as match
+inner join soccer_venue as venue on match.venue_id=venue.venue_id
+inner join soccer_city as city on venue.city_id=city.city_id
+where match_no=1;
+
+13.
+select venue_name, aud_capacity, audence
+from match_mast as match
+inner join soccer_venue as venue on match.venue_id=venue.venue_id
+inner join soccer_city as city on venue.city_id=city.city_id
+where play_stage='F';
+
+14.
+select venue_name, city, count(match_no)
+from match_mast as match
+inner join soccer_venue as venue on match.venue_id=venue.venue_id
+inner join soccer_city as city on venue.city_id=city.city_id
+group by venue_name, city;
+
+15.
+select player_name, country_name
+from player_booked as book
+inner join player_mast as play on book.player_id=play.player_id
+inner join soccer_country as country on book.team_id=country.country_id
+where match_no=1 and sent_off='Y';

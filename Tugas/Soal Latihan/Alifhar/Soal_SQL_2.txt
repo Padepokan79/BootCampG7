@@ -1,0 +1,13 @@
+1. Tampilkan jumlah pegawai dari setiap Satuan Kerja beserta skpd-nya pada tabel mstpegawai
+
+-- Output :
+-- Kode Satuan Kerja | Satuan Kerja | Kode SKPD | SKPD | Jumlah
+
+Tabel : mstpegawai, satker_tbl, skpd_tbl
+
+2. Carilah jumlah dari setiap pangkat yang memiliki golongan 41 atau lebih
+
+-- Output
+-- Pangkat | Golongan | Jumlah
+
+tabel : mstpegawai, pangkat_tbl
