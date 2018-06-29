@@ -10,10 +10,11 @@ JUMLAH JABATAN FUNGSI  JUMLAH JABATAN KHUSUS
 Contoh Output:
 NAMA LENGKAP			JUMLAH HUTANG	NAMA HUTANG
 dr. SRI UTAMI FAJARIYAH, Sp.A 	42750000	HUTANG KELEBIHAN BAYAR GAJI
-
+UTAMI FAJARIYAH, Sp.A 		22750000	HUTANG KELEBIHAN BAYAR GAJI
 
 3. Tampilkan data pegawai yang beragama Islam, memiliki gelar nama H. dan satuan kerjanya bukan di Dinas
 
 Contoh Output:
 NAMA LENGKAP			SATUAN KERJA 	AGAMA
 H.A. CHAIRIL BURHAN, BSc	PERKEBUNAN    	ISLAM                                               
+H. ARIEF SARIFUDIN		PERKEBUNAN    	ISLAM 
