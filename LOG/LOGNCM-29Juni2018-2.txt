@@ -1,0 +1,5 @@
+16.18
+
+ADD :
+- File Latihan Join Soccer.txt
+- File Tugas Soal JOIN SQL.txt
