@@ -1,0 +1,21 @@
+/*
+       DATE CREATED : 29 JUNI 2018
+       AUTHOR       : NURDHIAT CHAUDHARY MALIK
+*/
+
+
+//////////// 1
+Tampilkan NIP, Nama, Tgl Lahir, Agama, Pendidikan, Nama Hutang, Jml Hutang dengan ketentuan :
+- Agama Non muslim
+- Pegawai berusia sama dengan 40 tahun kebawah
+- Pegawai dengan kode pangkat 3B
+- Ditampilkan dari pemilik JML hutang terbesar - terkecil
+Tabel : mstpegawai, hutang, hutang_tbl, pangkat_tbl, agama_tbl
+
+
+//////////// 2
+Perusahaan ingin mengetahu pegawai mana saja yang memiliki hutang dan yang tidak
+Field : Nama pegawai, Nama Hutang, Jumlah hutang
+- pegawai dengan pendidikan terakhir SMA atau SLTA
+- khusus untuk pegawai dengan nama inisial selain 'a'
+- Ditampilkan dengan jumlah hutang terbesar - terkecil
