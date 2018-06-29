@@ -1,0 +1,149 @@
+//date : 29 Juni 2018 time : 9:22 AM
+//Author : Hendra Kunrniawan
+
+1. Write a query in SQL to find the teams played the first match of EURO cup 2016
+
+Jawaban
+SELECT soccer_venue.venue_name, soccer_city.city
+FROM ((soccer_venue
+INNER JOIN soccer_city ON soccer_venue.city_id = soccer_city.city_id)
+INNER JOIN match_mast ON soccer_venue.venue_id = match_mast.venue_id)
+WHERE match_mast.play_stage = 'F'
+;
+
+
+2. Write a query in SQL to find the number of goal scored by each team in every match within normal play schedule.
+
+Jawaban
+SELECT match_details.match_no, soccer_country.country_name, match_details.goal_score
+FROM match_details
+LEFT JOIN soccer_country ON match_details.team_id = soccer_country.country_id
+WHERE match_details.decided_by = 'N'
+
+3.Write a query in SQL to find the total number of goals scored by each player within normal play schedule and arrange the result set according to the heighest to lowest scorer.
+
+Jawaban
+SELECT player_mast.player_name, COUNT(*), soccer_country.country_name
+FROM ((goal_details
+INNER JOIN player_mast ON goal_details.player_id = player_mast.player_id)
+INNER JOIN soccer_country ON goal_details.team_id = soccer_country.country_id)
+WHERE goal_details.goal_type = 'N'
+GROUP BY player_mast.player_name, soccer_country.country_name
+ORDER BY COUNT(*) DESC
+
+4. Write a query in SQL to find the highest individual scorer in EURO cup 2016
+
+Jawaban
+SELECT player_mast.player_name, COUNT(*), soccer_country.country_name
+FROM ((goal_details
+INNER JOIN player_mast ON goal_details.player_id = player_mast.player_id)
+INNER JOIN soccer_country ON goal_details.team_id = soccer_country.country_id)
+WHERE goal_details.goal_type = 'N'
+GROUP BY player_mast.player_name, soccer_country.country_name
+ORDER BY COUNT(*) DESC
+LIMIT 1
+//cek
+
+
+5.Write a query in SQL to find the scorer of only goal along with his country and jersey number in the final of EURO cup 2016.
+
+Jawaban
+SELECT m.player_name, m.jersey_no, s.country_name
+FROM goal_details g
+INNER JOIN player_mast m ON g.player_id = m.player_id
+INNER JOIN soccer_country s ON g.team_id = s.country_id
+WHERE g.play_stage='F'
+
+6.Write a query in SQL to find the country where Football EURO cup 2016 held
+
+Jawaban
+SELECT o.country_name
+FROM soccer_venue s
+INNER JOIN soccer_city c ON s.city_id = c.city_id
+INNER JOIN soccer_country o ON c.country_id = o.country_id 
+GROUP BY o.country_name
+
+7.Write a query in SQL to find the player who socred first goal of EURO cup 2016
+
+Jawaban
+SELECT player_mast.player_name, soccer_country.country_name
+FROM ((goal_details
+INNER JOIN player_mast ON goal_details.player_id = player_mast.player_id)
+INNER JOIN soccer_country ON goal_details.team_id = soccer_country.country_id)
+WHERE goal_details.goal_id = 1
+
+8.Write a query in SQL to find the name and country of the referee who managed the opening match
+
+Jawaban
+SELECT r.referee_name , s.country_name
+FROM match_mast m
+INNER JOIN referee_mast r ON m.referee_id = r.referee_id 
+INNER JOIN soccer_country s ON s.country_id = r.country_id
+WHERE m.match_no = 1
+
+9.Write a query in SQL to find the name and country of the referee who managed the final match
+
+Jawaban
+SELECT r.referee_name , s.country_name
+FROM match_mast m
+INNER JOIN referee_mast r ON m.referee_id = r.referee_id 
+INNER JOIN soccer_country s ON s.country_id = r.country_id
+WHERE m.play_stage = 'F'
+
+10.Write a query in SQL to find the name and country of the referee who assisted the referee in the opening match
+
+Jawaban
+SELECT r.ass_ref_name, s.country_name
+FROM match_details m
+INNER JOIN asst_referee_mast r ON m.ass_ref = r.ass_ref_id 
+INNER JOIN soccer_country s ON s.country_id = r.country_id
+WHERE m.match_no = 1
+
+11. Write a query in SQL to find the name and country of the referee who assisted the referee in the final match
+
+Jawaban
+SELECT r.ass_ref_name, s.country_name
+FROM match_details m
+INNER JOIN asst_referee_mast r ON m.ass_ref = r.ass_ref_id 
+INNER JOIN soccer_country s ON s.country_id = r.country_id
+WHERE m.play_stage = 'F'
+
+12.Write a query in SQL to find the city where the opening match of EURO cup 2016 played
+
+Jawaban
+SELECT soccer_venue.venue_name, soccer_city.city
+FROM ((soccer_venue
+INNER JOIN soccer_city ON soccer_venue.city_id = soccer_city.city_id)
+INNER JOIN match_mast ON soccer_venue.venue_id = match_mast.venue_id)
+WHERE match_mast.match_no = 1
+
+13.Write a query in SQL to find the stadium hosted the final match of EURO cup 2016 along with the capacity, and audance for that match
+
+Jawaban
+SELECT soccer_venue.venue_name, soccer_city.city, soccer_venue.aud_capacity, match_mast.audence
+FROM ((soccer_venue
+JOIN soccer_city ON soccer_venue.city_id = soccer_city.city_id)
+JOIN match_mast ON soccer_venue.venue_id = match_mast.venue_id)
+WHERE match_mast.play_stage = 'F'
+
+
+14.Write a query in SQL to compute a report that contain the number of matches played in each venue along with their city
+
+Jawaban
+SELECT s.venue_name, c.city, COUNT(*)
+FROM soccer_venue s
+JOIN soccer_city c ON s.city_id = c.city_id
+JOIN match_mast m ON m.venue_id = s.venue_id
+GROUP BY s.venue_name, c.city
+
+
+15.Write a query in SQL to find the player who was the first player to be sent off at the tournament EURO cup 2016.
+
+Jawaban
+SELECT b.match_no, p.player_name, b.booking_time
+FROM player_booked b
+JOIN player_mast p ON b.player_id = p.player_id
+JOIN soccer_country s ON p.team_id = s.country_id
+WHERE b.sent_off = 'Y'
+AND b.match_no =( SELECT MIN(match_no) FROM player_booked)
+
