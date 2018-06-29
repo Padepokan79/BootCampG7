@@ -1,0 +1,13 @@
+/*
+AUTHOR 		: Malik Chaudhary
+DATE CREATE 	: 2018-29-06
+*/
+
+1. Tampilkan Nama Pegawai, Jenis kelamin, Agama, Nama Pangkat, Nama Eselon, Nama Kepala Satuan Kerja
+Ketentuan : 
+Hanya menampilkan pegawai yang beralamat di mahakam, yang tidak memiliki gelar Haji, yang memiliki nomor pokok wajib pajak, dan lokasi satuan kerja di kota bengkulu
+Tabel : mstpegawai, agama_tbl, pangkat_tbl, eselon_tbl, staker_tbl
+
+2. Tampilkan Nama Eselon dan Jumlah Pegawai dari tiap Eselon, beserta jumlah besaran total dari tiap eselonnya
+Tampilkan eselon yang hanya memiliki jumlah pegawai lebih dari 5
+Tabel : eselon_tbl, mstpegawai
