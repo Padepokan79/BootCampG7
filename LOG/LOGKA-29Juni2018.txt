@@ -1,0 +1,5 @@
+16:17
+
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanSQL/JawabanSoalSQLJoinKhairil.txt
+ create mode 100644 Tugas/TugasLatihan/Khairil/LatihanSQL/JoinSoccerDatabase.txt
+
