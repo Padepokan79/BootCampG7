@@ -1,0 +1,8 @@
+1. Tampilkan NIP, Nama, NamaGolongan, NamaJabatan, NamaJabatanGuru yang memiliki masa kerja kurang dari 20 tahun dan menduduki jabatan 'Guru sekaligus Kepala SLTA'
+tabel yang digunakan : fgaji_01, pangkat_tbl, fungsi, guru_tbl
+
+2. Tampilkan jumlah hutang yang dimiliki oleh PNS yang terdapat pada mstpegawai
+tabel yang digunakan : mstpegawai, hutang
+syarat	>Inputer = 'Endik'
+	>jumlah hutang < 300000
+	>gunakan left join

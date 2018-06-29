@@ -1,0 +1,108 @@
+/*
+       DATE CREATED : 29 JUNI 2018
+       AUTHOR       : NURDHIAT CHAUDHARY MALIK
+*/
+
+/////////// CHAUDHARY
+1. Tampilkan NIP, Nama, Tgl Lahir, Agama, Pendidikan, Nama Hutang, Jml Hutang dengan ketentuan :
+- Agama Non muslim
+- Pegawai berusia sama dengan 40 tahun kebawah
+- Pegawai dengan kode pangkat 3B
+- Ditampilkan dari pemilik JML hutang terbesar - terkecil
+Tabel : mstpegawai, hutang, hutang_tbl, pangkat_tbl, agama_tbl
+
+QUERY :
+SELECT m.NIP, m.NAMA, m.TGLLHR AS 'TGL LAHIR', atbl.NMAGAMA AS AGAMA, m.PENDIDIKAN, htbl.NMHUTANG AS 'NAMA HUTANG', h.JMLHUTANG AS 'JML HUTANG'
+FROM mstpegawai AS m
+INNER JOIN hutang AS h ON m.NIP = h.NIP
+INNER JOIN hutang_tbl AS htbl ON h.KDHUTANG = htbl.KDHUTANG
+INNER JOIN pangkat_tbl AS ptbl ON m.KDPANGKAT = ptbl.KDPANGKAT
+INNER JOIN agama_tbl AS atbl ON m.AGAMA = atbl.KDAGAMA
+WHERE atbl.NMAGAMA <> 'ISLAM' 
+AND m.TGLLHR BETWEEN '1963-06-29' AND '2018-06-29'
+AND ptbl.KDPANGKAT = '3B'
+ORDER BY h.JMLHUTANG DESC;
+
+
+2. Perusahaan ingin mengetahu pegawai mana saja yang memiliki hutang dan yang tidak
+Field : Nama pegawai, Nama Hutang, Jumlah hutang
+- pegawai dengan pendidikan terakhir SMA atau SLTA
+- khusus untuk pegawai dengan nama inisial selain 'a'
+- Ditampilkan dengan jumlah hutang terbesar - terkecil
+
+QUERY :
+SELECT m.NAMA, htbl.NMHUTANG AS 'NAMA HUTANG', h.JMLHUTANG AS 'JML HUTANG'
+FROM mstpegawai AS m
+LEFT JOIN hutang AS h ON m.NIP = h.NIP
+LEFT JOIN hutang_tbl AS htbl ON h.KDHUTANG = htbl.KDHUTANG
+WHERE m.PENDIDIKAN = 'SMA' OR m.PENDIDIKAN = 'SLTA' AND m.NAMA NOT LIKE 'a%'
+ORDER BY h.JMLHUTANG DESC;
+
+
+
+
+/////////// MALIK
+1. Tampilkan Nama Pegawai, Jenis kelamin, Agama, Nama Pangkat, Nama Eselon, Nama Kepala Satuan Kerja, alamat
+Ketentuan : 
+Hanya menampilkan pegawai yang beralamat di mahakam, yang tidak memiliki gelar Haji, yang memiliki nomor pokok wajib pajak, dan lokasi satuan kerja di kota bengkulu
+Tabel : mstpegawai, agama_tbl, pangkat_tbl, eselon_tbl, staker_tbl
+
+QUERY :
+SELECT m.NAMA, IF(m.KDJENKEL = 1, "Pria", "Wanita") AS 'GENDER', atbl.NMAGAMA, ptbl.NMPANGKAT, etbl.URAIAN, stbl.NMKEPALA, m.ALAMAT
+FROM mstpegawai AS m
+INNER JOIN agama_tbl AS atbl ON m.AGAMA = atbl.KDAGAMA
+INNER JOIN pangkat_tbl AS ptbl ON m.KDPANGKAT = ptbl.KDPANGKAT
+INNER JOIN eselon_tbl AS etbl ON m.KDESELON = etbl.KDESELON
+INNER JOIN satker_tbl AS stbl ON m.KDSATKER = stbl.KDSATKER
+WHERE m.ALAMAT LIKE '%mahakam%'
+AND m.NAMA NOT LIKE 'H.%'
+AND m.NPWP <> 0
+AND stbl.KOTA = 'BENGKULU';
+
+2. Tampilkan Nama Eselon dan Jumlah Pegawai dari tiap Eselon, beserta jumlah besaran total dari tiap eselonnya
+Tampilkan eselon yang hanya memiliki jumlah pegawai lebih dari 5
+Tabel : eselon_tbl, mstpegawai
+
+QUERY :
+SELECT etbl.URAIAN, COUNT(m.KDESELON) AS 'ESELON', etbl.RP_ESELON*COUNT(m.KDESELON) AS 'TOTAL'
+FROM eselon_tbl AS etbl
+INNER JOIN mstpegawai AS m ON etbl.KDESELON = m.KDESELON
+GROUP BY m.KDESELON
+HAVING COUNT(m.KDESELON) > 5;
+
+
+
+
+/////////// HENDRA K
+1. Tampilkan nip, nama , status kawin, nama gol, nama pangkat, gaji pokok 
+dengan pendidikan terakhir Sarjana, status kawin yang gaji pokoknya diatas 
+rata-rata, urutkan berdasarkan gapok dari yang terkecil
+sample tabel mstpegawai_01, pangkat_tbl, stawin_tbl
+
+QUERY :
+SELECT m.NIP, m.NAMA, stbl.nmstawin AS 'STATUS KAWIN', ptbl.NMGOL AS 'NAMA GOL', ptbl.NMPANGKAT AS 'NAMA PANGKAT', m.GAPOK
+FROM mstpegawai_01 AS m
+INNER JOIN pangkat_tbl AS ptbl ON m.KDPANGKAT = ptbl.KDPANGKAT
+INNER JOIN stawin_tbl AS stbl ON m.KDSTAWIN = stbl.kdstawin
+WHERE m.PENDIDIKAN = 'SARJANA'
+AND stbl.nmstawin = 'KAWIN'
+AND m.GAPOK > (SELECT AVG(GAPOK) FROM mstpegawai_01)
+ORDER BY m.GAPOK ASC;
+
+2. Tampilkan nip, nama, jenis_kelamin, agama, nama pangkat, status kawin, nama status pegawai, 
+nama jenis pegawai, jabatan eselon, gapok dengan ketentuan gapok lebih besar dari 3500000 
+dan lebih kecil 5000000
+urutkan gapok dari yang terkecil
+sample tabel mstpegawai, agama_tbl, pangkat_tbl ,stapeg_tbl ,jenis_peg, eselon_tbl, stawin_tbl 
+
+QUERY :
+SELECT m.NIP, m.NAMA, IF(m.KDJENKEL = 1, "Pria", "Wanita") AS 'JENIS KELAMIN', atbl.NMAGAMA AS 'AGAMA', ptbl.NMPANGKAT AS 'PANGKAT', sta.nmstawin AS 'STATUS KAWIN', stbl.NMSTAPEG AS 'NAMA STATUS PEGAWAI', jp.nm_jns AS 'NAMA JENIS PEGAWAI', etbl.URAIAN AS 'ESELON', m.GAPOK  
+FROM mstpegawai AS m
+INNER JOIN agama_tbl AS atbl ON m.AGAMA = atbl.KDAGAMA
+INNER JOIN pangkat_tbl AS ptbl ON m.KDPANGKAT = ptbl.KDPANGKAT
+INNER JOIN stapeg_tbl AS stbl ON m.KDSTAPEG = stbl.KDSTAPEG
+INNER JOIN jenis_peg AS jp ON stbl.kd_jns_peg = jp.kd_jns
+INNER JOIN eselon_tbl AS etbl ON m.KDESELON = etbl.KDESELON
+INNER JOIN stawin_tbl AS sta ON m.KDSTAWIN = sta.kdstawin
+WHERE m.GAPOK BETWEEN 3500000 AND 5000000
+ORDER BY m.GAPOK ASC;

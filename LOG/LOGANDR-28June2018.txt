@@ -1,0 +1,3 @@
+Menambahkan file :
+        new file:   Tugas/TugasLatihan/Andrian/SoalG7SQL.txt
+	new file:   LGANDRN-28June2018.txt

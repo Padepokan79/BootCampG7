@@ -1,0 +1,8 @@
+16.18
+
+ADD : 
+- File TugasSoalSQl.txt
+
+
+Modified :
+- file Soal SQL.txt

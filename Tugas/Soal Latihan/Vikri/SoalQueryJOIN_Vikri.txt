@@ -1,0 +1,7 @@
+1. 	Tampilkan nama, gajipokok bulan ke 1, bulan ke 2, bulan ke 3, bulan ke 4, total gaji dari bulan 1 sampai 4, status kawin, nama eselon, dan pangkat, dari pegawai yang mempunyai eselon, diurutkan dari total gaji terbesar
+tbl: mstpegawai, dll
+
+2. Tampilkan nama, Umur, Agama, jenisKelamin, dan THP
+dari pegawai yang THP nya lebih dari 0, dan punya anak 2
+urutkan berdasarkan thp tertinggi
+tbl: mstpegawai, hit_pajak

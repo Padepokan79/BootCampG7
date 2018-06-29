@@ -1,0 +1,108 @@
+//Date   : 28 Juni 2018
+//Author : Hendra Kurniawan
+================================================================================================
+(1)Hendra
+1. Tampilkan nip, nama , status kawin, nama gol, nama pangkat, gaji pokok 
+dengan pendidikan terakhir Sarjana, status kawin yang gaji pokoknya diatas 
+rata-rata, urutkan berdasarkan gapok dari yang terkecil
+
+sample tabel mstpegawai_01, pangkat_tbl, stawin_tbl
+SELECT m.nip, m.nama, s.nmstawin, p.NMGOL , p.NMPANGKAT, m.GAPOK
+FROM mstpegawai_01 m 
+INNER JOIN stawin_tbl s ON m.kdstawin = s.kdstawin 
+INNER JOIN pangkat_tbl p ON m.KDPANGKAT = p.KDPANGKAT 
+WHERE m.KDSTAWIN = 2 AND m.PENDIDIKAN = 'SARJANA'
+AND m.GAPOK > ( SELECT AVG(gapok) FROM mstpegawai_01)
+ORDER BY m.gapok ASC
+
+
+2. Tampilkan nip, nama, jenis_kelamin, agama, nama pangkat, status kawin, nama status pegawai, 
+nama jenis pegawai, jabatan eselon, gapok dengan ketentuan gapok lebih besar dari 3500000 
+dan lebih kecil 5000000
+urutkan gapok dari yang terkecil
+
+sample tabel mstpegawai, agama_tbl, pangkat_tbl ,stapeg_tbl ,jenis_peg, eselon_tbl 
+
+SELECT m.nip, m.NAMA,IF(m.kdjenkel = 1, 'L', 'P') as JenisKelamin, 
+a.NMAGAMA, p.NMPANGKAT, s.nmstawin, t.nmstapeg, j.nm_jns, e.uraian
+FROM mstpegawai m
+INNER JOIN agama_tbl a ON m.AGAMA = a.KDAGAMA
+INNER JOIN pangkat_tbl p ON p.KDPANGKAT = m.KDPANGKAT
+INNER JOIN stawin_tbl s ON s.kdstawin = m.KDSTAWIN
+INNER JOIN stapeg_tbl t ON t.kdstapeg = m.kdstapeg
+INNER JOIN jenis_peg j ON j.kd_jns = t.kd_jns_peg
+INNER JOIN eselon_tbl e ON e.kdeselon = m.kdeselon
+WHERE m.gapok BETWEEN 3500000 AND 5000000
+
+================================================================================================
+
+(2)YANA
+1. Tampilkan Data pegawai beserta total hutangnya, urutkan data berdasarkan jumlah total hutang terbesar
+ 
+ Contoh output:
+ NIP			NAMA				JUMLAH HUTANG
+ 197811152006041016	dr. YUSUF ENDANG		42750000
+ 197602052005022004	dr. SRI UTAMI FAJARIYAH, Sp.A	42750000
+ 
+ Jawban
+ SELECT h.NIP , m.NAMA, SUM(h.JMLHUTANG)
+ FROM mstpegawai m
+ INNER JOIN hutang h ON m.NIP = h.nip
+ GROUP BY h.NIP, m.NAMA
+ ORDER BY h.JMLHUTANG DESC 
+
+ 
+ 2. Tampilkan data pegawai yang meiliki total hutang lebih besar sama dengan gaji pokok per tahunnya. Urutkan berdasarkan total hutang terkecil
+ 
+ Contoh Output:
+ NIP			NAMA				GAPOK		JUMLAH HUTANG
+ 197803301997022001	SRI ENDANG MARTINA		3052200		42573824
+ 197811152006041016	dr. YUSUF ENDANG		3350600		42750000 
+
+ tables: mstpegawai, hutang
+
+ SELECT h.NIP , m.NAMA, m.GAPOK, SUM(h.JMLHUTANG)
+ FROM mstpegawai m
+ INNER JOIN hutang h ON m.NIP = h.nip
+ GROUP BY h.NIP, m.NAMA, m.GAPOK
+ HAVING SUM(h.JMLHUTANG) > m.GAPOK * 12
+ ORDER BY h.JMLHUTANG ASC 
+
+
+=======================================================================================================
+
+(3)Malik
+
+1. Tampilkan Nama Pegawai, Jenis kelamin, Agama, Nama Pangkat, Nama Eselon, Nama Kepala Satuan Kerja
+Ketentuan : 
+Hanya menampilkan pegawai yang beralamat di mahakam, yang tidak memiliki gelar Haji, yang memiliki nomor pokok wajib pajak, dan lokasi satuan kerja di kota bengkulu
+Tabel : mstpegawai, agama_tbl, pangkat_tbl, eselon_tbl, staker_tbl
+
+Jawaban
+SELECT m.NAMA, IF(m.KDJENKEL = 1, 'L','P') AS JenisKelamin, a.NMAGAMA, p.NMPANGKAT, e.URAIAN, s.NMKEPALA, 
+FROM mstpegawai m
+INNER JOIN agama_tbl a ON m.agama = a.KDAGAMA
+INNER JOIN pangkat_tbl p ON p.KDPANGKAT = m.KDPANGKAT
+INNER JOIN eselon_tbl e ON e.KDESELON = m.KDESELON
+INNER JOIN satker_tbl s ON s.KDSATKER = m.KDSATKER
+WHERE m.ALAMAT LIKE '%mahakam%' AND m.nama NOT LIKE '%H.%'
+AND m.NPWP NOT LIKE '0%0%0%0%0' AND m.NPWP LIKE '% %'
+AND s.kota = 'BENGKULU'
+
+
+2. Tampilkan Nama Eselon dan Jumlah Pegawai dari tiap Eselon, beserta jumlah besaran total dari tiap eselonnya
+Tampilkan eselon yang hanya memiliki jumlah pegawai lebih dari 5
+Tabel : eselon_tbl, mstpegawai
+
+Jawaban
+SELECT e.URAIAN , COUNT(*) AS JumlahPegawai
+FROM eselon_tbl e
+INNER JOIN mstpegawai m ON e.KDESELON = m.KDESELON
+GROUP BY e.URAIAN
+HAVING COUNT(*) > 5
+
+
+=======================================================================================================
+
+
+

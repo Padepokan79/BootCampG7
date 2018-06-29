@@ -1,0 +1,33 @@
+JAWABAN SOAL SQL JOIN BY RICHA
+29-JUNI-2018
+
+JAWABAN SOAL RICHA
+================================================================================================
+1. Tampilkan semua nama karyawan pada tabel 'fgaji_01' dan nama jabatan fungsionalnya pada tabel 'fungsi'khusus untuk karyawan yang memiliki status tidak kawin, urutkan tampilan berdasarkan alfabet nama fungsi. Total ada berapa records? 
+hint: pakai left join dan inner join
+
+SELECT f.namafungsi, gaji.NAMA
+FROM fgaji_01 as gaji
+LEFT JOIN fungsi as f ON f.kdjabatan = gaji.KDFUNGSI
+INNER JOIN stawin_tbl as kawin ON gaji.KDSTAWIN = kawin.kdstawin
+WHERE kawin.kdstawin = 1
+ORDER BY f.namafungsi
+
+2. Tampilkan tabel semua jenis hubkel dan tambahkan tabel nama kelurganya dan NIPnya yang ada di tabel keluarga diurutkan sesuai dengan NIP paling kecil
+hint: pakai right join
+
+SELECT kel.NIP, kel.NMKEL as Nama, hub.NMHUBKEL as HubunganKeluarga
+FROM keluarga as kel
+RIGHT JOIN hubkel_tbl as hub ON kel.KDHUBKEL = hub.KDHUBKEL
+ORDER BY kel.NIP
+================================================================================================JJAWABAN SOAL ANDRIAN
+
+1. Tampilkan NIP, Nama, NamaGolongan, NamaJabatan, NamaJabatanGuru yang memiliki masa kerja kurang dari 20 tahun dan menduduki jabatan 'Guru sekaligus Kepala SLTA'
+tabel yang digunakan : fgaji_01, pangkat_tbl, fungsi, guru_tbl
+
+SELECT gaji.NIP, gaji.NAMA, pang.NMGOL, f.namafungsi, guru.NMGURU
+FROM (((fgaji_01 AS gaji
+LEFT JOIN pangkat_tbl AS pang ON pang.KDPANGKAT = gaji.KDPANGKAT)
+LEFT JOIN fungsi AS f ON f.kdjabatan = gaji.KDFUNGSI)
+LEFT JOIN guru_tbl AS guru ON guru.KDGURU = gaji.KDGURU)
+WHERE gaji.MASKER < 20 AND f.namafungsi = 'Guru sekaligus Kepala SLTA'

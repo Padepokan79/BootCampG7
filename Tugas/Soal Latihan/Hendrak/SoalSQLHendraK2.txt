@@ -1,0 +1,21 @@
+//Tanggal 29 Juni 2018
+//Hendra Kurniawan
+Soal Sql
+========
+1. Tampilkan nip, nama , status kawin, nama gol, nama pangkat, gaji pokok 
+dengan pendidikan terakhir Sarjana, status kawin yang gaji pokoknya diatas 
+rata-rata, urutkan berdasarkan gapok dari yang terkecil
+
+sample tabel mstpegawai_01, pangkat_tbl, stawin_tbl
+
+
+
+2. Tampilkan nip, nama, jenis_kelamin, agama, nama pangkat, status kawin, nama status pegawai, 
+nama jenis pegawai, jabatan eselon, gapok dengan ketentuan gapok lebih besar dari 3500000 
+dan lebih kecil 5000000
+urutkan gapok dari yang terkecil
+
+sample tabel mstpegawai, agama_tbl, pangkat_tbl ,stapeg_tbl ,jenis_peg, eselon_tbl 
+
+
+

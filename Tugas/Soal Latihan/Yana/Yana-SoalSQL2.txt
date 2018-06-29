@@ -1,0 +1,19 @@
+
+
+1. Tampilkan Data pegawai beserta total hutangnya, urutkan data berdasarkan jumlah total hutang terbesar
+
+Contoh output:
+NIP			NAMA				JUMLAH HUTANG
+197811152006041016	dr. YUSUF ENDANG		42750000
+197602052005022004	dr. SRI UTAMI FAJARIYAH, Sp.A	42750000
+
+
+2. Tampilkan data pegawai yang meiliki total hutang lebih besar sama dengan gaji pokok per tahunnya. Urutkan berdasarkan total hutang terkecil
+
+Contoh Output:
+NIP			NAMA				GAPOK		JUMLAH HUTANG
+197803301997022001	SRI ENDANG MARTINA		3052200		42573824
+197811152006041016	dr. YUSUF ENDANG		3350600		42750000
+
+
+tables: mstpegawai, hutang

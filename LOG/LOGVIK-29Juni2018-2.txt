@@ -1,0 +1,3 @@
+ADDING NEW FILE
+	- jawab Soal query.txt
+	- jawab w3 resource.txt

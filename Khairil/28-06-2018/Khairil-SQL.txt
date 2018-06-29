@@ -1,0 +1,164 @@
+Jawaban Soal Latihan SQL 
+
+Soal Sendiri : 
+
+1. SELECT gabar.tglgaji as tanggal, gabar.nip as nip, gabar.nama as nama, IF(gabar.kdjenkel = 1, "Laki-laki", "Perempuan") as    jeniskelamin, gabar.tgllhr, st.nmstawin, concat(gabar.masker, " ", "tahun") as masakerja
+
+   FROM fgaji_baru as gabar, stawin_tbl as st
+   
+where gabar.kdstawin = st.kdstawin AND gabar.kdjnstrans = 5
+
+2. SELECT hut.nip as nip, peg.nama as namakaryawan, aga.nmagama as agama, hub.nmhutang as jenishutang, concat("Rp", " ", hut.JMLHUTANG)    as jumhutang, concat("Rp", " ", hut.JMLCICILAN) as jumcicilan, concat("Rp", " ", hut.cicilanakhir) as cicilanterakhir, concat   (hut.JMLBULAN, " ", "bulan") as jumlahbulan
+   
+FROM hutang as hut, mstpegawai as peg, agama_tbl as aga, hutang_tbl as hub
+   
+WHERE hut.nip = peg.nip AND peg.agama = aga.KDAGAMA AND hut.KDHUTANG = hub.KDHUTANG
+
+3. SELECT mst.nip as nip, mst.NAMA as nama, if(mst.KDJENKEL = 1, "Laki-laki","Perempuan") as jeniskelamin, mst.tgllhr as tanggallahir,    sta.nmstawin as statuskawin, pan.nmpangkat as pangkat, concat(mst.masker, " ", "tahun") as masakerja, ese.uraian as eselon,          mst.ALAMAT as alamat
+   
+FROM mstpegawai as mst, stawin_tbl as sta, pangkat_tbl as pan, eselon_tbl as ese
+   
+WHERE mst.KDSTAWIN = sta.kdstawin AND mst.KDPANGKAT = pan.KDPANGKAT AND mst.KDESELON = ese.KDESELON
+
+
+=================================================================================================================
+
+
+Soal Yana : 
+
+1. SELECT count(distinct fu.kdfungsi) as jumlahjabatanfungsi, count(distinct ku.kdjabatan) as jumlahjabatankhusus 
+
+   FROM jabatan_fungsi as fu, jabatankhusus_tbl as ku;
+
+2. SELECT vw.nama as namaLengkap, hut.jmlhutang as jumlahHutang, hutt.nmhutang as namaHutang
+   
+FROM vwpegawai as vw, hutang as hut, hutang_tbl as hutt
+
+   WHERE vw.nip = hut.nip AND hutt.KDHUTANG = hut.KDHUTANG
+   
+ORDER BY hut.jmlhutang DESC 
+   
+LIMIT 10;
+
+3. SELECT vw.nama as namaLengkap, vw.nmsatker as satuanKerja, aga.nmagama as agama
+   
+FROM vwpegawai as vw, agama_tbl as aga
+   
+WHERE aga.KDAGAMA = vw.AGAMA AND vw.nama LIKE 'H.%' AND vw.nmsatker NOT LIKE '%Dinas%';
+
+
+=================================================================================================================
+
+
+Soal Alifhar : 
+
+1. SELECT fg.nama as nama, fg.nip as nip, gu.NMGURU as jabatan, sk.NMSKPD as namaSKPD, fg.GAPOK as gajipokok, sta.nmstawin as statuskawin  
+
+   FROM fgaji_01 as fg, skpd_tbl as sk, stawin_tbl as sta, guru_tbl as gu
+   
+WHERE fg.KDGURU = gu.KDGURU AND fg.KDSKPD = sk.KDSKPD AND fg.KDSTAWIN = sta.kdstawin AND fg.kdstawin = 3; 
+
+2. SELECT gu.NMGURU as jabatan, count(fg.nama) as jumPegawai, fg.janak as jumlahAnak
+
+   FROM fgaji_01 as fg, guru_tbl as gu
+   
+WHERE fg.KDGURU = gu.KDGURU AND fg.janak = 1
+   
+GROUP by fg.KDGURU
+
+3. SELECT fg.nama as nama, fg.tgllhr as tanggalLahir, pa.nmpangkat as pangkat, es.uraian as eselon, YEAR(NOW()) - YEAR(fg.TGLLHR) as       usia
+
+   FROM fgaji_01 as fg, pangkat_tbl as pa, eselon_tbl as es
+
+   WHERE fg.KDPANGKAT = pa.KDPANGKAT AND fg.KDESELON = es.KDESELON AND YEAR(NOW()) - YEAR(fg.TGLLHR) <= 30;
+
+
+=================================================================================================================
+
+
+Soal Chaudary :
+
+1. SELECT peg.NIP, peg.nama, aga.NMAGAMA, ht.NMHUTANG, htg.JMLHUTANG
+
+   FROM hutang as htg, hutang_tbl as ht, mstpegawai as peg, agama_tbl as aga
+   
+WHERE aga.KDAGAMA = peg.AGAMA AND ht.KDHUTANG = htg.KDHUTANG AND htg.NIP = peg.NIP AND htg.JMLHUTANG > 4200000
+
+   ORDER BY htg.JMLHUTANG DESC, peg.nama ASC
+   LIMIT 70;
+
+2. SELECT aga.NMAGAMA, count(peg.nama) as jumPegawai
+
+   FROM mstpegawai as peg, agama_tbl as aga
+
+   WHERE aga.KDAGAMA = peg.AGAMA
+
+   GROUP BY peg.AGAMA;
+
+3. SELECT count(peg.NIP) as JumPegawai
+
+   FROM hutang as htg, hutang_tbl as ht, mstpegawai as peg, agama_tbl as aga
+   
+WHERE aga.KDAGAMA = peg.AGAMA AND htg.nip = peg.nip AND ht.KDHUTANG = htg.KDHUTANG AND aga.nmAGAMA <> 'Islam' AND htg.nip = peg.nip AND htg.JMLHUTANG < 1000000 AND peg.PENDIDIKAN = 'SLTA';
+
+
+=================================================================================================================
+
+
+SOal Arief : 
+
+1. SELECT nama as namalengkap, IF(kdjenkel = 1, "Laki-laki", "Perempuan") as jeniskelamin, aga.nmagama as agama
+
+   FROM dbgajido.mstpegawai as peg, dbgajido.agama_tbl as aga
+
+   WHERE nama LIKE '%,_.%' AND peg.AGAMA = aga.KDAGAMA
+
+2. SELECT nama, tgllhr, year(curdate()) - year(tgllhr) as usia
+
+   FROM dbgajido.mstpegawai
+   
+WHERE year(curdate()) - year(tgllhr) < 60
+
+3. SELECT peg.nama as nama, aga.NMAGAMA, peg.PENDIDIKAN
+   
+FROM dbgajido.mstpegawai as peg, dbgajido.agama_tbl as aga
+   
+WHERE aga.KDAGAMA = peg.AGAMA AND aga.NMAGAMA = 'Islam' AND peg.PENDIDIKAN = 'SMA'
+
+
+=================================================================================================================
+
+
+Soal Richa :
+
+1. SELECT fg3.nip as nip, fg3.nama as nama, sta.nmstawin as statuskawin, ese.URAIAN as eselon, tpc.NMDAERAH as namadaerah, fg3.TJTERPENCIL as tunjterpencil, fg3.bersih as gajibersih
+
+   FROM dbgajido.fgaji_03 as fg3, dbgajido.stawin_tbl as sta, dbgajido.eselon_tbl as ese, dbgajido.terpencil_tbl as tpc
+   
+WHERE fg3.KDSTAWIN = sta.kdstawin AND fg3.KDESELON = ese.KDESELON AND fg3.KDTERPENCIL = tpc.KDDAERAH AND left(fg3.TGLGAJI,4) = 2014 AND ese.URAIAN <> 'NON ESELON'
+
+   ORDER BY fg3.BERSIH
+   
+LIMIT 100;
+
+2. SELECT 
+
+3.
+
+
+=================================================================================================================
+
+
+Soal Malik : 
+
+1. SELECT mst.nip as nip, mst.nama as nama, mst.tgllhr as tanggallahir, aga.nmagama as agama, htt.nmhutang as jenishutang, ht.jmlhutang as jumlahhutang
+   FROM mstpegawai as mst, agama_tbl as aga, hutang as ht, hutang_tbl as htt
+   WHERE mst.AGAMA = aga.kdagama AND ht.KDHUTANG = htt.KDHUTANG
+
+2. SELECT fp.nip as nip, fp.nama as nama, zak.mulai as tgl_mulai
+   FROM mstpegawai as fp, zakat_tdk as zak
+   WHERE fp.nip = zak.nip AND fp.NAMA = 'H.ABDUL RACHMAN, SKM, MM'
+
+3. SELECT kdsatker as Kode, count(kdsatker) as jumlah 
+   FROM data_rapel
+   GROUP BY kdsatker

@@ -1,0 +1,31 @@
+Soal Khairil Join SQL
+
+
+1. Tampilkan Karyawan yang memiliki hubungan suami atau istri dan memiliki jenjang pendidikan bukan SMA dan SLTA
+
+   tabel yang dibutuhkan :
+   - mstpegawai
+   - keluarga
+   - hubkel_tbl
+
+   pake ineur
+
+   output :
+   NIP | Nama Karyawan | Nama Istri_Suami | Hubungan | Jenjang karyawan | jenjang istri_suami
+
+2. Tampilkan semua data dari mstpegawai yang memiliki jumlah cicilan antara 100000 s.d. 500000, beragama islam, dan berusia di atas 28 tahun
+
+   tabel yang dibutuhkan :
+   - hutang
+   - hutang_tbl
+   - stawin_tbl
+   - mstpegawai
+
+   pake lep
+
+   Output :
+   NIP | Nama | Usia | Status | Jenis Hutang | Jumlah Cicilan | Keterangan 
+
+================================================================================================================
+
+<3 Goodluck <3
