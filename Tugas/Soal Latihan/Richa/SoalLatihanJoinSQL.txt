@@ -1,0 +1,7 @@
+Soal Join SQL Richa
+
+1. Tampilkan semua nama karyawan pada tabel 'fgaji_01' dan nama jabatan fungsionalnya pada tabel 'fungsi'khusus untuk karyawan yang memiliki status tidak kawin, urutkan tampilan berdasarkan alfabet nama fungsi. Total ada berapa records? 
+hint: pakai left join dan inner join
+
+2. Tampilkan tabel semua jenis hubkel dan tambahkan tabel nama kelurganya dan NIPnya yang ada di tabel keluarga diurutkan sesuai dengan NIP paling kecil
+hint: pakai right join
