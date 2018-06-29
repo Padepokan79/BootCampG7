@@ -1,0 +1,120 @@
+Latihan Join Richa
+
+1. Write a query in SQL to find the name of the venue with city where the EURO cup 2016 final match was played. 
+
+SELECT v.venue_name, c.city 
+FROM soccer_venue as v
+INNER JOIN soccer_city as c ON c.city_id = v.city_id
+INNER JOIN match_mast as m ON m.venue_id = v.venue_id;
+
+4. Write a query in SQL to find the highest individual scorer in EURO cup 2016.
+
+SELECT COUNT (gd.player_id), pm.player_name as Name, sc.country_name as country
+FROM goal_details as gd
+INNER JOIN player_mast as pm ON pm.player_id = gd.player_id
+INNER JOIN soccer_country as sc ON gd.team_id = sc.country_id
+GROUP BY pm.player_name, sc.country_name
+ORDER BY COUNT (gd.player_id) DESC
+LIMIT 1;
+
+8. Write a query in SQL to find the name and country of the referee who managed the opening match.
+
+SELECT mm.play_date, rm.referee_name, sc.country_name
+FROM match_mast as mm
+INNER JOIN referee_mast as rm ON rm.referee_id = mm.referee_id
+INNER JOIN soccer_country as sc ON sc.country_id = rm.country_id
+ORDER BY mm.match_no
+LIMIT 1;
+
+12.Write a query in SQL to find the city where the opening match of EURO cup 2016 played.
+
+SELECT sc.city
+FROM match_mast as mm
+INNER JOIN soccer_venue as sv ON sv.venue_id = mm.venue_id
+INNER JOIN soccer_city as sc ON sv.city_id = sc.city_id
+ORDER BY mm.match_no
+LIMIT 1;
+
+16.  Write a query in SQL to find the teams that scored only one goal to the torunament.
+
+SELECT sc.country_name,st.team_group
+FROM soccer_team as st
+INNER JOIN soccer_country as sc ON st.team_id = sc.country_id
+WHERE st.goal_for = 1;
+
+20. Write a query in SQL to find the team(s) who conceded the most goals in EURO cup 2016.
+
+SELECT sc.country_name,st.team_group, st.goal_agnst
+FROM soccer_team as st
+INNER JOIN soccer_country as sc ON st.team_id = sc.country_id
+WHERE st.goal_agnst= (SELECT MAX(goal_agnst) FROM soccer_team) 
+ORDER BY st.goal_agnst DESC;
+
+24. Write a query in SQL to find the player and his team and how many matches he kept goal for his team.
+
+SELECT sc.country_name, pm.player_name, COUNT (md.player_gk)
+FROM match_details as md
+INNER JOIN player_mast as pm ON pm.player_id = md.player_gk
+INNER JOIN soccer_country as sc ON sc.country_id = pm.team_id
+GROUP BY sc.country_name, pm.player_name
+ORDER BY sc.country_name
+
+28. Write a query in SQL to find the teams with other information that finished bottom of their respective groups after conceding four times in three games. 
+
+SELECT sc.country_name, st.team_group
+FROM Soccer_team as st
+INNER JOIN Soccer_country as sc ON sc.country_id = st.team_id
+WHERE goal_agnst = 4 AND match_played = 3 AND group_position = 4 
+
+32. Write a query in SQL to find the captains with other information for all the matches in the tournament. 
+
+SELECT mc.match_no, sc.country_name, pm.player_name as captain
+FROM match_captain as mc
+INNER JOIN player_mast as pm ON pm.player_id = mc.player_captain
+INNER JOIN soccer_country as sc ON pm.team_id= sc.country_id
+ORDER BY match_no
+
+36. Write a query in SQL to prepare a list for the player of the match against each match. 
+
+SELECT match_no, play_date, country_name, player_name, jersey_no
+FROM match_mast mm
+INNER JOIN player_mast pm ON mm.plr_of_match = pm.player_id
+INNER JOIN soccer_country sc ON 
+pm.team_id = sc.country_id;
+
+9. Write a query in SQL to find the name and country of the referee who managed the final match.
+ 
+SELECT mm.play_date, rm.referee_name, sc.country_name
+FROM match_mast as mm
+INNER JOIN referee_mast as rm ON rm.referee_id = mm.referee_id
+INNER JOIN soccer_country as sc ON sc.country_id = rm.country_id
+ORDER BY mm.match_no DESC
+LIMIT 1;
+
+33. Write a query in SQL to find the captain and goal keeper with other information for all the matches for all the team. 
+
+SELECT md.match_no, pm1.player_name as captain, 
+pm2.player_name as goalkeeper, sc.country_name
+FROM match_captain as mc
+NATURAL JOIN match_details as md
+INNER JOIN soccer_country sc ON md.team_id = sc.country_id
+INNER JOIN player_mast pm1 ON mc.player_captain = pm1.player_id
+INNER JOIN player_mast pm2 ON md.player_gk = pm2.player_id;
+
+2. Write a query in SQL to find the number of goal scored by each team in every match within normal play schedule. 
+
+SELECT match_no, country_name,goal_score
+FROM match_details md
+JOIN soccer_country sc
+ON md.team_id = sc.country_id
+WHERE decided_by = 'N'
+ORDER BY match_no;
+
+17. Write a query in SQL to find the yellow cards received by each country.
+
+SELECT country_name, COUNT(*)
+FROM soccer_country 
+JOIN player_booked
+ON soccer_country.country_id=player_booked.team_id
+GROUP BY country_name
+ORDER BY COUNT(*) DESC;
