@@ -1,0 +1,141 @@
+Tugas SQL Join Team G7
+
+Soal Sendiri :
+
+1. SELECT mst.nip as nip, mst.nama, kel.nmkel as istri_suami, hub.nmhubkel as hubungan, mst.pendidikan, mst1.pendidikan as    pend_istri_suami
+   FROM mstpegawai as mst
+   INNER JOIN mstpegawai as mst1 ON mst.nip = mst1.nip
+   INNER JOIN keluarga as kel ON mst.nip = kel.nip
+   INNER JOIN hubkel_tbl as hub ON kel.kdhubkel = hub.kdhubkel
+   WHERE kel.kdhubkel = 10 AND mst.pendidikan <> 'SMA' AND mst.pendidikan <> 'SLTA'
+
+2. SELECT mst.nip, mst.nama, YEAR(CURDATE()) - YEAR(mst.tgllhr) as usia, sta.nmstawin,
+   htt.nmhutang as jenishutang, ht.jmlcicilan, ht.keterangan
+   FROM mstpegawai as mst
+   LEFT JOIN hutang as ht ON ht.NIP = mst.nip
+   LEFT JOIN hutang_tbl as htt ON htt.kdhutang = ht.kdhutang
+   LEFT JOIN stawin_tbl as sta ON mst.kdstawin = sta.kdstawin
+   WHERE ht.JMLCICILAN BETWEEN 100000 AND 500000 AND mst.KDSTAWIN = 3
+   AND YEAR(CURDATE()) - YEAR(mst.tgllhr) > 28
+   ORDER BY mst.nama
+
+
+=================================================================================================================
+
+
+Soal Alifhar :
+
+1. SELECT
+
+2. SELECT
+
+
+=================================================================================================================
+
+
+Soal Andrian :
+
+1. SELECT fg1.nip, fg1.nama, pa.nmgol, fu.namafungsi, gu.nmguru
+   FROM fgaji_01 as fg1
+   INNER JOIN pangkat_tbl as pa ON fg1.kdpangkat = pa.kdpangkat
+   INNER JOIN fungsi as fu ON fg1.kdfungsi = fu.kdfungsi
+   INNER JOIN guru_tbl as gu ON fg1.kdguru = gu.kdguru
+   WHERE fg1.masker < 20 AND gu.nmguru = 'Guru sekaligus Kepala SLTA'
+
+2. SELECT mst.nip, mst.nama, ht.jmlhutang
+   FROM mstpegawai as mst
+   LEFT JOIN hutang as ht ON mst.nip = ht.nip
+   WHERE mst.inputer = 'Endik' AND jmlhutang < 300000
+
+
+=================================================================================================================
+
+
+Soal Chaudary :
+
+1. SELECT
+
+2. SELECT
+
+
+=================================================================================================================
+
+
+Soal Malik :
+
+1. SELECT mst.nama as nama, if(mst.kdjenkel = 1,"Laki-laki","Perempuan") as jeniskelamin, 
+   aga.nmagama as agama, pan.nmpangkat as pangkat, es.uraian as eselon, sat.nmsatker as satker
+   FROM mstpegawai as mst
+   INNER JOIN agama_tbl as aga ON aga.kdagama = mst.AGAMA
+   INNER JOIN pangkat_tbl as pan ON pan.kdpangkat = mst.KDPANGKAT
+   INNER JOIN eselon_tbl as es ON es.KDESELON = mst.KDESELON
+   INNER JOIN satker_tbl as sat ON sat.KDSATKER = mst.KDSATKER
+   WHERE mst.alamat LIKE '%Mahakam%' AND nama NOT LIKE '%H.%'
+   AND sat.nmsatker LIKE '%Bengkulu%'
+
+2. SELECT es.uraian as Eselon, count(mst.nama) as jumPegawai,
+   sum(es.rp_eselon) as besarantotal
+   FROM eselon_tbl as es
+   INNER JOIN mstpegawai as mst ON mst.KDESELON = es.KDESELON
+   GROUP BY es.uraian
+   HAVING count(mst.nama) > 5
+   ORDER BY mst.KDESELON
+
+
+=================================================================================================================
+
+
+Soal Richa :
+
+1. SELECT
+
+2. SELECT
+
+
+=================================================================================================================
+
+
+Soal Hendra :
+
+1. SELECT
+
+2. SELECT
+
+
+=================================================================================================================
+
+
+Soal Vikri :
+
+1. SELECT
+
+2. SELECT
+
+
+=================================================================================================================
+
+
+Soal Yana :
+
+1. SELECT mst.nip, mst.nama, sum(ht.jmlhutang)
+   FROM mstpegawai as mst
+   LEFT JOIN hutang as ht ON mst.nip = ht.nip
+   GROUP BY mst.nip, mst.nama
+   ORDER BY sum(ht.jmlhutang) DESC
+
+2. SELECT mst.nip, mst.nama, mst.GAPOK, sum(ht.JMLHUTANG) as jumlahhutang
+   FROM mstpegawai as mst
+   INNER JOIN hutang as ht ON mst.nip = ht.NIP 
+   GROUP BY mst.nip
+   HAVING sum(ht.JMLHUTANG) > mst.GAPOK * 12
+   ORDER BY ht.jmlhutang
+
+
+=================================================================================================================
+
+
+Soal Ryan :
+
+1. SELECT
+
+2. SELECT
