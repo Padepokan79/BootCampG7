@@ -7,7 +7,7 @@ Soal Sendiri :
    INNER JOIN mstpegawai as mst1 ON mst.nip = mst1.nip
    INNER JOIN keluarga as kel ON mst.nip = kel.nip
    INNER JOIN hubkel_tbl as hub ON kel.kdhubkel = hub.kdhubkel
-   WHERE kel.kdhubkel = 10 AND mst.pendidikan <> 'SMA' AND mst.pendidikan <> 'SLTA'
+   WHERE kel.kdhubkel = 10 AND mst.pendidikan <> 'SMA' AND mst.pendidikan <> 'SLTA' 
 
 2. SELECT mst.nip, mst.nama, YEAR(CURDATE()) - YEAR(mst.tgllhr) as usia, sta.nmstawin,
    htt.nmhutang as jenishutang, ht.jmlcicilan, ht.keterangan
@@ -25,9 +25,18 @@ Soal Sendiri :
 
 Soal Alifhar :
 
-1. SELECT
+1. SELECT mst.KDSATKER as kodesatuankerja, sat.NMSATKER as namasatuankerja,
+   mst.KDSKPD as kodeskpd, skp.NMSKPD, count(mst.NIP) as jumlah
+   FROM mstpegawai as mst
+   LEFT JOIN skpd_tbl as skp ON mst.KDSKPD = skp.KDSKPD
+   LEFT JOIN satker_tbl as sat ON mst.KDSATKER = sat.KDSATKER
+   GROUP BY mst.KDSATKER, sat.NMSATKER, mst.KDSKPD, skp.NMSKPD
 
-2. SELECT
+2. SELECT pan.NMPANGKAT, pan.NMGOL, count(mst.kdpangkat) as jumlah
+   FROM mstpegawai as mst
+   LEFT JOIN pangkat_tbl as pan ON mst.KDPANGKAT = pan.KDPANGKAT
+   WHERE pan.gol NOT IN('11', '12', '13', '14', '21', '22', '23', '24', '31', '32', '33', '34')
+   GROUP by pan.NMPANGKAT, pan.NMGOL
 
 
 =================================================================================================================
@@ -37,10 +46,10 @@ Soal Andrian :
 
 1. SELECT fg1.nip, fg1.nama, pa.nmgol, fu.namafungsi, gu.nmguru
    FROM fgaji_01 as fg1
-   INNER JOIN pangkat_tbl as pa ON fg1.kdpangkat = pa.kdpangkat
-   INNER JOIN fungsi as fu ON fg1.kdfungsi = fu.kdfungsi
+   INNER JOIN pangkat_tbl as pa ON pa.kdpangkat = fg1.kdpangkat
+   INNER JOIN fungsi as fu ON fu.kdjabatan = fg1.kdfungsi
    INNER JOIN guru_tbl as gu ON fg1.kdguru = gu.kdguru
-   WHERE fg1.masker < 20 AND gu.nmguru = 'Guru sekaligus Kepala SLTA'
+   WHERE fg1.masker < 20 AND fu.namafungsi = 'Guru sekaligus Kepala SLTA'
 
 2. SELECT mst.nip, mst.nama, ht.jmlhutang
    FROM mstpegawai as mst
@@ -53,9 +62,21 @@ Soal Andrian :
 
 Soal Chaudary :
 
-1. SELECT
+1. SELECT mst.nip as nip, mst.nama as nama, mst.TGLLHR as tgl_lahir, aga.NMAGAMA as agama, mst.PENDIDIKAN, hub.NMHUTANG, hut.JMLHUTANG
+   FROM mstpegawai as mst
+   INNER JOIN hutang as hut ON mst.nip = hut.NIP
+   INNER JOIN hutang_tbl as hub ON hut.kdhutang = hub.KDHUTANG
+   INNER JOIN pangkat_tbl as pan ON mst.KDPANGKAT = pan.KDPANGKAT
+   INNER JOIN agama_tbl as aga ON mst.AGAMA = aga.KDAGAMA
+   WHERE aga.NMAGAMA <> 'Islam' AND YEAR(CURDATE()) - YEAR(mst.tgllhr) <= 40 AND mst.kdpangkat = '3B'
+   ORDER BY hut.jmlhutang DESC
 
-2. SELECT
+2. SELECT mst.nama as nama, hub.NMHUTANG, hut.JMLHUTANG
+   FROM mstpegawai as mst
+   LEFT JOIN hutang as hut ON mst.nip = hut.NIP
+   LEFT JOIN hutang_tbl as hub ON hut.kdhutang = hub.KDHUTANG
+   WHERE mst.pendidikan = 'SLTA' OR mst.pendidikan = 'SMA' AND mst.NAMA NOT LIKE '%A%'
+   ORDER BY hut.jmlhutang DESC
 
 
 =================================================================================================================
@@ -70,7 +91,8 @@ Soal Malik :
    INNER JOIN pangkat_tbl as pan ON pan.kdpangkat = mst.KDPANGKAT
    INNER JOIN eselon_tbl as es ON es.KDESELON = mst.KDESELON
    INNER JOIN satker_tbl as sat ON sat.KDSATKER = mst.KDSATKER
-   WHERE mst.alamat LIKE '%Mahakam%' AND nama NOT LIKE '%H.%'
+   WHERE mst.alamat LIKE '%Mahakam%' AND mst.nama NOT LIKE '%H.%' AND mst.npwp <> '00.000.00.0-000.000' 
+   AND mst.npwp <> ''
    AND sat.nmsatker LIKE '%Bengkulu%'
 
 2. SELECT es.uraian as Eselon, count(mst.nama) as jumPegawai,
@@ -87,9 +109,17 @@ Soal Malik :
 
 Soal Richa :
 
-1. SELECT
+1. SELECT fg1.NAMA, fu.namafungsi
+   FROM fgaji_01 as fg1
+   LEFT JOIN fungsi as fu ON fg1.KDFUNGSI = fu.kdjabatan
+   INNER JOIN stawin_tbl as sta ON fg1.KDSTAWIN = sta.kdstawin
+   WHERE sta.nmstawin = 'Tidak Kawin'
+   ORDER BY fu.namafungsi
 
-2. SELECT
+2. SELECT kel.nip, hkel.nmhubkel as hubungan, kel.nmkel
+   FROM hubkel_tbl as hkel
+   RIGHT JOIN keluarga as kel ON kel.KDHUBKEL = hkel.KDHUBKEL
+   ORDER BY kel.nip
 
 
 =================================================================================================================
@@ -97,9 +127,22 @@ Soal Richa :
 
 Soal Hendra :
 
-1. SELECT
+1. SELECT mst.NIP, mst.NAMA, sta.nmstawin, pan.NMGOL, pan.NMPANGKAT, mst.GAPOK
+   FROM mstpegawai_01 as mst
+   LEFT JOIN pangkat_tbl as pan ON mst.kdpangkat = pan.KDPANGKAT
+   LEFT JOIN stawin_tbl as sta ON mst.KDSTAWIN = sta.kdstawin
+   WHERE mst.pendidikan LIKE '%Sarjana%' AND sta.nmstawin = 'Kawin' AND mst.GAPOK > (SELECT AVG(mst.GAPOK) FROM mstpegawai_01)
+   ORDER BY mst.GAPOK
 
-2. SELECT
+2. SELECT mst.nip, mst.nama, mst.kdjenkel, aga.nmagama, pan.NMPANGKAT, sta.nmstawin, stap.NMSTAPEG, jpeg.nm_jns
+   FROM mstpegawai as mst
+   INNER JOIN agama_tbl as aga ON mst.AGAMA = aga.KDAGAMA
+   INNER JOIN pangkat_tbl as pan ON mst.KDPANGKAT = pan.KDPANGKAT
+   INNER JOIN stawin_tbl as sta ON mst.KDSTAWIN = sta.kdstawin
+   INNER JOIN stapeg_tbl as stap ON mst.KDSTAPEG = stap.KDSTAPEG
+   INNER JOIN jenis_peg as jpeg ON mst.kd_jns_peg = stap.kd_jns 
+   INNER JOIN eselon_tbl as ese ON mst.KDESELON = ese.KDESELON
+   WHERE mst.GAPOK BETWEEN 3500000 AND 5000000	
 
 
 =================================================================================================================
@@ -107,9 +150,24 @@ Soal Hendra :
 
 Soal Vikri :
 
-1. SELECT
+1. SELECT fg1.nama, fg1.gapok as gapok_bulan1, fg2.gapok as gapok_bulan2, fg3.gapok as gapok_bulan3, fg4.gapok as gapok_bulan4,
+   fg1.gapok + fg2.gapok + fg3.gapok + fg4.gapok as total_gaji, sta.nmstawin as statuskawin, ese.uraian as eselon
+   FROM fgaji_01 as fg1 
+   INNER JOIN fgaji_02 as fg2 ON fg1.NIP = fg2.NIP
+   INNER JOIN fgaji_03 as fg3 ON fg1.NIP = fg3.NIP
+   INNER JOIN fgaji_04 as fg4 ON fg1.NIP = fg4.NIP
+   INNER JOIN stawin_tbl as sta ON fg1.KDSTAWIN = sta.kdstawin
+   INNER JOIN eselon_tbl as ese ON fg1.KDESELON = ese.KDESELON
+   WHERE ese.URAIAN <> 'NON ESELON'
+   GROUP BY fg1.nama
+   ORDER BY (fg1.GAPOK + fg2.GAPOK + fg3.GAPOK + fg4.GAPOK) DESC 
 
-2. SELECT
+2. SELECT mst.nama, YEAR(CURDATE()) - YEAR(mst.tgllhr) as usia, aga.nmagama as agama, if(mst.kdjenkel = 1, "Laki-laki","Perempuan") as    jenkel, hit.thp as thp
+   FROM mstpegawai as mst 
+   INNER JOIN agama_tbl as aga ON mst.agama = aga.kdagama
+   INNER JOIN hit_pajak as hit ON mst.nip = hit.nip
+   WHERE hit.thp > 0 AND mst.JANAK = 2
+   ORDER BY hit.thp DESC
 
 
 =================================================================================================================
@@ -136,6 +194,12 @@ Soal Yana :
 
 Soal Ryan :
 
-1. SELECT
+1. SELECT pan.nmpangkat, count(urt.nip_v) as jumlahkaryawan
+   FROM urtnip as urt
+   INNER JOIN pangkat_tbl as pan ON pan.nmgol = urt.c_golongan
+   GROUP BY urt.C_GOLONGAN 
 
-2. SELECT
+2. select mst.nip, mst.nama, hut.jmlhutang
+   FROM mstpegawai as mst
+   LEFT JOIN hutang as hut ON mst.nip = hut.nip
+   WHERE hut.jmlhutang <> 0
